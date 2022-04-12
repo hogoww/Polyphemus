@@ -1,5 +1,5 @@
 test-displaying
-tesTenNewSpaceObjectsAreDisplayed
+testTenNewSpaceObjectsAreDisplayed
 	
 	10 timesRepeat: [self newZeroSizedObject].
 	stackInspector updateInspector.
