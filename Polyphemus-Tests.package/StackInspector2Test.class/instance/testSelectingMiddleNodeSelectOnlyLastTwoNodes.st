@@ -8,9 +8,9 @@ testSelectingMiddleNodeSelectOnlyLastTwoNodes
 	oop slotAt: 1 put: firstLayer.
 	firstLayer slotAt: 1 put: secondLayer.
 	
-	stackInspector updateInspector.
-	stackInspector newSpaceNodes second click.
+	memorySpace updateMemorySpace.
+	memorySpace newSpaceNodes second click.
 	
-	self assert: stackInspector newSpaceNodes first paint equals: stackInspector colorProvider regularOopColor.
-	self assert: stackInspector newSpaceNodes second paint equals: stackInspector colorProvider initialSelectionColor.
-	self assert: stackInspector newSpaceNodes third paint equals: stackInspector colorProvider initialSelectionColor lighter lighter lighter.
+	self assert: memorySpace newSpaceNodes first paint equals: memorySpace colorProvider regularOopColor.
+	self assert: memorySpace newSpaceNodes second paint equals: memorySpace colorProvider initialSelectionColor.
+	self assert: memorySpace newSpaceNodes third paint equals: memorySpace colorProvider initialSelectionColor lighter lighter lighter.

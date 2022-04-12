@@ -2,6 +2,6 @@ test-displaying
 testTenNewSpaceObjectsAreDisplayed
 	
 	10 timesRepeat: [self newZeroSizedObject].
-	stackInspector updateInspector.
+	self updateSpaces.
 	
-	self assert: stackInspector newSpaceNodes size equals: 10.
+	self assert: newSpace spaceSize equals: 10.

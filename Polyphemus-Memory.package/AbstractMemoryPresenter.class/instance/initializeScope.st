@@ -1,0 +1,3 @@
+showing
+initializeScope
+	self updateScope 

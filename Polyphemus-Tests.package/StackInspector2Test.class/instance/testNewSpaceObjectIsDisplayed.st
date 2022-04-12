@@ -2,7 +2,7 @@ test-displaying
 testNewSpaceObjectIsDisplayed
 	| oop |
 	oop := self newZeroSizedObject.
-	stackInspector updateInspector.
+	self updateSpaces.
 	
-	self assert: stackInspector newSpaceNodes size equals: 1.
-	self assert: stackInspector newSpaceNodes first model equals: oop.
+	self assert: newSpace spaceSize equals: 1.
+	self assert: (newSpace oopWithAddress: oop) model equals: oop.

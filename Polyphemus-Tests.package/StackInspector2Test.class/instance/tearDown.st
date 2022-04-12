@@ -1,4 +1,5 @@
 running
 tearDown
-	stackInspector owner close.
+	newSpace owner close.
+	oldSpace owner close.
 	super tearDown.

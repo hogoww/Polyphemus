@@ -6,6 +6,6 @@ testPinnedObjectIsDisplayed
 	obj := self newZeroSizedObject.
 	memory pinObject: obj.
 	
-	stackInspector updateInspector.
+	self updateSpaces.
 	
-	self assert: stackInspector oldSpaceNodes last model equals: (memory followForwarded: obj).
+	self assert: (oldSpace oopWithAddress: (memory followForwarded: obj)) model equals: (memory followForwarded: obj).

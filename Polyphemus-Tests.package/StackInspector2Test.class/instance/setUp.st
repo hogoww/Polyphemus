@@ -1,5 +1,5 @@
 running
 setUp
 	self setUpUsingImage.
-
-	stackInspector := StackInspector openOn: interpreter.
+	 newSpace := NewSpacePresenter openOn: interpreter.
+	 oldSpace := OldSpacePresenter openOn: interpreter

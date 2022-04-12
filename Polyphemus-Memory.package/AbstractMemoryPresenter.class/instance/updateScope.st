@@ -1,0 +1,3 @@
+showing
+updateScope
+	^ self subclassResponsibility

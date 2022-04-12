@@ -1,12 +1,8 @@
 test-color
 testOldSpaceObjectIsColoredProperly
 	
-	| numberOfBoxes numberOfBoxesAfter oldOopBox |
-	numberOfBoxes := stackInspector oldSpaceNodes size.
-	self newOldSpaceObjectWithSlots: 1 classIndex: 90.
+	| oop |
+	oop := self newOldSpaceObjectWithSlots: 1 classIndex: 90.
+	self updateSpaces.
 	
-	stackInspector updateInspector.
-	numberOfBoxesAfter := stackInspector oldSpaceNodes size.
-	
-	oldOopBox := stackInspector oldSpaceNodes last.
-	self assert: oldOopBox paint equals: stackInspector colorProvider regularOopColor.
+	self assert: (oldSpace oopWithAddress: oop)  paint equals: oldSpace colorProvider regularOopColor.

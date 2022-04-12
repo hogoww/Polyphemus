@@ -3,6 +3,6 @@ testClassOopIsColoredProperly
 	
 	| smallIntegerClass box |
 	smallIntegerClass := memory fetchClassOf: (memory integerObjectOf: 1).
-	box := stackInspector oopWithAddress: smallIntegerClass.
+	box := oldSpace oopWithAddress: smallIntegerClass.
 	
-	self assert: box paint equals: stackInspector colorProvider classOopColor.
+	self assert: box paint equals: oldSpace colorProvider classOopColor.
