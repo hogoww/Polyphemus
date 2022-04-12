@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractSpurObject",
+	"category" : "Polyphemus-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SpurRegularObject",
+	"type" : "normal"
+}
