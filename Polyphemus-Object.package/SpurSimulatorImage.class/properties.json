@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SpurImage",
+	"category" : "Polyphemus-Object",
+	"classinstvars" : [
+		"simulator"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"currentObject"
+	],
+	"name" : "SpurSimulatorImage",
+	"type" : "normal"
+}

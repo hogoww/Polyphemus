@@ -1,0 +1,4 @@
+accessing
+oldSpace
+
+	^ oldSpace

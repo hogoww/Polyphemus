@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "SpurImage",
+	"category" : "Polyphemus-Object",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"format",
+		"memory",
+		"headerSize",
+		"dataSize",
+		"oldBaseAddress",
+		"specialObjectsArrayOop"
+	],
+	"name" : "SpurFileImage",
+	"type" : "normal"
+}

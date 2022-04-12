@@ -1,0 +1,3 @@
+coloring
+pinnedOopColor
+	^ self subclassResponsibility

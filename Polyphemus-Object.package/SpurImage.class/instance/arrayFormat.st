@@ -1,0 +1,3 @@
+constants
+arrayFormat
+	^ 2

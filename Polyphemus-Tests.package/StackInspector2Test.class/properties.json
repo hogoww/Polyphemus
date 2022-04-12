@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "VMInterpreterTests",
+	"category" : "Polyphemus-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stackInspector"
+	],
+	"name" : "StackInspector2Test",
+	"type" : "normal"
+}

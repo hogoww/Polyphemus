@@ -1,0 +1,3 @@
+coloring
+defaultFreeOopColor 
+	^ Color lightGray

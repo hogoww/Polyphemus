@@ -1,0 +1,4 @@
+accessing
+memory
+
+	^ image memory

@@ -1,0 +1,3 @@
+coloring
+defaultPinnedOopColor
+	^ Color black

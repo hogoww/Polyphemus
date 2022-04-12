@@ -1,0 +1,3 @@
+constants
+arrayClassIndexPun
+	^ 16

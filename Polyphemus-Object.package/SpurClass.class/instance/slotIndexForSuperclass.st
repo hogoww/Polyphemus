@@ -1,0 +1,3 @@
+constants
+slotIndexForSuperclass
+	^ 1

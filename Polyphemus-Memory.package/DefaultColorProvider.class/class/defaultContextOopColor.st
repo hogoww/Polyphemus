@@ -1,0 +1,3 @@
+coloring
+defaultContextOopColor
+	^ Color yellow

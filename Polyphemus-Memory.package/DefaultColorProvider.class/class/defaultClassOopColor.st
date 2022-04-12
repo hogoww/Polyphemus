@@ -1,0 +1,3 @@
+coloring
+defaultClassOopColor
+	^ Color blue

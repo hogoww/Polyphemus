@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "VMInterpreterTests",
+	"category" : "Polyphemus-Tests",
+	"classinstvars" : [ ],
+	"pools" : [
+		"VMBasicConstants",
+		"VMBytecodeConstants",
+		"VMObjectIndices"
+	],
+	"classvars" : [ ],
+	"instvars" : [
+		"imageName",
+		"image"
+	],
+	"name" : "VMInspectorTest",
+	"type" : "normal"
+}

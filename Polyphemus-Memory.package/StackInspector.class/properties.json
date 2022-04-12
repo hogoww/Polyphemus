@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "Polyphemus-Memory-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"interpreter",
+		"stack",
+		"frameContainer",
+		"newSpace",
+		"oldSpace",
+		"objectInspector",
+		"colorProvider",
+		"actionBar"
+	],
+	"name" : "StackInspector",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+coloring
+contextOopColor
+	^ self subclassResponsibility

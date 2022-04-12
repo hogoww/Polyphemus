@@ -1,0 +1,3 @@
+coloring
+defaultUsedOopColor 
+	^ Color green

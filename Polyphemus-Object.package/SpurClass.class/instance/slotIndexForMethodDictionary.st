@@ -1,0 +1,4 @@
+constants
+slotIndexForMethodDictionary
+
+	^ 2

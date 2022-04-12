@@ -1,0 +1,3 @@
+constants
+slotIndexForClassFormat
+	^ 3

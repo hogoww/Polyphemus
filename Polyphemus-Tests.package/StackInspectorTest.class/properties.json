@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "StackBuilderTest",
+	"category" : "Polyphemus-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stackInspector"
+	],
+	"name" : "StackInspectorTest",
+	"type" : "normal"
+}

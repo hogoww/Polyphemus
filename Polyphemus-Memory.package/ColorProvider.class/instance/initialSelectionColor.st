@@ -1,0 +1,3 @@
+coloring
+initialSelectionColor
+	^ self subclassResponsibility

@@ -1,0 +1,3 @@
+coloring
+defaultCompiledMethodOopColor
+	^ Color purple
