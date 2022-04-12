@@ -6,11 +6,10 @@ setupUsingImage
 	Currently not used by default, as some tests still fails, but is usable.
 	For example, we could test that all test are working on both a specific setup, and image load one.
 	Or we could design tests using the image setUp, which should have everything ready to use, and do the specific on after, to refine the requirements of a setUp for a test."
-	super setUp.
 	interpreter := self newInterpreter 
 		pluginList: { }.
 	
-	interpreter openOn: ((IceRepository registeredRepositoryIncludingPackage: self class package) location / 'resources' / 'img.image') pathString.
+	interpreter openOn: self pathTo64BitImage.
 	interpreter initStackPages.
 	interpreter loadInitialContext.
 	wordSize := memory wordSize.
