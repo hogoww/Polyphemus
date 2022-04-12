@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stackInspector"
+		"oldSpace",
+		"newSpace"
 	],
 	"name" : "StackInspector2Test",
 	"type" : "normal"

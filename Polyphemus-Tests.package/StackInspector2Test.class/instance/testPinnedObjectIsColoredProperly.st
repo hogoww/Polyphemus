@@ -6,6 +6,6 @@ testPinnedObjectIsColoredProperly
 	obj := self newZeroSizedObject.
 	memory pinObject: obj.
 	
-	stackInspector updateInspector.
+	self updateSpaces.
 
-	self assert: stackInspector oldSpaceNodes last color equals: stackInspector colorProvider pinnedOopColor.
+	self assert: (oldSpace oopWithAddress: (memory followForwarded: obj)) paint equals: oldSpace colorProvider pinnedOopColor.

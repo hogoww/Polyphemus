@@ -6,7 +6,7 @@ testForwarderIsDisplayed
 	obj := self newZeroSizedObject.
 	memory pinObject: obj.
 	
-	stackInspector updateInspector.
+	self updateSpaces.
 	
-	self assert: stackInspector newSpaceNodes size equals: 1.
-	self assert: (memory isUnambiguouslyForwarder: stackInspector newSpaceNodes anyOne model).
+	self assert: newSpace spaceSize equals: 1.
+	self assert: (memory isUnambiguouslyForwarder: (newSpace oopWithAddress: obj) model).

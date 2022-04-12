@@ -8,10 +8,10 @@ testSelectingInitialNodeSelectAllThreeNodes
 	oop slotAt: 1 put: firstLayer.
 	firstLayer slotAt: 1 put: secondLayer.
 	
-	stackInspector updateInspector.
-	stackInspector newSpaceNodes first click.
+	memorySpace updateMemorySpace.
+	memorySpace newSpaceNodes first click.
 	
 	"We also have the freelist from set upm that survived and is not tenured"
-	self assert: stackInspector newSpaceNodes first paint equals: stackInspector colorProvider initialSelectionColor.
-	self assert: stackInspector newSpaceNodes second paint equals: stackInspector colorProvider initialSelectionColor lighter lighter lighter.
-	self assert: stackInspector newSpaceNodes third paint equals: stackInspector colorProvider initialSelectionColor lighter lighter lighter lighter lighter lighter.
+	self assert: memorySpace newSpaceNodes first paint equals: memorySpace colorProvider initialSelectionColor.
+	self assert: memorySpace newSpaceNodes second paint equals: memorySpace colorProvider initialSelectionColor lighter lighter lighter.
+	self assert: memorySpace newSpaceNodes third paint equals: memorySpace colorProvider initialSelectionColor lighter lighter lighter lighter lighter lighter.

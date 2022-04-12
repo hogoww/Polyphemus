@@ -6,6 +6,6 @@ testForwarderIsColoredProperly
 	obj := self newZeroSizedObject.
 	memory pinObject: obj.
 	
-	stackInspector updateInspector.
+	self updateSpaces.
 	
-	self assert: (stackInspector oopWithAddress: obj) paint equals: stackInspector colorProvider forwarderOopColor.
+	self assert: (newSpace oopWithAddress: obj) paint equals: oldSpace colorProvider forwarderOopColor.
