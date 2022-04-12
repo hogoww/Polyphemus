@@ -1,5 +1,5 @@
 test-selecting
-testSelectioningMiddleNodeSelectOnlyLastTwoNodes
+testSelectingMiddleNodeSelectOnlyLastTwoNodes
 	| oop firstLayer secondLayer image |
 	image := SpurSimulatorImage onSpurSimulator: memory.
 	oop := SpurObject on: (self newObjectWithSlots: 1 classIndex: 42) image: image.

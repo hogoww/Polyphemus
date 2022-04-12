@@ -1,5 +1,5 @@
 test-selecting
-testSelectioningInitialNodeSelectAllThreeNodes
+testSelectingInitialNodeSelectAllThreeNodes
 	| oop firstLayer secondLayer image |
 	image := SpurSimulatorImage onSpurSimulator: memory.
 	oop := SpurObject on: (self newObjectWithSlots: 1) image: image.

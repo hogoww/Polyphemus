@@ -1,5 +1,5 @@
 test-selecting
-testSelectioningNodeWithNoSlotsSelectOnlyItself
+testSelectingNodeWithNoSlotsSelectOnlyItself
 	
 	self newZeroSizedObject.
 	
