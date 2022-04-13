@@ -1,4 +1,4 @@
 accessing
 slotAt: anInteger
 
-	^ self image objectForOop: (object fetchPointer: anInteger)
+	^ object fetchPointer: anInteger

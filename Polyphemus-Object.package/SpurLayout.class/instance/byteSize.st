@@ -1,3 +1,3 @@
 accessing
 byteSize
-	^ self object byteSize .
+	^ self object byteSize
