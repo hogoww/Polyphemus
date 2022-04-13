@@ -1,4 +1,4 @@
-tests-graphObject
+tests-allReferencers
 testSpurObjectWithOneReferencer
 	| oop slot |
 	oop := SpurObject on: (self newObjectWithSlots: 1) image: image.

@@ -1,4 +1,4 @@
-tests-graphObject
+tests-allReferencers
 testSpurObjectWithManyReferencer
 	| slot referencer |
 	slot := SpurObject on: self newZeroSizedObject image: image.

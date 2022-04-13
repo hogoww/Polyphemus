@@ -1,4 +1,4 @@
-tests-graphObject
+tests-allReferencers
 testSpurObjectWithNoReferenceHasNoReferencers
 	| oop |
 	oop := SpurObject on: self newZeroSizedObject image: image.
