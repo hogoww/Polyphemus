@@ -1,0 +1,3 @@
+testing
+isOldOop
+	^ self shouldBeImplemented

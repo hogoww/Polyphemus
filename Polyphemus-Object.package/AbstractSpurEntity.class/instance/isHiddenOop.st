@@ -1,0 +1,3 @@
+testing
+isHiddenOop
+	^ self shouldBeImplemented

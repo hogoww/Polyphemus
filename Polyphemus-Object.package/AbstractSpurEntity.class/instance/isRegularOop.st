@@ -1,0 +1,3 @@
+testing
+isRegularOop
+	^ self shouldBeImplemented

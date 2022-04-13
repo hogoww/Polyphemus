@@ -3,15 +3,12 @@
 	"super" : "AbstractInspectorsTest",
 	"category" : "Polyphemus-Tests",
 	"classinstvars" : [ ],
-	"pools" : [
-		"VMBasicConstants",
-		"VMBytecodeConstants",
-		"VMObjectIndices"
-	],
+	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"image"
+		"oldSpace",
+		"newSpace"
 	],
-	"name" : "VMInspectorTest",
+	"name" : "StackInspectorBaseTest",
 	"type" : "normal"
 }

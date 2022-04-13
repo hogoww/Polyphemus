@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "AbstractSpurEntity",
-	"category" : "Polyphemus-Object",
+	"super" : "VMObjectInspectionTest",
+	"category" : "Polyphemus-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SpurImmediate",
+	"name" : "VMObjectTestCreationTest",
 	"type" : "normal"
 }
