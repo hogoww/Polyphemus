@@ -1,4 +1,4 @@
-test-testing
+tests-printing
 testSmallIntegerClassName
 	| smallIntegerClass |
 	smallIntegerClass := SpurObject on: (memory fetchClassOf: (memory integerObjectOf: 1)) image: image.

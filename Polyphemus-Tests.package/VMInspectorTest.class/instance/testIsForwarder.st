@@ -1,4 +1,4 @@
-test-testing
+tests-testing
 testIsForwarder
 	| oop obj |
 	

@@ -1,4 +1,4 @@
-test-testing
+tests-testing
 testIsPinnedOop
 	| oop obj |
 	

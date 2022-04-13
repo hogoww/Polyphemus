@@ -1,4 +1,4 @@
-test-testing
+tests-testing
 testSmallIntegerHasSmallIntegerClass
 	| smallIntegerClass object |
 	smallIntegerClass := memory fetchClassOf: (memory integerObjectOf: 1).

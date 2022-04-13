@@ -1,4 +1,4 @@
-test-testing
+tests-testing
 testSmallIntegerClassIndexIsSmallIntegerClassIndex
 	| smallIntegerClass object |
 	smallIntegerClass := SpurObject on: (memory fetchClassOf: (memory integerObjectOf: 1)) image: image.

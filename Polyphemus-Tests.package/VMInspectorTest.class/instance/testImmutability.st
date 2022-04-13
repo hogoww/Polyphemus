@@ -1,4 +1,4 @@
-test-testing
+tests-testing
 testImmutability
 	| object objectOop |
 	objectOop := (self newObjectWithSlots: 1).

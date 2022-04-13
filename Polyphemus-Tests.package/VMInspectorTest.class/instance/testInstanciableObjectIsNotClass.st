@@ -1,4 +1,4 @@
-test-testing
+tests-testing
 testInstanciableObjectIsNotClass
 	| oop |
 	oop := SpurObject on: self newZeroSizedObject image: image.

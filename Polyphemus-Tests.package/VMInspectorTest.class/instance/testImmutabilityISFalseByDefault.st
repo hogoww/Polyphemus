@@ -1,4 +1,4 @@
-test-testing
+tests-testing
 testImmutabilityISFalseByDefault
 	| object |
 	object := image objectForOop: (self newObjectWithSlots: 1).
