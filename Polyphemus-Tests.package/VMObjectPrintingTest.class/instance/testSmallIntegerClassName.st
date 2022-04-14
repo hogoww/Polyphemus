@@ -1,5 +1,5 @@
 tests-printing-classes
 testSmallIntegerClassName
 	| smallIntegerClass |
-	smallIntegerClass := AbstractSpurEntity newFor: (memory fetchClassOf: (memory integerObjectOf: 1)) image: image.
+	smallIntegerClass := self objectForOop: (memory fetchClassOf: (memory integerObjectOf: 1)).
 	self assert: smallIntegerClass className equals: 'PCSmallInteger'

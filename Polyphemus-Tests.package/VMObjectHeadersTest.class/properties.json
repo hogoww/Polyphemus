@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "VMObjectTestCreationTest",
+	"name" : "VMObjectHeadersTest",
 	"type" : "normal"
 }

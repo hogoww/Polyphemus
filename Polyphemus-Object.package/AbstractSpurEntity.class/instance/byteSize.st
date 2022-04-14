@@ -1,8 +1,9 @@
 accessing
 byteSize
-	
 	| numberOfSlots |
-	numberOfSlots := self numSlots.
+	^ memory totalByteSizeOf: address
+	
+	"numberOfSlots := self numSlots.
 	^ (numberOfSlots = 0
 		ifTrue: [ 1 ]
-		ifFalse: [ numberOfSlots ]) * self wordSize.
+		ifFalse: [ numberOfSlots ]) * self wordSize."

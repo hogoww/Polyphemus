@@ -1,5 +1,5 @@
 tests-printing
 testNilObjectHasSpecialPrint
 	| oop |
-	oop := AbstractSpurEntity newFor: image nilObject value image: image.
+	oop := self objectForOop: memory nilObject.
 	self assert: 'nilObject' equals: oop printString
