@@ -1,3 +1,3 @@
 testing
 printString
-	^ [ self className ] on: Error do: [ 'Bad Class' ]
+	^ [ self className ] on: Error do: [ address printString ]
