@@ -1,4 +1,4 @@
 accessing
 spaceString
-	self isOld ifTrue: [ ^ 'Old Space' ].
+	self isOldOop ifTrue: [ ^ 'Old Space' ].
 	^ 'new Space'
