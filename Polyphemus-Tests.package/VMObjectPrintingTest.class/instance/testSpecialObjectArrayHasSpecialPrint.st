@@ -1,6 +1,5 @@
 tests-printing
 testSpecialObjectArrayHasSpecialPrint
 	| oop |
-	self fail.
-	oop := self objectForOop: memory freeListObj .
-	self assert: 'falseObject' equals: oop printString
+	oop := self objectForOop: memory specialObjectsOop .
+	self assert: 'specialObjectArray' equals: oop printString

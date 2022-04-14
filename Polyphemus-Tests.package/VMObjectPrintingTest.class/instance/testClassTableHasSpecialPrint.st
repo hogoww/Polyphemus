@@ -1,6 +1,5 @@
 tests-printing
 testClassTableHasSpecialPrint
 	| oop |
-	self fail.
-	oop := self objectForOop: memory freeListObj .
-	self assert: 'falseObject' equals: oop printString
+	oop := self objectForOop: memory classTableRootObj.
+	self assert: 'classTable' equals: oop printString

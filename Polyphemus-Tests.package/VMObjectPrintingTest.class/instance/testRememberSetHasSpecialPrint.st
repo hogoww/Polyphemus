@@ -1,6 +1,5 @@
 tests-printing
 testRememberSetHasSpecialPrint
 	| oop |
-	self fail.
-	oop := self objectForOop: memory freeListObj .
-	self assert: 'falseObject' equals: oop printString
+	oop := self objectForOop: memory rememberedSetObj.
+	self assert: 'rememberSet' equals: oop printString

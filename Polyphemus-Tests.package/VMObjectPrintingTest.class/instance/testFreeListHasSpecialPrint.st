@@ -1,6 +1,5 @@
 tests-printing
 testFreeListHasSpecialPrint
 	| oop |
-	self fail.
-	oop := self objectForOop: memory freeListObj .
-	self assert: 'falseObject' equals: oop printString
+	oop := self objectForOop: memory freeListsObject.
+	self assert: 'freeLists' equals: oop printString
