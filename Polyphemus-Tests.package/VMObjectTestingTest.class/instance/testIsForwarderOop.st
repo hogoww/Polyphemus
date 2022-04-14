@@ -1,5 +1,5 @@
 test
-testIsForwarder
+testIsForwarderOop
 	| oop obj |
 	
 	obj := self newZeroSizedObject.

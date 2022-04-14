@@ -1,5 +1,5 @@
 tests-testing
-testIsOld
+testIsOldOop
 	| oop |
 	oop := SpurObject on: (self newOldSpaceObjectWithSlots: 1) image: image.
 

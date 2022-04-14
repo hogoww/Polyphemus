@@ -1,5 +1,5 @@
 test
-testIsYoung
+testIsYoungOop
 	| oop |
 	oop := self objectForOop: self newZeroSizedObject.
 

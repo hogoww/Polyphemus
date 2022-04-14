@@ -1,8 +1,7 @@
 test
-testisContext
+testisImmutableOop
 	| oop |
-	self fail.
-	oop := self objectForOop: self newZeroSizedObect.
+	oop := self objectForOop: self newZeroSizedObject.
 	memory setIsImmutableOf: oop address to: true.
 	
 	self assert: oop isImmutableOop
