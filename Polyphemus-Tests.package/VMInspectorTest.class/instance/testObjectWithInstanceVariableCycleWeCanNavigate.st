@@ -11,5 +11,5 @@ testObjectWithInstanceVariableCycleWeCanNavigate
 	object1 slotAt: 1 put: object2.
 	object2 slotAt: 1 put: object1.
 
-	self assert: (object1 slotAt: 1) address equals: object2.
-	self assert: (object2 slotAt: 1) address equals: object1.
+	self assert: (object1 slotAt: 1) address equals: object2 value.
+	self assert: (object2 slotAt: 1) address equals: object1 value.
