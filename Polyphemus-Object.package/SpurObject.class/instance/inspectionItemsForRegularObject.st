@@ -9,7 +9,6 @@ inspectionItemsForRegularObject
 			ifTrue:[ #name -> self asSpurClass className ] 
 			ifFalse: [ #isClass -> false ]).
 		#class -> self classSpurObject.
-		#className ->  self classSpurObject asSpurClass className.
 		#classIndex -> self classIndex.
 		#format -> self format.
 		#layout -> self spurLayout.

@@ -1,8 +1,7 @@
-showing
+display
 selectOop: anOop
-	| oop graph color |
-	oop := (SpurObject on: anOop image: (SpurSimulatorImage onSpurSimulator: interpreter objectMemory)).
-	graph := oop objectGraph.
+	| graph color |
+	graph := anOop objectGraph.
 	color := colorProvider initialSelectionColor.
 	graph do: [ :aDepthArray |
 		aDepthArray do: [ : aSpurOop | (self oopForAddress: aSpurOop) paint: color ].

@@ -9,4 +9,4 @@ testForwarderIsDisplayed
 	self updateSpaces.
 	
 	self assert: newSpace spaceSize equals: 1.
-	self assert: (memory isUnambiguouslyForwarder: (newSpace oopWithAddress: obj) model).
+	self assert: (newSpace oopForAddress: obj) model isForwarderOop.

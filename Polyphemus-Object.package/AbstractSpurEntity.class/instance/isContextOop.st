@@ -1,3 +1,3 @@
 testing
-isHiddenOop
+isContextOop
 	^ false

@@ -9,9 +9,7 @@
 		"VMObjectIndices"
 	],
 	"classvars" : [ ],
-	"instvars" : [
-		"image"
-	],
+	"instvars" : [ ],
 	"name" : "VMInspectorTest",
 	"type" : "normal"
 }

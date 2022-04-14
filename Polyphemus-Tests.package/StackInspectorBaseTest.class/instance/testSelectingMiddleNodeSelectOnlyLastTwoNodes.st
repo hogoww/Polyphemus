@@ -1,16 +1,17 @@
 test-selecting
 testSelectingMiddleNodeSelectOnlyLastTwoNodes
-	| oop firstLayer secondLayer image |
-	image := SpurSimulatorImage onSpurSimulator: memory.
-	oop := SpurObject on: (self newObjectWithSlots: 1 classIndex: 42) image: image.
-	firstLayer := SpurObject on: (self newObjectWithSlots: 1) image: image.
-	secondLayer := SpurObject on: (self newObjectWithSlots: 0) image: image.
+	| oop firstLayer secondLayer oopObject |
+	oop := self objectForOop: (self newObjectWithSlots: 1).
+	firstLayer := self objectForOop: (self newObjectWithSlots: 1).
+	secondLayer := self objectForOop: (self newObjectWithSlots: 0).
 	oop slotAt: 1 put: firstLayer.
 	firstLayer slotAt: 1 put: secondLayer.
 	
-	memorySpace updateMemorySpace.
-	memorySpace newSpaceNodes second click.
+	self updateSpaces.
+	oopObject := (newSpace oopForAddress: firstLayer).
+	oopObject click.
 	
-	self assert: memorySpace newSpaceNodes first paint equals: memorySpace colorProvider regularOopColor.
-	self assert: memorySpace newSpaceNodes second paint equals: memorySpace colorProvider initialSelectionColor.
-	self assert: memorySpace newSpaceNodes third paint equals: memorySpace colorProvider initialSelectionColor lighter lighter lighter.
+	"We also have the freelist from set upm that survived and is not tenured"
+	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider specialOopColor.
+	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
+	self assert: (newSpace oopForAddress: secondLayer) paint equals: newSpace colorProvider initialSelectionColor lighter lighter lighter.

@@ -8,4 +8,4 @@ testPinnedObjectIsDisplayed
 	
 	self updateSpaces.
 	
-	self assert: (oldSpace oopWithAddress: (memory followForwarded: obj)) model equals: (memory followForwarded: obj).
+	self assert: (oldSpace oopForAddress: (memory followForwarded: obj)) model equals: (memory followForwarded: obj).

@@ -5,4 +5,4 @@ testNewSpaceObjectIsDisplayed
 	self updateSpaces.
 	
 	self assert: newSpace spaceSize equals: 1.
-	self assert: (newSpace oopWithAddress: oop) model equals: oop.
+	self assert: (newSpace oopForAddress: oop) model address equals: oop.

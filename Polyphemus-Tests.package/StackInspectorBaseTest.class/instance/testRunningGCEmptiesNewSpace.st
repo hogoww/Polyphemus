@@ -6,4 +6,3 @@ testRunningGCEmptiesNewSpace
 	self updateSpaces.
 	
 	self assert: newSpace spaceSize equals: 0.
-	self halt.

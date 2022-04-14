@@ -1,3 +1,4 @@
 running
 setUp
-	self setUpUsingImage
+	self setUpUsingImage.
+	image := SpurSimulatorImage onSpurSimulator: memory.

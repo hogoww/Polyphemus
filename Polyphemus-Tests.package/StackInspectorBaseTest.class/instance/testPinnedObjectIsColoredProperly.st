@@ -8,4 +8,4 @@ testPinnedObjectIsColoredProperly
 	
 	self updateSpaces.
 
-	self assert: (oldSpace oopWithAddress: (memory followForwarded: obj)) paint equals: oldSpace colorProvider pinnedOopColor.
+	self assert: (oldSpace oopForAddress: (memory followForwarded: obj)) paint equals: oldSpace colorProvider pinnedOopColor.

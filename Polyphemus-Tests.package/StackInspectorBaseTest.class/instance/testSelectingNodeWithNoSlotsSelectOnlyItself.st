@@ -1,10 +1,12 @@
 test-selecting
 testSelectingNodeWithNoSlotsSelectOnlyItself
 	
-	self newZeroSizedObject.
+	| oop oopObject |
+	oop := self newZeroSizedObject.
 	
-	memorySpace updateMemorySpace.
-	memorySpace newSpaceNodes anyOne click.
+	self updateSpaces.
+	oopObject := (newSpace oopForAddress: oop).
+	oopObject click.
 	
 	"We also have the freelist from set upm that survived and is not tenured"
-	self assert: memorySpace newSpaceNodes anyOne paint equals: memorySpace colorProvider initialSelectionColor.
+	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
