@@ -2,5 +2,5 @@ tests
 testCreatingRegularObject
 	| oop object |
 	oop := self newZeroSizedObject.
-	object := AbstractSpurEntity newFor: oop image: image.
+	object := self objectForOop: oop.
 	self assert: object isRegularOop.

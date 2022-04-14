@@ -1,5 +1,5 @@
 tests-printing
 testTrueObjectHasSpecialPrint
 	| oop |
-	oop := AbstractSpurEntity newFor: image trueObject value image: image.
+	oop := self objectForOop: memory trueObject.
 	self assert: 'trueObject' equals: oop printString

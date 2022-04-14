@@ -2,5 +2,5 @@ tests
 testCreatingClassObject
 	| oop object |
 	oop := memory fetchClassOf: (memory integerObjectOf: 42).
-	object := AbstractSpurEntity newFor: oop image: image.
+	object := self objectForOop: oop.
 	self assert: object isClassOop.

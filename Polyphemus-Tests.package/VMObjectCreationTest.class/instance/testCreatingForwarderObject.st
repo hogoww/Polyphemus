@@ -3,5 +3,5 @@ testCreatingForwarderObject
 	| oop object |
 	oop := self newZeroSizedObject.
 	memory pinObject: oop.
-	object := AbstractSpurEntity newFor: oop image: image.
+	object := self objectForOop: oop.
 	self assert: object isForwarderOop

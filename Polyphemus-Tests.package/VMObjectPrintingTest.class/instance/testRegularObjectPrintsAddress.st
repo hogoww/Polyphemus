@@ -2,6 +2,6 @@ tests-printing
 testRegularObjectPrintsAddress
 	| oop object |
 	oop := self newObjectWithSlots: 1.
-	object := SpurObject on: oop image: image.
+	object := self objectForOop: oop.
 	
 	self assert: object printString equals: oop printString
