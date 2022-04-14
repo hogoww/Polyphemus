@@ -24,5 +24,5 @@ black = pinned oop
 yellow = forwarder  
 green = default  
 
-Clicking on a box opens an inspector on a reification of the oop (based on "link to caro github").
+Clicking on a box opens an inspector on a reification of the oop (based on https://github.com/carolahp/PharoImageInspector).
 <img width="900" alt="inspector" src="https://user-images.githubusercontent.com/17796500/163357261-85441198-4a66-47d8-aa64-fa59c3bf9efb.png">
