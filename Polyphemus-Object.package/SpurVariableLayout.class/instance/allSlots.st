@@ -1,3 +1,3 @@
 gt-inspector-extension
 allSlots 
-	^ self object instanceVariables 
+	^ (1 to: self object numSlots) collect: [ :index | self object slotAt: index ]
