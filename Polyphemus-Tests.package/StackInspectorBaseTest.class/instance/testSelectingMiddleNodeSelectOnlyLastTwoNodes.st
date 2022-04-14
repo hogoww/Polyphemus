@@ -14,4 +14,4 @@ testSelectingMiddleNodeSelectOnlyLastTwoNodes
 	"We also have the freelist from set upm that survived and is not tenured"
 	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider specialOopColor.
 	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
-	self assert: (newSpace oopForAddress: secondLayer) paint equals: newSpace colorProvider initialSelectionColor lighter lighter lighter.
+	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 1).

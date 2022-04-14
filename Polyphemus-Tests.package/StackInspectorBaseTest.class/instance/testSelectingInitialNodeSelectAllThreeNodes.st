@@ -13,5 +13,5 @@ testSelectingInitialNodeSelectAllThreeNodes
 	
 	"We also have the freelist from set upm that survived and is not tenured"
 	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
-	self assert: (newSpace oopForAddress: firstLayer) paint equals: newSpace colorProvider initialSelectionColor lighter lighter lighter.
-	self assert: (newSpace oopForAddress: secondLayer) paint equals: newSpace colorProvider initialSelectionColor lighter lighter lighter lighter lighter lighter.
+	self assert: (newSpace oopForAddress: firstLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 1).
+	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 2).
