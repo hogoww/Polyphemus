@@ -2,8 +2,7 @@ test-color
 testCompiledMethodIsColoredProperly
 	
 	| oop |
-	self fail.
-	oop := self newOldSpaceObjectWithSlots: 1 classIndex: 90.
+	oop := methodBuilder buildMethod.
 	self updateSpaces.
 	
-	self assert: (oldSpace oopForAddress: oop)  paint equals: oldSpace colorProvider regularOopColor.
+	self assert: (oldSpace oopForAddress: oop) paint equals: oldSpace colorProvider compiledMethodOopColor.
