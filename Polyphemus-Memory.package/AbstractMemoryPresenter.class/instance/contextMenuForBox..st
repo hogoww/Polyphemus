@@ -5,10 +5,15 @@ contextMenuForBox: box
 	menuActivable := RSMenuActivable new.
 	menuActivable menuDo: [ :menu :element | 
 		menu
-			add: 'Color subgraph'
+			add: 'Color subgraph.'
 			target: self
 			selector: #objectGraphOf:
-			argument: box model ].
-
+			argument: box model.
+		menu 
+			add: 'Color referecers.'	
+			target: self
+			selector: #allReferencersOf:
+			argument: box model.
+			 ].
 	box @ menuActivable.
 	^ box
