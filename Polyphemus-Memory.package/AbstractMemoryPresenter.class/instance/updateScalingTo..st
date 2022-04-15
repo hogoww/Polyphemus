@@ -1,4 +1,5 @@
 building
 updateScalingTo: aScallingSelector
-	self perform: aScallingSelector.
+
+	self setScalingByByteSize.
 	self updateMemorySpace

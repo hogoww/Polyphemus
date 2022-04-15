@@ -6,5 +6,5 @@ initializeMissingComponents
 	image := SpurSimulatorImage onSpurSimulator: interpreter objectMemory.
 	"self refreshStack."
 	self buildMemorySpace: memorySpace.
-	self updateStatsAndLegend.
+	self updateStatsAndLegend: colorProvider.
 	
