@@ -1,4 +1,4 @@
 accessing
 slotAt: anInteger
 
-	^ object fetchPointer: anInteger
+	^ AbstractSpurEntity newFor: (object fetchPointer: anInteger) image: object image
