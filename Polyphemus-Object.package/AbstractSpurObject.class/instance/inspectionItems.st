@@ -1,6 +1,6 @@
 inspection
 inspectionItems
-	| items |
+	| items counter |
 
 	items := {
 		#address -> self printString.
@@ -15,6 +15,11 @@ inspectionItems
 		#immutable -> self isImmutableOop.
 		#numSlots -> self numSlots.	
 		} asOrderedCollection .
-		
-	1 to: self numSlots do: [ :i| items add: (('slot', i printString) -> (self slotAt: i)) ].
+
+	counter := 0.
+	self allSlots collect: [ :aSlot | 
+		counter := counter + 1.
+		('slot', counter printString) -> aSlot.
+		] into: items.
+
 	^ items
