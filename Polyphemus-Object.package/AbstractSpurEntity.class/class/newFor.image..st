@@ -1,8 +1,12 @@
 instance creation
 newFor: anAddress image: image
 	| handler |
-	handler := (SpurImmediate canHandle: anAddress image: image) ifTrue: [ { SpurImmediate } ].
-	handler := handler ifNil: [ AbstractSpurEntity allSubclasses select: [ :aSubclass | aSubclass = SpurImmediate ifFalse: [ aSubclass canHandle: anAddress image: image ] ifTrue: false ] ].
+	anAddress = 0 ifTrue: [ handler := { SpurImmediate } ].
+	handler := handler ifNil: [ (SpurImmediate canHandle: anAddress image: image) ifTrue: [ { SpurImmediate } ] ].
+	handler := handler ifNil: [
+		AbstractSpurEntity allSubclasses 
+			select: [ :aSubclass | aSubclass = SpurImmediate 
+				ifFalse: [ aSubclass canHandle: anAddress image: image ] ifTrue: false ] ].
 	
 	
 	^ (handler ifEmpty: [ SpurRegularObject ] ifNotEmpty: [
