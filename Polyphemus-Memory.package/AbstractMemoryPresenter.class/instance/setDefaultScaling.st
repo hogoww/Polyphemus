@@ -1,0 +1,4 @@
+scaling
+setDefaultScaling
+
+	^ scalling := [ :aBox | ].

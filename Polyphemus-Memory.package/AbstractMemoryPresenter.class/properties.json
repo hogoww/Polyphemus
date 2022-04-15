@@ -10,7 +10,8 @@
 		"memorySpace",
 		"scopedOop",
 		"image",
-		"colorProvider"
+		"colorProvider",
+		"scalling"
 	],
 	"name" : "AbstractMemoryPresenter",
 	"type" : "normal"
