@@ -1,6 +1,7 @@
 query
 objectGraph
 	| res current stack usedValues |
+	self isImmediateOop ifTrue: [ ^ {} ].
 	res := { { self } } asOrderedCollection.
 	current := res.
 	stack := Stack new.
