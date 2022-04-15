@@ -1,5 +1,5 @@
 display
-selectOop: anOop
+objectGraphOf: anOop
 	| graph color |
 	graph := anOop objectGraph.
 	color := colorProvider initialSelectionColor.

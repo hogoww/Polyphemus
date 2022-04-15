@@ -1,5 +1,5 @@
 showing
-selectOop: anOop
+objectGraphOf: anOop
 	| oop graph color |
 	oop := (SpurObject on: anOop image: (SpurSimulatorImage onSpurSimulator: interpreter objectMemory)).
 	graph := oop objectGraph.
