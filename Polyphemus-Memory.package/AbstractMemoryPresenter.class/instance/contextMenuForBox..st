@@ -10,10 +10,10 @@ contextMenuForBox: box
 			selector: #objectGraphOf:
 			argument: box model.
 		menu 
-			add: 'Color referecers.'	
+			add: 'Color referencers.'	
 			target: self
 			selector: #allReferencersOf:
 			argument: box model.
-			 ].
+		].
 	box @ menuActivable.
 	^ box

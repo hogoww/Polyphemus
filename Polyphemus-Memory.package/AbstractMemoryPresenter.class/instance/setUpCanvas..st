@@ -1,7 +1,7 @@
 updating
-setUpCanvas: aSpace canvas: canvas
+setUpCanvas: canvas
 
-	aSpace currentCanvas
+	memorySpace currentCanvas
 		ifNotNil: [ :aCanvas | 
 			| widget |
 			widget := aCanvas morph.
@@ -9,4 +9,4 @@ setUpCanvas: aSpace canvas: canvas
 			canvas extent: widget extent.
 			canvas signalUpdate
 			 ].
-	aSpace canvas: canvas
+	memorySpace canvas: canvas
