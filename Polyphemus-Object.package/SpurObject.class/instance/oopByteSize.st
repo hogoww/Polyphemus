@@ -1,5 +1,5 @@
 accessing-header
-byteSize
+oopByteSize
 	
 	| numberOfSlots |
 	numberOfSlots := self numSlots.

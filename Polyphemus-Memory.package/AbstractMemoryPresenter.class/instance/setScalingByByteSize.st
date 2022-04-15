@@ -1,4 +1,4 @@
 scaling
 setScalingByByteSize
 
-	^ scaling := [ :aBox | aBox size: aBox model byteSize ].
+	^ scaling := [ :aBox | aBox size: aBox model oopByteSize ].

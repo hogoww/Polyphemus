@@ -1,3 +1,3 @@
 header
-classTag
+oopClassTag
 	^ memory fetchClassTagOf: address

@@ -3,4 +3,4 @@ testClassTagForForwarder
 	| oop |
 	oop := self objectForOop: self newZeroSizedObject.
 	oop pinObjectOop.
-	self assert: oop classTag equals: memory isForwardedObjectClassIndexPun
+	self assert: oop oopClassTag equals: memory isForwardedObjectClassIndexPun

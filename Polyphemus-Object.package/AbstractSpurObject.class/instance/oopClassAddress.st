@@ -1,3 +1,3 @@
 accessing
 oopClassAddress
-	^ memory classForClassTag: self classTag
+	^ memory classForClassTag: self oopClassTag

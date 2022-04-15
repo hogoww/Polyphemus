@@ -1,5 +1,5 @@
 accessing
-byteSize
+oopByteSize
 	| numberOfSlots |
 	^ memory totalByteSizeOf: address
 	

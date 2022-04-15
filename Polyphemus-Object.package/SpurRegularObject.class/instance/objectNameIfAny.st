@@ -8,8 +8,7 @@ objectNameIfAny
 	address = memory classTableRootObj ifTrue: [ ^ #classTable ].
 	address = memory specialObjectsOop ifTrue: [ ^ #specialObjectArray ].
 	address = memory rememberedSetObj ifTrue: [ ^ #rememberSet ].
-	self isClassTablePage = 0 ifFalse: [ ^ #classTablePage ]. 
-
+	self isClassTablePage = 0 ifFalse: [ ^ #classTablePage ].
 
 	className := self oopClass className.
 	className = 'Bad class' ifFalse: [ ^ 'Instance of ', className ].

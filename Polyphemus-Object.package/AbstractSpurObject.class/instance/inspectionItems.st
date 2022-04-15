@@ -6,7 +6,7 @@ inspectionItems
 		#address -> self printString.
 		#header -> (self oopHeader printStringBase: 2).
 		#class -> self oopClass.
-		#classTag -> self classTag.
+		#oopClassTag -> self oopClassTag.
 		#format -> self oopFormat.
 		#layout -> self spurLayout.
 		#hash -> self oopHash.
