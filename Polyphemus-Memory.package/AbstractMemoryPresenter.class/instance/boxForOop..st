@@ -6,6 +6,6 @@ boxForOop: o
 	box popup.
 	box paint: (colorProvider colorForOop: o).
 	self enableInspectOnClickForBox: box.
-	self scallingForBox: box.
+	self scalingForBox: box.
 	self contextMenuForBox: box.
 	^ box

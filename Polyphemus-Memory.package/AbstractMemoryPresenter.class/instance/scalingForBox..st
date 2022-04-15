@@ -1,4 +1,4 @@
 display
-scallingForBox: box
+scalingForBox: box
 	scalling 	value: box.
 	^ box
