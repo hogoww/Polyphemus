@@ -1,5 +1,5 @@
-test-selecting
-testSelectingInitialNodeSelectAllThreeNodes
+test-objectGraph
+testObjectGraphOnMiddleNodeSelectOnlyLastTwoNodes
 	| oop firstLayer secondLayer oopObject |
 	oop := self objectForOop: (self newObjectWithSlots: 1).
 	firstLayer := self objectForOop: (self newObjectWithSlots: 1).
@@ -8,10 +8,10 @@ testSelectingInitialNodeSelectAllThreeNodes
 	firstLayer slotAt: 1 put: secondLayer.
 	
 	self updateSpaces.
-	oopObject := (newSpace oopForAddress: oop).
-	oopObject click.
+	oopObject := (newSpace oopForAddress: firstLayer).
+	newSpace objectGraphOf: oopObject model.
 	
 	"We also have the freelist from set upm that survived and is not tenured"
+	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider specialOopColor.
 	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
-	self assert: (newSpace oopForAddress: firstLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 1).
-	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 2).
+	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 1).
