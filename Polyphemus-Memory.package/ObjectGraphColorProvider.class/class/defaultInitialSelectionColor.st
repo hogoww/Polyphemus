@@ -1,0 +1,3 @@
+coloring
+defaultInitialSelectionColor 
+	^ Color orange
