@@ -11,7 +11,9 @@
 		"scopedOop",
 		"image",
 		"colorProvider",
-		"scalling"
+		"scaling",
+		"queryTextInput",
+		"legend"
 	],
 	"name" : "AbstractMemoryPresenter",
 	"type" : "normal"
