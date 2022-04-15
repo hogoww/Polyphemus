@@ -6,7 +6,6 @@ buildMemorySpace: aSpace
 	
 	scopedOop do: [ :anOop | canvas add: (self boxForOop: anOop) ].
 
-
 	RSGridLayout new
 		gapSize: 1;
 		on: canvas nodes.		

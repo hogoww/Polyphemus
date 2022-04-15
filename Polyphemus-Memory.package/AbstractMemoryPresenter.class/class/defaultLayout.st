@@ -5,7 +5,7 @@ defaultLayout
 		add:
 			(SpBoxLayout newLeftToRight
 				add: #memorySpace;
-				add: #legend expand: false;
+				add: #legend "expand: false";
 				yourself);
 		add: #queryTextInput expand: false;
 		yourself
