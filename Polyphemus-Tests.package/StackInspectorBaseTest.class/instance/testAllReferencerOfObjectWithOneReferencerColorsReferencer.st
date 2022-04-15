@@ -1,4 +1,4 @@
-test-objectGraph
+test-allReferencers
 testAllReferencerOfObjectWithOneReferencerColorsReferencer
 	
 	| oop oopSlot slot |

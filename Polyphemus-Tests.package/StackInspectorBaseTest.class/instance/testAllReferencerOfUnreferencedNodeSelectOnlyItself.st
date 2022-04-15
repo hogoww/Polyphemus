@@ -1,4 +1,4 @@
-test-objectGraph
+test-allReferencers
 testAllReferencerOfUnreferencedNodeSelectOnlyItself
 	
 	| oop oopObject slot |
