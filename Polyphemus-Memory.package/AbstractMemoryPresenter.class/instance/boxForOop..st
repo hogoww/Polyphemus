@@ -5,7 +5,7 @@ boxForOop: o
 	box model: o.
 	box popup.
 	box paint: (colorProvider colorForOop: o).
-	box when: RSMouseClick do:[ :rso | rso shape model inspect ].
-	box when: RSMouseClick do: [ self selectOop: box model ].
+	self enableInspectOnClickForBox: box.
+	self enableSelectOopOnClickForBox: box.
 	self scallingForBox: box.
 	^ box
