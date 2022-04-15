@@ -1,4 +1,4 @@
 display
 scalingForBox: box
-	scalling 	value: box.
+	scaling 	value: box.
 	^ box
