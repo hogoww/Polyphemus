@@ -1,3 +1,0 @@
-coloring
-regularOopColor
-	^ self subclassResponsibility

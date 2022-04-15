@@ -1,3 +1,0 @@
-coloring
-defaultInitialSelectionColor 
-	^ Color orange

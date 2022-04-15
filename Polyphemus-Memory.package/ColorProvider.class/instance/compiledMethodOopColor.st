@@ -1,3 +1,0 @@
-coloring
-compiledMethodOopColor 
-	^ self subclassResponsibility

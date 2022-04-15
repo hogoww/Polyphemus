@@ -1,3 +1,0 @@
-coloring
-forwarderOopColor
-	^ self subclassResponsibility
