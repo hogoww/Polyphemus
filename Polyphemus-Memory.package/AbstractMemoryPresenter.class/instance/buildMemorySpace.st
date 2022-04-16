@@ -11,3 +11,4 @@ buildMemorySpace
 		on: canvas nodes.		
 	canvas addInteraction: RSCanvasController new.
 	self addMenuForCanvas: canvas.
+	self setUpCanvas: canvas.
