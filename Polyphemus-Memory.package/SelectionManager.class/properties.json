@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"selection"
+		"stackInspector"
 	],
-	"name" : "ColorProvider",
+	"name" : "SelectionManager",
 	"type" : "normal"
 }

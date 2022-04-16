@@ -13,7 +13,8 @@
 		"colorProvider",
 		"scaling",
 		"queryTextInput",
-		"legend"
+		"legend",
+		"selection"
 	],
 	"name" : "AbstractMemoryPresenter",
 	"type" : "normal"

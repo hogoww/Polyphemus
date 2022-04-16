@@ -2,4 +2,4 @@ tests
 testByteSizeOfEmptyObject
 	| oop |
 	oop := self objectForOop: self newZeroSizedObject.
-	self assert: oop byteSize equals: 16
+	self assert: oop oopByteSize equals: 16
