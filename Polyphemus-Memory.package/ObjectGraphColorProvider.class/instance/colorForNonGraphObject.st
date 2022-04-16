@@ -1,4 +1,4 @@
 coloring
 colorForNonGraphObject
 
-	^Color gray.
+	^ Color gray
