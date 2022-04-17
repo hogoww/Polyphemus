@@ -10,5 +10,4 @@ testAllReferencerOfObjectWithOneReferencerColorsReferencer
 	oopSlot := (newSpace oopForAddress: slot).
 	newSpace allReferencersOf: oopSlot model.
 	
-	"We also have the freelist from set upm that survived and is not tenured"
 	self assert: oopSlot paint equals: newSpace colorProvider initialSelectionColor.

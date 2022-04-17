@@ -10,5 +10,4 @@ testAllReferencerOfUnreferencedNodeSelectOnlyItself
 	oopObject := (newSpace oopForAddress: oop).
 	newSpace allReferencersOf: oopObject model.
 	
-	"We also have the freelist from set upm that survived and is not tenured"
 	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
