@@ -1,4 +1,4 @@
-showing
+initialization
 initializeNonSpecComponents
 	self setDefaultScaling.
 	self colorProvider. "Lazy initialization if no colorProvider is ready"

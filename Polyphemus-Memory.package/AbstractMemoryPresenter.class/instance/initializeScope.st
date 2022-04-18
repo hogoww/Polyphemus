@@ -1,3 +1,3 @@
-showing
+initialization
 initializeScope
 	self updateScope 

@@ -1,20 +1,12 @@
 initialization
 updateStatsAndLegend: aColorProvider
 
-	| statline collect memorySpace |
-	"disable it for now"
-	true ifTrue: [ ^ self ].
-	collect := Dictionary new.
-	memorySpace canvas nodes do: [ :node | 
-		| color |
-		color := node paint.
-		(collect includesKey: color)
-			ifTrue: [ collect at: color put: (collect at: color) + 1 ]
-			ifFalse: [ collect add: color -> 1 ] ].
+	| statline collect |
+	collect := memoryPresenter allNodes collect: [ :aNode | aNode paint ] into: Bag new.
 
-	collect keysDo: [ :key | 
+	collect doWithOccurrences: [ :key :value | 
 		statline := self
-			            stat: (collect at: key)
+			            stat: value
 			            lineFor: 'representing ', (aColorProvider descriptionForColor: key)
 			            withColor: key.
 		legend canvas add: statline ].

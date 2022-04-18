@@ -1,3 +1,0 @@
-accessing
-updateMemorySpace
-	memoryPresenter updateMemorySpace

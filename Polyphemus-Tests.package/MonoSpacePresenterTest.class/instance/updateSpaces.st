@@ -1,4 +1,4 @@
 running
 updateSpaces
-	newSpace updateMemorySpace.
-	oldSpace updateMemorySpace.
+	newSpace update.
+	oldSpace update.
