@@ -1,17 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "SpPresenter",
+	"super" : "SpTextInputFieldPresenter",
 	"category" : "Polyphemus-Memory-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"interpreter",
-		"memoryPresenter",
-		"legend",
-		"spacePresenter",
-		"queryWidget"
+		"kindOfQueryList",
+		"queryInput"
 	],
-	"name" : "MonoSpacePresenter",
+	"name" : "QueryWidget",
 	"type" : "normal"
 }

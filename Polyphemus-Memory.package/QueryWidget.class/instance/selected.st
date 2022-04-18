@@ -1,0 +1,3 @@
+initialize
+selected 
+	^ kindOfQueryList selectedItem

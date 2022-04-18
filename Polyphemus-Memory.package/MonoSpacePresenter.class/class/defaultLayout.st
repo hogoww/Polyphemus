@@ -7,5 +7,5 @@ defaultLayout
 				add: #memoryPresenter;
 				add: #legend "expand: false";
 				yourself);
-		add: #queryTextInput expand: false;
+		add: #queryWidget expand: false;
 		yourself
