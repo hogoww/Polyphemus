@@ -1,4 +1,4 @@
-as yet unclassified
+coloring
 colorForNonGraphObject
 
-	^Color gray.
+	^ Color gray

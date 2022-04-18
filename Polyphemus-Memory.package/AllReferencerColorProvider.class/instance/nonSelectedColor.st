@@ -1,0 +1,3 @@
+helper
+nonSelectedColor
+	^ Color lightGray

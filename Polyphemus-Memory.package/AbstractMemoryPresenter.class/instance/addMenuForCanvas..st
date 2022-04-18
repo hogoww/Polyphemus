@@ -14,4 +14,4 @@ addMenuForCanvas: canvas
 			selector: #updateScalingTo:
 			argument: #setDefaultScaling
 			].
-	canvas @ menuActivable.
+	memorySpace contextMenu: menuActivable.

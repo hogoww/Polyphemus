@@ -1,0 +1,3 @@
+helper
+selectedColor
+	^ Color orange

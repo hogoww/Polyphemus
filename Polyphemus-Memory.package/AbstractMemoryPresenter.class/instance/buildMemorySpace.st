@@ -1,5 +1,5 @@
 building
-buildMemorySpace: aSpace
+buildMemorySpace
 
 	| canvas |
 	canvas := RSCanvas new.
@@ -10,5 +10,5 @@ buildMemorySpace: aSpace
 		gapSize: 1;
 		on: canvas nodes.		
 	canvas addInteraction: RSCanvasController new.
-	self addMenuForCanvas: canvas.	
-	self setUpCanvas: canvas. 
+	self addMenuForCanvas: canvas.
+	self setUpCanvas: canvas.

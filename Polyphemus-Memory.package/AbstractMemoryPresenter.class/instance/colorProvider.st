@@ -1,4 +1,4 @@
 accessing
 colorProvider
 
-	^ colorProvider ifNil: [ colorProvider := DefaultColorProvider newFor: self ]
+	^ colorProvider ifNil: [ colorProvider := DefaultColorProvider forSelection: self selection ]

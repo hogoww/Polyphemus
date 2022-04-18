@@ -1,8 +1,8 @@
 updating
 updateMemorySpace
 
-	self initializeScope.
-	self buildMemorySpace: memorySpace.
+	self updateScope.
+	self buildMemorySpace.
 	
 	memorySpace canvas 
 		zoomToFit;
