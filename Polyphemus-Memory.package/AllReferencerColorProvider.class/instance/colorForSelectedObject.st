@@ -1,0 +1,3 @@
+helper
+colorForSelectedObject
+	^ Color orange

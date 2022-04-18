@@ -1,4 +1,4 @@
-test-objectGraph
+test-displaying
 testUpdateSpacesTwiceShowsTwoObjects
 	self newZeroSizedObject.
 	self updateSpaces.	 

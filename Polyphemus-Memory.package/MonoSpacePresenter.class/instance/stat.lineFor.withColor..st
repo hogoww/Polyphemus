@@ -1,4 +1,4 @@
-as yet unclassified
+stats
 stat: aNumber lineFor: aString withColor: aColor
 
 	| composite |

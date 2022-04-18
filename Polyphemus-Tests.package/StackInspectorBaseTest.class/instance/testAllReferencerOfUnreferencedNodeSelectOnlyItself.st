@@ -1,13 +1,11 @@
 test-allReferencers
 testAllReferencerOfUnreferencedNodeSelectOnlyItself
 	
-	| oop oopObject slot |
-	oop := self objectForOop: (self newObjectWithSlots: 1).
-	slot := self objectForOop: self newZeroSizedObject.
-
+	| oop oopObject |
+	oop := self objectForOop: self newZeroSizedObject.
 	
 	self updateSpaces.
 	oopObject := (newSpace oopForAddress: oop).
 	newSpace allReferencersOf: oopObject model.
 	
-	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
+	self assert: oopObject paint equals: newSpace colorProvider colorForSelectedObject

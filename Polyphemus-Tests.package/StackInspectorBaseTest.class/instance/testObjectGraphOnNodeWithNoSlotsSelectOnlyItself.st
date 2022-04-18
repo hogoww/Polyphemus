@@ -8,4 +8,4 @@ testObjectGraphOnNodeWithNoSlotsSelectOnlyItself
 	oopObject := (newSpace oopForAddress: oop).
 	newSpace objectGraphOf: oopObject model.
 	
-	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
+	self assert: oopObject paint equals: newSpace colorProvider initialColorForSelectedObject.

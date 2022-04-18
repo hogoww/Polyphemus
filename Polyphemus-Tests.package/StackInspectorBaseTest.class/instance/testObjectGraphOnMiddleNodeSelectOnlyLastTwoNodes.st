@@ -11,6 +11,6 @@ testObjectGraphOnMiddleNodeSelectOnlyLastTwoNodes
 	oopObject := (newSpace oopForAddress: firstLayer).
 	newSpace objectGraphOf: oopObject model.
 	
-	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider specialOopColor.
-	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
+	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider colorForNonSelectedObject.
+	self assert: oopObject paint equals: newSpace colorProvider initialColorForSelectedObject.
 	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 1).

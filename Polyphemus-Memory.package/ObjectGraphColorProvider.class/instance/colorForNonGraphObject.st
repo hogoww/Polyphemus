@@ -1,4 +1,0 @@
-coloring
-colorForNonGraphObject
-
-	^ Color gray

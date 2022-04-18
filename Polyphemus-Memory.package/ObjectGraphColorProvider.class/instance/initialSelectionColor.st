@@ -1,3 +1,0 @@
-coloring
-initialSelectionColor
-	^ self class defaultInitialSelectionColor

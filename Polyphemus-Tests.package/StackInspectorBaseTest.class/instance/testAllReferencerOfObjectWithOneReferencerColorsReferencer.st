@@ -7,7 +7,7 @@ testAllReferencerOfObjectWithOneReferencerColorsReferencer
 	oop slotAt: 1 put: slot.
 	
 	self updateSpaces.
-	oopSlot := (newSpace oopForAddress: slot).
+	oopSlot := newSpace oopForAddress: slot.
 	newSpace allReferencersOf: oopSlot model.
 	
-	self assert: oopSlot paint equals: newSpace colorProvider initialSelectionColor.
+	self assert: oopSlot paint equals: newSpace colorProvider colorForSelectedObject

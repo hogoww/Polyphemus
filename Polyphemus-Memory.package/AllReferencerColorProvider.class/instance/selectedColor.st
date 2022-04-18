@@ -1,3 +1,0 @@
-helper
-selectedColor
-	^ Color orange

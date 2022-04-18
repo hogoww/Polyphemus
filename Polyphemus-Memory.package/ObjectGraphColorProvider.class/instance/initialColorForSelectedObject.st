@@ -1,0 +1,3 @@
+coloring
+initialColorForSelectedObject
+	^ Color purple

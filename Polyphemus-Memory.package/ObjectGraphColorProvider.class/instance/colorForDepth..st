@@ -1,5 +1,8 @@
 coloring
 colorForDepth: aDepth 
-	aDepth = 0 ifTrue: [ ^ self colorForNonGraphObject ].
-	aDepth = 1 ifTrue: [ ^ self initialSelectionColor ].
-	aDepth timesRepeat: [ ^ self initialSelectionColor lighter lighter lighter lighter ]. 
+	| color |
+	aDepth = 0 ifTrue: [ ^ self colorForNonSelectedObject ].
+
+	color := self initialColorForSelectedObject.
+	aDepth - 1 timesRepeat: [ color lighter lighter lighter lighter ]. 
+	^ color
