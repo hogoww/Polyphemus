@@ -1,3 +1,0 @@
-coloring
-currentMethodColor
-	^ self subclassResponsibility

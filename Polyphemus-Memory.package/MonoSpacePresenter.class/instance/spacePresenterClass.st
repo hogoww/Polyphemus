@@ -1,3 +1,3 @@
-coloring
-classOopColor
+accessing
+spacePresenterClass
 	^ self subclassResponsibility

@@ -1,6 +1,5 @@
 instance creation
 openOn: anInterpreter
 
-	^ self new
-		  interpreter: anInterpreter;
+	^ (self newOn: anInterpreter)
 		  open

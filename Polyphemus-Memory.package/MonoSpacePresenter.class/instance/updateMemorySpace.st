@@ -1,0 +1,3 @@
+accessing
+updateMemorySpace
+	memoryPresenter updateMemorySpace

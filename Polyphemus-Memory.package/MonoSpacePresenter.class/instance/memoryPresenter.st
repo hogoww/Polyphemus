@@ -1,0 +1,4 @@
+accessing
+memoryPresenter
+
+	^ memoryPresenter
