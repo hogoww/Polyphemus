@@ -1,3 +1,3 @@
 display
 reifyOop: anOop
-	^ AbstractSpurEntity newFor: anOop image: self image
+	^ AbstractSpurEntity newFor: anOop image: image

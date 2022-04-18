@@ -12,8 +12,6 @@
 		"image",
 		"colorProvider",
 		"scaling",
-		"queryTextInput",
-		"legend",
 		"selection"
 	],
 	"name" : "AbstractMemoryPresenter",
