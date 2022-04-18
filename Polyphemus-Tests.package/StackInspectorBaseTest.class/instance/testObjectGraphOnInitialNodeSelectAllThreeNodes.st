@@ -10,8 +10,7 @@ testObjectGraphOnInitialNodeSelectAllThreeNodes
 	self updateSpaces.
 	oopObject := (newSpace oopForAddress: oop).
 	newSpace objectGraphOf: oopObject model.
-   1halt.
-	
+
 	self assert: oopObject paint equals: newSpace colorProvider initialSelectionColor.
 	self assert: (newSpace oopForAddress: firstLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 1).
 	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 2).

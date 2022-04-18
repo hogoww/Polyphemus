@@ -1,3 +1,3 @@
-showing
+accessing
 image
-	^ image ifNil: [ SpurSimulatorImage onSpurSimulator: interpreter objectMemory ]
+	^ image

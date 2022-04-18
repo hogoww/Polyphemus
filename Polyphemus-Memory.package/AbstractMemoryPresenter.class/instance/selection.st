@@ -1,3 +1,3 @@
-showing
+accessing
 selection
-	^ selection ifNil: [ #() ]
+	^ selection
