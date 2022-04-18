@@ -1,3 +1,3 @@
-updating
-updateScope
+accessing
+spacePresenterClass
 	^ self subclassResponsibility

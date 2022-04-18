@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MonoSpacePresenter",
+	"category" : "Polyphemus-Memory-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NewSpaceFullPresenter",
+	"type" : "normal"
+}

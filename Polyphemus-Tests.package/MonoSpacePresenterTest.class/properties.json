@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorsTest",
+	"category" : "Polyphemus-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"oldSpace",
+		"newSpace"
+	],
+	"name" : "MonoSpacePresenterTest",
+	"type" : "normal"
+}
