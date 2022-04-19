@@ -1,0 +1,3 @@
+coloring
+defaultMetaclassOopColor 
+	^ Color lightBlue
