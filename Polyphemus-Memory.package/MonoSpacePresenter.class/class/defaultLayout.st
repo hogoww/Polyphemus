@@ -7,5 +7,5 @@ defaultLayout
 				add: #memoryPresenter;
 				add: #legend "expand: false";
 				yourself);
-		add: #queryWidget expand: false;
+		add: #queryWidget height: 35;
 		yourself

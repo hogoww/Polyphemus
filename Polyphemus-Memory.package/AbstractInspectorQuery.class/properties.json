@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Polyphemus-Memory-Queries",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"defaultText"
+	],
+	"name" : "AbstractInspectorQuery",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+initialBlock
+	^ self subclassResponsibility 

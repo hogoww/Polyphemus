@@ -1,3 +1,0 @@
-initialize
-kindOfQuerySupported
-	^ #( Selecting nodeBehavior )
