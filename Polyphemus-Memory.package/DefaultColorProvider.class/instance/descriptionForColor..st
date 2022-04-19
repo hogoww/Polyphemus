@@ -1,6 +1,7 @@
 description
 descriptionForColor: aColor
 
+	aColor = self metaclassOopColor ifTrue: [ 'meteclass' ].
 	aColor = self classOopColor ifTrue: [ ^ 'class' ].
 	aColor = self compiledMethodOopColor ifTrue: [ ^ 'compiled method' ].
 	aColor = self contextOopColor ifTrue: [ ^ 'context' ].
