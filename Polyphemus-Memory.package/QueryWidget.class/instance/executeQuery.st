@@ -1,0 +1,3 @@
+initialize
+executeQuery
+	self shouldBeImplemented 

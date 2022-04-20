@@ -5,6 +5,7 @@ initializePresenters
 	kindOfQueryList items: queries keys.
 	
 	queryInput := self instantiate: SpCodePresenter.
+	queryInput bindKeyCombination: Character cr toAction: [ self executeQuery ].
 	queryInput lineNumbers: false.
 	queryInput withoutScrollBars.
 	queryInput text: queries anyOne defaultText
