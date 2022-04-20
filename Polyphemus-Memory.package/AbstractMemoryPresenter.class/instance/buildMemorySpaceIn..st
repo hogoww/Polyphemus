@@ -3,6 +3,7 @@ buildMemorySpaceIn: canvas
 	| controller |
 	canvas nodes ifNotEmpty: [ canvas nodes copy do: #remove ].
 	canvas addAll: (scopedOop collect:[:anOop | self boxForOop: anOop ]).
+	
 	RSGridLayout new
 		gapSize: 1;
 		on: canvas nodes.
