@@ -1,5 +1,5 @@
-building
+updating
 updateScalingTo: aScallingSelector
 
-	self setScalingByByteSize.
+	self setScalingSizeByByteSize.
 	self updateMemorySpace

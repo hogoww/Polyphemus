@@ -1,4 +1,4 @@
-display
+building
 contextMenuForBox: box
 
 	| menuActivable |

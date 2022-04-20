@@ -1,4 +1,4 @@
-display
+building
 boxForOop: o
 	| box |
 	box := RSBox new.
