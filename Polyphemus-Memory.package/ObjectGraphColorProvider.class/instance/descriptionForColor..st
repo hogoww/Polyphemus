@@ -1,7 +1,8 @@
 description
 descriptionForColor: aColor
 
-	aColor = self initialSelectionColor ifTrue: [ ^'selected element' ].
+	aColor = self initialColorForSelectedObject ifTrue: [ ^'selected element' ].
+	aColor = self colorForNonSelectedObject ifTrue: [ ^'non subgraph object' ].
 	self flag: #HandleDepthColor.
 	"blab blah ifTrue: [^ 'depth ', actualDepth  ]"
-	^'non subgraph object'
+	^'depth not handled or color with no description'

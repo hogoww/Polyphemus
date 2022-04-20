@@ -1,4 +1,4 @@
 initialization
 update
 	memoryPresenter updateMemorySpace.
-	self updateStatsAndLegend: memoryPresenter colorProvider
+	legend updateStatsAndLegend.
