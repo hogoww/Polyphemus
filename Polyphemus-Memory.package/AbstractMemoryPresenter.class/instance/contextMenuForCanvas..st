@@ -5,7 +5,7 @@ contextMenuForCanvas: canvas
 	menuActivable menuDo: [ :menu :element | 
 		
 		menu 
-			add: 'No scalling'
+			add: 'No scaling'
 			target: self
 			selector: #updateScalingTo:
 			argument: #setScalingToDefault.

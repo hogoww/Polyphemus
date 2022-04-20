@@ -1,7 +1,8 @@
 updating
 updateMemorySpace
 	self updateScope.
-	self buildMemorySpaceIn: memorySpace canvas.
+	memorySpace refresh.
+	"self buildMemorySpaceIn: memorySpace canvas."
 	"self buildMemorySpace.
 	
 	memorySpace canvas 
