@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "AbstractSpurObjectoid",
-	"category" : "Polyphemus-Object",
+	"category" : "Polyphemus-Object-spurObjects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SpurObject",
-	"category" : "Polyphemus-Object",
+	"category" : "Polyphemus-Object-oldSpurObject",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
