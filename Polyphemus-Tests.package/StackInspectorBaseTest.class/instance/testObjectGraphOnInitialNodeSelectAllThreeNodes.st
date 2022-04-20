@@ -1,16 +1,15 @@
 test-objectGraph
 testObjectGraphOnInitialNodeSelectAllThreeNodes
-	| oop firstLayer secondLayer oopObject |
+	| oop firstLayer secondLayer |
 	oop := self objectForOop: (self newObjectWithSlots: 1).
 	firstLayer := self objectForOop: (self newObjectWithSlots: 1).
-	secondLayer := self objectForOop: (self newObjectWithSlots: 0).
+	secondLayer := self objectForOop: self newZeroSizedObject.
 	oop slotAt: 1 put: firstLayer.
 	firstLayer slotAt: 1 put: secondLayer.
 	
 	self updateSpaces.
-	oopObject := (newSpace oopForAddress: oop).
-	newSpace objectGraphOf: oopObject model.
+	newSpace objectGraphOf: (newSpace oopForAddress: oop) model.
 
-	self assert: oopObject paint equals: newSpace colorProvider colorForNonSelectedObject.
-	self assert: (newSpace oopForAddress: firstLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 1).
-	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 2).
+	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider initialColorForSelectedObject.
+	self assert: (newSpace oopForAddress: firstLayer) paint equals: (newSpace colorProvider colorForDepth: 1).
+	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider colorForDepth: 2).

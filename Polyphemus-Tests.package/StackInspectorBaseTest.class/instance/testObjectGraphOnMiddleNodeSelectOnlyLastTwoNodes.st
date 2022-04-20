@@ -1,6 +1,6 @@
 test-objectGraph
 testObjectGraphOnMiddleNodeSelectOnlyLastTwoNodes
-	| oop firstLayer secondLayer oopObject |
+	| oop firstLayer secondLayer |
 	oop := self objectForOop: (self newObjectWithSlots: 1).
 	firstLayer := self objectForOop: (self newObjectWithSlots: 1).
 	secondLayer := self objectForOop: (self newObjectWithSlots: 0).
@@ -8,9 +8,8 @@ testObjectGraphOnMiddleNodeSelectOnlyLastTwoNodes
 	firstLayer slotAt: 1 put: secondLayer.
 	
 	self updateSpaces.
-	oopObject := (newSpace oopForAddress: firstLayer).
-	newSpace objectGraphOf: oopObject model.
+	newSpace objectGraphOf: (newSpace oopForAddress: firstLayer) model.
 	
 	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider colorForNonSelectedObject.
-	self assert: oopObject paint equals: newSpace colorProvider initialColorForSelectedObject.
-	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider selectionColorForDepth: 1).
+	self assert: (newSpace oopForAddress: firstLayer) paint equals: newSpace colorProvider initialColorForSelectedObject.
+	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider colorForDepth: 1).

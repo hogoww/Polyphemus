@@ -1,11 +1,10 @@
 test-objectGraph
 testObjectGraphOnNodeWithNoSlotsSelectOnlyItself
 	
-	| oop oopObject |
+	| oop |
 	oop := self newZeroSizedObject.
 	
 	self updateSpaces.
-	oopObject := (newSpace oopForAddress: oop).
-	newSpace objectGraphOf: oopObject model.
+	newSpace objectGraphOf: (newSpace oopForAddress: oop) model.
 	
-	self assert: oopObject paint equals: newSpace colorProvider initialColorForSelectedObject.
+	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider initialColorForSelectedObject.
