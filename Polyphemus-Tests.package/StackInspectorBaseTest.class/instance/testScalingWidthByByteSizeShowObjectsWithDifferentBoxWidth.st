@@ -2,8 +2,8 @@ test-displaying
 testScalingWidthByByteSizeShowObjectsWithDifferentBoxWidth
 	
 	|  smallObjectBox bigObjectBox |
-	oldSpace setScalingWidthByBytesize.
-	self updateSpaces.
+	oldSpace updateScalingTo: #setScalingWidthByBytesize.
+	
 	smallObjectBox := oldSpace oopForAddress: memory nilObject.
 	bigObjectBox := oldSpace oopForAddress: memory freeListsObject.
 	

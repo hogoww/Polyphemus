@@ -5,6 +5,6 @@ boxForOop: o
 	box model: o.
 	box paint: (self colorProvider colorForOop: o).
 	self enableInspectOnClickForBox: box.
-	self scalingForBox: box.
+	scaling value: box.
 	self contextMenuForBox: box.
 	^ box
