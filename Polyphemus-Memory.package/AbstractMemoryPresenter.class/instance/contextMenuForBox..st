@@ -9,6 +9,7 @@ contextMenuForBox: box
 			target: self
 			selector: #objectGraphOf:
 			argument: box model.
+			
 		menu 
 			add: 'Color referencers.'	
 			target: self
