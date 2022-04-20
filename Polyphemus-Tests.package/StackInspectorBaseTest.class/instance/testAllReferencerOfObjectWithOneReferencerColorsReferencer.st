@@ -1,13 +1,14 @@
 test-allReferencers
 testAllReferencerOfObjectWithOneReferencerColorsReferencer
 	
-	| oop oopSlot slot |
+	| oop slot slotObject objectOop |
 	oop := self objectForOop: (self newObjectWithSlots: 1).
 	slot := self objectForOop: self newZeroSizedObject.
 	oop slotAt: 1 put: slot.
 	
 	self updateSpaces.
-	oopSlot := newSpace oopForAddress: slot.
-	newSpace allReferencersOf: oopSlot model.
+	slotObject := newSpace oopForAddress: slot.
+	newSpace allReferencersOf: slotObject model.
+	objectOop := newSpace oopForAddress: oop.
 	
-	self assert: oopSlot paint equals: newSpace colorProvider colorForSelectedObject
+	self assert: objectOop paint equals: newSpace colorProvider colorForSelectedObject

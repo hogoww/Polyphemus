@@ -1,5 +1,5 @@
 test-allReferencers
-testAllReferencerOfUnreferencedNodeSelectOnlyItself
+testAllReferencerOfUnreferencedNodeDoesNotSelectItself
 	
 	| oop oopObject |
 	oop := self objectForOop: self newZeroSizedObject.
@@ -8,4 +8,5 @@ testAllReferencerOfUnreferencedNodeSelectOnlyItself
 	oopObject := (newSpace oopForAddress: oop).
 	newSpace allReferencersOf: oopObject model.
 	
-	self assert: oopObject paint equals: newSpace colorProvider colorForSelectedObject
+	oopObject := (newSpace oopForAddress: oop).
+	self assert: oopObject paint equals: newSpace colorProvider colorForNonSelectedObject
