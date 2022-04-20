@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "AbstractInspectorsTest",
-	"category" : "Polyphemus-Tests",
+	"category" : "Polyphemus-Tests-archive",
 	"classinstvars" : [ ],
 	"pools" : [
 		"VMBasicConstants",
