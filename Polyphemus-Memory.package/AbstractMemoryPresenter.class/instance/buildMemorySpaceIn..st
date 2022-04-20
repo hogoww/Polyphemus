@@ -12,5 +12,5 @@ buildMemorySpaceIn: canvas
 		maxScale: 100000;
 		minScale: 0.00001.
 	canvas addInteraction: controller.
-	self addMenuForCanvas: canvas.
+	self contextMenuForCanvas: canvas.
 	canvas signalUpdate.
