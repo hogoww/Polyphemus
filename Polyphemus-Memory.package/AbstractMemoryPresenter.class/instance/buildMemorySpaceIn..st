@@ -1,8 +1,7 @@
-initialization
+building
 buildMemorySpaceIn: canvas	
 	| controller |
-	canvas nodes ifNotEmpty: [ canvas nodes copy do: #remove ].
-	canvas addAll: (scopedOop collect:[:anOop | self boxForOop: anOop ]).
+	canvas addAll: (scopedOop collect: [ :anOop | self boxForOop: anOop ]).
 	
 	RSGridLayout new
 		gapSize: 1;
