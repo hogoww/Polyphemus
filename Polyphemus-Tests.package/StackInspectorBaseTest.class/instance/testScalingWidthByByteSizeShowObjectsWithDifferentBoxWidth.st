@@ -7,4 +7,5 @@ testScalingWidthByByteSizeShowObjectsWithDifferentBoxWidth
 	smallObjectBox := oldSpace oopForAddress: memory nilObject.
 	bigObjectBox := oldSpace oopForAddress: memory freeListsObject.
 	
-	self assert: smallObjectBox extent < bigObjectBox extent
+	self assert: smallObjectBox extent y equals: bigObjectBox extent y.
+	self assert: smallObjectBox extent x < bigObjectBox extent x.
