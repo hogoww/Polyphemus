@@ -1,5 +1,5 @@
 test-displaying
-testScallingWidthByByteSizeShowObjectsWithDifferentBoxWidth
+testScalingWidthByByteSizeShowObjectsWithDifferentBoxWidth
 	
 	|  smallObjectBox bigObjectBox |
 	oldSpace setScalingWidthByBytesize.
