@@ -12,5 +12,9 @@ updateStatsAndLegend: aColorProvider
 		legend canvas add: statline ].
 
 	RSVerticalLineLayout new
-		gapSize: 3;
+		gapSize: 5;
 		on: legend canvas nodes.
+	legend canvas when: RSExtentChangedEvent do: [ :evt |
+		evt canvas zoomToFit.
+		evt signalUpdate.
+		 ].

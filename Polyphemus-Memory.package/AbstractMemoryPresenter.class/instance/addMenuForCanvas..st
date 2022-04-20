@@ -2,8 +2,7 @@ building
 addMenuForCanvas: canvas
 	| menuActivable |
 	menuActivable := RSMenuActivable new.
-	menuActivable menuDo: [ :menu :element | 
-	
+	menuActivable menuDo: [ :menu :element |
 		menu 
 			add: 'Scaling by byte size'
 			target: self

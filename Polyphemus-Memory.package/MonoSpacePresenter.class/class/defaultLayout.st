@@ -3,9 +3,10 @@ defaultLayout
 
 	^ SpBoxLayout newTopToBottom
 		add:
-			(SpBoxLayout newLeftToRight
+			(SpPanedLayout newLeftToRight
 				add: #memoryPresenter;
-				add: #legend "expand: false";
+				add: #legend;
+				positionOfSlider: 0.8;
 				yourself);
 		add: #queryWidget height: 35;
 		yourself

@@ -1,9 +1,9 @@
 updating
 updateMemorySpace
-
 	self updateScope.
-	self buildMemorySpace.
+	self buildMemorySpaceIn: memorySpace canvas.
+	"self buildMemorySpace.
 	
 	memorySpace canvas 
 		zoomToFit;
-		signalUpdate.
+		signalUpdate."
