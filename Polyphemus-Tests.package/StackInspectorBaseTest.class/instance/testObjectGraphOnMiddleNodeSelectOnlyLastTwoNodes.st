@@ -12,4 +12,4 @@ testObjectGraphOnMiddleNodeSelectOnlyLastTwoNodes
 	
 	self assert: (newSpace oopForAddress: oop) paint equals: newSpace colorProvider colorForNonSelectedObject.
 	self assert: (newSpace oopForAddress: firstLayer) paint equals: newSpace colorProvider initialColorForSelectedObject.
-	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider colorForDepth: 1).
+	self assert: (newSpace oopForAddress: secondLayer) paint equals: (newSpace colorProvider colorForDepth: 2).
