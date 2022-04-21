@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "Polyphemus-Memory-Annoucements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"query"
+	],
+	"name" : "QueryIsReady",
+	"type" : "normal"
+}

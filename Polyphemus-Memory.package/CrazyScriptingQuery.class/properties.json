@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorQuery",
+	"category" : "Polyphemus-Memory-Queries",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CrazyScriptingQuery",
+	"type" : "normal"
+}

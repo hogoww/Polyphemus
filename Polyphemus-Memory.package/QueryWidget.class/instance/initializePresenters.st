@@ -1,11 +1,9 @@
 initialize
 initializePresenters
-	kindOfQueryList := self instantiate: SpDropListPresenter.
+	querySelector := self instantiate: SpDropListPresenter.
 	self initializeQueries.
-	kindOfQueryList items: queries keys.
+	querySelector items: queries keys.
 	
 	queryInput := self instantiate: SpCodePresenter.
-	queryInput bindKeyCombination: Character cr toAction: [ self executeQuery ].
 	queryInput lineNumbers: false.
 	queryInput withoutScrollBars.
-	queryInput text: queries anyOne defaultText

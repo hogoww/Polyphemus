@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"kindOfQueryList",
 		"queryInput",
-		"queries"
+		"queries",
+		"querySelector"
 	],
 	"name" : "QueryWidget",
 	"type" : "normal"

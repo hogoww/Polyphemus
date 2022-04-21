@@ -1,3 +1,3 @@
 initialize
 executeQuery
-	self shouldBeImplemented 
+	^ SystemAnnouncer uniqueInstance announce: QueryIsReady new

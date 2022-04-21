@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	widget := QueryWidget new
+	widget := (QueryWidget new open) presenter.

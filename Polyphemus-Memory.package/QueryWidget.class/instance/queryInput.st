@@ -1,0 +1,3 @@
+initialize
+queryInput
+	^ queryInput

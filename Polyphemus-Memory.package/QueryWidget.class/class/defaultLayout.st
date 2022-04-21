@@ -1,6 +1,6 @@
 layout
 defaultLayout
 	^ SpBoxLayout newLeftToRight
-		add: #kindOfQueryList expand: false;
+		add: #querySelector expand: false;
 		add: #queryInput;
 		yourself

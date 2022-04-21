@@ -1,3 +1,3 @@
 accessing
 queryName
-	^ 'Selecting'
+	^ #Scaling
