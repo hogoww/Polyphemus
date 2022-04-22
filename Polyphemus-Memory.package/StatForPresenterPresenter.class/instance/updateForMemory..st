@@ -1,5 +1,5 @@
 initialization
-updateWithColorProvider: memoryPresenter
+updateForMemory: memoryPresenter
 
 	| statline |
 	self canvas nodes ifNotEmpty: [ self canvas nodes copy do: #remove ].

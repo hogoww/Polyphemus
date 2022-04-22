@@ -1,6 +1,5 @@
 accessing
 oopByteSize
-	| numberOfSlots |
 	^ memory totalByteSizeOf: address
 	
 	"numberOfSlots := self numSlots.

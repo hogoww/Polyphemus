@@ -1,2 +1,0 @@
-statistics
-colorProvider: a
