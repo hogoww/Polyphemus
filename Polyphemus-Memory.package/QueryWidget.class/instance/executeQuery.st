@@ -1,3 +1,3 @@
 initialize
 executeQuery
-	^ SystemAnnouncer uniqueInstance announce: QueryIsReady new
+	^ updateBlock value: self

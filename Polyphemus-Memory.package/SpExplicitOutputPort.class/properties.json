@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SpOutputPort",
+	"category" : "Polyphemus-Memory-SpecExtention",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SpExplicitOutputPort",
+	"type" : "normal"
+}

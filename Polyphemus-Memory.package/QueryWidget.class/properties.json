@@ -8,7 +8,9 @@
 	"instvars" : [
 		"queryInput",
 		"queries",
-		"querySelector"
+		"querySelector",
+		"queryOutput",
+		"updateBlock"
 	],
 	"name" : "QueryWidget",
 	"type" : "normal"

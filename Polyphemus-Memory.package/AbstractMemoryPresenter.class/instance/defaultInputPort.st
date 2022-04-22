@@ -1,0 +1,3 @@
+updating
+defaultInputPort
+	^ queryInput
