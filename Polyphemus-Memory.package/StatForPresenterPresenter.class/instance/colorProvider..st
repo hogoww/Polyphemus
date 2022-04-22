@@ -1,3 +1,2 @@
-setting
-colorProvider: aDefaultColorProvider 
-	colorProvider := aDefaultColorProvider
+statistics
+colorProvider: a
