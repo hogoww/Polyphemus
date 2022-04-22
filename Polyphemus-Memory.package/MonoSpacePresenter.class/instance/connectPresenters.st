@@ -3,7 +3,7 @@ connectPresenters
 
 	SystemAnnouncer uniqueInstance weak 
 		when: MemorySpaceUpdate
-		do: [ legend updateWithColorProvider: memoryPresenter ].
+		do: [ legend updateForMemory: memoryPresenter ].
 
 	SystemAnnouncer uniqueInstance weak 
 		when: QueryIsReady
