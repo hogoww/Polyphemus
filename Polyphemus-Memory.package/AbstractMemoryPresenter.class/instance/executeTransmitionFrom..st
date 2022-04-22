@@ -1,0 +1,3 @@
+query
+executeTransmitionFrom: aQueryWidget 
+	^ self

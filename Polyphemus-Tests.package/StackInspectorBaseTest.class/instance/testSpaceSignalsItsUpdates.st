@@ -1,10 +1,10 @@
 test-event
 testSpaceSignalsItsUpdates
 	"If the Annoucement is not fired, the test fails"
-	SystemAnnouncer uniqueInstance weak 
-		when: MemorySpaceUpdate
-		do: [ ^ SystemAnnouncer uniqueInstance unsubscribe: self ].
+	| pass |
+	pass := false.
+	newSpace whenUpdatedDo: [ :aPresenter | pass := true ].
 		
 	newSpace updateMemorySpace.
 
-	self fail.
+	self assert: pass

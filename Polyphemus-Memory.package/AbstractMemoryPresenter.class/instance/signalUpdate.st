@@ -1,3 +1,3 @@
 updating
 signalUpdate
-	 SystemAnnouncer uniqueInstance announce: MemorySpaceUpdate new
+	updateBlock ifNotNil: [ updateBlock value: self ]

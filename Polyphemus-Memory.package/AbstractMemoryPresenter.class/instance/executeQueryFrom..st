@@ -1,0 +1,3 @@
+query
+executeQueryFrom: aQueryWidget 
+	^ self

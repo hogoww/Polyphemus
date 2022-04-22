@@ -1,6 +1,7 @@
 accessing
 connectPresenters
-
-	queryWidget 
-		transmitTo: memoryPresenter
-		transform: [ self halt . memoryPresenter executeQuery ]
+	"memory presenter"
+	
+	memoryPresenter transmitTo: legend.
+	
+	queryWidget transmitTo: memoryPresenter

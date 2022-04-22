@@ -12,7 +12,9 @@
 		"image",
 		"colorProvider",
 		"scaling",
-		"queryInput"
+		"queryInput",
+		"updateOutput",
+		"updateBlock"
 	],
 	"name" : "AbstractMemoryPresenter",
 	"type" : "normal"

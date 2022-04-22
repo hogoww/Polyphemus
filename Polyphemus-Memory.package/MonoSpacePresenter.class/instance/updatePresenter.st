@@ -1,0 +1,3 @@
+initialization
+updatePresenter
+	memoryPresenter updateMemorySpace.
