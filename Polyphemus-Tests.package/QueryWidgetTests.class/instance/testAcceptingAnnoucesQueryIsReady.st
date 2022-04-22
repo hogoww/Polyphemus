@@ -11,4 +11,4 @@ testAcceptingAnnoucesQueryIsReady
 		control: false
 		option: false.
 		
-	
+	self fail
