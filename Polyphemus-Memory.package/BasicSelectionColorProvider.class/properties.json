@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "AllReferencerColorProvider",
+	"name" : "BasicSelectionColorProvider",
 	"type" : "normal"
 }

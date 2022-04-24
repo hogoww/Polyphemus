@@ -1,5 +1,3 @@
 query
 allReferencersOf: anOop
-
-	colorProvider := AllReferencerColorProvider forSelection: anOop allReferencers.
-	self updateMemorySpace.
+	self updateColorProviderTo: (BasicSelectionColorProvider forSelection: anOop allReferencers)
