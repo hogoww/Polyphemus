@@ -1,3 +1,3 @@
-initialize
+initialization
 initializeQueries
 	queries := AbstractInspectorQuery allQueries

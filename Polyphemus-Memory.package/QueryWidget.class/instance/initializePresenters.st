@@ -1,4 +1,4 @@
-initialize
+initialization
 initializePresenters
 	querySelector := self instantiate: SpDropListPresenter.
 	self initializeQueries.

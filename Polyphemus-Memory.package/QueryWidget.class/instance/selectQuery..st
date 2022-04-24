@@ -1,4 +1,4 @@
-event-handling
+updated
 selectQuery: aQueryName 
 	| querySelected |
 	querySelected := queries at: aQueryName.
