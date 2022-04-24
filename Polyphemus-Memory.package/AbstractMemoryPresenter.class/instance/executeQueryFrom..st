@@ -1,3 +1,0 @@
-query
-executeQueryFrom: aQueryWidget 
-	^ self

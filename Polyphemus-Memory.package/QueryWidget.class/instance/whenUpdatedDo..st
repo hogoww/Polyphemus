@@ -1,3 +1,3 @@
 updated
 whenUpdatedDo: aBlock
-	updateBlock := aBlock.
+	updateBlock := aBlock

@@ -1,0 +1,3 @@
+execution
+queryColorProvider
+	^ self subclassResponsibility

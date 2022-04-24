@@ -1,3 +1,5 @@
 as yet unclassified
 allQueries
-	^ self allSubclasses collect: [ :aClass | aClass queryName -> aClass new ] into: Dictionary new
+	^ (self allSubclasses 
+		reject: [ : aClass | aClass isAbstract ]
+		thenCollect: [ :aClass | aClass queryName -> aClass new ]) asDictionary
