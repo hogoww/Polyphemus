@@ -21,5 +21,11 @@ contextMenuForCanvas: canvas
 			target: self
 			selector: #updateScalingTo:
 			argument: self scalingWidthByBytesize.
+			
+		menu 
+			add: 'Default coloring'
+			target: self
+			selector: #updateColorProviderTo:
+			argument: self defaultColorProvider.
 			].
 	canvas @ menuActivable.

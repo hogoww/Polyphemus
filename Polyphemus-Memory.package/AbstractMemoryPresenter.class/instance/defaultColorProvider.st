@@ -1,0 +1,3 @@
+default
+defaultColorProvider
+	^ DefaultColorProvider forSelection: #()
