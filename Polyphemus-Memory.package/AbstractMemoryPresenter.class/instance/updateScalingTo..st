@@ -1,5 +1,5 @@
 updating
-updateScalingTo: aScallingSelector
+updateScalingTo: aBlock
 
-	self perform: aScallingSelector.
+	scaling := aBlock.
 	self updateMemorySpace

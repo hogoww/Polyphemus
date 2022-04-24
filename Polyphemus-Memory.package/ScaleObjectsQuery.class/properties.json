@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "IndividualObjectsQuery",
+	"super" : "AbstractInspectorQuery",
 	"category" : "Polyphemus-Memory-Queries",
 	"classinstvars" : [ ],
 	"pools" : [ ],

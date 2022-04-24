@@ -8,18 +8,18 @@ contextMenuForCanvas: canvas
 			add: 'No scaling'
 			target: self
 			selector: #updateScalingTo:
-			argument: #setScalingToDefault.
+			argument: self scalingToDefault.
 		
 		menu 
 			add: 'Scaling size by byte size'
 			target: self
 			selector: #updateScalingTo:
-			argument: #setScalingSizeByByteSize.
+			argument: self scalingSizeByByteSize.
 		
 		menu 
 			add: 'Scaling width by byte size'
 			target: self
 			selector: #updateScalingTo:
-			argument: #setScalingWidthByBytesize.
+			argument: self scalingWidthByBytesize.
 			].
 	canvas @ menuActivable.

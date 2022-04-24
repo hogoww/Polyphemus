@@ -1,6 +1,6 @@
 initialization
 initializeNonSpecComponents
-	self setScalingToDefault.
+	scaling := self scalingToDefault.
 	self colorProvider. "Lazy initialization if no colorProvider is ready"
 	image := SpurSimulatorImage onSpurSimulator: interpreter objectMemory.
 	self initializeScope.
