@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "OOPAbstractEntity",
+	"category" : "Polyphemus-Object-spurObjects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"spurLayout"
+	],
+	"name" : "OOPAbstractObject",
+	"type" : "normal"
+}

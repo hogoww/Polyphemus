@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OOPRegularObject",
+	"category" : "Polyphemus-Object-spurObjects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OOPCompiledMethod",
+	"type" : "normal"
+}
