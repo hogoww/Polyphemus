@@ -1,3 +1,3 @@
 tests
 objectForOop: anAddress
-	^ AbstractSpurEntity newFor: anAddress image: image
+	^ OOPAbstractEntity newFor: anAddress image: image
