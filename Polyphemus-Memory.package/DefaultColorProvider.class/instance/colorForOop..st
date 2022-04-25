@@ -7,9 +7,9 @@ colorForOop: anOop
 	"(self memory isFreeOop: anOop) ifTrue: [ ^ self freeOopColor ]."
 	anOop isCompiledMethodOop ifTrue: [ ^ self compiledMethodOopColor ]. "
 		[ interpreter objectMemory isHid ] -> [ self usedOopColor ]"
-	
 	anOop isContextOop ifTrue: [ ^ self contextOopColor ].
 	anOop isMetaclassOop ifTrue: [ ^ self metaclassOopColor ].
 	anOop isClassOop ifTrue: [ ^ self classOopColor ].
 	anOop isHiddenOop ifTrue: [ ^ self specialOopColor ].
+	anOop isFreeOop ifTrue: [ ^self freeOopColor  ].
 	^ self regularOopColor

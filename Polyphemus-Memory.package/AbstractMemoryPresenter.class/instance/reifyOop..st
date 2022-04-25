@@ -1,3 +1,3 @@
 building
 reifyOop: anOop
-	^ AbstractSpurEntity newFor: anOop image: image
+	^ OOPAbstractEntity newFor: anOop image: image
