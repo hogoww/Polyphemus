@@ -7,7 +7,7 @@ newFor: anAddress image: image
 		           (OOPImmediate canHandle: anAddress image: image) ifTrue: [ 
 			           { OOPImmediate } ] ].
 	handler := handler ifNil: [ 
-		           self allSubclasses select: [ :aSubclass | 
+		           OOPAbstractEntity allSubclasses select: [ :aSubclass | 
 			           aSubclass = OOPImmediate
 				           ifFalse: [ aSubclass canHandle: anAddress image: image ]
 				           ifTrue: false ] ].
