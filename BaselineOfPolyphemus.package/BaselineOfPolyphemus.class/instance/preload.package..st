@@ -1,10 +1,10 @@
 baselines
 preload: loader package: packageSpec
-	(FileSystem workingDirectory) asFileReference exists ifFalse: [ self error ].
-	(FileSystem workingDirectory / 'pharo-local') asFileReference exists ifFalse: [ self error ].
-	(FileSystem workingDirectory / 'pharo-local' / 'iceberg') asFileReference exists ifFalse: [ self error ].
-	(FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww') asFileReference exists ifFalse: [ self error ].
-	(FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww' / 'Polyphemus') asFileReference exists ifFalse: [ self error ].
+	(FileSystem workingDirectory) asFileReference exists ifFalse: [ self error: 'filesystem' ].
+	(FileSystem workingDirectory / 'pharo-local') asFileReference exists ifFalse: [ self error: 'PharoLocal' ].
+	(FileSystem workingDirectory / 'pharo-local' / 'iceberg') asFileReference exists ifFalse: [ self error: 'iceberg' ].
+	(FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww') asFileReference exists ifFalse: [ self error: 'hogoww' ].
+	(FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww' / 'Polyphemus') asFileReference exists ifFalse: [ self error: 'poly' ].
 	"[ 'VMMaker' asPackage ] on: NotFound do: [
 
 		Metacello new
