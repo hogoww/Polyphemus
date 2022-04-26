@@ -6,6 +6,6 @@ postload: loader package: packageSpec
 	
 	| repository |
 	repository := IceRepositoryCreator new
-		location: (FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww' / 'Polyphemus') asFileReference;
+		location: (FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww' / 'Polyphemus') asFileReference ;
 		createRepository.
 	repository register.
