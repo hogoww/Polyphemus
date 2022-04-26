@@ -9,3 +9,15 @@ postload: loader package: packageSpec
 		location: FileSystem workingDirectory ;
 		createRepository.
 	repository register.
+	
+
+	[ IceRepository registeredRepositoryIncludingPackage: [ self class package ] ] on: NotFound do: [
+
+		Metacello new
+		  baseline: 'Polyphemus';
+		  repository: 'tonel://' , FileSystem workingDirectory;
+		  onConflictUseIncoming;
+		  onWarningLog;
+		  load.
+	].
+	IceRepository registeredRepositoryIncludingPackage: [ self class package ]
