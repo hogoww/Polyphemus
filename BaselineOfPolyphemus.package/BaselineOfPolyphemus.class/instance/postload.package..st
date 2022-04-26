@@ -5,6 +5,7 @@ postload: loader package: packageSpec
 	It's not done by the CI, apparently"
 	
 	| repository |
+	(FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww' / 'Polyphemus') asFileReference exists ifFalse: [ self error ].
 	repository := IceRepositoryCreator new
 		location: (FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww' / 'Polyphemus') asFileReference ;
 		createRepository.
