@@ -6,6 +6,6 @@ postload: loader package: packageSpec
 	
 	| repository |
 	repository := IceRepositoryCreator new
-		location: FileSystem workingDirectory asFileReference ;
+		location: FileSystem workingDirectory ;
 		createRepository.
 	repository register.
