@@ -7,6 +7,6 @@ postload: loader package: packageSpec
 	| repository |
 	(FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww' / 'Polyphemus') asFileReference exists ifFalse: [ self error ].
 	repository := IceRepositoryCreator new
-		location: (FileSystem workingDirectory / 'pharo-local' / 'iceberg' / 'hogoww' / 'Polyphemus') asFileReference ;
+		location: FileSystem workingDirectory asFileReference ;
 		createRepository.
 	repository register.
