@@ -21,6 +21,6 @@ jobs:
         timeout-minutes: 15
       - uses: actions/upload-artifact
         with:
-	  name: my-artifact
-	  path: ./my_path
-	  retention-days: 30
+          name: my-artifact
+          path: ./my_path
+          retention-days: 30
