@@ -4,7 +4,6 @@ baseline: spec
 
 	spec for: #common do: [
 		spec preLoadDoIt: #'preload:package:'.
-		spec postLoadDoIt: #'postload:package:'.
 		spec package: 'Polyphemus-Memory'.
 		spec package: 'Polyphemus-Object'.
 		spec package: 'Polyphemus-Tests'.
