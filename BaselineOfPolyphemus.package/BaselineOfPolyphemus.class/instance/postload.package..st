@@ -11,7 +11,7 @@ postload: loader package: packageSpec
 	repository register.
 	
 
-	[ IceRepository registeredRepositoryIncludingPackage: [ self class package ] ] on: NotFound do: [
+	(IceRepository registeredRepositoryIncludingPackage: [ self class package ]) ifNotNil: [ ^ self ] .
 
 		Metacello new
 		  baseline: 'Polyphemus';
@@ -19,5 +19,3 @@ postload: loader package: packageSpec
 		  onConflictUseIncoming;
 		  onWarningLog;
 		  load.
-	].
-	IceRepository registeredRepositoryIncludingPackage: [ self class package ]
