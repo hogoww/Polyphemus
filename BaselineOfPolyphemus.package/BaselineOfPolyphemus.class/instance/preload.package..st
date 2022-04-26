@@ -4,7 +4,7 @@ preload: loader package: packageSpec
 	[ 'VMMaker' asPackage ] on: NotFound do: [
 	
 		Metacello new
-		  baseline: 'OpenSmalltalk-VM';
+		  baseline: 'VMMaker';
 		  repository: 'github://pharo-project/OpenSmalltalk-VM:pharoX/src';
 		  onConflictUseIncoming;
 		  onWarningLog;
