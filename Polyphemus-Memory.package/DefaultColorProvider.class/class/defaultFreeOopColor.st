@@ -1,3 +1,3 @@
 coloring
 defaultFreeOopColor 
-	^ Color lightGray
+	^ Color gray
