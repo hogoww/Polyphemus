@@ -5,17 +5,7 @@ postload: loader package: packageSpec
 	It's not done by the CI, apparently"
 	
 	| repository |
-	repository := IceRepositoryCreator new
+	"repository := IceRepositoryCreator new
 		location: FileSystem workingDirectory ;
 		createRepository.
-	repository register.
-	
-
-	(IceRepository registeredRepositoryIncludingPackage: [ self class package ]) ifNotNil: [ ^ self ] .
-
-		Metacello new
-		  baseline: 'Polyphemus';
-		  repository: 'tonel://' , FileSystem workingDirectory;
-		  onConflictUseIncoming;
-		  onWarningLog;
-		  load.
+	repository register."
