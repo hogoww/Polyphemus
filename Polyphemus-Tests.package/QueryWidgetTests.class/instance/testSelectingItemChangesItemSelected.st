@@ -1,6 +1,6 @@
 running
 testSelectingItemChangesItemSelected
 	| initialText |
-	initialText := widget queryInput text.
+	initialText := widget querySelector selectedItem.
 	widget querySelector selectIndex: widget querySelector listSize.
-	self deny: initialText equals: widget queryInput text
+	self deny: initialText equals: widget querySelector selectedItem
