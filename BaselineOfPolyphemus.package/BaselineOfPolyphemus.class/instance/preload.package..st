@@ -5,7 +5,7 @@ preload: loader package: packageSpec
 	
 		Metacello new
 		  baseline: 'OpenSmalltalk-VM';
-		  repository: 'github://hogoww/OpenSmalltalk-VM:hogoww/src';
+		  repository: 'github://pharo-project/OpenSmalltalk-VM:pharoX/src';
 		  onConflictUseIncoming;
 		  onWarningLog;
 		  load.
