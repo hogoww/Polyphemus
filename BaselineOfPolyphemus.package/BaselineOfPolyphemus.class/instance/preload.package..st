@@ -1,7 +1,7 @@
 baselines
 preload: loader package: packageSpec
 	
-	[ 'VMMaker' asPackage ] on: NotFound do: [
+"	[ 'VMMaker' asPackage ] on: NotFound do: [
 
 		Metacello new
 		  baseline: 'VMMaker';
@@ -9,4 +9,4 @@ preload: loader package: packageSpec
 		  onConflictUseIncoming;
 		  onWarningLog;
 		  load.
-	]
+	]."
