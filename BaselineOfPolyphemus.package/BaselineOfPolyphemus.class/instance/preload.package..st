@@ -1,11 +1,12 @@
 baselines
 preload: loader package: packageSpec
 	
-	'VMMaker' asPackage ifNotNil: [ ^ self ].
+	[ 'VMMaker' asPackage ] on: NotFound do: [
 	
-	Metacello new
-	  baseline: 'OpenSmalltalk-VM';
-	  repository: 'github://hogoww/OpenSmalltalk-VM:hogoww/src';
-	  onConflictUseIncoming;
-	  onWarningLog;
-	  load.
+		Metacello new
+		  baseline: 'OpenSmalltalk-VM';
+		  repository: 'github://hogoww/OpenSmalltalk-VM:hogoww/src';
+		  onConflictUseIncoming;
+		  onWarningLog;
+		  load.
+	]
