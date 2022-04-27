@@ -1,0 +1,3 @@
+initialization
+title
+	^ 'memory inspector'

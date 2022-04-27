@@ -1,0 +1,3 @@
+initialization
+test
+	self halt
