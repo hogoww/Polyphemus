@@ -1,4 +1,4 @@
-accessing
+initialization
 connectPresenters
 	
 	memoryPresenter transmitTo: legend.

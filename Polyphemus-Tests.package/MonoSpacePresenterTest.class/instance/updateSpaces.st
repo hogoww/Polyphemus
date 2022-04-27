@@ -1,4 +1,4 @@
 running
 updateSpaces
-	newSpace update.
-	oldSpace update.
+	newSpace updatePresenter.
+	oldSpace updatePresenter.
