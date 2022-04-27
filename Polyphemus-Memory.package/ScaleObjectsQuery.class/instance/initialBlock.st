@@ -1,3 +1,3 @@
 accessing
 initialBlock
-	^ [ :aBox | aBox ]
+	^ [ :aBox | aBox size: 10 ]
