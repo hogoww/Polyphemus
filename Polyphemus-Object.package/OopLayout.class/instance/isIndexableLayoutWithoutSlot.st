@@ -1,0 +1,3 @@
+testing
+isIndexableLayoutWithoutSlot
+	^ false

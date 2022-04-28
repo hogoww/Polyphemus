@@ -1,3 +1,3 @@
 initialization
 testFixedLayoutObjectIsFixedLayout
-	self assert: nonIndexableLayoutObject oopLayout isNonIndexableLayout
+	self assert: self testedObject oopLayout isNonIndexableLayout

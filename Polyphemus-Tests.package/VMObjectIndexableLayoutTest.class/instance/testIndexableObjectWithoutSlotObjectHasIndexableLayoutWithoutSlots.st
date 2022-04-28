@@ -1,0 +1,3 @@
+initialization
+testIndexableObjectWithoutSlotObjectHasIndexableLayoutWithoutSlots
+	self assert: indexableLayoutObject oopLayout isIndexableLayoutWithoutSlot

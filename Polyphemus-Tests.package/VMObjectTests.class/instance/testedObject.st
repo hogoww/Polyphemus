@@ -1,0 +1,3 @@
+initialization
+testedObject
+	^ self subclassResponsibility

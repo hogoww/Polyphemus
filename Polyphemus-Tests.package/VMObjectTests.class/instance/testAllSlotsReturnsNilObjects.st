@@ -1,7 +1,7 @@
 initialization
 testAllSlotsReturnsNilObjects
 	| slots |
-	slots := nonIndexableLayoutObject allSlots.
+	slots := self testedObject allSlots.
 	self assert: slots size equals: 3.
 
 	slots do: [ :aSlot |

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OopLayout",
+	"category" : "Polyphemus-Object-layouts",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OopCompiledMethodLayout",
+	"type" : "normal"
+}

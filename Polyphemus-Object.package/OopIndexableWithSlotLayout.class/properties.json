@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "hogoww 4/28/2022 15:44",
 	"super" : "OopLayout",
 	"category" : "Polyphemus-Object-layouts",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OopIndexableLayout",
+	"name" : "OopIndexableWithSlotLayout",
 	"type" : "normal"
 }

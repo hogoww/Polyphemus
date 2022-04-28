@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "VMObjectTests",
+	"super" : "AbstractInspectorsTest",
 	"category" : "Polyphemus-Tests-layout",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"nonIndexableLayoutObject"
+		"compiledMethodObject"
 	],
-	"name" : "VMObjectNonIndexableLayout",
+	"name" : "VMObjectCompiledMethodLayoutTest",
 	"type" : "normal"
 }
