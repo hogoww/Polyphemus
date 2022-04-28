@@ -1,3 +1,3 @@
-accessing
+testing
 isIndexableLayoutWithoutSlot
 	^ true
