@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"fixedLayoutObject"
+		"emptyLayoutObject",
+		"indexableLayoutObject"
 	],
-	"name" : "VMObjectFixedLayout",
+	"name" : "VMObjectIndexableLayoutTest",
 	"type" : "normal"
 }

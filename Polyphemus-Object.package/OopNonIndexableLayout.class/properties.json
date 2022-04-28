@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OopFixedLayout",
+	"name" : "OopNonIndexableLayout",
 	"type" : "normal"
 }

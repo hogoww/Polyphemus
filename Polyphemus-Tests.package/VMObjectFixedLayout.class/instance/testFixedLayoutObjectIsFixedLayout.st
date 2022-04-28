@@ -1,3 +1,0 @@
-initialization
-testFixedLayoutObjectIsFixedLayout
-	self assert: fixedLayoutObject oopLayout isFixedLayout

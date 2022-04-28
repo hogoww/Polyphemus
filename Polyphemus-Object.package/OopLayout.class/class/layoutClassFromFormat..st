@@ -3,7 +3,7 @@ layoutClassFromFormat: objFormat
 	(objFormat = 0)
 		ifTrue: [ ^ OopEmptyLayout ].
 	(objFormat = 1)
-		ifTrue: [ ^ OopFixedLayout ].
+		ifTrue: [ ^ OopNonIndexableLayout ].
 	self halt.
 	(objFormat = 2) 
 		ifTrue: [ ^ SpurVariableLayout ].	
