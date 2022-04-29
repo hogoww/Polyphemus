@@ -1,1 +1,0 @@
-Don't know how to create one at the VM level, copy/paste from OopIndexableWithoutSlots for now

@@ -1,3 +1,3 @@
 testing
 isNonIndexableLayout
-	^ false
+	^ object oopFormat = 1

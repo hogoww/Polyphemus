@@ -1,13 +1,13 @@
 instance creation
 layoutClassFromFormat: objFormat
 	objFormat = 0
-		ifTrue: [ ^ OopEmptyLayout ].
+		ifTrue: [ ^ OopRegularLayout ].
 	objFormat = 1
-		ifTrue: [ ^ OopNonIndexableLayout ].
+		ifTrue: [ ^ OopRegularLayout ].
 	objFormat = 2
-		ifTrue: [ ^ OopIndexableWithoutSlotLayout ].	
+		ifTrue: [ ^ OopRegularLayout ].	
 	objFormat = 3
-		ifTrue: [ ^ OopIndexableWithSlotLayout ].
+		ifTrue: [ ^ OopRegularLayout ].
 
 "	objFormat = 4
 		ifTrue: [ ^SpurVariableWithInstanceVariablesLayout ].
@@ -19,7 +19,7 @@ layoutClassFromFormat: objFormat
 	(objFormat between: 8 and: 24)
 		ifTrue: [ ^ SpurByteLayout ].
 	(objFormat between: 24 and: 31)
-		ifTrue: [ ^ OopCompiledMethodLayout ].
+		ifTrue: [ ^ OopRegularLayout ].
 		
 	^ self error: 'Unused or invalid format.'
 	

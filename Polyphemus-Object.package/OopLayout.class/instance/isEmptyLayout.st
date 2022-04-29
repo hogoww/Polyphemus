@@ -1,3 +1,3 @@
 testing
 isEmptyLayout
-	^ false
+	^ object oopFormat = 0

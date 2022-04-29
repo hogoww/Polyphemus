@@ -1,3 +1,3 @@
 testing
 isIndexableLayoutWithSlot
-	^ false
+	^ object oopFormat = 3
