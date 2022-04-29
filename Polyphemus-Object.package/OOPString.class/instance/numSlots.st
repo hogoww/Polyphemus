@@ -1,0 +1,3 @@
+printing
+numSlots
+	^ 0
