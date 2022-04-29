@@ -1,4 +1,4 @@
-literals
+accessing
 numSlots
-	"we discard methods bytecodes"
-	^ "method header" 1 + self numberOfLiterals 
+	"Override because we want to remove bytecodes accesses"
+	^ 1 + self numberOfLiterals "method header"

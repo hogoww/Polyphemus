@@ -1,4 +1,4 @@
 accessing
 checkSlotAccessIndex: anIndex
-	(anIndex between: 1 and: object numberOfLiterals + 1 "method header")
+	(anIndex between: 1 and: object numSlots)
 		ifFalse: [ SubscriptOutOfBounds signal ].	
