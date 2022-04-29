@@ -1,3 +1,3 @@
 printing
 printOn: aStream
-	^ aStream << self spurLayout asLocalByteArray asString
+	^ aStream << self asLocalByteArray asString

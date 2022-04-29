@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"spurLayout",
-		"oopLayout"
-	],
+	"instvars" : [ ],
 	"name" : "OOPAbstractObject",
 	"type" : "normal"
 }

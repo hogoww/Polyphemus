@@ -1,3 +1,3 @@
 converting
 asLocalByteArray
-	^ self spurLayout asLocalByteArray
+	^ self asLocalByteArray

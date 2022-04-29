@@ -1,3 +1,4 @@
-accessing-slots
+accessing
 slotAt: anIndex
-	^ self spurLayout slotAt: anIndex
+	self checkSlotAccessIndex: anIndex.
+	^ self reifyOop: (self fetchPointer: anIndex - 1)

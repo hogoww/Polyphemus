@@ -1,3 +1,3 @@
 tests
 testEmptyLayoutObjectHasEmptyLayout
-	self assert: emptyLayoutObject oopLayout isEmptyLayout
+	self assert: emptyLayoutObject isEmptyLayout

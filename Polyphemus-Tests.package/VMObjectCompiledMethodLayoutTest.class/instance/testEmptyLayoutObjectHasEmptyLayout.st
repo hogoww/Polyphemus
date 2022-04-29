@@ -1,3 +1,3 @@
 tests
 testEmptyLayoutObjectHasEmptyLayout
-	self assert: compiledMethodObject oopLayout isCompiledMethodLayout
+	self assert: compiledMethodObject isCompiledMethodLayout

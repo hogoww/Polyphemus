@@ -1,0 +1,3 @@
+tests
+testIsByteLayoutObject
+	self assert: byteLayoutObject isByteLayout

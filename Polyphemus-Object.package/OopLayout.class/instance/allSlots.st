@@ -1,3 +1,0 @@
-accessing
-allSlots
-	^ self subclassResponsibility

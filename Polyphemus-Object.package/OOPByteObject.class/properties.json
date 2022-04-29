@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "OopLayout",
-	"category" : "Polyphemus-Object-layouts",
+	"super" : "OOPRegularObject",
+	"category" : "Polyphemus-Object-oop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OopRegularLayout",
+	"name" : "OOPByteObject",
 	"type" : "normal"
 }
