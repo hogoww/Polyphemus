@@ -1,15 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "BaseMemoryPresenter",
+	"super" : "SpPresenter",
 	"category" : "Polyphemus-Memory-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"memoryPresenter",
-		"legend",
-		"queryWidget"
+		"interpreter"
 	],
-	"name" : "MonoSpacePresenter",
+	"name" : "BaseMemoryPresenter",
 	"type" : "normal"
 }

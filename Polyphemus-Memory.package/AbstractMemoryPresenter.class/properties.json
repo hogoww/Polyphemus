@@ -1,20 +1,19 @@
 {
 	"commentStamp" : "",
-	"super" : "SpPresenter",
+	"super" : "BaseMemoryPresenter",
 	"category" : "Polyphemus-Memory-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"interpreter",
 		"memorySpace",
 		"scopedOop",
-		"image",
 		"colorProvider",
 		"scaling",
 		"queryInput",
 		"updateOutput",
-		"updateBlock"
+		"updateBlock",
+		"image"
 	],
 	"name" : "AbstractMemoryPresenter",
 	"type" : "normal"
