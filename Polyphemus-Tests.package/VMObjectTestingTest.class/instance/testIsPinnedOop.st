@@ -4,6 +4,6 @@ testIsPinnedOop
 	
 	obj := self newZeroSizedObject.
 	memory pinObject: obj.
-	oop := self objectForOop: (memory followForwarded: obj).
+	oop := self reifyOop: (memory followForwarded: obj).
 	
 	self assert: oop isPinnedOop

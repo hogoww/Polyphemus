@@ -1,5 +1,5 @@
 tests-printing
 testRememberSetHasSpecialPrint
 	| oop |
-	oop := self objectForOop: memory rememberedSetObj.
+	oop := self reifyOop: memory rememberedSetObj.
 	self assert: 'rememberSet' equals: oop printString

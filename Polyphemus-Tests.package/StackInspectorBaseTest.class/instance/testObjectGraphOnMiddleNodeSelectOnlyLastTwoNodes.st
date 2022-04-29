@@ -1,9 +1,9 @@
 test-objectGraph
 testObjectGraphOnMiddleNodeSelectOnlyLastTwoNodes
 	| oop firstLayer secondLayer |
-	oop := self objectForOop: (self newObjectWithSlots: 1).
-	firstLayer := self objectForOop: (self newObjectWithSlots: 1).
-	secondLayer := self objectForOop: (self newObjectWithSlots: 0).
+	oop := self reifyOop: (self newObjectWithSlots: 1).
+	firstLayer := self reifyOop: (self newObjectWithSlots: 1).
+	secondLayer := self reifyOop: (self newObjectWithSlots: 0).
 	oop slotAt: 1 put: firstLayer.
 	firstLayer slotAt: 1 put: secondLayer.
 	

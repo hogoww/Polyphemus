@@ -1,5 +1,5 @@
 tests
 testFormat
 	| oop |
-	oop := self objectForOop: self newZeroSizedObject.
+	oop := self reifyOop: self newZeroSizedObject.
 	self assert: oop oopFormat equals: (memory formatOf: oop address)

@@ -1,5 +1,5 @@
 execution
 executeCode: aBlock on: aMemoryPresenter
 	| selection |
-	selection := aMemoryPresenter allNodes select: aBlock thenCollect: [ :aBox | aBox model ].
+	selection := (aMemoryPresenter allNodes collect: aBlock ).
 	selection inspect

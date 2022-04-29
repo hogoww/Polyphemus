@@ -5,5 +5,5 @@ testIsForwarderOop
 	obj := self newZeroSizedObject.
 	memory pinObject: obj.
 	
-	oop := self objectForOop: obj.
+	oop := self reifyOop: obj.
 	self assert: oop isForwarderOop.

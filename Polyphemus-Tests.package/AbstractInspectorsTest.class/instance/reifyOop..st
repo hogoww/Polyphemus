@@ -1,3 +1,3 @@
 tests
-objectForOop: anAddress
+reifyOop: anAddress
 	^ OOPAbstractEntity newFor: anAddress image: image

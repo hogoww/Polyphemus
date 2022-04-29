@@ -2,5 +2,5 @@ tests
 testCreatingImmediateObject
 	| oop object |
 	oop := memory integerObjectOf: 42.
-	object := self objectForOop: oop.
+	object := self reifyOop: oop.
 	self assert: object isImmediateOop
