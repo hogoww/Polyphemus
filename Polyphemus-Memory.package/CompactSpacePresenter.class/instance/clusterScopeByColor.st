@@ -10,6 +10,7 @@ clusterScopeByColor
 		oopColor := colorProvider colorForOop: anOop.
 		oopColor = currentColor
 			ifFalse: [
+				currentColor := oopColor.
 				res add: currentCollection.
 				currentCollection := OrderedCollection new 
 				].
