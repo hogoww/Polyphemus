@@ -1,12 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "SpPresenter",
+	"super" : "AbstractInspectorPresenter",
 	"category" : "Polyphemus-Memory-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"interpreter",
 		"notebook"
 	],
 	"name" : "MemoryInspector",
