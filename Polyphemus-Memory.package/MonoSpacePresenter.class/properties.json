@@ -8,7 +8,8 @@
 	"instvars" : [
 		"memoryPresenter",
 		"legend",
-		"queryWidget"
+		"queryWidget",
+		"spacePresenterClass"
 	],
 	"name" : "MonoSpacePresenter",
 	"type" : "normal"
