@@ -9,8 +9,8 @@ descriptionForColor: aColor
 	aColor = self forwarderOopColor ifTrue: [ ^ 'forwarder' ].
 	aColor = self freeOopColor ifTrue: [ ^ 'free chunk' ].
 	aColor = self pinnedOopColor ifTrue: [ ^ 'pinned object' ].
-	aColor = self regularOopColor  ifTrue: [ ^ 'regular object' ].
-	aColor = self specialOopColor  ifTrue: [ ^ 'special object' ].
+	aColor = self regularOopColor ifTrue: [ ^ 'regular object' ].
+	aColor = self specialOopColor ifTrue: [ ^ 'special object' ].
 	^'No description for this color'
 	
 	
