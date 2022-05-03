@@ -1,5 +1,5 @@
 tests
 testByteSizeOfTwoSlotObject
 	| oop |
-	oop := self objectForOop: (self newObjectWithSlots: 2).
+	oop := self reifyOop: (self newObjectWithSlots: 2).
 	self assert: oop oopByteSize equals: 24

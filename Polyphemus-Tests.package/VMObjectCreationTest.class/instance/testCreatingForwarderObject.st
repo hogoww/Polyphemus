@@ -3,5 +3,5 @@ testCreatingForwarderObject
 	| oop object |
 	oop := self newZeroSizedObject.
 	memory pinObject: oop.
-	object := self objectForOop: oop.
+	object := self reifyOop: oop.
 	self assert: object isForwarderOop

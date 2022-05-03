@@ -2,5 +2,5 @@ tests
 testPrintOopForSmallInteger
 	| oop object |
 	oop := memory integerObjectOf: 1.
-	object := self objectForOop: oop.
+	object := self reifyOop: oop.
 	self assert: object printString equals: '1'

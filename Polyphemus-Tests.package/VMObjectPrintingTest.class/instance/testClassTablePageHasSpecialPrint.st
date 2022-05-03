@@ -1,5 +1,5 @@
 tests-printing
 testClassTablePageHasSpecialPrint
 	| oop |
-	oop := self objectForOop: memory classTableFirstPage.
+	oop := self reifyOop: memory classTableFirstPage.
 	self assert: 'classTablePage' equals: oop printString

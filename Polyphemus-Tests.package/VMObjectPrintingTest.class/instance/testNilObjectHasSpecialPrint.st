@@ -1,5 +1,5 @@
 tests-printing
 testNilObjectHasSpecialPrint
 	| oop |
-	oop := self objectForOop: memory nilObject.
+	oop := self reifyOop: memory nilObject.
 	self assert: 'nilObject' equals: oop printString

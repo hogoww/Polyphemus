@@ -2,8 +2,8 @@ test-allReferencers
 testAllReferencerOfObjectWithOneReferencerColorsReferencer
 	
 	| oop slot slotObject objectOop |
-	oop := self objectForOop: (self newObjectWithSlots: 1).
-	slot := self objectForOop: self newZeroSizedObject.
+	oop := self reifyOop: (self newObjectWithSlots: 1).
+	slot := self reifyOop: self newZeroSizedObject.
 	oop slotAt: 1 put: slot.
 	
 	self updateSpaces.

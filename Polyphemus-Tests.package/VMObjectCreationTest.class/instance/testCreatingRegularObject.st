@@ -2,5 +2,5 @@ tests
 testCreatingRegularObject
 	| oop object |
 	oop := self newZeroSizedObject.
-	object := self objectForOop: oop.
+	object := self reifyOop: oop.
 	self assert: object isRegularOop

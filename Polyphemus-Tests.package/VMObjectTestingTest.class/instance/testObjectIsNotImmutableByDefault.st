@@ -1,6 +1,6 @@
 test
 testObjectIsNotImmutableByDefault
 	| object |
-	object := self objectForOop: self newZeroSizedObject.
+	object := self reifyOop: self newZeroSizedObject.
 	
 	self deny: object isImmutableOop
