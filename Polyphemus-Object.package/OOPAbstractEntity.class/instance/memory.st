@@ -1,3 +1,3 @@
 accessing
 memory
-	^ memory
+	memory

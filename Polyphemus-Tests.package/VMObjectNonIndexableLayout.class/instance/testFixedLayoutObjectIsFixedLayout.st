@@ -1,0 +1,3 @@
+initialization
+testFixedLayoutObjectIsFixedLayout
+	self assert: self testedObject isNonIndexableLayout

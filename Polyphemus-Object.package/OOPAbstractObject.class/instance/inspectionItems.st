@@ -8,7 +8,6 @@ inspectionItems
 		#class -> self oopClass.
 		#oopClassTag -> self oopClassTag.
 		#format -> self oopFormat.
-		#layout -> self spurLayout.
 		#hash -> self oopHash.
 		#pinned -> self isPinnedOop.
 		#space -> self spaceString.

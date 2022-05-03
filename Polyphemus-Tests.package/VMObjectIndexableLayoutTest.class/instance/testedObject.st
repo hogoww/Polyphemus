@@ -1,0 +1,3 @@
+initialization
+testedObject
+	^ indexableLayoutObject 

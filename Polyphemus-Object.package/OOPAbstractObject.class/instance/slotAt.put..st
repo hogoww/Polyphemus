@@ -1,10 +1,8 @@
 accessing-slots
-slotAt: anIndex put: aSpurObjectOrOop
-	"Our api is 1 based but the simulator is 0 based"
+slotAt: anIndex put: anObjectOrOop
+	
+	self checkSlotAccessIndex: anIndex.
 
-	self numSlots >= anIndex ifFalse: [ SubscriptOutOfBounds signal ].	
-
-	^ memory
+	^ self
 		  storePointer: anIndex - 1
-		  ofObject: self address
-		  withValue: aSpurObjectOrOop value
+		  withValue: anObjectOrOop value

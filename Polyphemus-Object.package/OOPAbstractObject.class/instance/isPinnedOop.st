@@ -1,3 +1,3 @@
-accessing-slots
+testing
 isPinnedOop
 	^ memory isPinned: address

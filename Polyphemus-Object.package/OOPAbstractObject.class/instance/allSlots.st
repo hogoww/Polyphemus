@@ -1,4 +1,4 @@
 accessing-slots
-allSlots
-
-	^ self spurLayout allSlots
+allSlots 
+	^ (1 to: self numSlots) 
+		collect: [ :anIndex | self slotAt: anIndex ]

@@ -14,5 +14,6 @@ newFor: anAddress image: image
 
 
 	^ (handler ifEmpty: [ OOPRegularObject ] ifNotEmpty: [ 
-		   handler size > 1 ifTrue: [  ].
-		   handler first ]) on: anAddress image: image
+		   handler size > 1 
+        ifTrue: [ handler last ]
+							ifFalse: [ handler first ]]) on: anAddress image: image

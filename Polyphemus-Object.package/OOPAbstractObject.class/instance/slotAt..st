@@ -1,5 +1,4 @@
-accessing-slots
+accessing
 slotAt: anIndex
-	"Api is 1 based but the memory api is O based"
-	self numSlots >= anIndex ifFalse: [ SubscriptOutOfBounds signal ].
-	^ self spurLayout slotAt: anIndex - 1
+	self checkSlotAccessIndex: anIndex.
+	^ self reifyOop: (self fetchPointer: anIndex - 1)

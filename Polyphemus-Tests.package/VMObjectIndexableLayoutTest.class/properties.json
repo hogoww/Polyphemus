@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "VMObjectTests",
+	"category" : "Polyphemus-Tests-layout",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"emptyLayoutObject",
+		"indexableLayoutObject"
+	],
+	"name" : "VMObjectIndexableLayoutTest",
+	"type" : "normal"
+}

@@ -1,4 +1,4 @@
 accessing
 fetchPointer: anInteger
 
-	^ self image fetchPointer: anInteger ofObject: self address value
+	^ memory fetchPointer: anInteger ofObject: address

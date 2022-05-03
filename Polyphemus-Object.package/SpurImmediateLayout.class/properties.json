@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SpurLayout",
-	"category" : "Polyphemus-Object-layouts",
+	"category" : "Polyphemus-Object-oldLayout",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
