@@ -1,3 +1,3 @@
 testing
 printOn: aStream
-	^ [ aStream << self className ] on: Error do: [ address printOn: aStream ]
+	self className printOn: aStream

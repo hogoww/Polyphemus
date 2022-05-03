@@ -1,4 +1,4 @@
 initialization
 setUp
 	super setUp.
-	emptyLayoutObject := self objectForOop: memory nilObject
+	emptyLayoutObject := self reifyOop: memory nilObject
