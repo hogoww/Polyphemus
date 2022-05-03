@@ -1,5 +1,5 @@
 running
 setUp
 	super setUp.
-	newSpace := (NewSpaceFullPresenter openOn: interpreter) presenter.
-	oldSpace := (OldSpaceFullPresenter openOn: interpreter) presenter.
+	newSpace := (MonoSpacePresenter newSpaceOn: interpreter) open presenter.
+	oldSpace := (MonoSpacePresenter oldSpaceOn: interpreter) open presenter.

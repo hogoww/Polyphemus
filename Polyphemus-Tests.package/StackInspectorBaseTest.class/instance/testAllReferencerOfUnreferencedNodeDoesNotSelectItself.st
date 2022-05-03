@@ -2,7 +2,7 @@ test-allReferencers
 testAllReferencerOfUnreferencedNodeDoesNotSelectItself
 	
 	| oop oopObject |
-	oop := self objectForOop: self newZeroSizedObject.
+	oop := self reifyOop: self newZeroSizedObject.
 	
 	self updateSpaces.
 	oopObject := (newSpace oopForAddress: oop).

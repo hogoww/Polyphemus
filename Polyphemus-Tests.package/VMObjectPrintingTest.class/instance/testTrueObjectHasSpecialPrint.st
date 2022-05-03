@@ -1,5 +1,5 @@
 tests-printing
 testTrueObjectHasSpecialPrint
 	| oop |
-	oop := self objectForOop: memory trueObject.
+	oop := self reifyOop: memory trueObject.
 	self assert: 'trueObject' equals: oop printString

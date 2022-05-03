@@ -1,3 +1,3 @@
 accessing
 spacePresenterClass
-	^ self subclassResponsibility
+	^ spacePresenterClass

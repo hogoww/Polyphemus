@@ -2,5 +2,5 @@ tests
 testIsCharacterOop
 	| oop object |
 	oop := memory characterObjectOf: 1.
-	object := self objectForOop: oop.
+	object := self reifyOop: oop.
 	self assert: object isCharacterOop

@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "MonoSpacePresenter",
+	"super" : "SpPresenter",
 	"category" : "Polyphemus-Memory-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "OldSpaceFullPresenter",
+	"instvars" : [
+		"interpreter"
+	],
+	"name" : "AbstractInspectorPresenter",
 	"type" : "normal"
 }

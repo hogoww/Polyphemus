@@ -1,7 +1,7 @@
 tests-graphObject
 testGraphObjectOfTwoSlotObjectHasBothTheInitialObjectAndItsSlots
 	| oop |
-	oop := self objectForOop: (self newObjectWithSlots: 2).
+	oop := self reifyOop: (self newObjectWithSlots: 2).
 	oop slotAt: 1 put: self newZeroSizedObject.
 	oop slotAt: 2 put: self newZeroSizedObject.
 	self assert: oop objectGraph size equals: 2."depth = 2"

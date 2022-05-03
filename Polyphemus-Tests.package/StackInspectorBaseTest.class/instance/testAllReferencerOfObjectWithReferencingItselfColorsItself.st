@@ -2,7 +2,7 @@ test-allReferencers
 testAllReferencerOfObjectWithReferencingItselfColorsItself
 	
 	| oop objectOop |
-	oop := self objectForOop: (self newObjectWithSlots: 1).
+	oop := self reifyOop: (self newObjectWithSlots: 1).
 	oop slotAt: 1 put: oop.
 	
 	self updateSpaces.

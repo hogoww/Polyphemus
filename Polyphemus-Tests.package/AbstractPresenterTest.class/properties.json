@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Polyphemus-Tests-memoryInspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"presenter"
+	],
+	"name" : "AbstractPresenterTest",
+	"type" : "normal"
+}

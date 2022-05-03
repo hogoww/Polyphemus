@@ -1,6 +1,6 @@
 test
 testisCompiledMethodOop
 	| oop |
-	oop := self objectForOop: methodBuilder buildMethod.
+	oop := self reifyOop: methodBuilder buildMethod.
 	
 	self assert: oop isCompiledMethodOop

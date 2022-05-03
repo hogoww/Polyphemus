@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
-	"super" : "OOPByteObject",
-	"category" : "Polyphemus-Object-oop",
+	"super" : "OOPAbstractObject",
+	"category" : "Polyphemus-Object-spurObjects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

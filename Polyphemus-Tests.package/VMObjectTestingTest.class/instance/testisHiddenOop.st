@@ -1,6 +1,6 @@
 test
 testisHiddenOop
 	| oop |
-	oop := self objectForOop: memory classTableRootObj.
+	oop := self reifyOop: memory classTableRootObj.
 	
 	self assert: oop isHiddenOop
