@@ -1,4 +1,4 @@
 accessing
 fetchPointer: anInteger
 
-	^ image fetchPointer: anInteger ofObject: address
+	^ memory fetchPointer: anInteger ofObject: address

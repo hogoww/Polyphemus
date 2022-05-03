@@ -1,3 +1,0 @@
-converting
-asLocalByteArray
-	^ self asLocalByteArray
