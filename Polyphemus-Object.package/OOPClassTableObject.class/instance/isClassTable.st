@@ -1,0 +1,3 @@
+testing
+isClassTable
+	^ true
