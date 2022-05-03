@@ -7,9 +7,7 @@
 	"classvars" : [
 		"ClassTableObjects"
 	],
-	"instvars" : [
-		"index"
-	],
-	"name" : "OOPClassTableObject",
+	"instvars" : [ ],
+	"name" : "OOPClassTablePageObject",
 	"type" : "normal"
 }
