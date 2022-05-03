@@ -2,7 +2,7 @@ running
 testClusterOneObjectWithTwoSimilarObjectCreatesTwoClusters
 	| res objectOop |
 	"relies on the fact that newObjectWithSlots currently creates an hidden object"
-	objectOop := self objectForOop: self newZeroSizedObject.
+	objectOop := self reifyOop: self newZeroSizedObject.
 	objectOop pinObjectOop.
 	self newZeroSizedObject.
 	self newZeroSizedObject.

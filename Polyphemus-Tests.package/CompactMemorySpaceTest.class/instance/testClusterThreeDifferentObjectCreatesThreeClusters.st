@@ -4,7 +4,7 @@ testClusterThreeDifferentObjectCreatesThreeClusters
 	"relies on the fact that newObjectWithSlots currently creates an hidden object"
 	self newZeroSizedObject.
 	self newObjectWithSlots: 1.
-	objectOop := self objectForOop: self newZeroSizedObject.
+	objectOop := self reifyOop: self newZeroSizedObject.
 	objectOop pinObjectOop.
 	
 	compactSpace updateScope.
