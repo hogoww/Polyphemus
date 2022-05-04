@@ -1,0 +1,3 @@
+initialization
+testIsByteLayoutObject
+	self assert: sixtyFourbitLayoutObject is64BitLayout

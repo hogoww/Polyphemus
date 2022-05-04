@@ -1,3 +1,3 @@
 tests
 testIsByteLayoutObject
-	self assert: byteLayoutObject isByteLayout
+	self assert: byteLayoutObject is8BitLayout

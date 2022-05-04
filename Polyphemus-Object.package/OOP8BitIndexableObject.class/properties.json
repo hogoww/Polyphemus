@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "OOP8BitIndexableObject",
+	"super" : "OOPBitIndexableObject",
 	"category" : "Polyphemus-Object-oop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OOPString",
+	"name" : "OOP8BitIndexableObject",
 	"type" : "normal"
 }

@@ -6,7 +6,6 @@ objectNameIfAny
 	address = memory falseObject ifTrue: [ ^ #falseObject ].
 	address = memory freeListsObj ifTrue:[ ^ #freeLists ].
 	address = memory specialObjectsOop ifTrue: [ ^ #specialObjectArray ].
-	address = memory rememberedSetObj ifTrue: [ ^ #rememberSet ].
 	self isClassTablePage = 0 ifFalse: [ ^ #classTablePage ].
 
 	className := self oopClass className.
