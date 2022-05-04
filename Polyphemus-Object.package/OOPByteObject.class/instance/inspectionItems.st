@@ -1,3 +1,0 @@
-inspection
-inspectionItems
-	^{}
