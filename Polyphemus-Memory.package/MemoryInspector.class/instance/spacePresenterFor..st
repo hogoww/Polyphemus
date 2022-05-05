@@ -1,11 +1,9 @@
 initialization
-spacePresenterFor: aClass
+spacePresenterFor: aPresenter
 
-	| pagePresenter |
-	pagePresenter := aClass newOn: interpreter.
 	^ (SpNotebookPage 
-		title: pagePresenter title
+		title: aPresenter title
 		icon: (self iconNamed: #nautilusIcon) 
-		provider: [ pagePresenter ])
+		provider: [ aPresenter ])
 		beCloseable;
 		yourself
