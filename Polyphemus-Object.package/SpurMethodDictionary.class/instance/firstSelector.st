@@ -1,4 +1,4 @@
 accessing
 firstSelector
 	
-	^ self slotAt: self firstSelectorIndex + 2
+	^ self reifiedSlotAt: self firstSelectorIndex + 2

@@ -1,4 +1,4 @@
 special-classes
 byteArrayClass
 	"indexInClassTable 50"
-	^ self specialObjectsArray slotAt: 27
+	^ self specialObjectsArray reifiedSlotAt: 27

@@ -1,4 +1,4 @@
 special-classes
 largeNegativeIntegerClass
 	"indexInClassTable 32"
-	^ self specialObjectsArray slotAt: 43
+	^ self specialObjectsArray reifiedSlotAt: 43

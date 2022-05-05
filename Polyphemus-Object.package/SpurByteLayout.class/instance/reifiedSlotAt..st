@@ -1,5 +1,5 @@
 accessing
-slotAt: anInteger 
+reifiedSlotAt: anInteger 
 	
 	| bodyAddress |
 	self assert: anInteger >= 0 description: 'Index must be greater than 0'.

@@ -6,4 +6,4 @@ selector
 	(selectorLiteral oopClass className
 		includes: 'AdditionalMethodState')
 			ifFalse: [ ^ selectorLiteral ]
-			ifTrue: [ ^ selectorLiteral slotAt: 2. "Supossed to be the selector" ]
+			ifTrue: [ ^ selectorLiteral reifiedSlotAt: 2. "Supossed to be the selector" ]

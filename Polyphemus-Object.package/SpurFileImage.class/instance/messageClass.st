@@ -1,4 +1,4 @@
 special-classes
 messageClass
 	"indexInClassTable 35"
-	^ self specialObjectsArray slotAt: 16
+	^ self specialObjectsArray reifiedSlotAt: 16

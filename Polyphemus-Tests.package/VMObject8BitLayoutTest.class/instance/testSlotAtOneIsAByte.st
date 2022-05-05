@@ -1,3 +1,3 @@
 tests
 testSlotAtOneIsAByte
-	self assert: (byteLayoutObject byteAt: 1) equals: $P asInteger
+	self assert: (byteLayoutObject indexedAt: 1) equals: $P asInteger

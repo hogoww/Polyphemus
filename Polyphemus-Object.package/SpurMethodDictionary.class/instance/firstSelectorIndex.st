@@ -5,7 +5,7 @@ firstSelectorIndex
 	found := nil.
 	[ currentIndex + 2 < self numberOfSlots and: [ found isNil ] ]
 		whileTrue: [ | object |
-			(object := (self slotAt: currentIndex + 2)) spIsNil
+			(object := (self reifiedSlotAt: currentIndex + 2)) spIsNil
 				ifTrue: [ currentIndex := currentIndex + 1 ]
 				ifFalse: [ found := object. ^currentIndex ]. ].
 	^ nil

@@ -1,4 +1,4 @@
 special-classes
 arrayClass
 	"indexInClassTable 51"
-	^ self specialObjectsArray slotAt: 8
+	^ self specialObjectsArray reifiedSlotAt: 8

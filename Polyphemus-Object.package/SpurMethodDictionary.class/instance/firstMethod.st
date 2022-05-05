@@ -4,6 +4,6 @@ firstMethod
 	| index arrayOfMethod |
 	index := self firstSelectorIndex.
 
-	arrayOfMethod := self slotAt: 2.
-	^arrayOfMethod slotAt: index.
+	arrayOfMethod := self reifiedSlotAt: 2.
+	^arrayOfMethod reifiedSlotAt: index.
 	

@@ -9,4 +9,4 @@ classOrNilAtIndex: classIndex
 	classTablePage = nilObj ifTrue:
 		[^nilObj].
 	^ (classTablePage
-		slotAt: (classIndex bitAnd: image classTableMinorIndexMask) + 1) asSpurClass
+		reifiedSlotAt: (classIndex bitAnd: image classTableMinorIndexMask) + 1) asSpurClass

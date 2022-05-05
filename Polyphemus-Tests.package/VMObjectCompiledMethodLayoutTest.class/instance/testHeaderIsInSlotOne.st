@@ -1,3 +1,3 @@
 tests
 testHeaderIsInSlotOne
-	self assert: (compiledMethodObject slotAt: 1) equals: compiledMethodObject methodHeader
+	self assert: (compiledMethodObject reifiedSlotAt: 1) equals: compiledMethodObject methodHeader

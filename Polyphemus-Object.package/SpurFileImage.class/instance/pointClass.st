@@ -1,4 +1,4 @@
 special-classes
 pointClass
 	"indexInClassTable 54"
-	^ self specialObjectsArray slotAt: 13
+	^ self specialObjectsArray reifiedSlotAt: 13

@@ -1,4 +1,4 @@
 special-classes
 semaphoreClass
 	"indexInClassTable 48"
-	^ self specialObjectsArray slotAt: 19
+	^ self specialObjectsArray reifiedSlotAt: 19

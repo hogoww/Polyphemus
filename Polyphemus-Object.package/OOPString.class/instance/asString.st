@@ -1,5 +1,5 @@
-printing
+converting
 asString
 	^ String streamContents: [ :s |
-		self allBytes do: [ :aSlot | s nextPut: aSlot asCharacter ]
+		self allIndexed do: [ :aSlot | s nextPut: aSlot asCharacter ]
 	]

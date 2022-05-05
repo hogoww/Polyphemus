@@ -2,6 +2,6 @@ testing
 className 
 "We assume this is a byteSymbol here"
 	self numSlots < self class slotIndexForClassName ifTrue: [ ^ 'Bad class' ].
-	^ [ (self slotAt: self class slotIndexForClassName) asString ]
+	^ [ (self reifiedSlotAt: self class slotIndexForClassName) asString ]
 		on: Error 
-      do: [ (self slotAt: self class slotIndexForClassName) asString , ' class']
+      do: [ (self reifiedSlotAt: self class slotIndexForClassName) asString , ' class']

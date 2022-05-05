@@ -1,3 +1,3 @@
 initialization
 testAskingForUnderflownSlotShouldRaiseException
-	self should: [ self testedObject slotAt: 0 ] raise: SubscriptOutOfBounds 
+	self should: [ self testedObject reifiedSlotAt: 0 ] raise: SubscriptOutOfBounds 

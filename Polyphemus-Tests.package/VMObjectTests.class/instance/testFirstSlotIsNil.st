@@ -1,3 +1,3 @@
 initialization
 testFirstSlotIsNil
-	self assert: (self testedObject slotAt: 1) isNilOop
+	self assert: (self testedObject reifiedSlotAt: 1) isNilOop

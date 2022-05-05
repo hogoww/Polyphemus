@@ -1,4 +1,4 @@
 special-classes
 largePositiveIntegerClass
 	"indexInClassTable 33"
-	^ self specialObjectsArray slotAt: 14
+	^ self specialObjectsArray reifiedSlotAt: 14

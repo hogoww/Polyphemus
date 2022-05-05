@@ -1,3 +1,3 @@
 printing
 characterAt: anIndex
-	^ (self byteAt: anIndex) asCharacter
+	^ (self indexedAt: anIndex) asCharacter

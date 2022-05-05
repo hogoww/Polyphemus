@@ -1,3 +1,3 @@
 testing
 classNameObject
-	^ self slotAt: self class slotIndexForClassName
+	^ self reifiedSlotAt: self class slotIndexForClassName

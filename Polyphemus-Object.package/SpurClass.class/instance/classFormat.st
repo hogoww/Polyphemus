@@ -1,3 +1,3 @@
 as yet unclassified
 classFormat
-	^ self slotAt: self slotIndexForClassFormat
+	^ self reifiedSlotAt: self slotIndexForClassFormat

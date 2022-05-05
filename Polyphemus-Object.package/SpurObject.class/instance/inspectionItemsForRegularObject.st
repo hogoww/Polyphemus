@@ -19,5 +19,5 @@ inspectionItemsForRegularObject
 		#numSlots -> self numSlots.	
 		} asOrderedCollection .
 		
-	1 to: self numSlots do: [ :i| items add: (('slot', i printString) -> (self slotAt: i)) ].
+	1 to: self numSlots do: [ :i| items add: (('slot', i printString) -> (self reifiedSlotAt: i)) ].
 	^ items
