@@ -1,4 +1,4 @@
-tests
+tests-classTable
 testClassTableForTwoDifferentImagesAreDifferent
 	| classTable1 image2 classTable2 |
 	classTable1 := self reifyOop: memory classTableRootObj.

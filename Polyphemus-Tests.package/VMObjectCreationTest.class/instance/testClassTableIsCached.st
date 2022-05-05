@@ -1,3 +1,6 @@
-tests
+tests-classTable
 testClassTableIsCached
-	self assert: (self reifyOop: memory classTableRootObj) equals: (self reifyOop: memory classTableRootObj)
+
+	self
+		assert: (self reifyOop: memory classTableRootObj)
+		identicalTo: (self reifyOop: memory classTableRootObj)
