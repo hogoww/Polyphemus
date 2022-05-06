@@ -1,6 +1,6 @@
 testing
 indexFor: anAddress
-	1 to: self numSlots do: [ :i |
-		(self slotAt: i) = anAddress 
+	self allClassTablePages doWithIndex: [ :aClassTablePage :i |
+		aClassTablePage = anAddress 
 			ifTrue: [ ^ i ] ].
 	^ 0
