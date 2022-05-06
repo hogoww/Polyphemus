@@ -1,5 +1,5 @@
 printing
 printOn: aStream
-	address = memory rememberedSetObj ifTrue: [ ^ aStream << 'Remembered Set' ].
-	address = memory freeListsObj ifTrue:[ ^ aStream << 'Free Lists' ].
+	memory rememberedSetObj = address ifTrue: [ ^ aStream << 'Remembered Set' ].
+	memory freeListsObj = address ifTrue:[ ^ aStream << 'Free Lists' ].
 	address printOn: aStream
