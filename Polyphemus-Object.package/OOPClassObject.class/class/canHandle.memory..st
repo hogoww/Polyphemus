@@ -1,3 +1,3 @@
 instance creation
-canHandle: anAddress image: memory
+canHandle: anAddress memory: memory
 	^ memory isInClassTable: anAddress

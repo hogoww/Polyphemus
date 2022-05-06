@@ -1,3 +1,3 @@
 as yet unclassified
 nilObject
- 	^ SpurObject on: simulator nilObject image: self 
+ 	^ SpurObject on: simulator nilObject memory: self 

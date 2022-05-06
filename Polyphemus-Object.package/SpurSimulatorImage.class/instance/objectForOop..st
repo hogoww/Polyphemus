@@ -1,4 +1,4 @@
 as yet unclassified
 objectForOop: anInteger
 
-	^ SpurObject on: anInteger image: self
+	^ SpurObject on: anInteger memory: self

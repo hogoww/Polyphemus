@@ -1,5 +1,5 @@
 as yet unclassified
-on: aSpurObject image: aSpurImage
+on: aSpurObject memory: aSpurImage
 	| layoutClass |
 	"TH; Why passing the image here ?" 
 	

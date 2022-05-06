@@ -1,3 +1,3 @@
 printing
 classSpurObject
-	^ self class on: self classOop image: image
+	^ self class on: self classOop memory: image

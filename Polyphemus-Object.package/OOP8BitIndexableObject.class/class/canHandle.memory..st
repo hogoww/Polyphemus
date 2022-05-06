@@ -1,3 +1,3 @@
 instance creation
-canHandle: anAddress image: image
+canHandle: anAddress memory: image
 	^ (image formatOf: anAddress) between: 16 and: 23

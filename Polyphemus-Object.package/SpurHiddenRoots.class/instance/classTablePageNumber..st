@@ -4,7 +4,7 @@ classTablePageNumber: anInteger
 	| classTablePage |
 	classTablePage := SpurObject
 						on:(self reifiedSlotAt: anInteger) address
-						image: image.
+						memory: image.
 	self assert: classTablePage format = image arrayFormat.
 	self assert: classTablePage classIndex = image arrayClassIndexPun.
 	^ classTablePage

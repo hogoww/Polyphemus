@@ -1,7 +1,7 @@
 instance creation
-on: address image: anImage
+on: address memory: aMemory
 	self class = OOPAbstractEntity ifTrue: [ self error: 'Cannot instanciate AbstractSpurEntity, I am abstract !' ].
 	^self new
 		address: address;
-		image: anImage;
+		memory: aMemory;
 		yourself

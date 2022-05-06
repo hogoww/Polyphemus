@@ -1,5 +1,5 @@
 as yet unclassified
-on: address image: anImage
+on: address memory: anImage
 	^self new
 		address: address;
 		image: anImage;

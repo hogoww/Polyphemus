@@ -1,5 +1,5 @@
 instance creation
-canHandle: anAddress image: memory
+canHandle: anAddress memory: memory
 	"is the class or superclass of the class of the object String, known inside the SpecialObjectArray"
 	|  oopClass oopSuperClass |
 	[	

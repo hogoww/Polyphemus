@@ -6,5 +6,5 @@ metaclassOop
 	Since Array is required by the vm we should not have a problem.
 	"
 	| arrayClass |
-	arrayClass := self class newFor: (memory classAtIndex: (memory arrayClassIndexPun)) image: image.
+	arrayClass := self class newFor: (memory classAtIndex: (memory arrayClassIndexPun)) memory: memory.
 	^arrayClass oopClass oopClass

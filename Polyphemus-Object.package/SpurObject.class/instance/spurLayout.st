@@ -1,3 +1,3 @@
 accessing
 spurLayout
-	^ spurLayout ifNil: [ spurLayout := SpurLayout on: self image: image ]
+	^ spurLayout ifNil: [ spurLayout := SpurLayout on: self memory: image ]

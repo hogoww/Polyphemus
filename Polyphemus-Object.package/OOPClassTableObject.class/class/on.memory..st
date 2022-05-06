@@ -1,3 +1,3 @@
 testing
-on: anAddress image: image
+on: anAddress memory: image
 	^ self classTableFor: image

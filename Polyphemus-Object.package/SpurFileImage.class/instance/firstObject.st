@@ -1,4 +1,4 @@
 special-objects
 firstObject
 
-	^ SpurObject on: headerSize + 1 image: self
+	^ SpurObject on: headerSize + 1 memory: self

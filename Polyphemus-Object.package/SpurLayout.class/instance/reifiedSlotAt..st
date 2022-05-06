@@ -1,4 +1,4 @@
 accessing
 reifiedSlotAt: anInteger
 
-	^ OOPAbstractEntity newFor: (object fetchPointer: anInteger) image: object image
+	^ OOPAbstractEntity newFor: (object fetchPointer: anInteger) memory: object image

@@ -1,3 +1,3 @@
 converting
 asSpurClass
-	^ SpurClass on: address image: self image
+	^ SpurClass on: address memory: self image

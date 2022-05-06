@@ -1,3 +1,3 @@
 instance creation
-canHandle: anAddress image: anImage
+canHandle: anAddress memory: anImage
 	^ (self classTableFor: anImage) = anAddress
