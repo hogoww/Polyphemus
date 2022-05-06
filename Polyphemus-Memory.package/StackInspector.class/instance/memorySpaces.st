@@ -1,3 +1,0 @@
-testing
-memorySpaces
-	^ { newSpace . oldSpace }

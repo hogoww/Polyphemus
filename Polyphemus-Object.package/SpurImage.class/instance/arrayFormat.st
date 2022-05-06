@@ -1,3 +1,0 @@
-constants
-arrayFormat
-	^ 2
