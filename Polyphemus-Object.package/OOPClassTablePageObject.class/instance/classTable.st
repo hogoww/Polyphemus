@@ -1,3 +1,3 @@
 testing
 classTable
-	^ OOPClassTableObject classTableFor: image
+	^ memory reifyOop: memory classTableRootObj

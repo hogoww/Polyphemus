@@ -3,6 +3,7 @@ newFor: anAddress memory: memory
 
 	| handler |
 	(memory objectAt: anAddress) ifNotNil: [ :obj | ^ obj ].
+	
 	anAddress = 0 ifTrue: [ handler := { OOPImmediate } ].
 	handler := handler ifNil: [ 
 		       

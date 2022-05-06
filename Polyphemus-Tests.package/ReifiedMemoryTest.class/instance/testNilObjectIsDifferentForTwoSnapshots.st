@@ -2,6 +2,6 @@ tests
 testNilObjectIsDifferentForTwoSnapshots
 	| initialNilObject |
  	self newMemorySnapshot.
-	initialNilObject := reifiedMemory nilObject.
+	initialNilObject := reifiedMemory reifyOop: reifiedMemory nilObject.
 	self newMemorySnapshot.
-	self deny: reifiedMemory nilObject identicalTo: initialNilObject 
+	self deny: (reifiedMemory reifyOop: reifiedMemory nilObject) identicalTo: initialNilObject 

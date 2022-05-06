@@ -1,3 +1,3 @@
 testing
 pageIndex
-	^ self classTable indexOf: address
+	^ self classTable indexFor: address
