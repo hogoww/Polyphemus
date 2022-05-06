@@ -1,3 +1,0 @@
-constants
-arrayClassIndexPun
-	^ 16

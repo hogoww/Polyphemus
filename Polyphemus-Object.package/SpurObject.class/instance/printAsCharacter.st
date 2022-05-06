@@ -1,3 +1,0 @@
-printing
-printAsCharacter
-	^ self shouldBeImplemented

@@ -1,5 +1,5 @@
 testing
-classTableFor: anImage
+classTableFor: aMemory
   ^ ClassTableObjects 
-		at: anImage 
-		ifAbsentPut: [ super on: anImage memory classTableRootObj image: anImage ]
+		at: aMemory 
+		ifAbsentPut: [ super on: aMemory classTableRootObj memory: aMemory ]

@@ -1,3 +1,3 @@
 testing
 isNilOop
-	^ self = image nilObject
+	^ self = memory nilObject

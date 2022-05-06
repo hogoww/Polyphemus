@@ -1,3 +1,3 @@
 tests
 reifyOop: anAddress
-	^ OOPAbstractEntity newFor: anAddress image: image
+	^ OOPAbstractEntity newFor: anAddress memory: memory
