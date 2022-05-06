@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "OOPAbstractObject",
+	"category" : "Polyphemus-Object-spurObjects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"ClassTableObjects"
+	],
+	"instvars" : [ ],
+	"name" : "OOPClassTablePageObject",
+	"type" : "normal"
+}
