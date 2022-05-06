@@ -1,4 +1,4 @@
 tests-classTable
 testClassTableCreation
-	self assert: (OOPClassTableObject classTableFor: image) address equals: memory classTableRootObj
+	self assert: (OOPClassTableObject classTableFor: memory) address equals: memory classTableRootObj
 	

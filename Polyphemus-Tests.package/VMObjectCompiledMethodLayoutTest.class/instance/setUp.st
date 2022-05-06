@@ -3,5 +3,5 @@ setUp
 
 	super setUp.
 	memory allOldSpaceObjectsDo: [ :oop | 
-		(OOPCompiledMethod canHandle: oop image: image) 
+		(OOPCompiledMethod canHandle: oop image: memory) 
 			ifTrue: [ ^ compiledMethodObject := self reifyOop: oop ] ].

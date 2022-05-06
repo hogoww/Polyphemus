@@ -1,9 +1,8 @@
 instance creation
-canHandle: anAddress image: image
+canHandle: anAddress image: memory
 	"is the class or superclass of the class of the object String, known inside the SpecialObjectArray"
-	| memory oopClass oopSuperClass |
+	|  oopClass oopSuperClass |
 	[	
-		memory := image memory.
 		oopClass := memory classForClassTag: (memory fetchClassTagOf: anAddress).
 		oopSuperClass := memory fetchPointer: 0 ofObject: oopClass.
 	] on: AssertionFailure do: [ ^ false ].
