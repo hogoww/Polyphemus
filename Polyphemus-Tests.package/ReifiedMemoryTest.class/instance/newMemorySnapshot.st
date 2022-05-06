@@ -1,4 +1,3 @@
 running
-setUp
-	self setUpUsingImage.
+newMemorySnapshot
 	reifiedMemory := ReifiedMemory on: memory

@@ -1,3 +1,3 @@
 instance creation
-canHandle: anAddress memory: image
+canHandle: anAddress memory: aMemory
 	^ false

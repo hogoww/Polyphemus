@@ -2,5 +2,5 @@ tests-classTable
 testFirstClassTablePageIsInClassTable
 	| oop classTable |
 	oop := memory classTableFirstPage.
-	classTable := OOPClassTableObject classTableFor: memory.
+	classTable := self reifyOop: memory classTableRootObj..
 	self assert: (classTable isInClassTable: oop)

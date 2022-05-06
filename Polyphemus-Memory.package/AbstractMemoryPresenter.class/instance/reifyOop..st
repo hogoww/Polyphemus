@@ -1,3 +1,3 @@
 building
 reifyOop: anOop
-	^ OOPAbstractEntity newFor: anOop memory: interpreter objectMemory
+	^ OOPAbstractEntity newFor: anOop memory: reifiedMemory

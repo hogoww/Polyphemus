@@ -1,10 +1,10 @@
 printing
 objectNameIfAny
 	| className |
-	address = memory nilObject ifTrue: [ ^ #nilObject ].
-	address = memory trueObject ifTrue: [ ^ #trueObject ].
-	address = memory falseObject ifTrue: [ ^ #falseObject ].
-	address = memory specialObjectsOop ifTrue: [ ^ #specialObjectArray ].
+	memory nilObject = address ifTrue: [ ^ #nilObject ].
+	memory trueObject = address ifTrue: [ ^ #trueObject ].
+	memory falseObject = address ifTrue: [ ^ #falseObject ].
+	memory specialObjectsOop = address ifTrue: [ ^ #specialObjectArray ].
 	self isClassTablePage = 0 ifFalse: [ ^ #classTablePage ].
 
 	className := self oopClass className.

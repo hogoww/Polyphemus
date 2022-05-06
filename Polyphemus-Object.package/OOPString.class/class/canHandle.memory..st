@@ -1,10 +1,10 @@
 instance creation
-canHandle: anAddress memory: memory
+canHandle: anAddress memory: aMemory
 	"is the class or superclass of the class of the object String, known inside the SpecialObjectArray"
 	|  oopClass oopSuperClass |
 	[	
-		oopClass := memory classForClassTag: (memory fetchClassTagOf: anAddress).
-		oopSuperClass := memory fetchPointer: 0 ofObject: oopClass.
+		oopClass := aMemory classForClassTag: (aMemory fetchClassTagOf: anAddress).
+		oopSuperClass := aMemory fetchPointer: 0 ofObject: oopClass.
 	] on: AssertionFailure do: [ ^ false ].
 
-	^ oopClass = memory classString or: [ oopSuperClass = memory classString ]
+	^ oopClass = aMemory classString or: [ oopSuperClass = aMemory classString ]

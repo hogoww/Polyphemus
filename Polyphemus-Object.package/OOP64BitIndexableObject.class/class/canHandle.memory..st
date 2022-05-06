@@ -1,3 +1,3 @@
 instance creation
-canHandle: anAddress memory: image
-	^ (image formatOf: anAddress) = 9
+canHandle: anAddress memory: aMemory
+	^ (aMemory formatOf: anAddress) = 9

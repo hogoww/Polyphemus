@@ -1,4 +1,4 @@
 instance creation
-canHandle: anAddress memory: image
+canHandle: anAddress memory: aMemory
 	"only created explicitly, it is the default"
-	^ image isOopCompiledMethod: anAddress
+	^ aMemory isOopCompiledMethod: anAddress

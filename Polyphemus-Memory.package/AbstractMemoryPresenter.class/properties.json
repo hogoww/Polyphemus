@@ -12,7 +12,8 @@
 		"scaling",
 		"queryInput",
 		"updateOutput",
-		"updateBlock"
+		"updateBlock",
+		"reifiedMemory"
 	],
 	"name" : "AbstractMemoryPresenter",
 	"type" : "normal"

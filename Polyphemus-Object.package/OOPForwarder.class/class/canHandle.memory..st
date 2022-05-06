@@ -1,3 +1,3 @@
 instance creation
-canHandle: anAddress memory: image
-	^ image isUnambiguouslyForwarder: anAddress
+canHandle: anAddress memory: aMemory
+	^ aMemory isUnambiguouslyForwarder: anAddress

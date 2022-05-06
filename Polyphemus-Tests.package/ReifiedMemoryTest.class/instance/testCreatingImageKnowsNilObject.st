@@ -1,3 +1,0 @@
-tests
-testCreatingImageKnowsNilObject
-	self assert: reifiedImage nilObject isNilOop
