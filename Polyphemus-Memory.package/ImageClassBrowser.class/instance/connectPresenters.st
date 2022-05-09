@@ -1,0 +1,4 @@
+initialization
+connectPresenters
+
+	self connectClassesPresenter
