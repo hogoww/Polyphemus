@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorPresenter",
+	"category" : "Polyphemus-Memory",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"classes",
+		"methods",
+		"reifiedMemory"
+	],
+	"name" : "ImageClassBrowser",
+	"type" : "normal"
+}
