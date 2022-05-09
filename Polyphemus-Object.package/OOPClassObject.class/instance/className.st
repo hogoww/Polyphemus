@@ -1,7 +1,12 @@
 testing
 className 
 "We assume this is a byteSymbol here"
+	| slot |
 	self numSlots < self class slotIndexForClassName ifTrue: [ ^ 'Bad class' ].
-	^ [ (self reifiedSlotAt: self class slotIndexForClassName) asString ]
+	slot := (self reifiedSlotAt: self class slotIndexForClassName).
+	^  slot isClassOop 
+		ifFalse: [ slot asString ]
+		ifTrue: [ slot className , ' class' ].
+"		]
 		on: Error 
-      do: [ (self reifiedSlotAt: self class slotIndexForClassName) asString , ' class']
+      do: [ (self reifiedSlotAt: self class slotIndexForClassName) asString , ]"

@@ -1,5 +1,5 @@
 initialization
-spacePresenterFor: aPresenter
+pageForPresenter: aPresenter
 
 	^ (SpNotebookPage 
 		title: aPresenter title
