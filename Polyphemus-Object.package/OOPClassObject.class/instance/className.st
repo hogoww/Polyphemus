@@ -4,7 +4,7 @@ className
 	| slot |
 	self numSlots < self class slotIndexForClassName ifTrue: [ ^ 'Bad class' ].
 	slot := (self reifiedSlotAt: self class slotIndexForClassName).
-	^  slot isClassOop 
+	^ self isMetaclassOop
 		ifFalse: [ slot asString ]
 		ifTrue: [ slot className , ' class' ].
 "		]
