@@ -1,6 +1,6 @@
-testing
-className 
-"We assume this is a byteSymbol here"
+accessing
+className
+	"We assume this is a byteSymbol here"
 	| slot |
 	self numSlots < self class slotIndexForClassName ifTrue: [ ^ 'Bad class' ].
 	slot := (self reifiedSlotAt: self class slotIndexForClassName).
