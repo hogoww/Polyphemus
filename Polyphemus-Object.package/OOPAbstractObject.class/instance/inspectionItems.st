@@ -1,6 +1,6 @@
 inspection
 inspectionItems
-	| items counter |
+	| items |
 
 	items := {
 		#address -> self printString.
@@ -12,13 +12,8 @@ inspectionItems
 		#pinned -> self isPinnedOop.
 		#space -> self spaceString.
 		#immutable -> self isImmutableOop.
-		#numSlots -> self numSlots.	
 		} asOrderedCollection .
 
-	counter := 0.
-	self allSlots collect: [ :aSlot | 
-		counter := counter + 1.
-		('slot', counter printString) -> aSlot.
-		] into: items.
+	items addAll: self containedInspectionItems.
 
 	^ items

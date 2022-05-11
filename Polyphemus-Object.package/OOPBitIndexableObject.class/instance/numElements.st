@@ -1,3 +1,3 @@
 accessing
-numIndexed
+numElements
 	^ memory numBytesOf: address
