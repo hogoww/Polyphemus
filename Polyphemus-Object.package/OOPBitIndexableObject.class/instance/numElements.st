@@ -1,3 +1,3 @@
 accessing
 numElements
-	^ memory numBytesOf: address
+	^ self subclassResponsibility
