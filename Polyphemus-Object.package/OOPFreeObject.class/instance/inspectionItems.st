@@ -3,7 +3,7 @@ inspectionItems
 	| items |
 
 	items := {
-		#size -> self byteSizeOop.
+		#size -> self oopByteSize.
 		}.
 		
 	^ items
