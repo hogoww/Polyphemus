@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "OOPAbstractClass",
+	"super" : "OOPAbstractObject",
 	"category" : "Polyphemus-Object-oop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OOPClassObject",
+	"name" : "OOPAbstractClass",
 	"type" : "normal"
 }
