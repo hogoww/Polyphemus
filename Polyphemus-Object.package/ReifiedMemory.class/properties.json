@@ -8,7 +8,8 @@
 	"instvars" : [
 		"objects",
 		"memory",
-		"image"
+		"image",
+		"metaclass"
 	],
 	"name" : "ReifiedMemory",
 	"type" : "normal"

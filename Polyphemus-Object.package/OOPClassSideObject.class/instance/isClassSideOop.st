@@ -1,0 +1,3 @@
+testing
+isClassSideOop
+	^ true
