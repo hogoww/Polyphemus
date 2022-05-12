@@ -1,5 +1,5 @@
 initialization
 initializePresenters
-
-	memorySpace := self instantiate: SpRoassalPresenter.
-	memorySpace script: [ :canvas | self buildMemorySpaceIn: canvas ].
+	memorySpace := self newRoassal.
+	bitmap := self newEmptyBitmap.
+	memorySpace script: [ :canvas | self buildMemorySpaceIn: canvas ]

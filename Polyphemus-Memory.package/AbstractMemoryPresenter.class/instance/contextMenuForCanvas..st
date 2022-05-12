@@ -2,8 +2,7 @@ building
 contextMenuForCanvas: canvas
 	| menuActivable |
 	menuActivable := RSMenuActivable new.
-	menuActivable menuDo: [ :menu :element | 
-		
+	menuActivable menuDo: [ :menu :element |
 		menu 
 			add: 'No scaling'
 			target: self

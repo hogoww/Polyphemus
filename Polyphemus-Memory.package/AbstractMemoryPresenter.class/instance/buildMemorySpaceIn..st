@@ -1,15 +1,15 @@
 building
 buildMemorySpaceIn: aCanvas
 	| controller |
-	aCanvas addAll: (scopedOop collect: [ :anOop | self boxForOop: anOop ]).
-	
-	RSGridLayout new
-		gapSize: 1;
-		on: aCanvas nodes.
+	aCanvas add: bitmap.
+	self createBitmap.
 	controller := RSCanvasController new.
 	controller configuration
-		maxScale: 100000;
+		maxScale: 5;
 		minScale: 0.00001.
-	aCanvas addInteraction: controller.
+	
+	aCanvas 
+		addInteraction: controller;
+		when: RSMouseClick send: #mouseClick: to: self.
 	self contextMenuForCanvas: aCanvas.
 	aCanvas signalUpdate.
