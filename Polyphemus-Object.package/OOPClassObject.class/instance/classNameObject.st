@@ -1,5 +1,5 @@
 testing
 classNameObject
 	| slotIndex |
-	slotIndex := self class slotIndexForClassName.
+	slotIndex := self slotIndexForClassName.
 	^ self reifiedSlotAt: slotIndex

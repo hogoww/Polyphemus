@@ -1,3 +1,3 @@
 printing
-oopClassName 
+oopClassName
 	^ self classNameObject printString

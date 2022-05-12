@@ -1,9 +1,11 @@
 initialization
 initializeClassesPresenter
 
+	| classesObjects |
 	classes := self newList.
+	classesObjects := (reifiedMemory select: [ :anOop | anOop isClassOop ]).
 	classes
-		display: [ :class | class className ];
+		display: [ :class | class oopClassName ];
 		displayIcon: [ :class | class systemIcon ];
-		sortingBlock: [ :a :b | a className asString < b className asString ];
-		items: (reifiedMemory select: [ :anOop | anOop isClassOop ])
+		sortingBlock: [ :a :b | a oopClassName asString < b oopClassName asString ];
+		items: classesObjects
