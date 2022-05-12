@@ -1,4 +1,0 @@
-testing
-isMetaclassOop
-
-	^ false
