@@ -1,3 +1,3 @@
 testing
 printOn: aStream
-	self className printOn: aStream
+	self oopClassName printOn: aStream
