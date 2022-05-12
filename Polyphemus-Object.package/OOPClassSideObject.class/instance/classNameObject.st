@@ -1,5 +1,5 @@
 printing
 classNameObject
 	| slotIndex |
-	slotIndex := self class slotIndexForMetaClassName.
+	slotIndex := self slotIndexForClassName.
 	^ (self reifiedSlotAt: slotIndex) classNameObject

@@ -1,0 +1,3 @@
+accessing
+oopInstanceSide
+	^ self subclassResponsibility
