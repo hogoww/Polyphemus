@@ -1,4 +1,7 @@
 query
 instancesOop
-	^ memory select: [ :anOop |
-		anOop oopClass address = address ]
+	| res | 
+	res := OrderedCollection new.
+	 memory allObjectsDo: [ :anOop|
+		(memory classForClassTag: (memory fetchClassTagOf: anOop)) = address ifTrue: [ res add: anOop ] ].
+	^ res
