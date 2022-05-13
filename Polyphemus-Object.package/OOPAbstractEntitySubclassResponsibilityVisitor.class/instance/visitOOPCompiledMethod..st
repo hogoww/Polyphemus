@@ -1,0 +1,4 @@
+visiting
+visitOOPCompiledMethod: anOOPCompiledMethod
+
+	self subclassResponsibility

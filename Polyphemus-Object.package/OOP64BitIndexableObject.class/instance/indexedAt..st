@@ -1,4 +1,3 @@
-accessing-slots
+accessing
 indexedAt: anIndex
-	"For 64 bits indexable, slotAt is enough"
-	^ self slotAt: anIndex
+	^ self fetchPointer: anIndex - 1

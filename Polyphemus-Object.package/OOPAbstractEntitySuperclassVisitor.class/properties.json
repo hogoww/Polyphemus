@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OOPAbstractEntityAbstractVisitor",
+	"category" : "Polyphemus-Object-visitor",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OOPAbstractEntitySuperclassVisitor",
+	"type" : "normal"
+}

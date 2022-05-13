@@ -1,3 +1,3 @@
-coloring
+colors
 initialColorForSelectedObject
-	^ Color purple
+	^ Color green

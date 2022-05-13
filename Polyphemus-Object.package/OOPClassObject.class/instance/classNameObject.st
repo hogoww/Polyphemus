@@ -1,3 +1,5 @@
-testing
+accessing
 classNameObject
-	^ self reifiedSlotAt: self class slotIndexForClassName
+	| slotIndex |
+	slotIndex := self slotIndexForClassName.
+	^ self reifiedSlotAt: slotIndex

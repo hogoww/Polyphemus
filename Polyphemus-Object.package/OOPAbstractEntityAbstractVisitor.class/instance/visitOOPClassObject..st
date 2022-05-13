@@ -1,0 +1,4 @@
+visiting
+visitOOPClassObject: anOOPClassObject
+
+	

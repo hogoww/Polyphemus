@@ -1,9 +1,11 @@
-accessing
+initialization
 initializeObjectsFromMemory
 	"Pre creating it allows to create class table pages"
-	self preCreateObjects.
+	self setUpMetaclass.
+	self setUpIsCandleImage.
 	
-	memory allNewSpaceObjectsDo: [ :anOop | 
+	self preCreateObjects.
+	self setUpStringClasses.
+	memory allObjectsDo: [ :anOop | 
 		self objectAt: anOop put: (self reifyOop: anOop) ].
-	memory allOldSpaceObjectsDo: [ :anOop |
-		self objectAt: anOop put: (self reifyOop: anOop) ].
+	

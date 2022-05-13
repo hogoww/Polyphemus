@@ -1,0 +1,3 @@
+accessing
+oopClassSide
+	^ self oopClass

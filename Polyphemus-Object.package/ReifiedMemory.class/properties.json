@@ -8,7 +8,10 @@
 	"instvars" : [
 		"objects",
 		"memory",
-		"image"
+		"image",
+		"metaclass",
+		"isCandleImage",
+		"stringClasses"
 	],
 	"name" : "ReifiedMemory",
 	"type" : "normal"

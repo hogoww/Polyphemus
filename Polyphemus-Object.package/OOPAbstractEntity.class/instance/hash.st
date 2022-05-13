@@ -1,0 +1,3 @@
+inspection
+hash
+	^ address hash

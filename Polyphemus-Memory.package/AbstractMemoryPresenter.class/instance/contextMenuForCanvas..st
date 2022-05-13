@@ -1,4 +1,4 @@
-building
+updating
 contextMenuForCanvas: canvas
 	| menuActivable |
 	menuActivable := RSMenuActivable new.

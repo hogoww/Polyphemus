@@ -1,0 +1,3 @@
+accessing
+classNameObject
+	^ self subclassResponsibility

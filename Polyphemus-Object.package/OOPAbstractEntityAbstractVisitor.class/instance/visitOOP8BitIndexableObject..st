@@ -1,0 +1,4 @@
+visiting
+visitOOP8BitIndexableObject: anOOP8BitIndexableObject
+
+	

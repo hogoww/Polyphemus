@@ -5,4 +5,4 @@ testSmallIntegerClassClassName
 		(memory fetchClassOf: 
 			(memory fetchClassOf: 
 				(memory integerObjectOf: 1))).
-	self assert: smallIntegerClass className equals: 'PCSmallInteger class'
+	self assert: smallIntegerClass oopClassName equals: 'PCSmallInteger class'

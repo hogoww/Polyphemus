@@ -1,0 +1,4 @@
+visiting
+visitOOPFreeObject: anOOPFreeObject
+
+	

@@ -1,0 +1,3 @@
+accessing
+numElements
+	^ self subclassResponsibility

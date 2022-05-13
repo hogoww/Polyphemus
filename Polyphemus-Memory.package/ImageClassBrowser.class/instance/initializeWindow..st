@@ -2,5 +2,5 @@ initialization
 initializeWindow: aWindowPresenter
 
 	aWindowPresenter
-		title: 'Class Browser';
+		title: self title;
 		initialExtent: 800 @ 600

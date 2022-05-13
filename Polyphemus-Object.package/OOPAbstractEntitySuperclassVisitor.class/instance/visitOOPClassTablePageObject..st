@@ -1,0 +1,4 @@
+visiting
+visitOOPClassTablePageObject: anOOPClassTablePageObject
+
+	^ self visitOOPAbstractObject: anOOPClassTablePageObject

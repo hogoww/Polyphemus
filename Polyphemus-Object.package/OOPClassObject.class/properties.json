@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "OOPAbstractObject",
+	"super" : "OOPAbstractClass",
 	"category" : "Polyphemus-Object-oop",
 	"classinstvars" : [ ],
 	"pools" : [ ],

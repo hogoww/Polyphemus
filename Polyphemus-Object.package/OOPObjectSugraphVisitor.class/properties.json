@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "OOPAbstractEntitySuperclassVisitor",
+	"category" : "Polyphemus-Object-visitor",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"subgraph",
+		"layer",
+		"rootObject"
+	],
+	"name" : "OOPObjectSugraphVisitor",
+	"type" : "normal"
+}

@@ -5,8 +5,9 @@ preCreateObjects
 	
 	self objectAt: memory classTableRootObj put: classTableObject.
 
-	classTablePages := classTableObject allClassTablePages reject: [ :aSlot | aSlot isNilOop ].
+	classTablePages := classTableObject allClassTablePages.
 	classTablePages do: [ :aClassTablePage | | classTablePage |
 		"At this point, the class table page is missidentified as a regular object"
 		classTablePage := OOPClassTablePageObject on: aClassTablePage address memory: self.
-		self objectAt: aClassTablePage address put: classTablePage ]
+		classTableObject registerPage: classTablePage. 
+		self objectAt: aClassTablePage address put: classTablePage ].
