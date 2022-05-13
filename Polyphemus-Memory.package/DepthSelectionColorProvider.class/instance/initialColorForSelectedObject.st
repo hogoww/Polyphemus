@@ -1,3 +1,3 @@
 colors
 initialColorForSelectedObject
-	^ Color yellow
+	^ Color green
