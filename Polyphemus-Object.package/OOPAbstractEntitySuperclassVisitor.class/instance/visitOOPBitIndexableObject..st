@@ -1,0 +1,4 @@
+visiting
+visitOOPBitIndexableObject: anOOPBitIndexableObject
+
+	^ self visitOOPAbstractObject: anOOPBitIndexableObject

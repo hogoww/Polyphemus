@@ -1,0 +1,4 @@
+visiting
+visitOOPAbstractObject: anOOPAbstractObject
+
+	self subclassResponsibility

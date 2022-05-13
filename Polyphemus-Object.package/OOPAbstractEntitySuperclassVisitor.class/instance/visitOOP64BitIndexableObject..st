@@ -1,0 +1,4 @@
+visiting
+visitOOP64BitIndexableObject: anOOP64BitIndexableObject
+
+	^ self visitOOPBitIndexableObject: anOOP64BitIndexableObject

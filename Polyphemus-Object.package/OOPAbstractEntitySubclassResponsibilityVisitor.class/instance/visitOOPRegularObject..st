@@ -1,0 +1,4 @@
+visiting
+visitOOPRegularObject: anOOPRegularObject
+
+	self subclassResponsibility
