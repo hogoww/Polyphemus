@@ -1,4 +1,4 @@
-as yet unclassified
+colors
 colorDepth3Object
   	^Color lightBlue
 	

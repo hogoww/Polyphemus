@@ -1,4 +1,4 @@
-description
+coloring
 selectionDepthFor: anOop
 	selection doWithIndex: [ :aCollection :iterator |
 		(aCollection includes: anOop) ifTrue: [ ^ iterator ] ].

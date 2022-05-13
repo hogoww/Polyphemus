@@ -1,4 +1,4 @@
-coloring
+colors
 colorForNonSelectedObject
 
 	^ Color gray

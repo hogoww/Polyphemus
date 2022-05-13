@@ -1,4 +1,4 @@
-as yet unclassified
+colors
 colorDepth1Object
   	^Color purple
 	
