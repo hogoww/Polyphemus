@@ -6,10 +6,10 @@ updateViewPort: evt
 		propertyAt: #viewport
 		ifAbsentPut: [ RSBitmap new ].
 	camera := mainCanvas propertyAt: #originalCamera.
+	camera ifNil: [ ^ self ].
 	rtree := mainCanvas propertyAt: #rtree.
 	newCanvas := RSCanvas new.
 	
-	"newCanvas color: Color transparent."
 	ext := mainCanvas extent.
 	scale := mainCanvas camera scale * camera scale.
 	

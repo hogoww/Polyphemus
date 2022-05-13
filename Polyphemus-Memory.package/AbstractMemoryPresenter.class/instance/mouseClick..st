@@ -8,7 +8,7 @@ mouseClick: evt
 	point := (camera fromPixelToSpace: evt position)+((camera canvas extent/2)/camera scale).
 
 	shapes := rtree nodesWithPoint: point.
-	shapes size traceCr.
-	shapes size = 1 ifFalse: [  ^ self ].
-	
-	"shapes first announce: evt class new."
+	mainCanvas removeInteractionIfPresent: RSMenuActivable.
+	(shapes
+		ifEmpty: [ camera canvas ]
+		ifNotEmpty: [ shapes first ]) announce: evt.

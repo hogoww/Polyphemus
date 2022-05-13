@@ -5,5 +5,4 @@ createNodes
 	RSGridLayout new
 		gapSize: 1;
 		on: shapes.
-	Transcript show: shapes size asString; show: ' elements! holy crap!!!';cr.
 	^ shapes
