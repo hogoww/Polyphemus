@@ -2,6 +2,7 @@ initialization
 initializeClassesPresenter
 
 	| classesObjects |
+	self halt.
 	classes := self newList.
 	classesObjects := (reifiedMemory select: [ :anOop | anOop isClassOop ]).
 	classes

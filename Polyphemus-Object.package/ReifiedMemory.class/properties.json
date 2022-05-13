@@ -10,7 +10,8 @@
 		"memory",
 		"image",
 		"metaclass",
-		"isCandleImage"
+		"isCandleImage",
+		"stringClasses"
 	],
 	"name" : "ReifiedMemory",
 	"type" : "normal"
