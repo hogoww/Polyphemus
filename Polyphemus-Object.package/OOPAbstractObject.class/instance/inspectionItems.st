@@ -7,7 +7,7 @@ inspectionItems
 		#header -> (self oopHeader printStringBase: 2).
 		#class -> self oopClass.
 		#oopClassTag -> self oopClassTag.
-		#format -> self oopFormat.
+		#format -> self oopFormatName.
 		#hash -> self oopHash.
 		#pinned -> self isPinnedOop.
 		#space -> self spaceString.
