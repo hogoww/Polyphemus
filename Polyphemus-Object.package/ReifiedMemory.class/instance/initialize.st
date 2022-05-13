@@ -1,3 +1,3 @@
 initialization
 initialize 
-	stringClasses := Dictionary new.
+	stringClasses := OrderedCollection new.

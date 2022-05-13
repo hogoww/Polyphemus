@@ -9,4 +9,5 @@ preCreateObjects
 	classTablePages do: [ :aClassTablePage | | classTablePage |
 		"At this point, the class table page is missidentified as a regular object"
 		classTablePage := OOPClassTablePageObject on: aClassTablePage address memory: self.
+		classTableObject registerPage: classTablePage. 
 		self objectAt: aClassTablePage address put: classTablePage ].

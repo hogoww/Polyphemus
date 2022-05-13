@@ -1,4 +1,4 @@
-testing
+accessing
 classNameObject
 	| slotIndex |
 	slotIndex := self slotIndexForClassName.
