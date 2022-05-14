@@ -1,4 +1,3 @@
 query
 instancesOop
-	^ memory select: [ :anOop |
-		anOop oopClass = self ]
+	^ memory select: [ :anOop | anOop oopClass = self ]
