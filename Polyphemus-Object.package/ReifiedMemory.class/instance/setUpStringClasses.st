@@ -6,8 +6,7 @@ setUpStringClasses
 	stringClassAddress := isCandleImage
 		ifFalse: [ memory superclassOf: memory classString ]
 		ifTrue: [ memory classString ].
-	stringClasses addAll: (self allClassesOop
-		select: [ :aClass | 
-			aClass oopSuperclass = stringClassAddress 
-			or: [ aClass oopSuperclass isNilOop not
-				and: [ aClass oopSuperclass oopSuperclass = stringClassAddress ]]]).
+	stringClasses addAll: (self classesOopAddresses
+		select: [ :aClass | (memory superclassOf: aClass) = stringClassAddress 
+			or: [ ((memory superclassOf: aClass) ~= memory nilObject)
+				and: [ (memory superclassOf: (memory superclassOf: aClass)) = stringClassAddress  ]]]).

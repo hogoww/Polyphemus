@@ -1,3 +1,5 @@
 enumerating
 allClassesOop
-	^ (classTablePages flatCollect: [ :aClassTablePage | aClassTablePage allClassesOop ]) asSet
+	^ (classTablePages flatCollect: [ :aClassTablePage |
+		aClassTablePage allClassesOop
+		]) asSet
