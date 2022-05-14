@@ -1,4 +1,4 @@
 running
 imageName
 	"Prepared to one day enable parametrization testing"
-	^ '64BitImage.image'
+	^ 'candle64Bit.image'
