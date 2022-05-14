@@ -9,6 +9,8 @@ testClassInstancesOf
 
 	newObjectOop := memory instantiateClass: classOop.
 	self deny: newObjectOop isNil.
+	
+	reifiedMemory update.
 	classObject := self reifyOop: classOop.
 	
-	self assert: classObject instancesOop equals: { newObjectOop } asOrderedCollection  
+	self assert: classObject instancesOop keys equals: { newObjectOop }  
