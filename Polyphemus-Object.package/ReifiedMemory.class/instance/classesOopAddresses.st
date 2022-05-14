@@ -1,3 +1,3 @@
 accessing
-classesOop
+classesOopAddresses
 	^ (self reifyOop: memory classTableRootObj) collectClassesAddresses
