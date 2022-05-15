@@ -1,8 +1,8 @@
 running
 setUp
 	super setUp.
-	newSpace := (NewSpacePresenter openOn: interpreter) presenter.
+	newSpace := (FlatSpacePresenter openOn: interpreter) presenter.
 	newSpace setScopeToNewSpace.
-	oldSpace := (OldSpacePresenter openOn: interpreter) presenter.
+	oldSpace := (FlatSpacePresenter openOn: interpreter) presenter.
 	oldSpace setScopeToOldSpace.
 	self updateSpaces
