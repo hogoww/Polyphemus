@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OOPClassObject",
+	"name" : "OOPClassInstanceSideObject",
 	"type" : "normal"
 }
