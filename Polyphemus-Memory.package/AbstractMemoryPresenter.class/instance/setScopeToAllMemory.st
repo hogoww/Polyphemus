@@ -1,3 +1,4 @@
 memoryScoping
 setScopeToAllMemory
-	^ scopingBlock := [ :anOop | true ]
+	scopingBlock := [ :anOop | true ].
+	self updateScope.

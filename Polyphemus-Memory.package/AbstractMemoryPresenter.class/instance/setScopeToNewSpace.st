@@ -1,3 +1,4 @@
 memoryScoping
 setScopeToNewSpace
-	^ scopingBlock := [ :anOop | anOop isOldOop not ]
+	scopingBlock := [ :anOop | anOop isOldOop not ].
+	self updateScope.
