@@ -1,7 +1,7 @@
 initialization
 initializePresenters
 
-	memoryPresenter := self spacePresenterClass newOn: interpreter.
+	memoryPresenter := AbstractMemoryPresenter newOn: interpreter.
 	
 	queryWidget := self instantiate: QueryWidget. 
 	

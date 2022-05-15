@@ -1,3 +1,3 @@
 initialization
 update
-	^ self initializeObjectsFromMemory
+	^ self snapshotMemory

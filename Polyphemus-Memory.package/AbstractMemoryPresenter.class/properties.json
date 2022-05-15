@@ -13,7 +13,8 @@
 		"queryInput",
 		"updateOutput",
 		"updateBlock",
-		"reifiedMemory"
+		"reifiedMemory",
+		"scopingBlock"
 	],
 	"name" : "AbstractMemoryPresenter",
 	"type" : "normal"

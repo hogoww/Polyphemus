@@ -2,6 +2,6 @@ running
 testOneObjectCreatesOneCluster
 	| res |
 	self newZeroSizedObject.
-	compactSpace updateScope.
+	compactSpace updateMemorySpace.
 	res := compactSpace clusterScopeByColor.
 	self assert: res size equals: 1

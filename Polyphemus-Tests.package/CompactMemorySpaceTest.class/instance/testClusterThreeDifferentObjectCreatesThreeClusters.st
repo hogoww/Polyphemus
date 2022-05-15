@@ -7,6 +7,6 @@ testClusterThreeDifferentObjectCreatesThreeClusters
 	objectOop := self reifyOop: self newZeroSizedObject.
 	objectOop pinObjectOop.
 	
-	compactSpace updateScope.
+	compactSpace updateMemorySpace.
 	res := compactSpace clusterScopeByColor.
 	self assert: res size equals: 3
