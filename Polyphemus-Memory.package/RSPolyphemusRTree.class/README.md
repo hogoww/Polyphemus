@@ -1,0 +1,1 @@
+This RTree is prepared for PolyphemusRTree to have a balanced tree

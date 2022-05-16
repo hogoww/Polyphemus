@@ -13,7 +13,9 @@
 		"queryInput",
 		"updateOutput",
 		"updateBlock",
-		"reifiedMemory"
+		"reifiedMemory",
+		"bitmap",
+		"nodes"
 	],
 	"name" : "AbstractMemoryPresenter",
 	"type" : "normal"
