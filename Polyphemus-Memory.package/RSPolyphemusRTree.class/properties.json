@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "akevalion 5/12/2022 10:09",
+	"super" : "RSRenderTree",
+	"category" : "Polyphemus-Memory-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "RSPolyphemusRTree",
+	"type" : "normal"
+}
