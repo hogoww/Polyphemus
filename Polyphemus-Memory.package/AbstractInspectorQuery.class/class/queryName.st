@@ -1,3 +1,3 @@
 accessing
 queryName
-	^ #Scoping
+	^ self subclassResponsibility

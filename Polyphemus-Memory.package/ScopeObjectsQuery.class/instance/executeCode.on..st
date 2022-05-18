@@ -1,3 +1,3 @@
 execution
 executeCode: someCode on: aMemoryPresenter
-	^ self subclassResponsibility
+	aMemoryPresenter updateScopingTo: someCode
