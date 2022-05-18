@@ -1,0 +1,3 @@
+memoryScoping
+scopeToallMemory
+	^ [ :anOop | true ]
