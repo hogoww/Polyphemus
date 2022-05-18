@@ -1,3 +1,3 @@
 updating
 updateScope
-	^ self subclassResponsibility
+	scopedOop := reifiedMemory select: scopingBlock

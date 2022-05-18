@@ -1,7 +1,7 @@
 building
 buildMemorySpaceIn: aCanvas
 	| controller |
-	aCanvas addAll: (scopedOop collect: [ :anOop | self boxForOop: anOop ]).
+	self addElementsToCanvas: aCanvas.
 	
 	RSGridLayout new
 		gapSize: 1;

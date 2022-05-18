@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OldSpacePresenter",
+	"name" : "FlatSpacePresenter",
 	"type" : "normal"
 }

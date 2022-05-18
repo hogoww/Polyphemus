@@ -1,3 +1,0 @@
-initialization
-title
-	^ 'New Space'

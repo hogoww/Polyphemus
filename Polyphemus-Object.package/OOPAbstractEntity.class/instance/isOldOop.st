@@ -1,3 +1,3 @@
 testing
 isOldOop
-	^ self shouldBeImplemented
+	^ memory isOldObject: address
