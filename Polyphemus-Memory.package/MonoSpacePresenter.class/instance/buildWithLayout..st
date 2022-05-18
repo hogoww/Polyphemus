@@ -1,4 +1,6 @@
 showing
 buildWithLayout: aSpecLayout
-	super buildWithLayout: aSpecLayout.
+	| res |
+	res := super buildWithLayout: aSpecLayout.
 	memoryPresenter signalUpdate.
+	^ res
