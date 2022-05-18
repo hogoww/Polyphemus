@@ -1,11 +1,8 @@
 tests
 testAskingForMemoryOfSameInterpreterTwiceAnswerSameMemory
-
-	| initialSize postGCSize |
+	| initalMemory |
 	self newMemorySnapshot.
-	initialSize := ReifiedMemory cache size.
-	reifiedMemory := nil.
-	Smalltalk garbageCollect.
-	ReifiedMemory cleanupCache.
-	postGCSize := ReifiedMemory cache size.
-	self assert: postGCSize < initialSize
+	initalMemory := reifiedMemory.
+	self newMemorySnapshot.
+	self assert: initalMemory
+		identicalTo: reifiedMemory
