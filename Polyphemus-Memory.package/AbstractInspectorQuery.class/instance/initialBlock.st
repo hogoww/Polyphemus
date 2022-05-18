@@ -1,3 +1,3 @@
 accessing
 initialBlock
-	^ self subclassResponsibility 
+	^ [ :aBox | true ]

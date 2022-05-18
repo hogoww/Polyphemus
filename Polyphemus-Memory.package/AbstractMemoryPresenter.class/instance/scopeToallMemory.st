@@ -1,3 +1,3 @@
 memoryScoping
-scopeToallMemory
+scopeToAllMemory
 	^ [ :anOop | true ]

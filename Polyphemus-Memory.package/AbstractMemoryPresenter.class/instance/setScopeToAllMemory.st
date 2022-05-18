@@ -1,4 +1,4 @@
 memoryScoping
 setScopeToAllMemory
-	scopingBlock := self scopeToallMemory.
+	scopingBlock := self scopeToAllMemory.
 	self updateMemorySpace.
