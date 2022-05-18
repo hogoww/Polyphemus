@@ -1,3 +1,3 @@
-initialization
+configuring
 title
-	^ 'memory inspector'
+	^ 'Memory inspector'
