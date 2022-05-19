@@ -1,0 +1,4 @@
+visiting
+visitOOPClassInstanceSideObject: anOOPClassInstanceSideObject
+
+	^ self visitOOPAbstractClass: anOOPClassInstanceSideObject

@@ -1,0 +1,4 @@
+visiting
+visitOOPRememberSetObject: anOOPRememberSetObject
+
+	self subclassResponsibility

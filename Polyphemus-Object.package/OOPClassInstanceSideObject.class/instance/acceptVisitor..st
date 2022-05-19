@@ -1,4 +1,4 @@
 visiting
 acceptVisitor: aVisitor
 
-	^ aVisitor visitOOPClassObject: self
+	^ aVisitor visitOOPClassInstanceSideObject: self
