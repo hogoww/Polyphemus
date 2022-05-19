@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorPresenter",
+	"category" : "Polyphemus-Memory-Presenters",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"codePresenter",
+		"reifiedMemory"
+	],
+	"name" : "ReifiedMemoryScripter",
+	"type" : "normal"
+}

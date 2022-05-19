@@ -11,5 +11,6 @@ initializePresenters
 	notebook := self newNotebook.
 	notebook
 		addPage: (self pageForPresenter: (ImageClassBrowser newOn: interpreter));
+		addPage: (self pageForPresenter: ((ReifiedMemoryScripter newOn: interpreter)));
 		addPage: ((self pageForPresenter: newSpacePage) title: 'New Space');
 		addPage: ((self pageForPresenter: oldSpacePage) title: 'Old Space')
