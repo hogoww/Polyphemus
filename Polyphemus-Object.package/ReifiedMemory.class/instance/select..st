@@ -1,3 +1,3 @@
 enumerating
 select: aBlock
-	^ allObjects select: aBlock
+	^ objects select: aBlock

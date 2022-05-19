@@ -1,3 +1,3 @@
 enumerating
 collect: aBlock
-	^ allObjects collect: aBlock
+	^ objects collect: aBlock

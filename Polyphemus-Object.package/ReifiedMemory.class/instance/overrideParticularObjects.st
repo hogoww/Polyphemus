@@ -1,6 +1,9 @@
 initialization
-preCreateObjects
+overrideParticularObjects
 	| classTableObject classTablePages |
+	"We recreate a few specific objects with the right class
+	This is done after the initialization of all objects because we use an OrderedDictionary"
+	
 	classTableObject := (OOPClassTableObject on: memory classTableRootObj memory: self).
 	
 	self objectAt: memory classTableRootObj put: classTableObject.
