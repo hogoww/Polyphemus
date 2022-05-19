@@ -1,3 +1,3 @@
-initialization
+updating
 update
 	^ self snapshotMemory

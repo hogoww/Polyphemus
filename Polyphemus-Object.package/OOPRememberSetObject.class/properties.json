@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OOP64BitIndexableObject",
+	"category" : "Polyphemus-Object-oop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OOPRememberSetObject",
+	"type" : "normal"
+}
