@@ -4,6 +4,6 @@ testClusterTwoDifferentObjectCreatesTwoClusters
 	self newZeroSizedObject.
 	objectOop := self reifyOop: self newZeroSizedObject.
 	objectOop pinObjectOop.
-	compactSpace updateMemorySpace.
+	self updateSpace.
 	res := compactSpace clusterScopeByColor.
 	self assert: res size equals: 2

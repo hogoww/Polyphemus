@@ -4,5 +4,5 @@ testTwoDifferentObjectDisplayTwoBoxes
 	self newZeroSizedObject.
 	objectOop := self reifyOop: self newZeroSizedObject.
 	objectOop pinObjectOop.
-	compactSpace updateMemorySpace.
+	self updateSpace.
 	self assert: compactSpace allNodes size equals: 2

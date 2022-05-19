@@ -1,5 +1,5 @@
 running
 testOneObjectDisplayOneBox
 	self newZeroSizedObject.
-	compactSpace updateMemorySpace.
+	self updateSpace.
 	self assert: compactSpace allNodes size equals: 1
