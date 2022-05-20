@@ -3,7 +3,11 @@ contextMenuForCanvas: canvas
 	| menuActivable |
 	menuActivable := RSMenuActivable new.
 	menuActivable menuDo: [ :menu :element | 
-		
+		menu
+			add: 'Refresh memory'
+			target: self
+			selector: #updateMemorySpace.
+			
 		menu 
 			add: 'No scaling'
 			target: self

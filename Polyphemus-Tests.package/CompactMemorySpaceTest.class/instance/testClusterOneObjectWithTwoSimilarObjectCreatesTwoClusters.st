@@ -7,6 +7,6 @@ testClusterOneObjectWithTwoSimilarObjectCreatesTwoClusters
 	self newZeroSizedObject.
 	self newZeroSizedObject.
 	
-	compactSpace updateScope.
+	self updateSpace.
 	res := compactSpace clusterScopeByColor.
 	self assert: res size equals: 2

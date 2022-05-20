@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"classes",
-		"methods",
-		"reifiedMemory"
+		"methods"
 	],
 	"name" : "ImageClassBrowser",
 	"type" : "normal"

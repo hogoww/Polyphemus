@@ -1,4 +1,4 @@
-updating
+scaling
 updateScalingTo: aBlock
 
 	scaling := aBlock.

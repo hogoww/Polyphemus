@@ -4,7 +4,9 @@
 	"category" : "Polyphemus-Object-image",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"MemoryCache"
+	],
 	"instvars" : [
 		"objects",
 		"memory",

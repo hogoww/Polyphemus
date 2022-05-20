@@ -2,4 +2,4 @@ tests-classTable
 testClassTablePageAllClasses
 	| oop |
 	oop := self reifyOop: memory classTableFirstPage.
-	self assert: oop allClassAddresses size equals: 14
+	self assert: oop allClassesOop size equals: 14

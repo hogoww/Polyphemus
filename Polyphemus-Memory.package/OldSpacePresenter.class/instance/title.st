@@ -1,3 +1,0 @@
-showing
-title
-	^ 'Old Space'

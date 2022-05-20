@@ -1,0 +1,3 @@
+building
+addElementsToCanvas: aCanvas
+	self subclassResponsibility

@@ -1,5 +1,5 @@
 instance creation
 slotIndexForClassName 
 	^ memory isCandleImage
-		ifTrue: [ 4 ]
+		ifTrue: [ self class candleClassIndexForName ]
 		ifFalse: [ self class regularClassIndexForName ]
