@@ -1,3 +1,0 @@
-accessing
-reifiedMemory
-	^ reifiedMemory

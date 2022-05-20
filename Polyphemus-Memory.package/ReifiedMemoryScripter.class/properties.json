@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"codePresenter",
-		"reifiedMemory"
+		"codePresenter"
 	],
 	"name" : "ReifiedMemoryScripter",
 	"type" : "normal"
