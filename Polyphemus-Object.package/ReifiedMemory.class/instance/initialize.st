@@ -1,3 +1,3 @@
 initialization
 initialize 
-	stringClasses := OrderedCollection new.
+	stringClasses := Set new.
