@@ -10,8 +10,8 @@ containedInspectionItems
 	
 	counter := 0.
 	res := OrderedCollection new: self numSlots + 1.
-	res add: #selector -> self selector;
-		add: #methodClass -> self methodClass;
+	res
+		add: #hostMethod -> self hostMethodOop;
 		add: #methodHeader -> self methodHeader;
 		add: #numLiterals -> self numberOfLiterals.
 	counter := 0.

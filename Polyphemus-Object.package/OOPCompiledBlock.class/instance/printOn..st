@@ -1,3 +1,4 @@
 accessing
 printOn: aStream
-	aStream << 'Compiled Block'
+	aStream << '[...] in '.
+	self hostMethodOop printOn: aStream.
