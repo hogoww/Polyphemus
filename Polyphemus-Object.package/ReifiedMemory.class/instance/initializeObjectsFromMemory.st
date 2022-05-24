@@ -4,7 +4,8 @@ initializeObjectsFromMemory
 	self setUpMetaclass.
 	self setUpIsCandleImage.
 	self setUpStringClasses.
-
+	self setUpCompiledMethodClass.
+	
 	"fill the memory of all objects"
 	memory allObjectsDo: [ :anOop | 
 		self objectAt: anOop put: (self reifyOop: anOop) ].

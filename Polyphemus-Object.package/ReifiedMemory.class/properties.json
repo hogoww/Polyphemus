@@ -13,7 +13,8 @@
 		"image",
 		"metaclass",
 		"isCandleImage",
-		"stringClasses"
+		"stringClasses",
+		"compiledMethodClass"
 	],
 	"name" : "ReifiedMemory",
 	"type" : "normal"
