@@ -9,5 +9,5 @@ initializeClassesPresenter
 		display: [ :class | class oopClassName ];
 		displayIcon: [ :class | class systemIcon ];
 		sortingBlock: [ :a :b | a oopClassName asString < b oopClassName asString ];
-		contextMenu: self contextMenuForItems;
+		contextMenu: (self contextMenuForItems: classes);
 		items: classesObjects
