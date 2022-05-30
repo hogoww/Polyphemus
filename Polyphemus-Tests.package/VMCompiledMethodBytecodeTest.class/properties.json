@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorsTest",
+	"category" : "Polyphemus-Tests-layout",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"compiledMethodObject",
+		"oop",
+		"object"
+	],
+	"name" : "VMCompiledMethodBytecodeTest",
+	"type" : "normal"
+}
