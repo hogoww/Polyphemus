@@ -1,5 +1,5 @@
 accessing
-methodClass
+oopMethodClass
 	
 	| methodClassBinding |
 	methodClassBinding := self lastLiteral.

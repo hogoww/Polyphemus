@@ -1,5 +1,5 @@
 accessing
 printOn: aStream
-	self methodClass printOn: aStream.
+	self oopMethodClass printOn: aStream.
 	aStream << ' >> #'.
 	self selector printOn: aStream
