@@ -1,0 +1,4 @@
+visiting
+visitOOPCompiledCodeObject: anOOPCompiledCodeObject
+
+	self subclassResponsibility

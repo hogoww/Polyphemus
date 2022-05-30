@@ -1,0 +1,3 @@
+accessing
+hostMethodOop
+	^ self subclassResponsibility

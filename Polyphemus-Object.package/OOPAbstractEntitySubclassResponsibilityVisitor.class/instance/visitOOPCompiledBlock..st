@@ -1,0 +1,4 @@
+visiting
+visitOOPCompiledBlock: anOOPCompiledBlock
+
+	self subclassResponsibility

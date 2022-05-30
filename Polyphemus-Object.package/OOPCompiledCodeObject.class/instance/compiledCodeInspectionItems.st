@@ -1,0 +1,3 @@
+inspection
+compiledCodeInspectionItems
+	^ self subclassResponsibility 

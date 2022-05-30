@@ -1,4 +1,4 @@
 visiting
 acceptVisitor: aVisitor
 
-	^ aVisitor visitOOPCompiledMethod: self
+	^ aVisitor visitOOPCompiledBlock: self

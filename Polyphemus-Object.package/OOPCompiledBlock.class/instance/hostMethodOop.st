@@ -1,3 +1,3 @@
 accessing
 hostMethodOop
-	^ self lastLiteral hostMethodOop.
+	^ self lastLiteral hostMethodOop
