@@ -1,0 +1,3 @@
+accessing
+initialPC
+	^ 1
