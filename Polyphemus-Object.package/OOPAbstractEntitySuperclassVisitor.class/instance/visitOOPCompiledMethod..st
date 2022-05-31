@@ -1,4 +1,4 @@
 visiting
 visitOOPCompiledMethod: anOOPCompiledMethod
 
-	^ self visitOOPAbstractObject: anOOPCompiledMethod
+	^ self visitOOPCompiledCodeObject: anOOPCompiledMethod

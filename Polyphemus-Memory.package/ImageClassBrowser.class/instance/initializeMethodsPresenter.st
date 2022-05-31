@@ -5,4 +5,4 @@ initializeMethodsPresenter
 	methods
 		display: [ :method | method selector ];
 		sortingBlock: [ :a :b | a selector asString < b selector asString ];
-		contextMenu: self contextMenuForItems
+		contextMenu: (self contextMenuForItems: methods)
