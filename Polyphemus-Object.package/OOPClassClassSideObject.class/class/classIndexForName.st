@@ -1,0 +1,3 @@
+printing
+classIndexForName
+	^ 6

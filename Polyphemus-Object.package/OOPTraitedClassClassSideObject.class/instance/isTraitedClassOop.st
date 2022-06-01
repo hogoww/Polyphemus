@@ -1,0 +1,4 @@
+testing
+isTraitedClassOop 
+
+	^true
