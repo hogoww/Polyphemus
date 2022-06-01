@@ -1,4 +1,4 @@
 tests
 testMethodClass
 	self assert: 'PCMagnitude'
-		equals: compiledMethodObject methodClass printString
+		equals: compiledMethodObject oopMethodClass printString
