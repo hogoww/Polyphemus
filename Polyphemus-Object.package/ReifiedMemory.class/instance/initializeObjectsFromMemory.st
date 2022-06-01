@@ -9,8 +9,8 @@ initializeObjectsFromMemory
 	self setUpTraitedMetaclass.
 	
 	"fill the memory of all objects"
-	memory allObjectsDo: [ :anOop | 
-		self objectAt: anOop put: (self reifyOop: anOop) ].
+	[memory allObjectsDo: [ :anOop | 
+		self objectAt: anOop put: (self reifyOop: anOop) ]] onErrorDo: [self attemptObjectGraphTraversal.].
 	memory allFreeObjectsDo: [ :anOop | 
 		self objectAt: anOop put: (OOPFreeObject on: anOop memory: self) ].
 	"recreate explicitly a few objects, particularly the class table and class table pages"

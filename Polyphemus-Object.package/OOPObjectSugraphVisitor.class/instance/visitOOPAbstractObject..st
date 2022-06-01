@@ -6,5 +6,5 @@ visitOOPAbstractObject: anOopObject
 			a value > layer ifTrue: [ a value: layer ].
 			^ self ]
 		ifAbsent: [ subgraph at: anOopObject put: layer ].
-		
+			
 	anOopObject allSlots do: [ :aSlot | self visitObject: aSlot ]
