@@ -13,6 +13,7 @@ descriptionForColor: aColor
 	aColor = self pinnedOopColor ifTrue: [ ^ 'pinned object' ].
 	aColor = self regularOopColor ifTrue: [ ^ 'regular object' ].
 	aColor = self specialOopColor ifTrue: [ ^ 'special object' ].
+	aColor  = self abnormalOopColor ifTrue: [ ^ 'abnormal entity' ].
 	^'No description for this color'
 	
 	
