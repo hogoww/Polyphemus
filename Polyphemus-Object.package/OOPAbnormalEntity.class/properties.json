@@ -1,14 +1,12 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "OOPAbstractEntity",
 	"category" : "Polyphemus-Object-oop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"address",
-		"size",
-		"memory"
+		"size"
 	],
 	"name" : "OOPAbnormalEntity",
 	"type" : "normal"
