@@ -3,21 +3,21 @@ fillBlankBetweenOopStartingAt: lastReifiedObject for: foundOop
 
 	"Computing the first blank"
 
-	| supposedBuggedAddress anormalObjectSize anormalEntity anormalObjects |
+	| supposedBuggedAddress abnormalObjectSize abnormalEntity abnormalObjects |
 	foundOop ifEmpty: [ ^self ].
-	anormalObjects := OrderedCollection new.
+	abnormalObjects := OrderedCollection new.
 	supposedBuggedAddress := memory objectAfter:
 		                         lastReifiedObject address.
 	"This supposes addresses increments"
-	anormalObjectSize := (foundOop first address) - supposedBuggedAddress.
-	anormalObjectSize = 0
+	abnormalObjectSize := (foundOop first address) - supposedBuggedAddress.
+	abnormalObjectSize = 0
 		ifTrue: [ self error: 'We should have a blank else everything fine' ]
 		ifFalse: [ 
-			anormalEntity := OOPAnormalEntity
+			abnormalEntity := OOPAbnormalEntity
 				                 newFor: supposedBuggedAddress
-				                 size: anormalObjectSize
+				                 size: abnormalObjectSize
 				                 on: self.
-				anormalObjects add: anormalEntity].
+				abnormalObjects add: abnormalEntity].
 	"The objects should be contiguous, freeChunk are also represented by objects any disconstinuity is abnormal.
 Since we foundOop through roots we have great chance to miss entire object graph leaving blanks
 " 
@@ -31,11 +31,11 @@ Since we foundOop through roots we have great chance to miss entire object graph
 		                               - actualNextObjectAddress.
 		
 		sizeBetweenSuppoedAndActual = 0 ifFalse: [ 
-			anormalEntity := OOPAnormalEntity
+			abnormalEntity := OOPAbnormalEntity
 				                 newFor: supposedNextObjectAddress
 				                 size: sizeBetweenSuppoedAndActual
 				                 on: self.
-				anormalObjects add: anormalEntity ] ]].
+				abnormalObjects add: abnormalEntity ] ]].
 	
-		foundOop addAll: anormalObjects.
+		foundOop addAll: abnormalObjects.
 		foundOop sort.

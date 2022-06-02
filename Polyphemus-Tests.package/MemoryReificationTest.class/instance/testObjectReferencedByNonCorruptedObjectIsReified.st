@@ -18,4 +18,4 @@ testObjectReferencedByNonCorruptedObjectIsReified
 
 	self
 		assert: (reifiedMemory objectAt: corruptedObject) class 
-		equals: OOPAnormalEntity
+		equals: OOPAbnormalEntity
