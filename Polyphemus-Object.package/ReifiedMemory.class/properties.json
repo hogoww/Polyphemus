@@ -16,7 +16,8 @@
 		"stringClasses",
 		"compiledMethodClass",
 		"traitedMetaclass",
-		"metaclassForTrait"
+		"metaclassForTrait",
+		"flagErrorObjects"
 	],
 	"name" : "ReifiedMemory",
 	"type" : "normal"

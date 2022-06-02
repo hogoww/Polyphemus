@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Polyphemus-Object-oop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"address",
+		"size",
+		"memory"
+	],
+	"name" : "OOPAnormalEntity",
+	"type" : "normal"
+}
