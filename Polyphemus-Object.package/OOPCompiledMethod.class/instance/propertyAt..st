@@ -1,0 +1,3 @@
+accessing
+propertyAt: aString 
+	^ nil

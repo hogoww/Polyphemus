@@ -1,0 +1,3 @@
+accessing
+hasProperty: aString 
+	^ false

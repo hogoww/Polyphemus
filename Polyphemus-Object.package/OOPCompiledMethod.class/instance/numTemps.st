@@ -1,0 +1,3 @@
+accessing
+numTemps
+	^ 1
