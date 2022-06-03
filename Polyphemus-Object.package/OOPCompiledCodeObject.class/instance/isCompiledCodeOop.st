@@ -1,0 +1,3 @@
+accessing
+isCompiledCodeOop
+	^ true
