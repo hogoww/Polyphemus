@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"encoderClass"
-	],
+	"instvars" : [ ],
 	"name" : "OOPCompiledMethod",
 	"type" : "normal"
 }
