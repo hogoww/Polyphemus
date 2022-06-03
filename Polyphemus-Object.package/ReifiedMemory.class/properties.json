@@ -14,7 +14,9 @@
 		"metaclass",
 		"isCandleImage",
 		"stringClasses",
-		"compiledMethodClass"
+		"compiledMethodClass",
+		"traitedMetaclass",
+		"metaclassForTrait"
 	],
 	"name" : "ReifiedMemory",
 	"type" : "normal"

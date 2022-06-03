@@ -8,6 +8,8 @@ colorForOop: anOop
 	anOop isCompiledMethodOop ifTrue: [ ^ self compiledMethodOopColor ]. "
 		[ interpreter objectMemory isHid ] -> [ self usedOopColor ]"
 	anOop isContextOop ifTrue: [ ^ self contextOopColor ].
+	anOop isTraitOop ifTrue: [ ^ self traitOopColor  ].
+	anOop isClassTraitOop ifTrue: [ ^ self classTraitOopColor  ].
 	anOop isClassSideOop ifTrue: [ ^ self metaclassOopColor ].
 	anOop isClassOop ifTrue: [ ^ self classOopColor ].
 	anOop isHiddenOop ifTrue: [ ^ self specialOopColor ].

@@ -1,4 +1,4 @@
 instance creation
 canHandle: anAddress memory: aMemory
 	^ (aMemory isInClassTable: anAddress) and: [ 
-		(OOPClassSideObject canHandle: anAddress memory: aMemory) not ]
+		(OOPClassClassSideObject canHandle: anAddress memory: aMemory) not ]
