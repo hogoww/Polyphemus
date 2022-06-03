@@ -1,4 +1,4 @@
 accessing
 numberOfBytecodes
 	
-	^ (memory numBytesOf: address) - (self numSlots * memory wordSize)
+	^ self size - (self numSlots * memory wordSize)

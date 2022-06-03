@@ -1,3 +1,3 @@
 accessing
 initialPC
-	^ 1
+	^ self numSlots * memory wordSize + memory wordSize + 1
