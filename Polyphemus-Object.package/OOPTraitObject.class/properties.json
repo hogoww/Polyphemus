@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
-	"super" : "OOPAbstractClass",
+	"commentStamp" : "tr 6/1/2022 10:45",
+	"super" : "OOPClassInstanceSideObject",
 	"category" : "Polyphemus-Object-oop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OOPClassSideObject",
+	"name" : "OOPTraitObject",
 	"type" : "normal"
 }

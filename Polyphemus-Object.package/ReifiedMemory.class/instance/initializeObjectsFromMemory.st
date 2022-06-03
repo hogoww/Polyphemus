@@ -5,6 +5,8 @@ initializeObjectsFromMemory
 	self setUpIsCandleImage.
 	self setUpStringClasses.
 	self setUpCompiledMethodClass.
+	self setUpMetaclassForTrait.
+	self setUpTraitedMetaclass.
 	
 	"fill the memory of all objects"
 	memory allObjectsDo: [ :anOop | 

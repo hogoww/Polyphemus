@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OOPClassClassSideObject",
+	"category" : "Polyphemus-Object-oop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OOPClassTraitClassSideObject",
+	"type" : "normal"
+}
