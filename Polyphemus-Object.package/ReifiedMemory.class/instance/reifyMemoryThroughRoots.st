@@ -3,13 +3,17 @@ reifyMemoryThroughRoots
 
 	"For now take all already reified objects as Roots, may be changed in the future cause it add a lot of redundancy"
 
-	| roots foundOop lastKnownObject |
+	| roots foundOop lastKnownObject res |
 	roots := (self select: [ :obj | true ]) asOrderedCollection.
 	lastKnownObject := roots last.
 	foundOop := Set new.
 	roots do: [ :aRoot | 
 		aRoot ifNotNil: [ 
-			aRoot objectGraph do: [ :subgraph | 
+			res := OOPObjectMissingSubgraphVisitor new
+				toIgnore: objects keys;
+				rootObject: aRoot;
+				compute.
+				res do: [ :subgraph | 
 				subgraph do: [ :anOop | "Not sure of this heuristic, we could encounter an erronous object"
 					roots
 						remove: anOop
