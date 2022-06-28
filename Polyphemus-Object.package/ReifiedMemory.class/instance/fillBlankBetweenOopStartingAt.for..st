@@ -25,10 +25,9 @@ Since we foundOop through roots we have great chance to miss entire object graph
 		| nextOop supposedNextObjectAddress sizeBetweenSuppoedAndActual actualNextObjectAddress |
 		(foundOop last = anOop) ifFalse:[ .
 		nextOop := foundOop at: anIndex + 1.
-		supposedNextObjectAddress := memory objectAfter: anOop.
+		supposedNextObjectAddress := memory objectAfter: anOop address.
 		actualNextObjectAddress := nextOop address.
-		sizeBetweenSuppoedAndActual := supposedNextObjectAddress
-		                               - actualNextObjectAddress.
+		sizeBetweenSuppoedAndActual := actualNextObjectAddress - supposedNextObjectAddress.
 		
 		sizeBetweenSuppoedAndActual = 0 ifFalse: [ 
 			abnormalEntity := OOPAbnormalEntity
