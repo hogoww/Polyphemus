@@ -7,4 +7,4 @@ testCorruptFirstNonRootsObject
 	reifiedMemory := ReifiedMemory on: memory.
 	
 	self assert: reifiedMemory flagErrorObjects.
-	self assert: reifiedMemory objects size equals: 2473 
+	self assert: reifiedMemory numberOfElements equals: 2473 

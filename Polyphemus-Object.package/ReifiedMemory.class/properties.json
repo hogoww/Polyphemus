@@ -9,11 +9,13 @@
 	],
 	"instvars" : [
 		"objects",
+		"compressedObjects",
 		"memory",
 		"image",
 		"metaclass",
 		"isCandleImage",
 		"stringClasses",
+		"baseAddress",
 		"compiledMethodClass",
 		"traitedMetaclass",
 		"metaclassForTrait",

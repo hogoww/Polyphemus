@@ -1,3 +1,3 @@
 accessing
 objectAt: anAddress
-	^ objects at: anAddress ifAbsent: nil
+	^ objects at: anAddress - baseAddress >> 3 ifAbsent: nil

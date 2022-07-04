@@ -37,4 +37,3 @@ Since we foundOop through roots we have great chance to miss entire object graph
 				abnormalObjects add: abnormalEntity ] ]].
 	
 		foundOop addAll: abnormalObjects.
-		foundOop sort.

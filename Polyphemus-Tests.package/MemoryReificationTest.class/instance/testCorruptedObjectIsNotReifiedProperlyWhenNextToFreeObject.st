@@ -11,5 +11,4 @@ testCorruptedObjectIsNotReifiedProperlyWhenNextToFreeObject
 
 	reifiedMemory := ReifiedMemory on: memory.
 	
-	self assert: (reifiedMemory objectAt: lastOop) equals: nil.
-	self deny: lastOop equals: reifiedMemory lastKnownObject address
+	self assert: (reifiedMemory objectAt: lastOop) class equals: OOPAbnormalEntity.
