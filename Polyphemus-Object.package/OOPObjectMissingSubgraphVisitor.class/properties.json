@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"toIgnore"
+		"firstVisit",
+		"toIgnore",
+		"baseAddress"
 	],
 	"name" : "OOPObjectMissingSubgraphVisitor",
 	"type" : "normal"

@@ -1,6 +1,6 @@
 tests
 testGraphObjectOfTwoSlotsPointingToEachOtherDoesNotCreateAnExtraLevelOfDepth
-	| oop firstSlot secondSlot res toIgnore |
+	| oop firstSlot secondSlot res |
 	oop := self reifyOop: (self newObjectWithSlots: 2).
 	firstSlot := self reifyOop: (self newObjectWithSlots: 1).
 	secondSlot := self reifyOop: (self newObjectWithSlots: 1).
@@ -10,11 +10,9 @@ testGraphObjectOfTwoSlotsPointingToEachOtherDoesNotCreateAnExtraLevelOfDepth
 	firstSlot slotAt: 1 put: secondSlot.
 	secondSlot slotAt: 1 put: firstSlot. 
 	
-	toIgnore := OrderedCollection new.
-	toIgnore add: secondSlot.
-	
 	res := OOPObjectMissingSubgraphVisitor new
-		toIgnore: toIgnore;
+		baseAddress: memory newSpaceStart - memory wordSize;
+		toIgnore: { secondSlot };
 		rootObject: oop;
 		compute.
 		

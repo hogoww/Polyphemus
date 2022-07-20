@@ -19,7 +19,8 @@
 		"compiledMethodClass",
 		"traitedMetaclass",
 		"metaclassForTrait",
-		"flagErrorObjects"
+		"flagErrorObjects",
+		"lastKnownObject"
 	],
 	"name" : "ReifiedMemory",
 	"type" : "normal"
