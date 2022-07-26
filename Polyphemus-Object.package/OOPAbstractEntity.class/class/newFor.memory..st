@@ -10,13 +10,11 @@ newFor: anAddress memory: memory
     (OOPImmediate canHandle: anAddress memory: memory) ifTrue: [ 
 			           { OOPImmediate } ] ].
 	handler := handler ifNil: [ 
-		           OOPAbstractEntity allSubclasses select: [ :aSubclass | 
-			           aSubclass = OOPImmediate
-				           ifFalse: [ aSubclass canHandle: anAddress memory: memory ]
-				           ifTrue: false ] ].
+		SubclassesToEvaluate select: [ :aSubclass | 
+			aSubclass = OOPImmediate
+				ifFalse: [ aSubclass canHandle: anAddress memory: memory ]	
+				ifTrue: false ] ].
 
 
-	^ (handler ifEmpty: [ OOPRegularObject ] ifNotEmpty: [ 
-		   handler size > 1 
-        ifTrue: [ handler last ]
-							ifFalse: [ handler first ]]) on: anAddress memory: memory
+	^ (handler ifEmpty: [ OOPRegularObject ] ifNotEmpty: [ handler last ])
+		on: anAddress memory: memory
