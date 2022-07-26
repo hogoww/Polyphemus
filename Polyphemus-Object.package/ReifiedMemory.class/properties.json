@@ -10,7 +10,6 @@
 	"instvars" : [
 		"objects",
 		"memory",
-		"image",
 		"metaclass",
 		"isCandleImage",
 		"stringClasses",
