@@ -2,6 +2,7 @@ coloring
 colorForOop: anOop
 	"Forwarders are hidden objects, so we need to check for forwarder before hidden."
 	"Compiled method in the method builder have bad indexes. They have to be checked before hidden for now"
+	anOop isAbnormalOop ifTrue: [ ^ self abnormalOopColor ].
 	anOop isForwarderOop ifTrue: [ ^ self forwarderOopColor ].
 	anOop isPinnedOop ifTrue: [ ^ self pinnedOopColor ].
 	"(self memory isFreeOop: anOop) ifTrue: [ ^ self freeOopColor ]."

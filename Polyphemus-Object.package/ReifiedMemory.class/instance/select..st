@@ -1,3 +1,4 @@
 enumerating
 select: aBlock
-	^ (objects select: aBlock) values
+
+	^ compressedObjects select: aBlock

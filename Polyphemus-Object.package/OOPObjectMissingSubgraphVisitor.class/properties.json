@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "OOPObjectSugraphVisitor",
+	"category" : "Polyphemus-Object-visitor",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"firstVisit",
+		"toIgnore",
+		"baseAddress"
+	],
+	"name" : "OOPObjectMissingSubgraphVisitor",
+	"type" : "normal"
+}

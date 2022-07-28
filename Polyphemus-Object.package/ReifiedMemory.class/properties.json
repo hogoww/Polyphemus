@@ -9,13 +9,17 @@
 	],
 	"instvars" : [
 		"objects",
+		"compressedObjects",
 		"memory",
 		"metaclass",
 		"isCandleImage",
 		"stringClasses",
+		"baseAddress",
 		"compiledMethodClass",
 		"traitedMetaclass",
-		"metaclassForTrait"
+		"metaclassForTrait",
+		"flagErrorObjects",
+		"lastKnownObject"
 	],
 	"name" : "ReifiedMemory",
 	"type" : "normal"

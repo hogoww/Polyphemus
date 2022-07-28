@@ -8,4 +8,6 @@ testGraphObjectOfTwoSlotsPointingToEachOtherDoesNotCreateAnExtraLevelOfDepth
 	oop slotAt: 2 put: secondSlot.
 	firstSlot slotAt: 1 put: secondSlot.
 	secondSlot slotAt: 1 put: firstSlot. 
+	
 	self assert: oop objectGraph size equals: 2.
+	self assert: (oop objectGraph flatCollect: [ :o | o ])  size equals: 3.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "VMObjectGraphTest",
+	"category" : "Polyphemus-Tests-objectInspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "VMObjectMissingSubgraphTest",
+	"type" : "normal"
+}
