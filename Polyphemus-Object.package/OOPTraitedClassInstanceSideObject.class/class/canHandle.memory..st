@@ -1,4 +1,9 @@
-testing
+instance creation
 canHandle: anAddress memory: aMemory
-
-^ (aMemory fetchClassOf: (aMemory fetchClassOf: anAddress)) = aMemory traitedMetaclass
+	| traitedMetaclass |
+	(aMemory formatOf: anAddress) = 1 ifFalse: [ ^ false ].
+	
+	traitedMetaclass := aMemory traitedMetaclass.
+	traitedMetaclass ifNil: [ ^ false ].
+	
+	^ (aMemory fetchClassOf: (aMemory fetchClassOf: anAddress)) = traitedMetaclass
