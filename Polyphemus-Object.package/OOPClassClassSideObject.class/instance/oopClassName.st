@@ -1,3 +1,3 @@
 printing
 oopClassName
-	^ super oopClassName printString , ' class'
+	^ super oopClassName , ' class'

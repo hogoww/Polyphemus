@@ -1,3 +1,3 @@
 testing
 isStringOop
-	^ false
+	^ true
