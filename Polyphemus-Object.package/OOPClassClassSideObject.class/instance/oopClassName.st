@@ -1,3 +1,3 @@
 printing
 oopClassName
-	^ self classNameObject printString , ' class'
+	^ super oopClassName printString , ' class'
