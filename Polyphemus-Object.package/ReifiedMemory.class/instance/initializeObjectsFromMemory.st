@@ -19,7 +19,7 @@ initializeObjectsFromMemory
 		[ memory allObjectsDo: [ :anOop | 
 			bar value: anOop.
 			bar title: 'Generating Object at address: ' , anOop printString.
-			self objectAt: anOop put: (self reifyOop: anOop) ] ]
+			self objectAt: anOop put: (OOPAbstractEntity instantiateObject: anOop on: self) ] ]
 			on: Error
 			do: [:e |
 				bar title: 'Generating Objects with visitor, flying blind'.
