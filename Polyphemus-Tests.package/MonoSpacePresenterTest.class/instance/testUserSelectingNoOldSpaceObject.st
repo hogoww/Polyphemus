@@ -14,6 +14,7 @@ testUserSelectingNoOldSpaceObject
 		meta: false
 		control: false
 		option: false.
+		1halt.
 
 	self deny: oldSpace memoryPresenter allNodes size equals: 0.
 	oldSpace memoryPresenter allNodes do: [ :aBox | 
