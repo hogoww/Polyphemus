@@ -1,3 +1,4 @@
 instance creation
 canHandle: anAddress memory: aMemory
-	^ (aMemory fetchClassOf: anAddress) = aMemory metaclass
+	^ (aMemory formatOf: anAddress) = 1 and: [
+		(aMemory fetchClassOf: anAddress) = aMemory metaclass]

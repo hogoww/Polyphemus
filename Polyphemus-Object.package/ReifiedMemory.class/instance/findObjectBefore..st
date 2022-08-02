@@ -1,4 +1,4 @@
-as yet unclassified
+finding
 findObjectBefore: anOop
 
 	| anIndex |

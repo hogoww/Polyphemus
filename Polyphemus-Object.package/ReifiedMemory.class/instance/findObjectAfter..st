@@ -1,4 +1,4 @@
-as yet unclassified
+finding
 findObjectAfter: anOop
 
 	| anIndex max |

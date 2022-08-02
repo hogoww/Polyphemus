@@ -4,7 +4,9 @@
 	"category" : "Polyphemus-Object-oop",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"SubclassesToEvaluate"
+	],
 	"instvars" : [
 		"address",
 		"memory"
