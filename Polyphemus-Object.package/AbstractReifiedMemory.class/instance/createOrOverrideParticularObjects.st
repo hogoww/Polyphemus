@@ -1,5 +1,5 @@
 initialization
-overrideParticularObjects
+createOrOverrideParticularObjects
 	| classTableObject |
 	"We recreate a few specific objects with the right class
 	This is done after the initialization of all objects because we use an OrderedDictionary"

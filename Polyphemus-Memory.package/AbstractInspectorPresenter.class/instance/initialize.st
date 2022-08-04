@@ -1,4 +1,4 @@
 initialization
 initialize
-	reifiedMemory := ReifiedMemory on: interpreter objectMemory.
+	reifiedMemory := PreReifiedMemory on: interpreter objectMemory.
 	super initialize.

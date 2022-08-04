@@ -1,4 +1,4 @@
 running
 setUp
 	self setUpUsingImage.
-	reifiedMemory := ReifiedMemory on: memory
+	reifiedMemory := PreReifiedMemory on: memory

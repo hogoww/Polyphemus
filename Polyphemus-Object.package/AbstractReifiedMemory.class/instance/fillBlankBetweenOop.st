@@ -1,4 +1,4 @@
-accessing
+recovering
 fillBlankBetweenOop
 
 	| abnormalEntity nextOop max supposedNextObjectAddress actualNextObjectAddress sizeBetweenSupposedAndActual |

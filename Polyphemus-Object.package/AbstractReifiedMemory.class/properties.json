@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "VMSimulatorAccess",
 	"category" : "Polyphemus-Object-image",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -10,7 +10,6 @@
 	"instvars" : [
 		"objects",
 		"compressedObjects",
-		"memory",
 		"metaclass",
 		"isCandleImage",
 		"stringClasses",
@@ -21,6 +20,6 @@
 		"flagErrorObjects",
 		"lastKnownObject"
 	],
-	"name" : "ReifiedMemory",
+	"name" : "AbstractReifiedMemory",
 	"type" : "normal"
 }
