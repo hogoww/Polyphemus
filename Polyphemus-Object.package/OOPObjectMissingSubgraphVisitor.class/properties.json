@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "OOPObjectSugraphVisitor",
+	"super" : "OOPAbstractEntitySuperclassVisitor",
 	"category" : "Polyphemus-Object-visitor",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,7 +8,9 @@
 	"instvars" : [
 		"firstVisit",
 		"baseAddress",
-		"memory"
+		"memory",
+		"rootObject",
+		"subgraph"
 	],
 	"name" : "OOPObjectMissingSubgraphVisitor",
 	"type" : "normal"
