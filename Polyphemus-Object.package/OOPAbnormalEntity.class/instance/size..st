@@ -1,3 +1,4 @@
 setting
-size: anInteger 
+size: anInteger
+
 	size := anInteger

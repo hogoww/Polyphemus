@@ -1,4 +1,4 @@
 testing
 isAbnormalOop
 
-	^true
+	^ true
