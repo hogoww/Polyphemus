@@ -16,7 +16,7 @@ defaultEdenBytes
 	 and a lot of compactions.  So we now use 4Mb for 32-bits and 7Mb for 64-bits."
 
 	<inline: false>
-	^ 7 * 1024
+	^ 7 * 1024 * 1024
 
 	"Here are the expressions used to collect the above-mentioned figures:"
 	"freeStart - self newSpaceStart"

@@ -25,7 +25,7 @@ initializeObjectsFromMemory
 				self
 					objectAt: anOop
 					put: (OOPAbstractEntity instantiateObject: anOop on: self) ] ]
-				on: Error
+				on: OopIsNotAnObject
 				do: [ :e | 
 					bar title: 'Generating Objects with visitor, flying blind'.
 					lastKnownObject := self findObjectBefore: e oop.

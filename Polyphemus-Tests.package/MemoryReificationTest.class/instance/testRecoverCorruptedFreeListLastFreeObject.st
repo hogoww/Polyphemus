@@ -1,5 +1,5 @@
 tests
-testCorruptedFreeList
+testRecoverCorruptedFreeListLastFreeObject
 
 	| freeObjects |
 	reifiedMemory := ReifiedMemory onWithFlagFreeTree: memory.
