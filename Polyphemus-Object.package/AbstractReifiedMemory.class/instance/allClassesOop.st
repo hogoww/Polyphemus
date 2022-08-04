@@ -1,3 +1,3 @@
 querying
 allClassesOop
-	^ (self reifyOop: memory classTableRootObj) allClassesOop
+	^ self reifiedClassTable allClassesOop
