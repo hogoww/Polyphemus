@@ -1,5 +1,5 @@
 tests
-testCreationOfSubGraphFromObjectNotInMemoryCreatesChild
+testCreationOfSubGraphFromRootObjectNotInMemoryCreatesChild
 	| oop slot res initialSize |
 	initialSize := reifiedMemory objects size.
 	oop := self reifyOop: (self newObjectWithSlots: 1).
