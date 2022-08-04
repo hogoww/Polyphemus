@@ -1,3 +1,4 @@
 enumerating
 reject: aBlock
-	^objects reject: aBlock
+
+	^ objects reject: aBlock

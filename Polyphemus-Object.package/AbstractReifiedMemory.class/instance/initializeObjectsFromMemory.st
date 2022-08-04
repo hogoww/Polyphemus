@@ -1,0 +1,3 @@
+initialization
+initializeObjectsFromMemory
+	^ self subclassResponsibility
