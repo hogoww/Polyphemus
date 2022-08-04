@@ -1,4 +1,4 @@
 accessing
 allSlots
 
-	^0
+	^#()
