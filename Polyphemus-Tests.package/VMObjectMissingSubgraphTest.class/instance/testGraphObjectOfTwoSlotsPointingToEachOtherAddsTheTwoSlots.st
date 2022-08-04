@@ -1,6 +1,7 @@
 tests
-testGraphObjectOfTwoSlotsPointingToEachOtherDoesNotCreateAnExtraLevelOfDepth
-	| oop firstSlot secondSlot res |
+testGraphObjectOfTwoSlotsPointingToEachOtherAddsTheTwoSlots
+	| oop firstSlot secondSlot res initialSize |
+	initialSize := reifiedMemory objects size.
 	oop := self reifyOop: (self newObjectWithSlots: 2).
 	firstSlot := self reifyOop: (self newObjectWithSlots: 1).
 	secondSlot := self reifyOop: (self newObjectWithSlots: 1).
@@ -9,12 +10,13 @@ testGraphObjectOfTwoSlotsPointingToEachOtherDoesNotCreateAnExtraLevelOfDepth
 	oop slotAt: 2 put: secondSlot.
 	firstSlot slotAt: 1 put: secondSlot.
 	secondSlot slotAt: 1 put: firstSlot. 
-	
+
 	res := OOPObjectMissingSubgraphVisitor new
 		baseAddress: memory newSpaceStart - memory wordSize;
-		toIgnore: { secondSlot };
+		memory: reifiedMemory;
 		rootObject: oop;
 		compute.
-		
-	self assert: res size equals: 2.
-	self assert: (res flatCollect: [ :o | o ])  size equals: 2.
+	reifiedMemory createCompressedVersion.
+	
+	self assert: (reifiedMemory objectAt: firstSlot address) equals: firstSlot.
+	self assert: (reifiedMemory objectAt: secondSlot address) equals: secondSlot.

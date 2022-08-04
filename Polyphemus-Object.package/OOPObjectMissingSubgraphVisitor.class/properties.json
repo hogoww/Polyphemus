@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"firstVisit",
-		"toIgnore",
-		"baseAddress"
+		"baseAddress",
+		"memory"
 	],
 	"name" : "OOPObjectMissingSubgraphVisitor",
 	"type" : "normal"

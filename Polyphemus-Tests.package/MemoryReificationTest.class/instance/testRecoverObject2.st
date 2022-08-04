@@ -28,7 +28,7 @@ testRecoverObject2
 	
 	"The second abnormal object is recoverable"
 	recoveredObject := abnormalObjects last recoverCouldBeObj.
-
+ 
 	recoveredObject := (recoveredObject at: 1) at: 1.
 	self deny: recoveredObject class equals: OOPAbnormalEntity.
 	self assert: recoveredObject address equals: recoverableObject.
