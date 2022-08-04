@@ -1,3 +1,3 @@
 enumerating
 do: aBlock
-	^ compressedObjects do: aBlock
+	^ objects do: aBlock

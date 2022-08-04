@@ -1,4 +1,4 @@
 initialization
 createCompressedVersion
 
-	compressedObjects := objects select: [:e | e isNotNil ].
+	objects := objectsArray select: [:e | e isNotNil ].

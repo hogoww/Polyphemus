@@ -7,12 +7,12 @@ reifyMemoryThroughRoots
 	visitor := OOPObjectMissingSubgraphVisitor new.
 	visitor
 		baseAddress: baseAddress;
-		toIgnore: objects.
+		toIgnore: objectsArray.
 
 	lastKnownIndex := lastKnownObject address - baseAddress >> 3.
 
 	1 to: lastKnownIndex do: [ :anIndex | 
-		aRoot := objects at: anIndex.
+		aRoot := objectsArray at: anIndex.
 		aRoot ifNotNil: [ 
 			visitor
 				rootObject: aRoot;

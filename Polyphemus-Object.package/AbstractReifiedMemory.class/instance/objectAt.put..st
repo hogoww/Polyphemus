@@ -5,4 +5,4 @@ objectAt: anOop put: anObject
 
 	"objects addresses are offsets from a base address and then compacted"
 
-	objects at: anOop - baseAddress >> 3 put: anObject
+	objectsArray at: anOop - baseAddress >> 3 put: anObject

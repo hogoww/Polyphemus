@@ -6,7 +6,7 @@ fillBlankBetweenOop
 Since we foundOop through roots we have great chance to miss entire object graph leaving blanks
 "
 	actualNextObjectAddress := lastKnownObject address.
-	max := objects size.
+	max := objectsArray size.
 
 	[ 
 	nextOop := self findObjectAfter: actualNextObjectAddress.

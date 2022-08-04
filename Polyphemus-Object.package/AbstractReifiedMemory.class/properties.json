@@ -8,8 +8,6 @@
 		"MemoryCache"
 	],
 	"instvars" : [
-		"objects",
-		"compressedObjects",
 		"metaclass",
 		"isCandleImage",
 		"stringClasses",
@@ -18,7 +16,9 @@
 		"traitedMetaclass",
 		"metaclassForTrait",
 		"flagErrorObjects",
-		"lastKnownObject"
+		"lastKnownObject",
+		"objectsArray",
+		"objects"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"

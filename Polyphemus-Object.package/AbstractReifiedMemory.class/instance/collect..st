@@ -1,3 +1,3 @@
 enumerating
 collect: aBlock
-	^ compressedObjects collect: aBlock
+	^ objects collect: aBlock

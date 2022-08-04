@@ -1,3 +1,3 @@
 enumerating
 reject: aBlock
-	^compressedObjects reject: aBlock
+	^objects reject: aBlock
