@@ -1,3 +1,3 @@
-enumerating
+accessing
 objects
 ^ objects
