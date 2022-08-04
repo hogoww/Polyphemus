@@ -1,13 +1,13 @@
 finding
-findObjectAfter: anOop
+findObjectAfter: anAddress
 
 	| anIndex max |
-	anIndex := (anOop - baseAddress >> 3) + 1.
+	anIndex := (self indexForAddress: anAddress) + 1.
 	max := objectsArray size.
 
-	[ (objectsArray at: anIndex) isNil and: [ anIndex  < max ] ] whileTrue: [ 
-		anIndex := anIndex + 1 ].
+	[ (objectsArray at: anIndex) isNil and: [ anIndex < max ] ]
+	 	whileTrue: [ anIndex := anIndex + 1 ].
 
-	anIndex = 0
-		ifTrue: [ ^nil ]
-		ifFalse: [ ^ objectsArray at: anIndex ]
+	^ anIndex = max
+		ifTrue: [ nil ]
+		ifFalse: [ objectsArray at: anIndex ]

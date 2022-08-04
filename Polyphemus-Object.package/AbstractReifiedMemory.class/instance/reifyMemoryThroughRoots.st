@@ -9,8 +9,8 @@ reifyMemoryThroughRoots
 		baseAddress: baseAddress;
 		toIgnore: objectsArray.
 
-	lastKnownIndex := lastKnownObject address - baseAddress >> 3.
-
+	lastKnownIndex := self indexForAddress: lastKnownObject address.
+	
 	1 to: lastKnownIndex do: [ :anIndex | 
 		aRoot := objectsArray at: anIndex.
 		aRoot ifNotNil: [ 

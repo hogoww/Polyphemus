@@ -1,3 +1,4 @@
 accessing
 objectAt: anAddress
-	^ objectsArray at: anAddress - baseAddress >> 3 ifAbsent: nil
+
+	^ objectsArray at: (self indexForAddress: anAddress) ifAbsent: nil
