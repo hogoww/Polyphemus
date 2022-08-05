@@ -5,7 +5,7 @@ initialHeadroom: extraVmMemory givenFreeOldSpaceInImage: freeOldSpaceInImage
 	<inline: true>
 	| headroom |
 	headroom := extraVmMemory = 0
-					ifTrue: [growHeadroom ifNil: [ 16*1024*1024 ]]
+					ifTrue: [growHeadroom ifNil: [ 16 * 4 * 1024 ]]
 					ifFalse: [extraVmMemory].
 	freeOldSpaceInImage >= headroom ifTrue:
 		[^0].

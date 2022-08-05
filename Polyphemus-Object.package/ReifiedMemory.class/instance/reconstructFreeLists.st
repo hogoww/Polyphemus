@@ -1,6 +1,8 @@
 reflective operations
 reconstructFreeLists
 
+	"Pay attention oes not work when crossing segments"
+
 	| freeChunks freeLists address size |
 	"First we clear the current FreeLists as it is corrupted"
 	freeLists := self reifyOop: self freeListsObj.
