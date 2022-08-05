@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "VMSimulatorAccess",
+	"category" : "Polyphemus-Object-image",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"MemoryCache"
+	],
+	"instvars" : [
+		"metaclass",
+		"isCandleImage",
+		"stringClasses",
+		"baseAddress",
+		"compiledMethodClass",
+		"traitedMetaclass",
+		"metaclassForTrait",
+		"flagErrorObjects",
+		"lastKnownObject",
+		"objectsArray",
+		"objects"
+	],
+	"name" : "AbstractReifiedMemory",
+	"type" : "normal"
+}

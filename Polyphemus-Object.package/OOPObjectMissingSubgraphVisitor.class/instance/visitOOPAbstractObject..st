@@ -1,12 +1,7 @@
 visiting
 visitOOPAbstractObject: anOopObject
 
-	| compactedAddress |
-	firstVisit
-		ifTrue: [ firstVisit := false ]
-		ifFalse: [ 
-			compactedAddress := anOopObject address - baseAddress >> 3.
-			(toIgnore at: compactedAddress) ifNotNil: [ ^ self ].
-			toIgnore at: compactedAddress put: anOopObject ].
+	(memory objectAt: anOopObject address) ifNotNil: [ ^ self ].
+	memory objectAt: anOopObject address put: anOopObject.
 		
-	anOopObject allSlots do: [ :aSlot | self visitObject: aSlot ]
+	self visitSlotsOf: anOopObject

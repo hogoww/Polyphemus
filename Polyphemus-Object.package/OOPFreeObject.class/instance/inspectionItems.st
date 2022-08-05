@@ -1,9 +1,7 @@
 inspection
 inspectionItems
-	| items |
 
-	items := {
+	^ {
+		#address -> address.
 		#size -> self oopByteSize.
-		}.
-		
-	^ items
+		}

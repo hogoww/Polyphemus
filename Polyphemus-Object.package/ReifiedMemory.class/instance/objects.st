@@ -1,3 +1,0 @@
-enumerating
-objects
-^ objects

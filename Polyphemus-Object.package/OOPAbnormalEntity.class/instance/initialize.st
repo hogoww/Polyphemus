@@ -1,4 +1,4 @@
 initialization
-initialize 
+initialize
 
-	couldBeObjLists := OrderedCollection new.
+	couldBeObjLists := OrderedCollection new

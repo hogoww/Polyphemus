@@ -1,6 +1,7 @@
 inspection
 inspectionItems
-	^ { #address -> address.
+	^ { 
+		#address -> address.
 		#fowardsTo -> #todo.
 		#oopByteSize -> #todo
-	}
+		}

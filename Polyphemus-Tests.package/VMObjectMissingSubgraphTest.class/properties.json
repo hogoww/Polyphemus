@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "VMObjectGraphTest",
+	"super" : "AbstractInspectorsTest",
 	"category" : "Polyphemus-Tests-objectInspector",
 	"classinstvars" : [ ],
 	"pools" : [ ],

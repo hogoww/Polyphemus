@@ -17,7 +17,7 @@ testCorruptedObjectIsReified
 
 	self corrupt: corruptedObject.
 
-	reifiedMemory := ReifiedMemory on: memory.
+	reifiedMemory := PreReifiedMemory on: memory.
 
 	self
 		assert: (reifiedMemory objectAt: referencedObject) address

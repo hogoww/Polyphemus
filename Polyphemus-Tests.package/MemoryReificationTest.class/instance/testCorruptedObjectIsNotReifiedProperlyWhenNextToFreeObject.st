@@ -9,6 +9,6 @@ testCorruptedObjectIsNotReifiedProperlyWhenNextToFreeObject
 
 	self corrupt: lastOop.
 
-	reifiedMemory := ReifiedMemory on: memory.
+	reifiedMemory := PreReifiedMemory on: memory.
 	
 	self assert: (reifiedMemory objectAt: lastOop) class equals: OOPAbnormalEntity.
