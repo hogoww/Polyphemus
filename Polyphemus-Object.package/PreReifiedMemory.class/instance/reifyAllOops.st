@@ -18,6 +18,7 @@ reifyAllOops
 			flagErrorObjects := true.
 			self reifyMemoryThroughRoots ].
 
+	   flagErrorFreeTree ifTrue: [ self reconstructFreeLists  ].
 		memory allFreeObjectsDo: [ :anOop |
 			job value: anOop.
 			job title: 'Generating Free Object at address: ' , anOop printString.
