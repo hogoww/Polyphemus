@@ -15,7 +15,7 @@ reconstructFreeLists
 	freeChunks := self select: [ :anOop | anOop isAbnormalOop ].
 	
 	"We create the final freeChunk"
-	address := self addressAfter: compressedObjects last address.
+	address := self addressAfter: objects last address.
 	size := self endOfMemory - address.
 	freeChunks :=  freeChunks asOrderedCollection. "Need to see why this is not the case yet"
 	freeChunks add: (OOPAbnormalEntity newFor: address size: size  on: self).

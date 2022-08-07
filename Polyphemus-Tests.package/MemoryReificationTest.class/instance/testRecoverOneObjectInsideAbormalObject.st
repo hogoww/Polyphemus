@@ -20,7 +20,7 @@ testRecoverOneObjectInsideAbormalObject
 
 	self corrupt: corruptedObject.
 
-	reifiedMemory := ReifiedMemory on: memory.
+	reifiedMemory := PreReifiedMemory on: memory.
 
 	abnormalObjects := reifiedMemory select: [:anObj | anObj isAbnormalOop  ].
 	

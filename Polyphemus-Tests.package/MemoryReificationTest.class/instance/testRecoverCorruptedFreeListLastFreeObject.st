@@ -2,7 +2,7 @@ tests
 testRecoverCorruptedFreeListLastFreeObject
 
 	| freeObjects |
-	reifiedMemory := ReifiedMemory onWithFlagFreeTree: memory.
+	reifiedMemory := PreReifiedMemory onWithFlagFreeTree: memory.
 	
 	freeObjects := reifiedMemory select: [ :anOop | anOop isFreeOop ].
 	

@@ -16,6 +16,7 @@
 		"traitedMetaclass",
 		"metaclassForTrait",
 		"flagErrorObjects",
+		"flagErrorFreeTree",
 		"lastKnownObject",
 		"objectsArray",
 		"objects"
