@@ -1,0 +1,3 @@
+modes
+candleImageMode
+	^ #candleImage

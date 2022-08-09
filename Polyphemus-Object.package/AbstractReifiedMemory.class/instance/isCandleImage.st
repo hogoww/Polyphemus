@@ -1,4 +1,4 @@
-accessing
+testing
 isCandleImage
 
-	^ isCandleImage
+	^ mode = self candleImageMode
