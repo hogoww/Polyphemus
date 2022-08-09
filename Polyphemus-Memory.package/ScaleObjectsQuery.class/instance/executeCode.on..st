@@ -1,3 +1,3 @@
 executing
-executeCode: someCode on: aMemoryPresenter
-	aMemoryPresenter updateScalingTo: someCode
+executeCode: aBlock on: aMemoryPresenter
+	aMemoryPresenter updateScalingTo: aBlock
