@@ -1,5 +1,5 @@
 tests
-testRecoverObject
+testRecoverTwoObjectsInsideAbnormalObject
 
 	| corruptedObject referencedObject1 referencerObject recoverableObject referencedObject2 abnormalObjects recoveredObject |
 	"Creation order matter, pay attention"

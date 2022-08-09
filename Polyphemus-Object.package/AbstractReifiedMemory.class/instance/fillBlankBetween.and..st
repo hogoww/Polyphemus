@@ -1,16 +1,15 @@
-recovering
-fillBlankBetweenOop
+accessing
+fillBlankBetween: anAddress and: anotherAddress
 
 	| abnormalEntity nextOop max supposedNextObjectAddress actualNextObjectAddress sizeBetweenSupposedAndActual |
 	"The objects should be contiguous, freeChunk are also represented by objects any disconstinuity is abnormal.
 Since we foundOop through roots we have great chance to miss entire object graph leaving blanks
 "
-	actualNextObjectAddress := lastKnownObject address.
-	max := objectsArray size.
-
+	actualNextObjectAddress := anAddress.
+	max := anotherAddress.
 	[ 
 	nextOop := self findObjectAfter: actualNextObjectAddress.
-	(self indexForAddress: actualNextObjectAddress) < max and: [ nextOop isNotNil ] ] whileTrue: [ 
+	(actualNextObjectAddress - baseAddress >> 3) < max and: [ nextOop isNotNil ] ] whileTrue: [ 
 		
 		supposedNextObjectAddress := memory objectAfter:
 			                             actualNextObjectAddress.
