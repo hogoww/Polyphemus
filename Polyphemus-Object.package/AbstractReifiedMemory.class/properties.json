@@ -18,7 +18,8 @@
 		"lastKnownObject",
 		"objectsArray",
 		"objects",
-		"mode"
+		"mode",
+		"flagErrorFreeTree"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"
