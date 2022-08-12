@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Error",
+	"category" : "Polyphemus-Memory-Errors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"address",
+		"sizeOfChunk"
+	],
+	"name" : "FreeListIsCorrupted",
+	"type" : "normal"
+}
