@@ -9,7 +9,7 @@ The simplest way to use is to execute the following:
 - using an image```(MemoryInspector newFromImage: path)```.  
 
 The path should be provided as a string.  
-A small image is provided by default an accessible through the command: ```AbstractInspectorsTest new pathTo64BitImage.``` (https://github.com/carolahp/PharoBootstrap/) . 
+A [small image](https://github.com/carolahp/PharoBootstrap/) is provided by default an accessible through the command: ```AbstractInspectorsTest new pathTo64BitImage.```.  
 
 # UI Details
 
@@ -33,7 +33,7 @@ Note: An image is only the old space.
 Therefore, loading an image into polyphemus will display an empty new space !
 
 # Inspector
-Clicking on a box opens an inspector on a reification of the oop (based on https://github.com/carolahp/PharoImageInspector).  
+Clicking on a box opens an inspector on a reification of the oop (based on [carolina's inspector](https://github.com/carolahp/PharoImageInspector).  
 We do as many guess as possible to provide the user with as many high level information as possible.  
 Particularly, string interpretation.  
 Moreover, the object in the inspector can be navigated just like Pharo objects.  
@@ -42,11 +42,11 @@ Moreover, the object in the inspector can be navigated just like Pharo objects.
   
 # Ideas
 
-The main idea of Polyphemus is to provide a higher level vision of VMs OOPs.
-However, this is meant to be a basis for Pharo tools.
-Particularly we are investigating how to investigate memory corrupt and dead images.
-We were able to save an image, see the other Ressources section.
+The main idea of Polyphemus is to provide a higher level vision of VMs OOPs.  
+However, this is meant to be a basis for Pharo tools.  
+Particularly we are investigating how to investigate memory corrupt and dead images.  
+We were able to save an image, see the other Ressources section.  
 
 # Other Ressources
-Video submited to the Esug'22 Innovation Technology Awards: https://youtu.be/zf3cCtNW830 (Vote pending)
-Report of how we used Polyphemus to resurect a dead image: todo upload and link
+[Video submited to the Esug'22 Innovation Technology Awards](https://youtu.be/zf3cCtNW830) (Vote pending).  
+[Report of how we used Polyphemus to resurrect a dead image](https://github.com/hogoww/Polyphemus/blob/main/Documentation/ResurrectingDeadImages/ResurrectingDeadImages.pdf).  
