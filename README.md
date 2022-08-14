@@ -16,14 +16,17 @@ A small image is provided by default an accessible through the command: ```Abstr
 The Memory Inspector has 4 tabs: A scripter, a class and methods browser, and the new and the old space objects in a visualisation.  
   
 - The scripter has direct binding to the memory to execute queries directly inside the presenter as well as allowing to script the two visualization tabs as well.  
+   
 <img width="577" alt="Screenshot 2022-08-14 at 14 57 43" src="https://user-images.githubusercontent.com/21278554/184537989-97385246-8db6-4dac-a4c9-d7851ffa392d.png">.   
   
 - The class browser allows to browse classes and methods objects similarly to the Calypso browser in Pharo (Method code is currently not implemented, but we are working on it).  
-<img width="577" alt="Screenshot 2022-08-14 at 14 59 49" src="https://user-images.githubusercontent.com/21278554/184538081-a6701a93-01ec-4a52-a8d6-01e577d3b5fe.png">.  
+    
+<img width="577" alt="Screenshot 2022-08-14 at 14 59 49" src="https://user-images.githubusercontent.com/21278554/184538081-a6701a93-01ec-4a52-a8d6-01e577d3b5fe.png">  
   
 - The VM uses a new and a old space to work, both working with different allocators and garbage collection.
 Each space is displayed in its own tab.  
 They also come with a few queries illustrating the possibilities of such a visualization (Scale, Scope, Select, Statistics) that are applicable directly on the visualization.
+  
 <img width="1438" alt="Screenshot 2022-08-14 at 15 00 13" src="https://user-images.githubusercontent.com/21278554/184538103-07e417e1-95d8-4904-9a33-86c9a471d06f.png">.  
   
 Note: An image is only the old space.  
@@ -34,8 +37,9 @@ Clicking on a box opens an inspector on a reification of the oop (based on https
 We do as many guess as possible to provide the user with as many high level information as possible.  
 Particularly, string interpretation.  
 Moreover, the object in the inspector can be navigated just like Pharo objects.  
+  
 <img width="697" alt="Screenshot 2022-08-14 at 14 56 57" src="https://user-images.githubusercontent.com/21278554/184538511-de8af681-7a66-455f-8301-aa9e93d44d02.png">
-
+  
 # Ideas
 
 The main idea of Polyphemus is to provide a higher level vision of VMs OOPs.
