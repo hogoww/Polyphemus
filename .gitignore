@@ -3,8 +3,6 @@
 **/*.out
 **/*.log
 **/*.synctex.gz
-**/*.pdf
-!figures/*.pdf
 **/*.blg
 **/*.bbl
 **/*.toc
