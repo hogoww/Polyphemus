@@ -23,6 +23,7 @@ The Memory Inspector has 4 tabs: A scripter, a class and methods browser, and th
   
 - The VM uses a new and a old space to work, both working with different allocators and garbage collection.
 Each space is displayed in its own tab.  
+They also come with a few queries illustrating the possibilities of such a visualization (Scale, Scope, Select, Statistics) that are applicable directly on the visualization.
 <img width="1438" alt="Screenshot 2022-08-14 at 15 00 13" src="https://user-images.githubusercontent.com/21278554/184538103-07e417e1-95d8-4904-9a33-86c9a471d06f.png">.  
   
 Note: An image is only the old space.  
@@ -33,5 +34,15 @@ Clicking on a box opens an inspector on a reification of the oop (based on https
 We do as many guess as possible to provide the user with as many high level information as possible.  
 Particularly, string interpretation.  
 Moreover, the object in the inspector can be navigated just like Pharo objects.  
-![Uploading Screenshot 2022-08-14 at 14.56.57.png…]()
+<img width="697" alt="Screenshot 2022-08-14 at 14 56 57" src="https://user-images.githubusercontent.com/21278554/184538511-de8af681-7a66-455f-8301-aa9e93d44d02.png">
 
+# Ideas
+
+The main idea of Polyphemus is to provide a higher level vision of VMs OOPs.
+However, this is meant to be a basis for Pharo tools.
+Particularly we are investigating how to investigate memory corrupt and dead images.
+We were able to save an image, see the other Ressources section.
+
+# Other Ressources
+Video submited to the Esug'22 Innovation Technology Awards: https://youtu.be/zf3cCtNW830 (Vote pending)
+Report of how we used Polyphemus to resurect a dead image: todo upload and link
