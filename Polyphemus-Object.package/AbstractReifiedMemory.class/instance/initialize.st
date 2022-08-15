@@ -4,3 +4,4 @@ initialize
 	stringClasses := Set new.
 	OOPAbstractEntity initialize.
 	flagErrorObjects := false.
+	flagErrorFreeTree := false.

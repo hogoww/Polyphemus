@@ -2,8 +2,7 @@ initialization
 initializeClassesPresenter
 
 	| classesObjects |
-	reifiedMemory setUpStringClasses.
-		classes := self newList.
+	classes := self newList.
 	classesObjects := reifiedMemory select: [ :anOop | anOop isClassOop ].
 	classes
 		display: [ :class | class oopClassName ];

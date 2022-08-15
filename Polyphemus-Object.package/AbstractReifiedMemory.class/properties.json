@@ -9,7 +9,6 @@
 	],
 	"instvars" : [
 		"metaclass",
-		"isCandleImage",
 		"stringClasses",
 		"baseAddress",
 		"compiledMethodClass",
@@ -18,7 +17,9 @@
 		"flagErrorObjects",
 		"lastKnownObject",
 		"objectsArray",
-		"objects"
+		"objects",
+		"mode",
+		"flagErrorFreeTree"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"

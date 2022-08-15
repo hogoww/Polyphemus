@@ -4,7 +4,7 @@ setUpBasicIndexes
 	Still nothing should be reified after this point"
 	self setUpBaseAddress.
 	self setUpMetaclass.
-	self setUpIsCandleImage.
+	self setUpMode.
 	self setUpStringClasses.
 	self setUpCompiledMethodClass.
 	self setUpMetaclassForTrait.

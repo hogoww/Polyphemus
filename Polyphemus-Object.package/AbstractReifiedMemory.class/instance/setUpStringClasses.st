@@ -3,7 +3,8 @@ setUpStringClasses
 	" This is mostly guess work."
 	|  stringClassAddress |
 	stringClasses add: memory classString.
-	stringClassAddress := isCandleImage
+	self isSimulator ifTrue: [ ^ self "There most likely is no string classes instanciated" ].
+	stringClassAddress := self isCandleImage
 		ifFalse: [ memory superclassOf: memory classString ]
 		ifTrue: [ memory classString ].
 	

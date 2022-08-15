@@ -5,6 +5,5 @@ testCorruptFirstNonRootsObject
 	self corrupt: 8596968.
 
 	reifiedMemory := PreReifiedMemory on: memory.
-	
 	self assert: reifiedMemory flagErrorObjects.
-	self assert: reifiedMemory numberOfElements equals: 2473 
+	self assert: reifiedMemory numberOfElements equals: 2473.
