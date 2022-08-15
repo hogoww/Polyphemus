@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorsTest",
+	"category" : "Polyphemus-Tests-memory",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LazyReifiedMemoryTest",
+	"type" : "normal"
+}

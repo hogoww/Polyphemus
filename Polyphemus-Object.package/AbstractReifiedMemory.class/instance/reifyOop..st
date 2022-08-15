@@ -1,3 +1,3 @@
-reifying
+finding
 reifyOop: anAddress
-	^ OOPAbstractEntity newFor: anAddress memory: self
+	^ self subclassResponsibility
