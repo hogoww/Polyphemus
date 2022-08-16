@@ -1,3 +1,3 @@
-finding
+reifying
 reifyOop: anAddress
 	^ self subclassResponsibility

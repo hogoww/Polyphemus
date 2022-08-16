@@ -1,4 +1,4 @@
-reifying
+accessing
 objects
 	"recreate the object collection only when needed"
 	lastObjectAccess < objects size ifTrue: [ self createCompressedVersion ].
