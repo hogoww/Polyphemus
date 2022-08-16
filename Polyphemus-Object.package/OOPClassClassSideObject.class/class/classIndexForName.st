@@ -1,3 +1,0 @@
-printing
-classIndexForName
-	^ 6

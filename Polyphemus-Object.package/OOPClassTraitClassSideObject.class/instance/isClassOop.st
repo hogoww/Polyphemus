@@ -1,3 +1,4 @@
 testing
-isClassOop 
-	^false
+isClassOop
+
+	^ false

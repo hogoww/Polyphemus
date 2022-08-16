@@ -1,0 +1,3 @@
+instance creation
+slotIndexForClassName 
+	^ memory mode classIndexForClassInstanceSideName

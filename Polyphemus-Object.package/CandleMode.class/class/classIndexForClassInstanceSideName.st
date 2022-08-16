@@ -1,0 +1,3 @@
+accessing
+classIndexForClassInstanceSideName
+	^ 4

@@ -1,4 +1,4 @@
 testing
 isClassTraitOop
 
-	^true
+	^ true
