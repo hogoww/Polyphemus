@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ExecutionMode",
+	"category" : "Polyphemus-Object-image",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SimulatorMode",
+	"type" : "normal"
+}

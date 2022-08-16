@@ -1,4 +1,3 @@
 testing
 isPharoImage
-
-	^ mode isPharoImage
+	^ false

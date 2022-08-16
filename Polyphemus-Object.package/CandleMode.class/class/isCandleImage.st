@@ -1,4 +1,3 @@
 testing
 isCandleImage
-
-	^ mode isCandleImage
+	^ true

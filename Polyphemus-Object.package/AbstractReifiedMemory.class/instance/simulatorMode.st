@@ -1,3 +1,3 @@
 modes
 simulatorMode
-	^ #simulator
+	^ SimulatorMode

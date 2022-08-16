@@ -1,4 +1,3 @@
 testing
 isSimulator
-
-	^ mode isSimulator
+	^ false

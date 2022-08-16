@@ -1,3 +1,3 @@
 modes
 pharoImageMode
-	^ #pharoImage
+	^ PharoMode
