@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"classes",
-		"methods"
+		"methods",
+		"classesList",
+		"classOrder"
 	],
 	"name" : "ImageClassBrowser",
 	"type" : "normal"

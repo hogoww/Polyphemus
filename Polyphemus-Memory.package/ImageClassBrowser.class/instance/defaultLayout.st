@@ -5,7 +5,11 @@ defaultLayout
 	
 	classesLayout := SpBoxLayout newTopToBottom
 		add: 'Classes' expand: false;
-		add: classes;
+		add: classesList;
+		add: (SpBoxLayout newLeftToRight
+			spacing: 5;
+			add: classOrder;
+			yourself) height: 25;
 		yourself.
 	
 	methodsLayout := SpBoxLayout newTopToBottom
@@ -19,5 +23,5 @@ defaultLayout
 			spacing: 5;
 			add: classesLayout;
 			add: methodsLayout;
-			yourself);	
+			yourself);
 		yourself

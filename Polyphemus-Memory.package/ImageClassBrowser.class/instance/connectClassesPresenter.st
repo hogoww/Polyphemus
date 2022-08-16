@@ -1,7 +1,7 @@
 initialization
 connectClassesPresenter
 
-	classes 	
+	classesList 	
 		transmitTo: methods
 		transform: [ :aClass | | methodDict |
 			methodDict := aClass reifiedMethodDictionary reifiedSlotAt: 2.
