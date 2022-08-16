@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "AbstractInspectorsTest",
-	"category" : "Polyphemus-Tests-objectInspector",
+	"category" : "Polyphemus-Tests-Expensive",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
