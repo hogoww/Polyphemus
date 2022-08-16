@@ -26,7 +26,7 @@ For example: ```ReifiedMemory select: [ :anOop | anOop isCompiledMethod ]```.
   
 
 - The class browser allows to browse classes and methods objects similarly to the Calypso browser in Pharo (Method code is currently not implemented, but we are working on it).  
-Using the right click on a given method or class allow to inspect the selected object.
+Using the right click on a given method or class allows you to inspect the selected object.
    
     
 <p align="center">
@@ -36,7 +36,8 @@ Using the right click on a given method or class allow to inspect the selected o
   
 - The VM uses a new and a old space to work, both working with different allocators and garbage collection.
 Each space is displayed in its own tab.
-They also come with a few queries illustrating the possibilities of such a visualization (Scale, Scope, Select, Statistics) that are applicable directly on the visualization.
+They also come with a few queries illustrating the possibilities of this visualization (Scale, Scope, Select, Statistics).
+These are applicable directly on the visualizations tabs.
   
   
 <p align="center">  
@@ -48,7 +49,7 @@ Note: An image is only the old space.
 Therefore, loading an image into Polyphemus will display an empty new space !
 
 # Inspector
-Clicking on a box opens an inspector on a reification of the oop (based on [carolina's inspector](https://github.com/carolahp/PharoImageInspector).  
+Clicking on a box opens an inspector on a reification of the oop (based on [carolina's inspector](https://github.com/carolahp/PharoImageInspector)).  
 We do as many guess as possible to provide the user with as many high level information as possible.  
 Particularly, string interpretation.  
 Moreover, the object in the inspector can be navigated just like Pharo objects.  
