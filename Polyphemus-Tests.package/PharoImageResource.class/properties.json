@@ -8,10 +8,7 @@
 	"instvars" : [
 		"reifiedMemory",
 		"interpreter",
-		"memory",
-		"methodBuilder",
-		"stackBuilder",
-		"wordSize"
+		"memory"
 	],
 	"name" : "PharoImageResource",
 	"type" : "normal"

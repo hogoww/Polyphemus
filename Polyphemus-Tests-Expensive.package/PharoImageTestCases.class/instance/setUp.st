@@ -1,11 +1,6 @@
 running
 setUp
-	| resource |
-	resource := PharoImageResource current.
-	reifiedMemory := resource reifiedMemory.
-	interpreter := resource interpreter.
-	memory := resource memory.
-	wordSize := resource wordSize.
+	PharoImageResource current setUpTestCase: self.
 	
 	methodBuilder := VMCompiledCodeBuilder new
 		interpreter: interpreter; 
