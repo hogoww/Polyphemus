@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"classinstvars" : [ ],
+	"category" : "Polyphemus-Tests",
+	"instvars" : [
+		"memory",
+		"interpreter",
+		"methodBuilder",
+		"stackBuilder",
+		"wordSize",
+		"zeroSizedObjectClassIndex",
+		"nextIndex"
+	],
+	"name" : "VMHelperTrait"
+}

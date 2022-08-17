@@ -1,0 +1,3 @@
+retainObject
+keptObjectInVMVariable1
+	^ interpreter newMethod
