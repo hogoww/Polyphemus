@@ -1,3 +1,3 @@
 accessing
 oopInstanceSide
-	^ self slotAt: 6
+	^ self reifiedSlotAt: self slotIndexForClassName
