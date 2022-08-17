@@ -1,8 +1,13 @@
 accessing-slots
 allSlots
 
-	| errorBlock |
-	errorBlock := [ "I am unsure of what we should do for now I will juste anwser nilObject" 
-	              memory objectAt: memory nilObject ].
+	| abnormal |
 	^ (1 to: self numSlots) collect: [ :anIndex | 
-		  [ self reifiedSlotAt: anIndex ] onErrorDo: errorBlock ]
+		  [ self reifiedSlotAt: anIndex ] onErrorDo:  [ 
+		"We should not modify memory like this, discuss agian with Pierre to know what we want"
+		self slotAt: anIndex put: memory reifiedNilObject. 
+		
+		abnormal := OOPAbnormalEntity newFor: (self slotAt: anIndex) size: 0 on: memory.
+		memory addAbnormal: abnormal.
+		abnormal
+	 ] ]

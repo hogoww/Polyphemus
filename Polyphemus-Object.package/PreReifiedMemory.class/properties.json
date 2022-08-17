@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"corruptedFreeObjects"
+		"corruptedFreeObjects",
+		"abnormalObjects"
 	],
 	"name" : "PreReifiedMemory",
 	"type" : "normal"
