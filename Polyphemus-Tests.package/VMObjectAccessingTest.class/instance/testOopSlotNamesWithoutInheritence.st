@@ -1,6 +1,5 @@
 tests-slotNames
 testOopSlotNamesWithoutInheritence
-	| pointClass |
-	pointClass := reifiedMemory reifiedClassTable allClassesOop detect: [ :o | o oopClassName = #PCPoint ].
-	self assert: pointClass oopSlotNames first printString equals: #x.
-	self assert: pointClass oopSlotNames second printString equals: #y
+	| behaviorClass |
+	behaviorClass := (self reifyOop: reifiedMemory metaclass) oopSuperclass.
+	self assert: behaviorClass oopSlotNames first printString equals: #superclass.
