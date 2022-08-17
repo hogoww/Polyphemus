@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "TestResource",
+	"category" : "Polyphemus-Tests-memoryInspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"reifiedMemory",
+		"interpreter",
+		"memory",
+		"methodBuilder",
+		"stackBuilder",
+		"wordSize"
+	],
+	"name" : "PharoImageResource",
+	"type" : "normal"
+}
