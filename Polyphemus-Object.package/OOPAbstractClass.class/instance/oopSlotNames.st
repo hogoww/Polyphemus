@@ -1,3 +1,3 @@
 accessing
-oopSlotsNames
+oopSlotNames
 	^ memory mode getObjectSlotName: self
