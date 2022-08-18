@@ -6,7 +6,7 @@ contextMenuForCanvas: canvas
 		menu
 			add: 'Refresh memory'
 			target: self
-			selector: #updateMemorySpace.
+			selector: #refreshMemory.
 			
 		menu 
 			add: 'No scaling'
