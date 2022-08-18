@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "VMObjectInstancesOfAClassTest",
+	"name" : "VMOOPClassTest",
 	"type" : "normal"
 }
