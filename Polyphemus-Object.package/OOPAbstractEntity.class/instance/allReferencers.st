@@ -1,4 +1,3 @@
 query
 allReferencers
-	^ memory select: [ :anOop | 
-		anOop allSlots anySatisfy: [ :aSlot | aSlot = self ] ].
+	^ memory select: [ :anOop | anOop references: self ].

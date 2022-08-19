@@ -1,3 +1,3 @@
 testing
-pageIndex
+oopPageIndex
 	^ self classTable indexFor: address

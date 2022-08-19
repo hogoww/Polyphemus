@@ -2,4 +2,4 @@ tests-classTable
 testClassTablePageCreationPageIndex
 	| oop |
 	oop := self reifyOop: memory classTableFirstPage.
-	self assert: oop pageIndex equals: 1
+	self assert: oop oopPageIndex equals: 1

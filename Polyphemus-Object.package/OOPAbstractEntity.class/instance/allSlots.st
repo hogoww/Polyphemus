@@ -1,0 +1,4 @@
+accessing
+allSlots
+
+	^ self subclassResponsibility

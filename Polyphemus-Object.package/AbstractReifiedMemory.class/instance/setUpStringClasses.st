@@ -4,9 +4,7 @@ setUpStringClasses
 	|  stringClassAddress |
 	stringClasses add: memory classString.
 	self isSimulator ifTrue: [ ^ self "There most likely is no string classes instanciated" ].
-	stringClassAddress := self isCandleImage
-		ifFalse: [ memory superclassOf: memory classString ]
-		ifTrue: [ memory classString ].
+	stringClassAddress := mode stringClassAddressFor: memory.
 	
 	memory classTableEntriesDo: [ :aClassTableAddress :anIndex |
 		((memory superclassOf: aClassTableAddress) = stringClassAddress 
