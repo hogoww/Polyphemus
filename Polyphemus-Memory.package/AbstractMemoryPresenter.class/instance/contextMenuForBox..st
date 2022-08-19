@@ -15,6 +15,21 @@ contextMenuForBox: box
 			target: self
 			selector: #allReferencersOf:
 			argument: box model.
+		
+		box model isClassOop ifTrue: [
+				menu 
+					add: 'Subclasses'	
+					target: self
+					selector: #selectSubclassesOf:
+					argument: box model.
+				
+				menu 
+					add: 'Instances'	
+					target: self
+					selector: #selectInstancesOf:
+					argument: box model.
+				
+			].
 		].
 	box @ menuActivable.
 	^ box
