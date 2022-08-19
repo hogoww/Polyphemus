@@ -3,4 +3,4 @@ testRandomObjectIsNotInClassTable
 	| oop classTable |
 	oop := self newZeroSizedObject.
 	classTable := self reifyOop: memory classTableRootObj.
-	self deny: (classTable isInClassTable: oop)
+	self deny: (classTable isClassInClassTable: oop)

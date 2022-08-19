@@ -1,3 +1,3 @@
 testing
-isInClassTable: anAddress
+isClassInClassTable: anAddress
 	^ (self indexForClass: anAddress) ~= 0

@@ -1,3 +1,3 @@
 testing
 oopPageIndex
-	^ self classTable indexFor: address
+	^ self classTable indexForPage: address
