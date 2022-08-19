@@ -5,3 +5,4 @@ initialize
 	OOPAbstractEntity initialize.
 	flagErrorObjects := false.
 	flagErrorFreeTree := false.
+	freeze := false

@@ -1,0 +1,3 @@
+accessing
+unfreezeMemory
+	freeze := false

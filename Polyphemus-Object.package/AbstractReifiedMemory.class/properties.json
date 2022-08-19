@@ -19,7 +19,8 @@
 		"objectsArray",
 		"objects",
 		"mode",
-		"flagErrorFreeTree"
+		"flagErrorFreeTree",
+		"freeze"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"
