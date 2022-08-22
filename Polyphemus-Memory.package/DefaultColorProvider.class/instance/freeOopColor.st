@@ -1,3 +1,4 @@
 coloring
-freeOopColor 
+freeOopColor
+
 	^ self class defaultFreeOopColor

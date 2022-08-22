@@ -1,4 +1,4 @@
-as yet unclassified
+coloring
 classTraitOopColor
 
 	^self class defaultClassTraitOopColor 

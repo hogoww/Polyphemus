@@ -1,3 +1,4 @@
-as yet unclassified
+coloring
 abnormalOopColor
-	^self class defaultAbnormalOopColor
+
+	^ self class defaultAbnormalOopColor

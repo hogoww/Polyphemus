@@ -1,3 +1,4 @@
 coloring
-compiledMethodOopColor 
+compiledMethodOopColor
+
 	^ self class defaultCompiledMethodOopColor
