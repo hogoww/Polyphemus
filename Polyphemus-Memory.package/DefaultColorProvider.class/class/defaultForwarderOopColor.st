@@ -1,3 +1,3 @@
 coloring
 defaultForwarderOopColor
-	^ Color blue
+	^ Color lightGreen
