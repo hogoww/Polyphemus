@@ -1,4 +1,4 @@
-initialization
+displayMode
 classesAsList
 
 	| classesObjects |
