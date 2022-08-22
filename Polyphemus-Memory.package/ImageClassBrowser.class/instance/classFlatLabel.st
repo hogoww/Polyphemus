@@ -1,3 +1,3 @@
 displayMode
-classFkatLabel
+classFlatLabel
 	^ #Flat
