@@ -7,6 +7,6 @@ containedInspectionItems
 	self allIndexed collect: [ :aSlot | | slot |
 		counter := counter + 1.
 		slot := (memory objectAt: aSlot) ifNotNil: [ :anOop | anOop ] ifNil: [ aSlot ] .
-		('element', counter printString) -> slot.
+		'element ', counter printString -> slot.
 		] into: res.
 	^ res

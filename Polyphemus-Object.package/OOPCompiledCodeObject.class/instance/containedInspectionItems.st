@@ -16,7 +16,7 @@ containedInspectionItems
 	counter := 0.
 	self allLiterals collect: [ :literal | 
 		counter := counter + 1.
-		('literal ', counter printString) -> literal.
+		'literal ', counter printString -> literal.
 		] into: res.
 	
 	^res
