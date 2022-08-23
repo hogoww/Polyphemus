@@ -1,7 +1,8 @@
-testing
+inspection
 containedInspectionItems
 	| res |
 	res := OrderedCollection new.
+	res add: ('Index in Class Table' -> self oopPageIndex).
 	res add: (#size -> self numSlots).
 	self allSlots doWithIndex: [ :aSlot :anIndex |
 		aSlot isNilOop ifFalse: [ 
