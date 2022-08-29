@@ -1,3 +1,5 @@
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/hogoww/Polyphemus/CI)](https://img.shields.io/github/workflow/status/hogoww/Polyphemus/CI)
+
 # Polyphemus
 Polyphemus is a tool that gives a higher level representation of the object ordinary pointers (OOP) for the Pharo VM.
 It also proposes a visualization of the memory.

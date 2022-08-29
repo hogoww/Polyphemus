@@ -6,6 +6,6 @@ containedInspectionItems
 	res add: (#numIndexedElements -> self numElements).
 	self allIndexed collect: [ :aSlot | 
 		counter := counter + 1.
-		('element', counter printString) -> aSlot.
+		'element ' , counter printString -> aSlot.
 		] into: res.
 	^ res

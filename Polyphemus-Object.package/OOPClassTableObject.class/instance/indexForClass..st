@@ -1,6 +1,6 @@
 querying
 indexForClass: aClassOop 
-	self allClassTablePages do: [ :aClassTablePage | | index |
+	classTablePages do: [ :aClassTablePage | | index |
 		index := aClassTablePage indexForClass: aClassOop.
 		index = 0 ifFalse: [ ^ index ]
 		].
