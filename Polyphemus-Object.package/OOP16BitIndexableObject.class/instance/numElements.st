@@ -1,3 +1,3 @@
 accessing
 numElements
-	^ memory num64BitUnitsOf: address
+	^ memory num16BitUnitsOf: address
