@@ -8,4 +8,5 @@ baseline: spec
 		spec package: 'Polyphemus-Memory'.
 		spec package: 'Polyphemus-Object'.
 		spec package: 'Polyphemus-Tests'.
-	]
+	].
+	self postLoad
