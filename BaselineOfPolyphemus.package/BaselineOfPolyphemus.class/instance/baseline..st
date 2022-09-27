@@ -9,4 +9,3 @@ baseline: spec
 		spec package: 'Polyphemus-Object'.
 		spec package: 'Polyphemus-Tests'.
 	].
-	self postLoad
