@@ -1,3 +1,5 @@
 baselines
 postLoad
-	StPlayground openContents: self defaultPlayground
+	ToolRegistry new openClassBrowser packageView filterField updateTextWith: 'Polyphemus'.
+	StPlayground openContents: self defaultPlayground.
+	
