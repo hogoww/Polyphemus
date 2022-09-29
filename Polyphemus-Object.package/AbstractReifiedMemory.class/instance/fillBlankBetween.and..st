@@ -9,7 +9,7 @@ Since we foundOop through roots we have great chance to miss entire object graph
 	max := anotherAddress.
 	[ 
 	nextOop := self findObjectAfter: actualNextObjectAddress.
-	(actualNextObjectAddress - baseAddress >> 3) < max and: [ nextOop isNotNil ] ] whileTrue: [ 
+	(self indexForAddress: actualNextObjectAddress) < max and: [ nextOop isNotNil ] ] whileTrue: [ 
 		
 		supposedNextObjectAddress := memory objectAfter:
 			                             actualNextObjectAddress.
