@@ -3,7 +3,8 @@ inspectionItems
 	| items |
 
 	items := {
-		#address -> self printString.
+		#identity -> self printString.
+		#address -> self address.
 		#header -> (self oopHeader printStringBase: 2).
 		#class -> self oopClass.
 		#oopClassTag -> self oopClassTag.

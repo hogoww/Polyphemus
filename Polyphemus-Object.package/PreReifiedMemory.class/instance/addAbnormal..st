@@ -1,5 +1,5 @@
 adding
 addAbnormal: anOOPAbnormalObject
 
-	abnormalObjects ifNil: [abnormalObjects := OrderedCollection new ].
+	abnormalObjects ifNil: [abnormalObjects := Set new ].
 	abnormalObjects add: anOOPAbnormalObject

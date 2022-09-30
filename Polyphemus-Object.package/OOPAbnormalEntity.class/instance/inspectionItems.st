@@ -3,5 +3,5 @@ inspectionItems
 	
 	^ {
 		#address -> address.
-		#size -> self oopByteSize.
+		#size -> self size.
 		}
