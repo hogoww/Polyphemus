@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Polyphemus-Builder",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"oopIsClass",
+		"oopIsOld",
+		"oopNumberOfSlots",
+		"oopFormat",
+		"oopClassIndex",
+		"oopIsImmutable",
+		"oopIsMarked",
+		"oopIsPinned",
+		"oopIsRemembered",
+		"classIndex",
+		"memory"
+	],
+	"name" : "OOPBuilder",
+	"type" : "normal"
+}
