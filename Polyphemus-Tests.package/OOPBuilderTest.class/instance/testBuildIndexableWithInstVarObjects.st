@@ -5,4 +5,4 @@ testBuildIndexableWithInstVarObjects
 		oopNumberOfSlots: 10.
 	reifiedOop := self buildObject.
 	
-	self assert: reifiedOop equals: 10
+	self assert: reifiedOop numSlots equals: 10

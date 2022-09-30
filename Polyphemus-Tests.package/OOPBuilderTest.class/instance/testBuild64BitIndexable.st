@@ -1,8 +1,8 @@
 test-layouts
-testBuild
+testBuild64BitIndexable
 	oopBuilder 
-		oopFormat: 2;
+		oopFormat: 9;
 		oopNumberOfSlots: 10.
 	reifiedOop := self buildObject.
 	
-	self assert: reifiedOop numSlots equals: 10
+	self assert: reifiedOop numSlots equals: 0
