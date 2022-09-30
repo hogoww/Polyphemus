@@ -1,5 +1,5 @@
 running
-setUpUsingImage
+setUpUsingImage: aPath
 	"/!\ Only runnable with a wordsize equals to your image's (needs disabling parametizing of wordsize) /!\"
 	
 	"This is an alternate setUp using an image to correctly initialize memory/interpreter.
@@ -9,7 +9,7 @@ setUpUsingImage
 	interpreter := self newInterpreter 
 		pluginList: { }.
 	
-	interpreter openOn: self pathToCandle64BitImage.
+	interpreter openOn: aPath.
 	interpreter initStackPages.
 	interpreter loadInitialContext.
 	wordSize := memory wordSize.

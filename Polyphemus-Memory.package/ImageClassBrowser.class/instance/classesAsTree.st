@@ -4,7 +4,7 @@ classesAsTree
 	| objectClass |
 	classOrder label: self classFlatLabel.
 	classesList := self newTree.
-	objectClass := reifiedMemory reifiedClassTable allClassesOop detect: [ :o | o oopClassName = reifiedMemory mode objectClassName ].
+	objectClass := reifiedMemory reifiedClassTable allClassesOop detect: [ :o | o oopName = reifiedMemory mode objectClassName ].
 	classesList
 		roots: { objectClass };
 		children: [ :node | node oopSubclasses ];

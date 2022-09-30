@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Polyphemus-Object-oop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isMarried"
+	],
+	"name" : "OOPStackFrameFlag",
+	"type" : "normal"
+}

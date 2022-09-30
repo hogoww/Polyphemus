@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Polyphemus-Object-oop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stackpages",
+		"mostRecentlyUsedPage",
+		"leastRecentlyUsedPage",
+		"memory",
+		"interpreter"
+	],
+	"name" : "OOPStackPageJournal",
+	"type" : "normal"
+}

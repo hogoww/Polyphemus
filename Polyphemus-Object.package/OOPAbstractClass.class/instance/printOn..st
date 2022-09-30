@@ -1,5 +1,5 @@
 printing
 printOn: aStream
-	[ aStream << self oopClassName ] 
+	[ aStream << self oopName ] 
 		on: Error 
 		do: [ ^ aStream << 'Bad Class' ]

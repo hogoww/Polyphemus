@@ -5,7 +5,7 @@ preFindClassNamed: aString
 		self error: 'Cannot find a class by name if we cannot decode name' ].
 	
 	memory classTableEntriesDo: [ :aClassTableAddress :anIndex | 
-		(self reifyOop: aClassTableAddress) oopClassName asString = aString 
+		(self reifyOop: aClassTableAddress) oopName asString = aString 
 			ifTrue: [ ^ aClassTableAddress ] ].
 		
 	NotFound signal

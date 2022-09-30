@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Polyphemus-Object-oop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stackFrames",
+		"associatedPage"
+	],
+	"name" : "OOPStackPage",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OOPAbstractStackFrame",
+	"category" : "Polyphemus-Object-oop",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "OOPStackFrame",
+	"type" : "normal"
+}
