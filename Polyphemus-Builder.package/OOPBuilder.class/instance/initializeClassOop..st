@@ -5,4 +5,10 @@ initializeClassOop: anOop
 	self setUpMethodDictionaryOf: anOop.
 	memory storePointer: 1 ofObject: anOop withValue: (self class forMemory: memory) buildObject.
 	memory storePointer: 2 ofObject: anOop withValue: (memory integerValueOf: 42).
-	memory ensureBehaviorHash: anOop
+	oopClassIndexinstalation = self defaultClassIndex 
+		ifTrue: [ memory ensureBehaviorHash: anOop ]
+		ifFalse: [
+			memory setHashBitsOf: anOop to: oopClassIndexinstalation.
+			self ensureClassPageExistsFor: oopClassIndexinstalation.
+			memory classAtIndex: oopClassIndexinstalation  put: anOop.
+			].

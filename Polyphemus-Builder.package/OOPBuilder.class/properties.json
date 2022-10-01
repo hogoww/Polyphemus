@@ -12,6 +12,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"oopIsClass",
+		"oopClassIndexinstalation",
 		"oopIsOld",
 		"oopNumberOfSlots",
 		"oopFormat",

@@ -1,4 +1,4 @@
-accessing
+initialization
 initialize
 	oopIsClass := false.
 	oopIsOld := false.
@@ -9,3 +9,4 @@ initialize
 	oopIsMarked := false.
 	oopIsPinned := false.
 	oopIsRemembered := false.
+	oopClassIndexinstalation := self defaultClassIndex
