@@ -1,7 +1,7 @@
 test-layouts
 testBuild32BitIndexableHasElements
 	oopBuilder 
-		oopFormat: 11;
+		oopFormat: 10;
 		oopNumberOfSlots: 10.
 	reifiedOop := self buildObject.
 
