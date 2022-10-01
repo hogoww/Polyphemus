@@ -3,7 +3,12 @@
 	"super" : "Object",
 	"category" : "Polyphemus-Builder",
 	"classinstvars" : [ ],
-	"pools" : [ ],
+	"pools" : [
+		"VMBasicConstants",
+		"VMBytecodeConstants",
+		"VMClassIndices",
+		"VMObjectIndices"
+	],
 	"classvars" : [ ],
 	"instvars" : [
 		"oopIsClass",

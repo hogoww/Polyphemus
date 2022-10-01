@@ -2,6 +2,7 @@ build
 buildObject
 	| oop |
 	self checkFormat.
+	self checkIndexable.
 	oopIsClass ifTrue: [ self checkClassAttributes ].
 	oop := self oopIsOld
 		ifTrue: [ self allocateInOldSpace ]
