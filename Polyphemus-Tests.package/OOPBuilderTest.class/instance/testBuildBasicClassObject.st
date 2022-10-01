@@ -3,4 +3,4 @@ testBuildBasicClassObject
 	oopBuilder oopIsClass: true.
 	reifiedOop := self buildObject.
 	
-	self assert: reifiedOop isInstanceSideOop
+	self assert: (self reifyOop: reifiedOop address) isInstanceSideOop 
