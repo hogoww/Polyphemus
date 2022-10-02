@@ -1,0 +1,4 @@
+accessing
+oopIsImmutable
+
+	^ oopIsImmutable

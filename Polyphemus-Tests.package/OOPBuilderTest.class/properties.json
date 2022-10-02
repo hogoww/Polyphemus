@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorsTest",
+	"category" : "Polyphemus-Tests-memoryInspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"oopBuilder",
+		"reifiedOop"
+	],
+	"name" : "OOPBuilderTest",
+	"type" : "normal"
+}

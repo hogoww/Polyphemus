@@ -8,8 +8,6 @@
 		"MemoryCache"
 	],
 	"instvars" : [
-		"metaclass",
-		"stringClasses",
 		"baseAddress",
 		"compiledMethodClass",
 		"traitedMetaclass",
@@ -20,7 +18,9 @@
 		"objects",
 		"mode",
 		"flagErrorFreeTree",
-		"freeze"
+		"freeze",
+		"metaclassIndex",
+		"stringClassIndexes"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"

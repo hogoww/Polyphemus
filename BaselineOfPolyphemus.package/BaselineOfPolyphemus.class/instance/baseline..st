@@ -10,4 +10,5 @@ baseline: spec
 		spec package: 'Polyphemus-Memory'.
 		spec package: 'Polyphemus-Object'.
 		spec package: 'Polyphemus-Tests'.
+		spec package: 'Polyphemus-Builder'.
 	].
