@@ -1,4 +1,4 @@
 accessing
-compiledMethodClass
+compiledMethodClassIndex
 
 	^ compiledMethodClassIndex

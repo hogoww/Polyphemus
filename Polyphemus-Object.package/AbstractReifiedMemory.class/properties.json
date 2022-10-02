@@ -9,7 +9,6 @@
 	],
 	"instvars" : [
 		"baseAddress",
-		"compiledMethodClass",
 		"traitedMetaclass",
 		"metaclassForTrait",
 		"flagErrorObjects",
@@ -20,7 +19,8 @@
 		"flagErrorFreeTree",
 		"freeze",
 		"metaclass",
-		"stringClassIndexes"
+		"stringClassIndexes",
+		"compiledMethodClassIndex"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"
