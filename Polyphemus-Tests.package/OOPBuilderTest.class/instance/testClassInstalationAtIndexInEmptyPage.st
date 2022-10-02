@@ -1,5 +1,6 @@
 tests-class
 testClassInstalationAtIndexInEmptyPage
+	"reifiedOop is 1 based, vm is 0 based"
 	oopBuilder 
 		oopIsClass: true;
 		oopClassIndexinstalation: 2049.
