@@ -1,5 +1,6 @@
 tests
 setUp
+
 	super setUp.
 	oop := methodBuilder 
 		literals:  #(1 2 3 4);

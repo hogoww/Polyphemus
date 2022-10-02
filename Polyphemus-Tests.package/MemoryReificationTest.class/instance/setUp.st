@@ -1,4 +1,4 @@
 running
 setUp
-	self setUpUsingImage.
+	super setUp.
 	self timeLimit: 5 minutes

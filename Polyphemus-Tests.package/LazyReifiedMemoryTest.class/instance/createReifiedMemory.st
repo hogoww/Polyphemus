@@ -1,5 +1,4 @@
 running
-setUp
-	self setUpUsingImage.
+createReifiedMemory
 	reifiedMemory := LazyReifiedMemory on: memory.
 	
