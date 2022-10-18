@@ -2,5 +2,5 @@ tests-slotNames
 testMetaclassFourthSlotIsSoleInstance
 	| metaClassOop |
 	
-	metaClassOop := self reifyOop: reifiedMemory metaclass.
+	metaClassOop := reifiedMemory reifiedMetaclass.
 	self assert: metaClassOop allOopSlotNames fourth printString equals: #soleInstance.

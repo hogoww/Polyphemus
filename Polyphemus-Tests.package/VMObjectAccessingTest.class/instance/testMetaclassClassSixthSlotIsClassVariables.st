@@ -2,5 +2,5 @@ tests-slotNames
 testMetaclassClassSixthSlotIsClassVariables
 	| metaClassClassOop |
 	
-	metaClassClassOop := (self reifyOop: reifiedMemory metaclass) oopClass.
+	metaClassClassOop := reifiedMemory reifiedMetaclass oopClass.
 	self assert: metaClassClassOop allOopSlotNames sixth printString equals: #classVariables
