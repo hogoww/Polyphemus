@@ -5,4 +5,5 @@ setUpMode
 	mode := 
 		(memory numSlotsOf: (memory classAtIndex: self metaclassIndex))  < 7
 			ifTrue:[ CandleMode ]
-			ifFalse: [ PharoMode new ]
+			ifFalse: [ PharoMode new ].
+	mode initializeFrom: self
