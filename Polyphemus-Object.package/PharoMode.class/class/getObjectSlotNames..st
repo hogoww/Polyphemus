@@ -1,5 +1,5 @@
 accessing
-getObjectSlotName: aClassOop
+getObjectSlotNames: aClassOop
 	| res |
 	layout := (aClassOop reifiedSlotAt: 4) reifiedSlotAt: 2.
 	res := OrderedCollection new.
