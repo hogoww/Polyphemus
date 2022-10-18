@@ -5,5 +5,5 @@ canHandle: address memory: memory
 	| classIndexOf |
 	
 	classIndexOf := (memory classIndexOf: address).
-	(classIndexOf < memory arrayClassIndexPun and: [ classIndexOf ~= memory isForwardedObjectClassIndexPun ]) ifTrue: [ self halt.Error signal ].
+	(classIndexOf < memory arrayClassIndexPun and: [ classIndexOf ~= memory isForwardedObjectClassIndexPun ]) ifTrue: [ Error signal ].
 	^ false
