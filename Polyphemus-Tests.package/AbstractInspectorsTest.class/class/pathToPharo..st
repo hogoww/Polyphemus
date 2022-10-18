@@ -1,4 +1,4 @@
-images
+pathFinding
 pathToPharo: aNumber
 	| path |
 	

@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"reifiedMemory"
+		"reifiedMemory",
+		"imagePath"
 	],
 	"name" : "AbstractInspectorsTest",
 	"type" : "normal"

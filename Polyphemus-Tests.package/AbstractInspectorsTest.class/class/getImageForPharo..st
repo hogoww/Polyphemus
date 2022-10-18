@@ -1,4 +1,4 @@
-images
+pathFinding
 getImageForPharo: aNumber
 
 	| commandLine |

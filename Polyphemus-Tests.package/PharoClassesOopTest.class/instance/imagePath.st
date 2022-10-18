@@ -1,3 +1,3 @@
 tests
-pathTo64BitImage
+imagePath
 	^ self class pathToMinimal64Bit
