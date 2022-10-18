@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"classesNamesIndex",
+		"metaclassNameIndex"
+	],
 	"name" : "PharoMode",
 	"type" : "normal"
 }

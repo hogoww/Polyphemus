@@ -1,3 +1,0 @@
-modes
-pharoImageMode
-	^ PharoMode

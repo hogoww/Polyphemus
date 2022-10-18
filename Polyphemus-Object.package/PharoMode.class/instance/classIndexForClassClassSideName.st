@@ -1,3 +1,3 @@
 testing
 classIndexForClassClassSideName
-	^ 7
+	^ metaclassNameIndex

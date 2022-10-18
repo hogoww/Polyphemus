@@ -4,3 +4,4 @@ initializeObjectsFromMemory
 	self createOrOverrideParticularObjects.
 	self reifiedClassTable computeSubclasses.
 	self createCompressedVersion.
+	self initializeMode

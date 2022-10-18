@@ -1,3 +1,3 @@
 testing
 classIndexForClassInstanceSideName
-	^ 6
+	^ classesNamesIndex
