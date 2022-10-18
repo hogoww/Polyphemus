@@ -1,8 +1,6 @@
 baselines
 defaultPlayground
-	^ '" clean P11 "path := FileSystem workingDirectory / ''..'' / ''clean11'' / ''clean11.image''.
-" Minimal Pharo11 " path := (IceRepository registeredRepositoryIncludingPackage: BaselineOfPolyphemus) location pathString ,''/resources/minimal64Bit.image''.
-"PharoCandle image" path := AbstractInspectorsTest new pathTo64BitImage asFileReference.
-
-(MemoryInspector newFromImage: path) open.
-'
+	^ '" clean P11 "path := AbstractInspectorsTest pathToPharo11.
+" Minimal Pharo11 " path := AbstractInspectorsTest pathToMinimal64Bit.
+"PharoCandle image" path := AbstractInspectorsTest pathToCandle64Bit.
+(MemoryInspector newFromImage: path) open.'
