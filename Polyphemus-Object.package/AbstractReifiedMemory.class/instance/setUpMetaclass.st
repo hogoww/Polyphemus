@@ -2,4 +2,4 @@ initialization
 setUpMetaclass
 	| arrayClass |
 	arrayClass := memory classAtIndex: (memory arrayClassIndexPun).
-	metaclass := memory classIndexOf: (memory fetchClassOf: arrayClass)
+	metaclassIndex := memory classIndexOf: (memory fetchClassOf: arrayClass)

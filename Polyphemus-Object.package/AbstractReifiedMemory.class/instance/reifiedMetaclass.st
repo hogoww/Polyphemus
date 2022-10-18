@@ -1,3 +1,3 @@
 accessing - specialObjects
 reifiedMetaclass
-	^ self reifyOop: (memory classAtIndex: metaclass)
+	^ self reifyOop: (memory classAtIndex: metaclassIndex)
