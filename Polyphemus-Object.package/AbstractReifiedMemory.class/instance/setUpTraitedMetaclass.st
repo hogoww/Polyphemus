@@ -1,4 +1,4 @@
 initialization
 setUpTraitedMetaclass
 
-		[ traitedMetaclass := self preFindClassNamed: 'TraitedMetaclass' ] onErrorDo: [ traitedMetaclass := nil ]
+		[ traitedMetaclass := self preFindClassNamed: 'TraitedMetaclass' ] on: NotFound do: [ traitedMetaclass := nil ]
