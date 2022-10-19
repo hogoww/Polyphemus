@@ -5,4 +5,4 @@ setUp
 	initializer imagePath: AbstractInspectorsTest pathToMinimal64Bit.
 	initializer setUpUsingImage.
 	self setUpFromInitializer: initializer.
-	reifiedMemory := PreReifiedMemory on: memory
+	reifiedMemory := FullyReifiedMemory on: memory

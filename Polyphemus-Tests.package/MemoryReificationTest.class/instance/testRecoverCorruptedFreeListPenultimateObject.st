@@ -13,7 +13,7 @@ testRecoverCorruptedFreeListPenultimateObject
 	
 	gcSize := memory fullGC.
 	
-	reifiedMemory := PreReifiedMemory onWithFlagFreeTree: memory.
+	reifiedMemory := FullyReifiedMemory onWithFlagFreeTree: memory.
 	
 	freeObjects := reifiedMemory select: [:anOop | anOop isFreeOop ].
 

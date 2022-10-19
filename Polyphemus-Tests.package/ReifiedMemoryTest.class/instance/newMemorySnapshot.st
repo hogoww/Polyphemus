@@ -1,3 +1,3 @@
 running
 newMemorySnapshot
-	reifiedMemory := PreReifiedMemory on: memory
+	reifiedMemory := FullyReifiedMemory on: memory

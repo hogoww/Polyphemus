@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PreReifiedMemory",
+	"name" : "FullyReifiedMemory",
 	"type" : "normal"
 }
