@@ -2,7 +2,6 @@ tests
 testCacheIsCleanupOnGarbageCollection
 
 	| initialSize postGCSize |
-	self newMemorySnapshot.
 	initialSize := PreReifiedMemory cache size.
 	reifiedMemory := nil.
 	Smalltalk garbageCollect.
