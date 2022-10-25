@@ -27,11 +27,20 @@ if [ -z $imageName ]; then
     exit
 fi
 
+#Expects three argument, the image version, the prefix and an image name
+extractAndName (){
+    unzip "$3"
+    rm *.sources "$3" pharo.version *.changes
+    newName="${2}P${1}.image"
+    mv *.image $newName
+    mv $newName ../resources/
+}
 
-
+#get regular 64
 wget "http://files.pharo.org/get-files/$pharoVersion/$imageName"
-unzip "$imageName"
-rm *.sources "$imageName" pharo.version *.changes
-newName="cleanP${1}.image"
-mv *.image $newName
-mv $newName ../resources/
+extractAndName $1 "clean" $imageName
+
+#get minimal 64 bit
+imageName="latest-minimal-64.zip"
+wget "http://files.pharo.org/image/$pharoVersion/$imageName"
+extractAndName $1 "minimal" $imageName
