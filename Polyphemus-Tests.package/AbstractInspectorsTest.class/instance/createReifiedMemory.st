@@ -1,3 +1,3 @@
 running
 createReifiedMemory
-	reifiedMemory := PreReifiedMemory on: memory
+	reifiedMemory := FullyReifiedMemory on: memory

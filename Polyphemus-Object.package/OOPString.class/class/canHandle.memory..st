@@ -2,4 +2,4 @@ instance creation
 canHandle: anAddress memory: aMemory
 	^(super canHandle: anAddress  memory: aMemory) and: [ 
 		aMemory stringClassIndexes anySatisfy: [ : aClassAddress |
-			(aMemory fetchClassTagOf: anAddress) = aClassAddress ]]
+			(aMemory classIndexOf: anAddress) = aClassAddress ]]

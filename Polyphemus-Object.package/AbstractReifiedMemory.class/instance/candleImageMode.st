@@ -1,3 +1,0 @@
-modes
-candleImageMode
-	^ CandleMode

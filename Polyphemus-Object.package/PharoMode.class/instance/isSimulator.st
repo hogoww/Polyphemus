@@ -1,0 +1,3 @@
+testing
+isSimulator
+	^ false

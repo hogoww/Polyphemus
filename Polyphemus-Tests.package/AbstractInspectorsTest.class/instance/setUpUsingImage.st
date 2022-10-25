@@ -9,7 +9,7 @@ setUpUsingImage
 	interpreter := self newInterpreter 
 		pluginList: { }.
 	
-	interpreter openOn: self pathTo64BitImage.
+	interpreter openOn: self imagePath.
 	interpreter initStackPages.
 	interpreter loadInitialContext.
 	wordSize := memory wordSize.

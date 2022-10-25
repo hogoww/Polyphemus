@@ -1,3 +1,3 @@
 accessing
 oopSlotNames
-	^ memory mode getObjectSlotName: self
+	^ memory mode getObjectSlotNames: self

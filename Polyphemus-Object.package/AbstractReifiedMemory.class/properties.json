@@ -18,9 +18,9 @@
 		"mode",
 		"flagErrorFreeTree",
 		"freeze",
-		"metaclass",
 		"stringClassIndexes",
-		"compiledMethodClassIndex"
+		"compiledMethodClassIndex",
+		"metaclassIndex"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"

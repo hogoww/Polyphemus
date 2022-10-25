@@ -2,7 +2,7 @@ initialization
 setUp
 	| initializer |
 	initializer := AbstractInspectorsTest new.
-	initializer imageName: self imageName.
+	initializer imagePath: AbstractInspectorsTest pathToMinimalP11.
 	initializer setUpUsingImage.
 	self setUpFromInitializer: initializer.
-	reifiedMemory := PreReifiedMemory on: memory
+	reifiedMemory := FullyReifiedMemory on: memory
