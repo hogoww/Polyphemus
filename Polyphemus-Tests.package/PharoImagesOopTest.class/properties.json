@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"classOop"
-	],
-	"name" : "PharoClassesOopTest",
+	"instvars" : [ ],
+	"name" : "PharoImagesOopTest",
 	"type" : "normal"
 }
