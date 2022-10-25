@@ -1,5 +1,7 @@
 initialization
 connectPresenters
 	
-	classOrder whenActivatedDo: [ self recreateListWithOtherMode ].
+	classOrder whenActivatedDo: [ 
+		self recreateListWithOtherMode.
+		self connectClassesPresenter ].
 	self connectClassesPresenter
