@@ -1,3 +1,3 @@
 accessing
 imagePath
-	^ self class pathToMinimal64Bit
+	^ self class pathToMinimalP11
