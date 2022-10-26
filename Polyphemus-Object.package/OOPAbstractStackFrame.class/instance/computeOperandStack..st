@@ -12,3 +12,8 @@ computeOperandStack: limit
 			operandStack add: (memory objectAt:
 					 (stackpages longAt: address)).
 			address := address - wordSize].
+		
+	"Hack to test"
+	self isTopFrame ifFalse: [  
+	operandStack remove: operandStack last.
+	savedIP := stackpages longAt: address] 
