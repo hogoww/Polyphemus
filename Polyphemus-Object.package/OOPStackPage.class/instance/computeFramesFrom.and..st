@@ -1,15 +1,29 @@
 initialization
 computeFramesFrom: aCogStackPage and: aMemory
 
-	| bottomFrame currentFrame |
-	bottomFrame := OOPAbstractStackFrame newFrom: aCogStackPage for: aCogStackPage baseAddress on: aMemory.
-	stackFrames push: bottomFrame.
+	| topFrame currentFrame interpreter |
+	aCogStackPage baseFP = 0 ifTrue: [ "Frame is not initialized page is free, may be reify me" 
+		^ self ].
+	interpreter := aMemory interpreter.
+	topFrame := interpreter stackPages mostRecentlyUsedPage
+	            = associatedPage
+		            ifTrue: [ 
+			            OOPAbstractStackFrame
+				            newTopFrameFrom: aCogStackPage
+				            startingAt: interpreter framePointer
+				            endingAt: interpreter stackPointer
+				            on: aMemory ]
+		            ifFalse: [ 
+			            OOPAbstractStackFrame
+				            newFrom: aCogStackPage
+				            for: aCogStackPage baseAddress
+				            on: aMemory ].
 
-	currentFrame := bottomFrame.
+	currentFrame := topFrame.
 	[ 
-	currentFrame := currentFrame frameAbove.
-	currentFrame
-		ifNotNil: [ 
-			stackFrames push: currentFrame.
-			true ]
-		ifNil: [ false ] ] whileTrue
+	stackFrames add: currentFrame.
+	currentFrame isBaseFrame
+		ifTrue: [ true ]
+		ifFalse: [ 
+			currentFrame := currentFrame oopCaller.
+			false ] ] whileFalse

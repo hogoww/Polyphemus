@@ -1,13 +1,12 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Polyphemus-Object-oop",
+	"super" : "OOPAbstractStackPage",
+	"category" : "Polyphemus-Object-oop-stack",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stackFrames",
-		"associatedPage"
+		"stackFrames"
 	],
 	"name" : "OOPStackPage",
 	"type" : "normal"

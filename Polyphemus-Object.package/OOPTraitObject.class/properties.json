@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "tr 6/1/2022 10:45",
 	"super" : "OOPClassInstanceSideObject",
-	"category" : "Polyphemus-Object-oop",
+	"category" : "Polyphemus-Object-oop-heap",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

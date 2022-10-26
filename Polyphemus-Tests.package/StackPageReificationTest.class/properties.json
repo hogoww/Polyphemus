@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorsTest",
+	"category" : "Polyphemus-Tests-reifiedMemory",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stackPages"
+	],
+	"name" : "StackPageReificationTest",
+	"type" : "normal"
+}

@@ -2,7 +2,8 @@ initialization
 computePages
 
 	memory interpreter stackPages pages do: [:stackpage |
-		stackpages add: (OOPStackPage newFrom: stackpage on: memory)
+		stackpages add: (OOPAbstractStackPage newFrom: stackpage on: memory)
 		  ].
-	1halt.
 	
+	mostRecentlyUsedPage := (stackpages select: [:page | page associatedPage = interpreter stackPages mostRecentlyUsedPage]) first.
+	leastRecentlyUsedPage  := stackpages last.

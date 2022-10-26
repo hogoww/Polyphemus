@@ -1,12 +1,15 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Polyphemus-Object-oop",
+	"category" : "Polyphemus-Object-oop-stack",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"isMarried"
+		"isMarried",
+		"isBlockAvtivation",
+		"numArgs",
+		"tag"
 	],
 	"name" : "OOPStackFrameFlag",
 	"type" : "normal"

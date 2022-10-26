@@ -1,0 +1,4 @@
+accessing
+frameNumber
+
+	^ stackFrames size

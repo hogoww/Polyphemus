@@ -1,18 +1,19 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Polyphemus-Object-oop",
+	"category" : "Polyphemus-Object-oop-stack",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"caller",
 		"method",
 		"flags",
 		"context",
 		"receiver",
 		"operandStack",
-		"memory"
+		"memory",
+		"framePointer",
+		"savedIP"
 	],
 	"name" : "OOPAbstractStackFrame",
 	"type" : "normal"

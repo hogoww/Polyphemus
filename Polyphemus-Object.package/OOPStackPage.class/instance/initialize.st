@@ -1,4 +1,4 @@
 initialization
 initialize 
 
-	stackFrames := Stack new.
+	stackFrames := OrderedCollection new.

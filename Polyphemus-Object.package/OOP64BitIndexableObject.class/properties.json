@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "OOPBitIndexableObject",
-	"category" : "Polyphemus-Object-oop",
+	"category" : "Polyphemus-Object-oop-heap",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
