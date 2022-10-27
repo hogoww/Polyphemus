@@ -1,10 +1,6 @@
 inspection
 inspectionItems: aBuilder
 	<inspectorPresentationOrder: 0 title: 'Oop'>
-	| items  |
-
-	self isImmediateOop ifTrue: [ ^ address value inspectIntegerIn: aBuilder ].
-	items := self inspectionItems.
 
 	^ aBuilder newTable 
 		addColumn: (SpStringTableColumn 
@@ -15,7 +11,7 @@ inspectionItems: aBuilder
 			title: 'Value' 
 			evaluated: [ :each | StObjectPrinter asTruncatedTextFrom: each value ]) 
 			beSortable;
-		items: items;
+		items: self inspectionItems;
 		beResizable;
 		alternateRowsColor;
 		yourself
