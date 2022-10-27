@@ -11,7 +11,7 @@ inspectionItems: aBuilder
 			title: 'Value' 
 			evaluated: [ :each | StObjectPrinter asTruncatedTextFrom: each value ]) 
 			beSortable;
-		items: self inspectionItems;
+		items: (self inspectionItems collect: [:e | StInspectorAssociationNode hostObject: e ]);
 		beResizable;
 		alternateRowsColor;
 		yourself
