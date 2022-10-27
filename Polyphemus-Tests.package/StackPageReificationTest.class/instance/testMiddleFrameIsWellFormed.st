@@ -18,4 +18,3 @@ testMiddleFrameIsWellFormed
 	self assert: middleFrame oopMethod selector asString equals: 'installNewSession'.
 	self assert: middleFrame oopContext equals: reifiedMemory reifiedNilObject.
 	self assert: middleFrame oopReceiver oopClassName equals: 'SessionManager'.
-	self halt.
