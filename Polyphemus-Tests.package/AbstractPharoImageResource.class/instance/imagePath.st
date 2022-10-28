@@ -1,0 +1,3 @@
+running
+imagePath
+	^ self subclassResponsibility

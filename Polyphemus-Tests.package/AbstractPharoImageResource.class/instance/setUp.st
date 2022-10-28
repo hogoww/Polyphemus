@@ -1,8 +1,9 @@
-initialization
+running
 setUp
 	| initializer |
+	super setUp.
 	initializer := AbstractInspectorsTest new.
-	initializer imagePath: AbstractInspectorsTest pathToMinimalP11.
+	initializer imagePath: self imagePath.
 	initializer setUpUsingImage.
 	self setUpFromInitializer: initializer.
 	reifiedMemory := FullyReifiedMemory on: memory
