@@ -9,8 +9,7 @@ inspectionItems: aBuilder
 	^ aBuilder newTable 
 		addColumn: ((SpStringTableColumn 
 			title: 'Key'
-			evaluated: [ :each | StObjectPrinter asTruncatedTextFrom: each key ])
-				)
+			evaluated: [ :each | StObjectPrinter asTruncatedTextFrom: each key ]))
 			beSortable;
 		addColumn: (SpStringTableColumn 
 			title: 'Value' 

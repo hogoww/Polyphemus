@@ -1,0 +1,3 @@
+running
+testCompiledMethodSomething
+	self assert: compiledMethodOop oopSelector isStringOop
