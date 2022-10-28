@@ -1,5 +1,5 @@
 initialization
 setUp
 
-	super setUp.
+	PharoCandleImageResource current setUpTestCase: self.
 	sixtyFourbitLayoutObject := self reifyOop: memory rememberedSetObj

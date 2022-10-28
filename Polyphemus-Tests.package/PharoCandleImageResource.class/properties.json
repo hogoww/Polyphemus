@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestResource",
+	"super" : "AbstractPharoImageResource",
 	"category" : "Polyphemus-Tests-memoryInspector",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"reifiedMemory",
-		"interpreter",
-		"memory"
-	],
-	"name" : "PharoImageResource",
+	"instvars" : [ ],
+	"name" : "PharoCandleImageResource",
 	"type" : "normal"
 }

@@ -1,0 +1,3 @@
+running
+imagePath
+	^ AbstractInspectorsTest pathToCandle64Bit
