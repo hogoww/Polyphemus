@@ -1,0 +1,4 @@
+accessing
+oopNumberOfSlots
+
+	^ oopNumberOfSlots

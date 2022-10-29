@@ -1,3 +1,0 @@
-modes
-simulatorMode
-	^ SimulatorMode

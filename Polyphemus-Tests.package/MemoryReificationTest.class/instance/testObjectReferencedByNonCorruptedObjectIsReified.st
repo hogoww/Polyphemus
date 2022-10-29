@@ -14,7 +14,7 @@ testObjectReferencedByNonCorruptedObjectIsReified
 
 	self corrupt: corruptedObject.
 
-	reifiedMemory := PreReifiedMemory on: memory.
+	reifiedMemory := FullyReifiedMemory on: memory.
 
 	self
 		assert: (reifiedMemory objectAt: corruptedObject) class 

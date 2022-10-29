@@ -1,6 +1,6 @@
 accessing
 compiledCodeInspectionItems
 	^ { 
-		#selector -> self selector.
+		#selector -> self oopSelector.
 		#methodClass -> self oopMethodClass
 		}

@@ -1,3 +1,3 @@
-inspection
+accessing
 hash
 	^ address hash

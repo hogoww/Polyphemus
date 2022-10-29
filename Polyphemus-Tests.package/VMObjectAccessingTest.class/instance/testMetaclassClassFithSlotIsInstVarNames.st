@@ -2,5 +2,5 @@ tests-slotNames
 testMetaclassClassFithSlotIsInstVarNames
 	| metaClassClassOop |
 	
-	metaClassClassOop := (self reifyOop: reifiedMemory metaclass) oopClass.
+	metaClassClassOop := reifiedMemory reifiedMetaclass oopClass.
 	self assert: metaClassClassOop allOopSlotNames fifth printString equals: #instVarNames
