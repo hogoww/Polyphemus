@@ -2,5 +2,5 @@ tests-slotNames
 testMetaclassThirdSlotIsFormat
 	| metaClassOop |
 	
-	metaClassOop := self reifyOop: reifiedMemory metaclass.
+	metaClassOop := reifiedMemory reifiedMetaclass.
 	self assert: metaClassOop allOopSlotNames third printString equals: #format.

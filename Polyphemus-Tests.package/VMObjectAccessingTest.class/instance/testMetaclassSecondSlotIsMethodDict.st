@@ -2,5 +2,5 @@ tests-slotNames
 testMetaclassSecondSlotIsMethodDict
 	| metaClassOop |
 	
-	metaClassOop := self reifyOop: reifiedMemory metaclass.
+	metaClassOop := reifiedMemory reifiedMetaclass.
 	self assert: metaClassOop allOopSlotNames second printString equals: #methodDict.

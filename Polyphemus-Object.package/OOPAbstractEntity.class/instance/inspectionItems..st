@@ -7,13 +7,15 @@ inspectionItems: aBuilder
 	items := self inspectionItems.
 	
 	^ aBuilder newTable 
-		addColumn: (SpStringTableColumn 
+		addColumn: ((SpStringTableColumn 
 			title: 'Key'
-			evaluated: [ :each | StObjectPrinter asTruncatedTextFrom: each key ])
+			evaluated: [ :each | StObjectPrinter asTruncatedTextFrom: each key ]))
 			beSortable;
 		addColumn: (SpStringTableColumn 
 			title: 'Value' 
 			evaluated: [ :each | StObjectPrinter asTruncatedTextFrom: each value ])
 			beSortable;
 		items: items;
+		beResizable;
+		alternateRowsColor;
 		yourself

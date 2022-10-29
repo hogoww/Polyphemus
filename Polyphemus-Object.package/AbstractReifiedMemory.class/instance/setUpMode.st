@@ -1,8 +1,9 @@
 initialization
 setUpMode
-	memory interpreter imageName ifNil: [ mode := self simulatorMode. ^ self ].
+	memory interpreter imageName ifNil: [ mode := SimulatorMode. ^ self ].
 	
 	mode := 
-		(memory numSlotsOf: self metaclass)  < 7
-			ifTrue:[ self candleImageMode ]
-			ifFalse: [ self pharoImageMode ]
+		(memory numSlotsOf: (memory classAtIndex: self metaclassIndex))  < 7
+			ifTrue:[ CandleMode ]
+			ifFalse: [ PharoMode new ].
+	mode initializeFrom: self

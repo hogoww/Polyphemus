@@ -20,7 +20,7 @@ defaultLayout
 	^ SpBoxLayout newTopToBottom
 		spacing: 5;
 		add: (SpBoxLayout newLeftToRight
-			spacing: 5;
+			"spacing: 5;"
 			add: classesLayout;
 			add: methodsLayout;
 			yourself);

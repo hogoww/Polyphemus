@@ -1,4 +1,3 @@
 initialization
 setUpMetaclassForTrait
-
-		[ metaclassForTrait := self preFindClassNamed: 'MetaclassForTraits' ] onErrorDo: [ metaclassForTrait := nil]
+	[ metaclassForTrait := self preFindClassNamed: 'MetaclassForTraits' ] on: NotFound do: [ metaclassForTrait := nil ]

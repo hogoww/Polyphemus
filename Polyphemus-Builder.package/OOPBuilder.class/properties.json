@@ -1,0 +1,29 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Polyphemus-Builder",
+	"classinstvars" : [ ],
+	"pools" : [
+		"VMBasicConstants",
+		"VMBytecodeConstants",
+		"VMClassIndices",
+		"VMObjectIndices"
+	],
+	"classvars" : [ ],
+	"instvars" : [
+		"oopIsClass",
+		"oopClassIndexinstalation",
+		"oopIsOld",
+		"oopNumberOfSlots",
+		"oopFormat",
+		"oopClassIndex",
+		"oopIsImmutable",
+		"oopIsMarked",
+		"oopIsPinned",
+		"oopIsRemembered",
+		"classIndex",
+		"memory"
+	],
+	"name" : "OOPBuilder",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractPharoImageResource",
+	"category" : "Polyphemus-Tests-memoryInspector",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MinimalPharo11ImageResource",
+	"type" : "normal"
+}
