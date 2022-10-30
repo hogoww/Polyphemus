@@ -5,4 +5,4 @@ testActivePageBaseFrameIsKindOfBaseFrame
 	activePage := stackPages mostRecentlyUsedPage.
 	baseFrame := activePage frames last.
 
-	self assert: baseFrame class equals: OOPBaseFrame.
+	self assert: baseFrame isBaseFrame

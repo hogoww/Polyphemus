@@ -5,4 +5,4 @@ testActivePageFirstFrameIsKindOfTopFrame
 	activePage := stackPages mostRecentlyUsedPage.
 	topFrame := activePage frames first.
 
-	self assert: topFrame class equals: OOPTopFrame.
+	self assert: topFrame isTopFrame 

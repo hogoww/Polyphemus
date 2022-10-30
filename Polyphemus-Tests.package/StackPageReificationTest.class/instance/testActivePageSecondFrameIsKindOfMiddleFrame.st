@@ -6,4 +6,4 @@ testActivePageSecondFrameIsKindOfMiddleFrame
 	activePage := stackPages mostRecentlyUsedPage.
 	middleFrame := activePage frames second.
 
-	self assert: middleFrame class equals: OOPMiddleFrame.
+	self assert: middleFrame isMiddleFrame

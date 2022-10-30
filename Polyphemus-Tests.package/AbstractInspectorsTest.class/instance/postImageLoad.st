@@ -1,0 +1,3 @@
+running
+postImageLoad
+	self createReifiedMemory
