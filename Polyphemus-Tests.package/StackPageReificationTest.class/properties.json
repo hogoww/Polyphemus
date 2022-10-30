@@ -4,7 +4,9 @@
 	"category" : "Polyphemus-Tests-reifiedMemory",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"CustomResource"
+	],
 	"instvars" : [
 		"stackPages"
 	],
