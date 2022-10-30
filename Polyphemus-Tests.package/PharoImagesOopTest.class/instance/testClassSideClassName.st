@@ -2,4 +2,4 @@ tests
 testClassSideClassName
 	| classOop |
 	classOop := reifiedMemory reifiedMetaclass.
-	self assert: classOop oopClassSide oopClassName equals: #'Metaclass class'
+	self assert: classOop oopClassSide oopName equals: #'Metaclass class'
