@@ -2,11 +2,6 @@ tests
 testMiddleFrameIsWellFormed
 
 	| activePage middleFrame callerFrame frameAbove |
-	self interpretUntilMethodChangedNumberOfTimes: 3.
-
-	reifiedMemory := PreReifiedMemory on: memory.
-	stackPages := OOPStackPageJournal newWith: reifiedMemory.
-
 	activePage := stackPages mostRecentlyUsedPage.
 	middleFrame := activePage frames second.
 	

@@ -5,8 +5,5 @@ testStackpageJournalMostRecentlyUsedIsTheSameAsInterpreter
 
 	self interpretUntilMethodChangedNumberOfTimes: 3.
 
-	reifiedMemory := PreReifiedMemory on: memory.
-	stackPages := OOPStackPageJournal newWith: reifiedMemory.
-
 	self assert: stackPages mostRecentlyUsedPage associatedPage equals: interpreter stackPages mostRecentlyUsedPage.
 

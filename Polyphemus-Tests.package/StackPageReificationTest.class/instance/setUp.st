@@ -1,4 +1,7 @@
 tests
 setUp
-	self setUpUsingImage: self pathToMinimal64BitImage.
-	self timeLimit: 5 minutes
+	super setUp.
+	self interpretUntilMethodChangedNumberOfTimes: 3.
+
+	reifiedMemory := FullyReifiedMemory on: memory.
+	stackPages := OOPStackPageJournal newWith: reifiedMemory.

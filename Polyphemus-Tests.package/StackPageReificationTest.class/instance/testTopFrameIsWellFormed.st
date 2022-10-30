@@ -2,10 +2,6 @@ tests
 testTopFrameIsWellFormed
 
 	| activePage topFrame callerFrame |
-	self interpretUntilMethodChangedNumberOfTimes: 3.
-
-	reifiedMemory := PreReifiedMemory on: memory.
-	stackPages := OOPStackPageJournal newWith: reifiedMemory.
 
 	activePage := stackPages mostRecentlyUsedPage.
 	topFrame := activePage frames first.
