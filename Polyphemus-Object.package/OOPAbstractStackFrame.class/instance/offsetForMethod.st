@@ -1,4 +1,4 @@
-as yet unclassified
+offsets
 offsetForMethod
 
 	^framePointer - memory wordSize

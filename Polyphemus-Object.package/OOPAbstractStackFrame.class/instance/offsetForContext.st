@@ -1,4 +1,4 @@
-as yet unclassified
+offsets
 offsetForContext
 
 	^framePointer - (2 * memory wordSize)
