@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ColorProvider",
+	"category" : "Polyphemus-Memory-Coloring",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colorDictionary",
+		"defaultColor"
+	],
+	"name" : "CustomColorProvider",
+	"type" : "normal"
+}

@@ -1,4 +1,6 @@
 tests
 testStackpageJournalMostRecentlyUsedIsTheSameAsInterpreter
-	self assert: stackPages mostRecentlyUsedPage associatedPage equals: interpreter stackPages mostRecentlyUsedPage.
 
+	self
+		assert: stackPages mostRecentlyUsedPage associatedPage
+		equals: interpreter stackPages mostRecentlyUsedPage
