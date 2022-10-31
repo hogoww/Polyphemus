@@ -3,7 +3,9 @@
 	"super" : "Object",
 	"category" : "Polyphemus-Object-oop-heap",
 	"classinstvars" : [ ],
-	"pools" : [ ],
+	"pools" : [
+		"VMClassIndices"
+	],
 	"classvars" : [
 		"SubclassesToEvaluate"
 	],
