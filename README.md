@@ -56,9 +56,11 @@ Moreover, the object in the inspector can be navigated just like Pharo objects.
 
 The main idea of Polyphemus is to provide a higher level vision of VMs OOPs.  
 However, this is meant to be a basis for Pharo tools.  
-Particularly we are investigating how to investigate memory corrupt and how to recover dead images.  
+Particularly we are investigating how to investigate memory corruptions and how to recover dead images.  
 We were able to save a dead image, see the other Ressources section.  
 
 # Other Ressources
-[Video submited to the Esug'22 Innovation Technology Awards](https://youtu.be/zf3cCtNW830) (Vote pending).  
-[Report of how we used Polyphemus to resurrect a dead image](https://github.com/hogoww/Polyphemus/blob/main/Documentation/ResurrectingDeadImages/ResurrectingDeadImages.pdf).  
+
+[Video submited to the Esug'22 Innovation Technology Awards.](https://youtu.be/zf3cCtNW830)
+[Report of how we used Polyphemus to resurrect a dead image.](https://github.com/hogoww/Polyphemus/blob/main/Documentation/ResurrectingDeadImages/ResurrectingDeadImages.pdf)
+[Paper accepted at VMIL'22 (preprint)] (https://hal.inria.fr/hal-03827632)
