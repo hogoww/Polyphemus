@@ -61,6 +61,6 @@ We were able to save a dead image, see the other Ressources section.
 
 # Other Ressources
 
-[Video submited to the Esug'22 Innovation Technology Awards.](https://youtu.be/zf3cCtNW830)
-[Report of how we used Polyphemus to resurrect a dead image.](https://github.com/hogoww/Polyphemus/blob/main/Documentation/ResurrectingDeadImages/ResurrectingDeadImages.pdf)
-[Paper accepted at VMIL'22 (preprint)] (https://hal.inria.fr/hal-03827632)
+[Video submited to the Esug'22 Innovation Technology Awards.](https://youtu.be/zf3cCtNW830)  
+[Report of how we used Polyphemus to resurrect a dead image.](https://github.com/hogoww/Polyphemus/blob/main/Documentation/ResurrectingDeadImages/ResurrectingDeadImages.pdf)  
+[Paper accepted at VMIL'22 (preprint)](https://hal.inria.fr/hal-03827632)  
