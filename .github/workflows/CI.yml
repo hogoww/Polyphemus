@@ -6,9 +6,9 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ ubuntu-latest ]#, macos-latest, windows-latest ]
+        os: [ ubuntu-latest ]
         smalltalk: [ Pharo64-10 ]
-      fail-fast: true # Do not let failures on Squeak 5.2 stop other jobs.
+      fail-fast: true
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     steps:
