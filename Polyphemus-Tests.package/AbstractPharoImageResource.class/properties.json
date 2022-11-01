@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "TestResource",
-	"category" : "Polyphemus-Tests-memoryInspector",
+	"category" : "Polyphemus-Tests-resource",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

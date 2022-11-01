@@ -1,3 +1,3 @@
 instance creation
 canHandle: anAddress memory: aMemory
-	^ aMemory isImmediate: anAddress
+	^ anAddress = 0 or: [ aMemory isImmediate: anAddress ]
