@@ -9,3 +9,4 @@ setUpBasicIndexes
 	self setUpCompiledMethodClass.
 	self setUpMetaclassForTrait.
 	self setUpTraitedMetaclass.
+	self setUpObjectHandlers.

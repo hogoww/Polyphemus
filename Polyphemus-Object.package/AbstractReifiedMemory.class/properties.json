@@ -20,7 +20,8 @@
 		"freeze",
 		"stringClassIndexes",
 		"compiledMethodClassIndex",
-		"metaclassIndex"
+		"metaclassIndex",
+		"objectHandlers"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"

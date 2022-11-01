@@ -7,7 +7,7 @@ instantiateObject: anAddress on: memory
 		handler := { OOPImmediate } ].
 	
 	handler := handler ifNil: [ 
-		SubclassesToEvaluate select: [ :aSubclass | 
+		memory objectHandlers select: [ :aSubclass | 
 				aSubclass canHandle: anAddress memory: memory ] ].
 
 	^ (handler ifEmpty: [ OOPRegularObject ] ifNotEmpty: [ handler last ])
