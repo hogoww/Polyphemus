@@ -1,4 +1,4 @@
-converting
+inspection
 inspectionItems: aBuilder
 	<inspectorPresentationOrder: 0 title: 'Oop'>
 
