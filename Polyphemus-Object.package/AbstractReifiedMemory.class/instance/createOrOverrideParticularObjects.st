@@ -20,5 +20,5 @@ createOrOverrideParticularObjects
 	
 	metaclassForTraitIndex ifNil:[ ^ self ].
 	
-	objectHandlers add: OOPClassClassSideObject subclasses.
-	objectHandlers add: OOPClassInstanceSideObject subclasses.
+	objectHandlers addAll: OOPClassClassSideObject subclasses.
+	objectHandlers addAll: OOPClassInstanceSideObject subclasses.
