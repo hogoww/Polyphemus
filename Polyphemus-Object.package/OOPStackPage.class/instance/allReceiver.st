@@ -4,5 +4,5 @@ allReceiver
 	| referencedOop |
 	referencedOop := Set new.
 	
-	stackFrames do: [:frame | referencedOop addAll: frame receiver].
+	stackFrames do: [:frame | referencedOop add: frame oopReceiver].
 	^referencedOop 

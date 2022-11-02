@@ -1,0 +1,3 @@
+querying
+topFrame
+	^ stackFrames first

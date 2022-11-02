@@ -6,8 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"colorDictionary",
-		"defaultColor"
+		"defaultColor",
+		"colorOopDictionary",
+		"colorDescriptionDictionary"
 	],
 	"name" : "CustomColorProvider",
 	"type" : "normal"
