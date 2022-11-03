@@ -2,7 +2,9 @@ tests
 testStackPageReceiverAreColoredProperly
 
 	| inspector customColorProvider colorOopDict colorDescriptionDict chosenColor notebook |
+	self fail.
 	self interpretUntilMethodChangedNumberOfTimes: 19.
+	stackPages := OOPStackPageJournal newWith: reifiedMemory.
 	chosenColor := Color green.
 
 	colorOopDict := Dictionary new.

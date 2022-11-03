@@ -1,0 +1,3 @@
+querying
+hasClosure
+	^isBlockActivation
