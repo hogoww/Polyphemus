@@ -10,7 +10,7 @@ setUpStringClasses
 	memory classTableEntriesDo: [ :aClassTableAddress :anIndex |
 		((memory superclassOf: aClassTableAddress) = stringClassAddress 
 			or: [ ((memory superclassOf: aClassTableAddress) ~= memory nilObject)
-				and: [ (memory superclassOf: (memory superclassOf: aClassTableAddress)) = stringClassAddress  ]])
+				and: [ (memory superclassOf: (memory superclassOf: aClassTableAddress)) = stringClassAddress ]])
 					ifTrue: [ stringClasses add: aClassTableAddress ]].
 
 	stringClasses collect: [ :anOop | memory rawHashBitsOf: anOop ] into: stringClassIndexes
