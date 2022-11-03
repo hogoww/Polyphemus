@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "AbstractInspectorsTest",
+	"super" : "ImageInterpretedSetup",
 	"category" : "Polyphemus-Tests-reifiedMemory",
 	"classinstvars" : [
 		"customResource"
