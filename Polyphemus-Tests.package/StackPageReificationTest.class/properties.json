@@ -2,11 +2,11 @@
 	"commentStamp" : "",
 	"super" : "AbstractInspectorsTest",
 	"category" : "Polyphemus-Tests-reifiedMemory",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [
-		"CustomResource"
+	"classinstvars" : [
+		"customResource"
 	],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"stackPages"
 	],

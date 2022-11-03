@@ -1,4 +1,4 @@
 running
 setUp
-	CustomResource current setUpTestCase: self.
+	self class currentImage current setUpTestCase: self.
 	stackPages := OOPStackPageJournal newWith: reifiedMemory.
