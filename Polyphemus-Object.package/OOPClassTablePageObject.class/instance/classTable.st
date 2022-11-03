@@ -1,0 +1,3 @@
+testing
+classTable
+	^ memory reifiedClassTable

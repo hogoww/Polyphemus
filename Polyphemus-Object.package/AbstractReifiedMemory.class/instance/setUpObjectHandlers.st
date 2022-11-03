@@ -1,10 +1,8 @@
 initialization
 setUpObjectHandlers
-	objectHandlers := OOPAbstractEntity allSubclasses select: [ :aSubclass | 
-		| method |
-		aSubclass = OOPImmediate 
-			ifTrue: [ false ]
-			ifFalse:	[
-				method := aSubclass classSide methodDictionary at: #canHandle:memory: ifAbsent: nil.
-				method isNotNil ]
-		]
+	objectHandlers := OOPAbstractObject allSubclasses select: [ :aSubclass | | method |
+		method := aSubclass classSide methodDictionary at: #canHandle:memory: ifAbsent: nil.
+		method isNotNil
+		].
+	objectHandlers := objectHandlers reject: [ :c | OOPAbstractClass allSubclasses includes: c ].
+	objectHandlers add: OOPForwarder.
