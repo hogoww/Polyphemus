@@ -9,6 +9,6 @@ testTopFrameIsWellFormed
 	callerFrame := activePage frames second.
 
 	self assert: topFrame oopCaller equals: callerFrame.
-	self assert: topFrame oopMethod selector asString equals: 'newSession'.
+	self assert: topFrame oopMethod oopSelector asString equals: 'newSession'.
 	self assert: topFrame oopContext equals: reifiedMemory reifiedNilObject.
 	self assert: topFrame oopReceiver oopClassName equals: 'SessionManager'.
