@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"exception"
+	],
 	"name" : "StackPageToDebuggerTest",
 	"type" : "normal"
 }

@@ -1,0 +1,4 @@
+compatibility
+isString
+
+	^true

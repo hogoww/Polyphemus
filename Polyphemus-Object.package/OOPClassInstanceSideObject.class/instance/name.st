@@ -1,0 +1,3 @@
+compatibility
+name
+	^self oopName

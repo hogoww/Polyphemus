@@ -1,0 +1,3 @@
+compatibility
+methodClass
+	^self oopMethodClass

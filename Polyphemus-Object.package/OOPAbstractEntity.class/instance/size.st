@@ -1,0 +1,3 @@
+compatibility
+size 
+	^self oopSize

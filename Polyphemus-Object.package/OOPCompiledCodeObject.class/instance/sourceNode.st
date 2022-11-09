@@ -1,0 +1,3 @@
+debugger
+sourceNode
+	self subclassResponsibility .

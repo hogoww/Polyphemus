@@ -1,13 +1,12 @@
 tests
 testMarryFrameCreateAnOopContext
 
-
-	| context topFrame |
-	topFrame := stackPages mostRecentlyUsedPage topFrame.
-	self halt.
-	context := topFrame marryToContext.
 	
-	"I dunno if we have an update"
-	reifiedMemory := FullyReifiedMemory on: memory.
-	self halt.
-	self assert: context equals: reifiedMemory lastObject.
+	|  topFrame interpreterContext modelContext |
+	topFrame := stackPages mostRecentlyUsedPage topFrame.
+
+	interpreterContext := topFrame marryToContext.
+
+	modelContext := topFrame asOopContext.
+	
+	self assert: interpreterContext equals: modelContext.
