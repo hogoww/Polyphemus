@@ -1,3 +1,3 @@
 running
 imagePath
-	^ AbstractInspectorsTest pathToCandle64Bit
+	^ PharoImageAccessor pathToCandle64Bit

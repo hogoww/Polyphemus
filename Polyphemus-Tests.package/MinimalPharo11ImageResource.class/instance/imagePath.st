@@ -1,3 +1,3 @@
 running
 imagePath
-	^ AbstractInspectorsTest pathToMinimalP11
+	^ PharoImageAccessor pathToMinimalP11
