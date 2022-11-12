@@ -1,3 +1,3 @@
 images
 pathToMinimalP11
-	^ self pathToMinimalPharo: 11
+	^ self pathToImageNamed: 'minimalP11.image'
