@@ -30,9 +30,10 @@ fi
 #Expects three argument, the image version, the prefix and an image name
 extractAndName (){
     unzip "$3"
-    rm *.sources "$3" pharo.version *.changes
-    newName="${2}P${1}.image"
-    mv *.image $newName
+    rm "$3" pharo.version *.changes
+    newName="${2}P${1}"
+    mv *.image "${newName}.image"
+    mv *.sources "${newName}.sources"
     mv $newName ../resources/
 }
 
