@@ -1,4 +1,7 @@
 SmalltalkCISpec {
+    #postLoading: [
+        'scripts/giveRightsToScripts.st'
+    ],
     #loading : [
         SCIMetacelloLoadSpec {
             #baseline : 'Polyphemus',
