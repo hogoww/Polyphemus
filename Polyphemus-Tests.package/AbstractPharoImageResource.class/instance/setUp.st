@@ -4,6 +4,5 @@ setUp
 	super setUp.
 	initializer := AbstractInspectorsTest new.
 	initializer imagePath: self imagePath.
-	initializer setUpUsingImage.
+	initializer setUpForResource.
 	self setUpFromInitializer: initializer.
-	reifiedMemory := FullyReifiedMemory on: memory

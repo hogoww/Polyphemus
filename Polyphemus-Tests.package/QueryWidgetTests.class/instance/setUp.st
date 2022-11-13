@@ -1,4 +1,4 @@
 running
 setUp
-	PharoCandleImageResource current setUpTestCase: self.
+	super setUp.
 	widget := QueryWidget new open presenter

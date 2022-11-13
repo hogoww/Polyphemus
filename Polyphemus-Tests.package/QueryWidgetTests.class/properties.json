@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "AbstractInspectorsTest",
+	"super" : "TestCase",
 	"category" : "Polyphemus-Tests-memoryInspector",
 	"classinstvars" : [ ],
 	"pools" : [ ],

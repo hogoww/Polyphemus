@@ -1,4 +1,4 @@
 running
 setUp
-	self class currentImage current setUpTestCase: self.
+	super setUp.
 	stackPages := OOPStackPageJournal newWith: reifiedMemory.
