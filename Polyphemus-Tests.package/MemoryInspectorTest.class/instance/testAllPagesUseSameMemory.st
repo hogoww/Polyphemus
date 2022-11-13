@@ -1,4 +1,4 @@
-running
+tests
 testAllPagesUseSameMemory
 	self assert: inspector pages isNotEmpty.
 	inspector pages do: [ :aPage |

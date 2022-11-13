@@ -11,10 +11,6 @@ initializePresenters
 	memoryScripter := (ReifiedMemoryScripter newOn: interpreter).
 	memoryScripter addBinding: (WorkspaceVariable key: #oldSpace value: oldSpacePage).
 	memoryScripter addBinding: (WorkspaceVariable key: #newSpace value: newSpacePage).
-	memoryScripter text: 
-'reifiedMemory.
-oldSpace.
-newSpace.'.
 	
 	notebook := self newNotebook.
 	notebook

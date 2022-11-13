@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"inspector",
-		"cachedCode"
+		"scripter"
 	],
-	"name" : "MemoryInspectorTest",
+	"name" : "MemoryScripterTest",
 	"type" : "normal"
 }

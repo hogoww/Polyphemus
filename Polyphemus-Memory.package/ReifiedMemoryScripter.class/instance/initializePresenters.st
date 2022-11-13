@@ -2,4 +2,5 @@ initialization
 initializePresenters
 	codePresenter := self instantiate: SpCodePresenter.
 	codePresenter beForScripting.
-	codePresenter text: 'reifiedMemory'
+	self setCode: LastCode.
+	codePresenter whenTextChangedDo: [ :newValue :oldValue | LastCode := newValue ].

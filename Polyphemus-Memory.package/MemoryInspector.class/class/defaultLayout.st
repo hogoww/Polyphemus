@@ -1,4 +1,4 @@
-instance creation
+layout
 defaultLayout
 
 	^ SpBoxLayout newHorizontal
