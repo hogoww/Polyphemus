@@ -1,5 +1,5 @@
 initialization
 setUp
 
-	PharoCandleImageResource current setUpTestCase: self.
+	super setUp.
 	emptyLayoutObject := self reifyOop: memory nilObject

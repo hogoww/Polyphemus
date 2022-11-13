@@ -1,0 +1,3 @@
+configuring
+resourceClass
+	^ MinimalPharo11ImageResource
