@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ImageInterpretedSetup",
-	"category" : "Polyphemus-Tests-reifiedMemory",
+	"category" : "Polyphemus-Tests-objectInspector",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

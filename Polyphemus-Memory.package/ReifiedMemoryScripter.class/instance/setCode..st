@@ -1,3 +1,3 @@
-text
-text: aString 
+accessing
+setCode: aString 
 	codePresenter text: aString
