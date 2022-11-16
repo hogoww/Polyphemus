@@ -10,5 +10,5 @@ initializeClassOop: anOop
 		ifFalse: [
 			memory setHashBitsOf: anOop to: oopClassIndexinstalation.
 			self ensureClassPageExistsFor: oopClassIndexinstalation.
-			memory classAtIndex: oopClassIndexinstalation  put: anOop.
+			memory classAtIndex: oopClassIndexinstalation put: anOop.
 			].
