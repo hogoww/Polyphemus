@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorsTest",
+	"category" : "Polyphemus-Tests-layout",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nonIndexableLayoutObject"
+	],
+	"name" : "VMDecompilerCompiledMethod",
+	"type" : "normal"
+}
