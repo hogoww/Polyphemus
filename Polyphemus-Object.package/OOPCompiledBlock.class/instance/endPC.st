@@ -1,0 +1,4 @@
+debugger
+endPC
+	
+	^ self oopSize

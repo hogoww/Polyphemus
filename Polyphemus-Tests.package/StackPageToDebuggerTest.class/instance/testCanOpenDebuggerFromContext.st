@@ -8,5 +8,5 @@ testCanOpenDebuggerFromContext
 	exception := self nullExceptionFor: context named: 'Dummy exception for context reification'.
 	debugSession := DebugSession named: exception description on: nil startedAt: exception signalerContext.
 	debugSession exception: exception.
-	StDebugger openOn: debugSession withFullView: true .
+	StDebugger openOn: debugSession withFullView: true.
 	self halt.
