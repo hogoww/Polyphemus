@@ -6,10 +6,12 @@ sender
 		frameCaller := self reifiedSlotAt: 2.
 		frameCaller isIntegerOop
 			ifTrue: [ 
-				frameAddress := frameCaller asInteger * memory wordSize.
+				frameCaller := frameCaller asInteger.
+				frameCaller  = 0 ifTrue: [ ^ nil ].
+				frameAddress := frameCaller * memory wordSize.
 				interpreter := memory interpreter.
 				sender := memory reifyOop: (interpreter
 						           ensureFrameIsMarried: frameAddress
 						           SP: interpreter stackPointer) ]
-			ifFalse: [ "certainly a Context " ^ frameCaller ] ].
+			ifFalse: [ "certainly a Context " sender := frameCaller ] ].
 	^ sender

@@ -7,7 +7,6 @@ testOOPCompiledMethodCanDecompile2
 	context := topFrame marryToContext.
 	
 	context := context sender sender.
-	self halt.
 
 	dissicatedMethod := context method.
 	"hard code hostMehtod for now"
