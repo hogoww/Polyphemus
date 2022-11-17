@@ -1,5 +1,5 @@
 tests-classVariables
 testStringClassAllClassVariables
-	| stringClass |
-	stringClass := reifiedMemory reifiedMetaclass classNameObject oopClass oopClass.
-	self assert: stringClass oopAllClassVariables size equals: 4
+	self assert: (self stringClass oopClassSide oopAllClassVariables 
+		anySatisfy: [ :aClassVariable | 
+			(aClassVariable allIndexed difference: (String classVariableNamed: #CaseSensitiveOrder) value) isEmpty ])
