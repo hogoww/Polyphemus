@@ -1,6 +1,3 @@
 tests-slotNames
 testMetaclassClassSideHasSixClassVariablesNames
-	| metaClassClassOop |
-	
-	metaClassClassOop := reifiedMemory reifiedMetaclass oopClass.
-	self assert: metaClassClassOop allOopSlotNames size equals: 6
+	self assert: reifiedMemory reifiedMetaclass oopClassSide allOopSlotNames size equals: 6
