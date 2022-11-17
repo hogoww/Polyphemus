@@ -1,0 +1,3 @@
+accessing
+classVariablesSlotName
+	^ self class classVariablesSlotName

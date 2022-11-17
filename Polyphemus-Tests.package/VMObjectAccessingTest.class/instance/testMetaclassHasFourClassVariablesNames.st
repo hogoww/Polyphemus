@@ -1,6 +1,3 @@
 tests-slotNames
 testMetaclassHasFourClassVariablesNames
-	| metaClassOop |
-	
-	metaClassOop := reifiedMemory reifiedMetaclass.
-	self assert: metaClassOop allOopSlotNames size equals: 4
+	self assert: reifiedMemory reifiedMetaclass allOopSlotNames size equals: 4
