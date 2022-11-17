@@ -1,0 +1,3 @@
+tests-slotNames
+testMetaDnuOnExisintSlot
+	self assert: reifiedMemory reifiedMetaclass format isImmediateOop
