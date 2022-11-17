@@ -1,3 +1,0 @@
-tests-slotNames
-testMetaclassClassFithSlotIsInstanceVariableName
-	self assert: reifiedMemory reifiedMetaclass oopClassSide allOopSlotNames fifth printString equals: #instVarNames
