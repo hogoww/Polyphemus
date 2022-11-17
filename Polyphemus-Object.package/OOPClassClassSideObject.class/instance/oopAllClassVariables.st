@@ -1,0 +1,3 @@
+class-variables
+oopAllClassVariables
+	^ self oopInstanceSide oopAllClassVariables
