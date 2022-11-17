@@ -1,3 +1,3 @@
 accessing
 imagePath
-	^ imagePath ifNil: [ self class pathToCandle64Bit ]
+	^ imagePath ifNil: [ PharoImageAccessor pathToCandle64Bit ]

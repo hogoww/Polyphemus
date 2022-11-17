@@ -4,7 +4,7 @@ canHandle: anAddress memory: aMemory
 	(aMemory formatOf: anAddress) = 1 ifFalse: [ ^ false ].
 	(aMemory isInClassTable: anAddress) ifFalse: [ ^ false ].
 	
-	traitedMetaclass := aMemory traitedMetaclass.
+	traitedMetaclass := aMemory traitedMetaclassIndex.
 	traitedMetaclass ifNil: [ ^ false ].
 
-	^ (aMemory fetchClassOf: anAddress) = aMemory traitedMetaclass
+	^ (aMemory classIndexOf: anAddress) = traitedMetaclass

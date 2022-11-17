@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractInspectorsTest",
+	"category" : "Polyphemus-Tests-objectInspector",
+	"classinstvars" : [
+		"currentImage"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ImageInterpretedSetup",
+	"type" : "normal"
+}

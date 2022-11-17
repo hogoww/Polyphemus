@@ -5,10 +5,11 @@ classesAsList
 	classOrder label: self classHierarchyLabel.
 	reifiedMemory setUpStringClasses.
 	classesList := self newList.
-	classesObjects := reifiedMemory select: [ :anOop | anOop isClassOop ].
+	classesObjects := reifiedMemory reifiedClassTable allClassesOop.
 	classesList
-		display: [ :class | class oopClassName ];
-		displayIcon: [ :class | class systemIcon ];
-		sortingBlock: [ :a :b | a oopClassName asString < b oopClassName asString ];
+		display: [ :class | class printString ];
+		displayIcon: [ :class | class iconNamed: class systemIconName ];
+		sortingBlock: [ :a :b | 
+			a printString < b printString ];
 		contextMenu: (self contextMenuForItems: classesList);
 		items: classesObjects

@@ -1,12 +1,10 @@
 {
 	"commentStamp" : "",
-	"super" : "AbstractInspectorsTest",
-	"category" : "Polyphemus-Tests-reifiedMemory",
+	"super" : "ImageInterpretedSetup",
+	"category" : "Polyphemus-Tests-objectInspector",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"CustomResource"
-	],
+	"classvars" : [ ],
 	"instvars" : [
 		"stackPages"
 	],

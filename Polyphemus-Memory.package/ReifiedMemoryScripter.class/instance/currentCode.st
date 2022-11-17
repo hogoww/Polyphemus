@@ -1,0 +1,3 @@
+accessing
+currentCode
+	^ codePresenter text

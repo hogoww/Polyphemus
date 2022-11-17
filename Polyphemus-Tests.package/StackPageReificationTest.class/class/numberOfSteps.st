@@ -1,0 +1,3 @@
+configuring
+numberOfSteps
+	^ 3

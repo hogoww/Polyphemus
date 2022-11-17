@@ -6,7 +6,13 @@ baseline: spec
 		spec postLoadDoIt: #postLoad.
 		
 		spec baseline: 'VMMaker'
-				with:[ spec repository: 'github://pharo-project/OpenSmalltalk-VM:pharoX' ].
+				with:[ 
+					"This may be executed multiple times, does not matter, it'll fail immediatly"
+					LibC runCommand: 'git clone https://github.com/pharo-project/pharo-vm.git'.
+					spec repository: 'tonel:///' , 
+					(FileSystem workingDirectory / 'pharo-vm' / 'smalltalksrc') pathString ].
+		
+		spec package: 'Polyphemus-Helper'.
 		spec package: 'Polyphemus-Memory'.
 		spec package: 'Polyphemus-Object'.
 		spec package: 'Polyphemus-Tests'.

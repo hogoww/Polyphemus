@@ -1,5 +1,4 @@
-testing
+instance creation
 canHandle: anAddress memory: aMemory
 
-	"Hard coded for now I dunno if we have access to shared pools"
-	^ (aMemory fetchClassTagOf: anAddress) = 36
+	^ (aMemory classIndexOf: anAddress) = ClassMethodContextCompactIndex 

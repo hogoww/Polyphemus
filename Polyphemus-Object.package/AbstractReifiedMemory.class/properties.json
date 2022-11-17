@@ -9,8 +9,6 @@
 	],
 	"instvars" : [
 		"baseAddress",
-		"traitedMetaclass",
-		"metaclassForTrait",
 		"flagErrorObjects",
 		"lastKnownObject",
 		"objectsArray",
@@ -20,7 +18,10 @@
 		"freeze",
 		"stringClassIndexes",
 		"compiledMethodClassIndex",
-		"metaclassIndex"
+		"metaclassIndex",
+		"objectHandlers",
+		"traitedMetaclassIndex",
+		"metaclassForTraitIndex"
 	],
 	"name" : "AbstractReifiedMemory",
 	"type" : "normal"

@@ -1,5 +1,5 @@
 initialization
 setUp
 
-	PharoCandleImageResource current setUpTestCase: self.
+	super setUp.
 	indexableLayoutObject := self reifyOop: (self newObjectWithSlots: 3 format: memory arrayFormat classIndex: memory arrayClassIndexPun).

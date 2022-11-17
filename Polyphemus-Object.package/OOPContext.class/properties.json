@@ -5,15 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"sender",
-		"pc",
-		"stackp",
-		"method",
-		"caller",
-		"closureOrNil",
-		"receiver"
-	],
+	"instvars" : [ ],
 	"name" : "OOPContext",
 	"type" : "normal"
 }

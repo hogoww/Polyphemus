@@ -13,3 +13,12 @@ createOrOverrideParticularObjects
 		classTablePage := OOPClassTablePageObject on: aClassTablePage address memory: self.
 		classTableObject registerPage: classTablePage. 
 		self objectAt: aClassTablePage address put: classTablePage ].
+	
+	self overrideClassOops.
+	objectHandlers add: OOPClassClassSideObject.
+	objectHandlers add: OOPClassInstanceSideObject.
+	
+	metaclassForTraitIndex ifNil:[ ^ self ].
+	
+	objectHandlers addAll: OOPClassClassSideObject subclasses.
+	objectHandlers addAll: OOPClassInstanceSideObject subclasses.

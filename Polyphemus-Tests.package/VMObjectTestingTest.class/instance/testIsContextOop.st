@@ -1,7 +1,5 @@
 test
 testIsContextOop
 	| oop |
-	oop := self reifyOop: (self newObjectWithSlots: 0 classIndex: ClassMethodContextCompactIndex).
-	memory setIsImmutableOf: oop address to: true.
-	
-	self assert: oop isImmutableOop
+	oop := self reifyOop: (self newObjectWithSlots: 0 classIndex: ClassMethodContextCompactIndex).	
+	self assert: oop isContextOop

@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"reifiedMemory",
-		"imagePath"
+		"imagePath",
+		"resource"
 	],
 	"name" : "AbstractInspectorsTest",
 	"type" : "normal"

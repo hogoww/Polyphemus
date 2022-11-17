@@ -2,7 +2,7 @@ initialization
 initializeMethodsPresenter
 	methods := self newList.
 	methods
-		display: [ :method | method selector ];
-		sortingBlock: [ :a :b | a selector asString < b selector asString ];
+		display: [ :method | method oopSelector ];
+		sortingBlock: [ :a :b | a oopSelector asString < b oopSelector asString ];
 		contextMenu: (self contextMenuForItems: methods)
 	
