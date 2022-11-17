@@ -1,5 +1,5 @@
 converting
 asInteger
 
-	^memory integerValueOf: address
+	^ memory integerValueOf: address
 	
