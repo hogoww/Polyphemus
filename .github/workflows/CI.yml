@@ -9,7 +9,6 @@ jobs:
         os: [ ubuntu-latest ]
         smalltalk: [ Pharo64-10 ]
       fail-fast: true
-      
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     steps:
@@ -17,10 +16,7 @@ jobs:
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
-      - name: Print directory structure
-        uses: FiorelaCiroku/XDTesting-Print-Directory-Structure@v1.0.2
       - run: smalltalkci -s ${{ matrix.smalltalk }}
         shell: bash
         timeout-minutes: 15
-        
 
