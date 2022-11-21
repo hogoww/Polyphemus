@@ -1,5 +1,5 @@
 tests
 testWideStringOopIsDetectedAsWideString
 	| wideString |
-	wideString := reifiedMemory objects select: #isWideStringOop.
-	self assert: wideString size equals: 1
+	wideString := reifiedMemory reifiedStringClass oopClassVariableNamed: #UppercasingTable.
+	self assert: wideString isWideStringOop
