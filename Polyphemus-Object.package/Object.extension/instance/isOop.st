@@ -1,0 +1,3 @@
+*Polyphemus-Object
+isOop
+ ^false

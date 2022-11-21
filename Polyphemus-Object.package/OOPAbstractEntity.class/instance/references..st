@@ -1,3 +1,3 @@
 testing
 references: anOop
-	^ self allSlots anySatisfy: [ :aSlot | aSlot = anOop ]
+	^ self allReifiedSlots anySatisfy: [ :aSlot | aSlot = anOop ]

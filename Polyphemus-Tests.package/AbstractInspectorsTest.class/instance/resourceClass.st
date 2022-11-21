@@ -1,3 +1,3 @@
 configuring
 resourceClass
-	^ PharoCandleImageResource
+	^ MinimalPharo11ImageResource 

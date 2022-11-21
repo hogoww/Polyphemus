@@ -1,0 +1,7 @@
+testing
+primitive
+
+	| initialPC |
+	^(self methodHeader asInteger anyMask: 65536) "Is the hasPrimitive? flag set?"
+		ifTrue: [(self at: (initialPC := self initialPC) + 1) + ((self at: initialPC + 2) bitShift: 8)]
+		ifFalse: [0]

@@ -1,6 +1,6 @@
 querying
 indexForClass: aClassOop
-	self allSlots doWithIndex: [ :o :i |
+	self allReifiedSlots doWithIndex: [ :o :i |
 		aClassOop = o ifTrue: [ 	^ i ]
 		].
 	^ 0
