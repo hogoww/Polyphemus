@@ -1,0 +1,3 @@
+tests-classVariables
+mutatesResource
+	^ false

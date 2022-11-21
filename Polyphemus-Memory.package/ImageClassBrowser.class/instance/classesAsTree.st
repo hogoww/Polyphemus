@@ -8,6 +8,6 @@ classesAsTree
 	classesList
 		roots: { objectClass };
 		children: [ :node | node oopSubclasses ];
-		display: [ :node | node oopClassName ];
+		display: [ :node | node oopName ];
 		contextMenu: (self contextMenuForItems: classesList);
 		expandAll 

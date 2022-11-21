@@ -1,5 +1,3 @@
 tests-classVariables
 testStringClassAllClassVariablesNamed
-	| stringClass |
-	stringClass := reifiedMemory reifiedMetaclass classNameObject oopClass oopClass.
-	self assert: (stringClass oopClassVariableNamed: #AsciiOrder) oopClassName equals: #PCByteArray
+	self assert: ((reifiedMemory reifiedStringClass oopClassVariableNamed: #AsciiOrder) oopClassName last: 9) equals: #ByteArray

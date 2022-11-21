@@ -1,3 +1,0 @@
-tests-slotNames
-testMetaclassClassSixthSlotIsClassVariableName
-	self assert: reifiedMemory reifiedMetaclass oopClassSide allOopSlotNames sixth printString equals: #classVariables

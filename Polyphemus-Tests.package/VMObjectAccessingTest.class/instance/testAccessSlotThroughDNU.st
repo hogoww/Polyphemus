@@ -1,3 +1,3 @@
-tests
+tests-slotNamesAccessing
 testAccessSlotThroughDNU
-	self assert: reifiedMemory reifiedMetaclass name asString equals: #PCMetaclass
+	self assert: (reifiedMemory reifiedMetaclass name asString last: 9) equals: #Metaclass
