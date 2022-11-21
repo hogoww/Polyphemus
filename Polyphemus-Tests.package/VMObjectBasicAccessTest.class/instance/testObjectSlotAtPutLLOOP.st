@@ -1,5 +1,5 @@
 tests
-testObjectSlotAtPutSpurObject
+testObjectSlotAtPutLLOOP
 	| oop slot1 |
 	oop := self reifyOop: (self newObjectWithSlots: 1).
 	slot1 := self reifyOop: self newZeroSizedObject.
