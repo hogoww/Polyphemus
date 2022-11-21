@@ -1,4 +1,4 @@
 setting
 closureOrNil: anUndefinedObject 
 	
-	closureOrNil := anUndefinedObject
+	closureOrNil := anUndefinedObject 

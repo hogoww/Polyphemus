@@ -5,7 +5,7 @@ inspectionItems
 	
 	items := {
 		#sender -> sender.
-		#pc -> pc.
+		#pc -> pc. 
 		#stackp -> stackp.
 		#method -> method.
 		#caller -> caller.

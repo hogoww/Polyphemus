@@ -1,4 +1,3 @@
 debugger
 selector
-	
-	^self compiledCode selector ifNil: [self compiledCode defaultSelector].
+	^self compiledCode oopSelector ifNil: [self compiledCode defaultSelector].
