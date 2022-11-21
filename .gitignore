@@ -17,3 +17,5 @@
 **/*.mtc
 **/*.mtc[0-9]*
 *.synctex(busy)
+**/*.image
+**/*.sources
