@@ -1,5 +1,5 @@
 tests-slotNames
 testOopSlotNamesWithoutInheritence
 	| behaviorClass |
-	behaviorClass := reifiedMemory reifiedMetaclass oopSuperclass.
-	self assert: behaviorClass oopSlotNames first printString equals: #superclass
+	behaviorClass := reifiedMemory reifiedMetaclass.
+	self assert: behaviorClass oopSlotNames size equals: 1.

@@ -1,3 +1,0 @@
-tests-slotNames
-testMetaclassFourthSlotIsSoleInstance
-	self assert: reifiedMemory reifiedMetaclass allOopSlotNames fourth printString equals: #soleInstance

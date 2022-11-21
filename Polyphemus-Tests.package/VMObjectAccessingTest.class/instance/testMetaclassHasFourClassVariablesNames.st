@@ -1,3 +1,0 @@
-tests-slotNames
-testMetaclassHasFourClassVariablesNames
-	self assert: reifiedMemory reifiedMetaclass allOopSlotNames size equals: 4
