@@ -1,5 +1,5 @@
 tests-classVariables
 testStringAllClassVariables
-	self assert: (self stringClass oopAllClassVariables 
+	self assert: (reifiedMemory reifiedStringClass oopAllClassVariables 
 		anySatisfy: [ :aClassVariable | 
 			(aClassVariable allIndexed difference: (String classVariableNamed: #CaseSensitiveOrder) value) isEmpty ])
