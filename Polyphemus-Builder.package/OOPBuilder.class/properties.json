@@ -21,7 +21,6 @@
 		"oopIsMarked",
 		"oopIsPinned",
 		"oopIsRemembered",
-		"classIndex",
 		"memory"
 	],
 	"name" : "OOPBuilder",
