@@ -9,4 +9,5 @@ initialize
 	oopIsMarked := false.
 	oopIsPinned := false.
 	oopIsRemembered := false.
-	oopClassIndexinstalation := self defaultClassIndex
+	oopClassIndexinstalation := self defaultClassIndex.
+	oopFormatOfInstances := 0.

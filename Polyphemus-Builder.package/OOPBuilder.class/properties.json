@@ -21,7 +21,8 @@
 		"oopIsMarked",
 		"oopIsPinned",
 		"oopIsRemembered",
-		"memory"
+		"memory",
+		"oopFormatOfInstances"
 	],
 	"name" : "OOPBuilder",
 	"type" : "normal"
