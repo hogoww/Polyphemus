@@ -1,5 +1,5 @@
 tests-class
-testClassInstalationAtIndex
+testClassInstallationAtIndex
 	"reifiedOop is 1 based, vm is 0 based"
 	oopBuilder 
 		oopIsClass: true;
