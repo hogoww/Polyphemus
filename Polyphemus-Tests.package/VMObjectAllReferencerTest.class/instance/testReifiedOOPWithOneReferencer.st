@@ -1,5 +1,5 @@
 tests-allReferencers
-testSpurObjectWithOneReferencer
+testReifiedOOPWithOneReferencer
 	| oop slot |
 	
 	"AllReferencer works with reified memory"

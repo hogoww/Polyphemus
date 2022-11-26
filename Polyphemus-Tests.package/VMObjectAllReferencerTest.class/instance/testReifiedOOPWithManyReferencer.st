@@ -1,5 +1,5 @@
 tests-allReferencers
-testSpurObjectWithManyReferencer
+testReifiedOOPWithManyReferencer
 	| slot referencer |
 	slot := self reifyOop: self newZeroSizedObject.
 	referencer := (1 to: 20) collect:[ :i | | oop |

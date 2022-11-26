@@ -1,4 +1,4 @@
 accessing
 value
-	"allow to treat addresses and spurObjects similarly"
+	"allow to treat addresses and reifiedOOP similarly"
 	^ address
