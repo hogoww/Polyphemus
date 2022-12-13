@@ -2,4 +2,4 @@ accessing
 key
 
 	"Hack for now"
-	self oopClassName = 'GlobalVariable' ifTrue: [ ^self reifiedSlotAt: 1 ]
+	(self acceptableClassNamesForKey includes: self oopClassName) ifTrue: [ ^self reifiedSlotAt: 1 ] ifFalse: [ self error: 'Undefined behvavior yet' ]

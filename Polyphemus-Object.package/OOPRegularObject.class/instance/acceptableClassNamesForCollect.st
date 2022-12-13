@@ -1,0 +1,5 @@
+debugger
+acceptableClassNamesForCollect
+	^#( 
+	'Array'
+	 )

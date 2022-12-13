@@ -5,6 +5,7 @@ lookupVar: aName declare: aBoolean
 	layout := (self reifiedSlotAt: 4).
 	"this should be a switch case"
 	layout oopClassName = 'ByteLayout' ifTrue: [^self bindingOf: aName].
+	layout oopClassName = 'CompiledMethodLayout' ifTrue: [^self bindingOf: aName].
 	layoutScope := layout reifiedSlotAt: 2.
 	2 to: layoutScope numSlots do: [ :anIndex | | aSlot |
 		aSlot := (layoutScope reifiedSlotAt: anIndex) .

@@ -11,5 +11,6 @@ at: anIndex
 		               fixedFieldsOf: oop
 		               format: oopFormat
 		               length: totalLength.
-	recalculatedIndex := anIndex + fixedFields.
+	"Dunno about the -1 if this is vm/smalltalk diff or something else"
+	recalculatedIndex := anIndex + fixedFields - 1.
 	^ memory fetchByte: recalculatedIndex ofObject: address

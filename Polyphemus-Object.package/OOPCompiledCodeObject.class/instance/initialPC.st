@@ -1,4 +1,4 @@
 accessing
 initialPC
 
-	^ (self numberOfLiterals + 1) * memory wordSize "+ 1"
+	^ (self numberOfLiterals + 1) * memory wordSize + 1
