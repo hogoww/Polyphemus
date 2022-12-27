@@ -2,4 +2,10 @@ accessing
 key
 
 	"Hack for now"
-	(self acceptableClassNamesForKey includes: self oopClassName) ifTrue: [ ^self reifiedSlotAt: 1 ] ifFalse: [ self error: 'Undefined behvavior yet' ]
+
+	| res |
+	(self acceptableClassNamesForKey includes: self oopClassName)
+		ifTrue: [ 
+			res := self reifiedSlotAt: 1.
+			res isNilOop ifTrue: [ ^ nil ] ifFalse: [ ^res ] ]
+		ifFalse: [ self error: 'Undefined behvavior yet' ]

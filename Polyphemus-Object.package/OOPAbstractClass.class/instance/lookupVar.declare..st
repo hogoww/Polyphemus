@@ -4,8 +4,7 @@ lookupVar: aName declare: aBoolean
 	"this should be extracted in a method and we should handle the parent scope and this should be with the mode"
 	layout := (self reifiedSlotAt: 4).
 	"this should be a switch case"
-	layout oopClassName = 'ByteLayout' ifTrue: [^self bindingOf: aName].
-	layout oopClassName = 'CompiledMethodLayout' ifTrue: [^self bindingOf: aName].
+	(self acceptableLayout includes: layout oopClassName) ifTrue: [^self bindingOf: aName].
 	layoutScope := layout reifiedSlotAt: 2.
 	2 to: layoutScope numSlots do: [ :anIndex | | aSlot |
 		aSlot := (layoutScope reifiedSlotAt: anIndex) .

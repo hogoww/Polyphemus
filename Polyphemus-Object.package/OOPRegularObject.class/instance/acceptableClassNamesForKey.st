@@ -4,4 +4,5 @@ acceptableClassNamesForKey
 	'GlobalVariable'
 	'UndeclaredVariable'
 	'ClassVariable'
-	'Association' )
+	'Association'
+	'LiteralVariable' )
