@@ -1,9 +1,5 @@
 printing
 storeOn: aStream
-	
-	| x |
-	aStream nextPut: $'.
-	1 to: self size do: [ :i | 
-		aStream nextPut: (x := self at: i).
-		x = $' ifTrue: [ aStream nextPut: x ] ].
-	aStream nextPut: $'.
+
+	self isSymbol ifTrue: [ ^ self asString asSymbol storeOn: aStream ].
+	^ self asString storeOn: aStream

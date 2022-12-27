@@ -1,11 +1,14 @@
 debugger
 propertyAt: aKey ifAbsent: aFullBlockClosure
 
-	"The +2 is to skip method and selector as it seems that the basicAt:m in the original method does that"
+	"See comments of includesProperty:"
+
+	"We don't use propertyOrPragma value, since this is an anAssociation we use directly the second slot"
+
 	self isAdditionalMethodState ifFalse: [ ^ self ].
 	1 to: self oopSize do: [ :i | 
 		| propertyOrPragma "<Association|Pragma>" |
 		propertyOrPragma := self reifiedSlotAt: i + 2.
-		(propertyOrPragma isAssociation and: [ propertyOrPragma key == aKey ]) 
-			ifTrue: [ ^ propertyOrPragma value ] ].
+		(propertyOrPragma isAssociation and: [ propertyOrPragma key = aKey ]) 
+			ifTrue: [ ^ propertyOrPragma reifiedSlotAt: 2 ] ].
 	^ aFullBlockClosure value
