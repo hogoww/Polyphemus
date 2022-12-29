@@ -1,0 +1,3 @@
+debugger
+sourcePointer
+	self subclassResponsibility .

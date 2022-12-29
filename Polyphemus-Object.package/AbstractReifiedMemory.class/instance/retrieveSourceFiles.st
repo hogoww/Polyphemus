@@ -8,13 +8,13 @@ retrieveSourceFiles
 
 	| sourceFiles aSourceFile aChangeFile rootPath sourcePath chancePath |
 	sourceFiles := SourceFileArray new.
-	rootPath := memory interpreter imageName asPath parent.
+	rootPath := memory interpreter imageName asPath parent. 
 	sourcePath := (rootPath asFileReference filesMatching: '*.sources') first path.
 	chancePath := (rootPath asFileReference filesMatching: '*.changes') first path.
-	aSourceFile := SourceFile on: rootPath potentialLocations: (SourceFiles fileAt: 1) potentialLocations.
-	aChangeFile := SourceFile on: rootPath potentialLocations: (SourceFiles fileAt: 2) potentialLocations.
+	aSourceFile := (SourceFile on: sourcePath fullName potentialLocations: {rootPath fullName}) tryOpenReadOnly: true.
+	aChangeFile := (SourceFile on: chancePath fullName potentialLocations: {rootPath fullName}) tryOpenReadOnly: true.
 	 "We must handle the possibility of change file not available here"
+	sourceFiles changesFileStream: aChangeFile.
+	sourceFiles sourcesFileStream: aSourceFile.
 	
-	sourceFiles files: (Array with: aSourceFile with: aChangeFile).
-	self halt.
 	^ sourceFiles
