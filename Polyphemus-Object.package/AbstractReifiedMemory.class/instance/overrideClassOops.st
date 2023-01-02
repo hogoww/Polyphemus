@@ -9,7 +9,7 @@ overrideClassOops
 	handlers add: OOPClassClassSideObject.
 	handlers add: OOPClassInstanceSideObject.
 	
-	self reifiedClassTable classesDo: [ :aClass | | handler |
+	self reifiedClassTable classOopsDo: [ :aClass | | handler |
 		handler := handlers detect: [ :anHandler | anHandler canHandle: aClass address memory: self ].
 		self objectAt: aClass address put: (handler on: aClass address memory: self)
 		].

@@ -2,7 +2,7 @@ finding
 findClassesNamed: someClassNames
 	| foundClasses |
 	foundClasses := OrderedDictionary new.
-	self reifiedClassTable classesDo: [ :aClassOop |
+	self reifiedClassTable classOopsDo: [ :aClassOop |
 		someClassNames ifEmpty: [ ^ foundClasses ].
 		(someClassNames includes: aClassOop oopName)
 			ifTrue: [
