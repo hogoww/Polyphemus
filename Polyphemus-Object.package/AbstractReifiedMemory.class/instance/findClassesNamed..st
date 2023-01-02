@@ -10,4 +10,5 @@ findClassesNamed: someClassNames
 				foundClasses at: aClassOop oopName put: aClassOop.
 				].
 		].
+	someClassNames collect: [ :aClassOop | aClassOop -> self reifiedNilObject ] into: foundClasses.
 	^ foundClasses
