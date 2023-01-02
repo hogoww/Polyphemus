@@ -1,4 +1,4 @@
-testing
+inspection
 containedInspectionItems
 	| res |
 	res := OrderedCollection new: classTablePages size. 
