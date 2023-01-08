@@ -1,5 +1,5 @@
 
-[![CI Status](https://img.shields.io/github/actions/workflow/status/hogoww/Polyphemus/CI.yml?branch=master)](https://github.com/hogoww/Polyphemus/actions/workflows/CI.yml)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/hogoww/Polyphemus/CI.yml?branch=main)](https://github.com/hogoww/Polyphemus/actions/workflows/CI.yml)
 
 # Polyphemus
 Polyphemus is a tool that gives a higher level representation of the object ordinary pointers (OOP) for the Pharo VM.
