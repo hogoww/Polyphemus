@@ -1,0 +1,3 @@
+accessing
+allReifiedSlots
+	^ self subclassResponsibility
