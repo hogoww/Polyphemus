@@ -3,7 +3,8 @@ SmalltalkCISpec {
         SCIMetacelloLoadSpec {
             #baseline : 'Polyphemus',
             #directory : '.',
-            #platforms : [ #pharo ]
+            #platforms : [ #pharo ],
+            #registerInIceberg : true
         }
     ],
   #testing : {
