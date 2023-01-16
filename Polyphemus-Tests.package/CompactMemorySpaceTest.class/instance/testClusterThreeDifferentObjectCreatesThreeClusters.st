@@ -1,4 +1,4 @@
-running
+tests
 testClusterThreeDifferentObjectCreatesThreeClusters
 	| res objectOop |
 	"relies on the fact that newObjectWithSlots currently creates an hidden object"

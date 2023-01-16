@@ -1,3 +1,3 @@
 tests
 testAllBytecodes
-	self assert: object allBytecodes equals:  #(1 2 3 4 5)
+	self assert: compiledMethodObject allBytecodes equals:  #(1 2 3 4 5)

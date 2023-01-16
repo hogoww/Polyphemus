@@ -1,4 +1,4 @@
-running
+tests
 testOneObjectCreatesOneCluster
 	| res |
 	self newZeroSizedObject.

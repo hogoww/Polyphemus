@@ -1,3 +1,3 @@
-tests-classVariables
+configuring
 mutatesResource
 	^ false

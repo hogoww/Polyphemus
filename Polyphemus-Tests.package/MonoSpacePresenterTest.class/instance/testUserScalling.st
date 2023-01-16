@@ -1,4 +1,4 @@
-running
+tests
 testUserScalling
 	| oop |
 	oop := self newZeroSizedObject.

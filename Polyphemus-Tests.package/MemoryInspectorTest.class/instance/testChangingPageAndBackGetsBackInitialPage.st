@@ -1,4 +1,4 @@
-bindings
+tests-bindings
 testChangingPageAndBackGetsBackInitialPage
 	| initialPage |
 	initialPage := inspector selectedPage.

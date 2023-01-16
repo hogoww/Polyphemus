@@ -1,4 +1,4 @@
-running
+tests
 testUserSelectingNoOldSpaceObject
 	oldSpace queryWidget querySelector selectItem: #Selecting.
 	oldSpace queryWidget queryInput text: '[ :aBox | false ]'.

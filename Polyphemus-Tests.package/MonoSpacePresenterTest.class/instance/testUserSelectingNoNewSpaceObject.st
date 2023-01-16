@@ -1,4 +1,4 @@
-running
+tests
 testUserSelectingNoNewSpaceObject
 	| oop |
 	oop := self newZeroSizedObject.

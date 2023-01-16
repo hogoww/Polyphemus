@@ -1,3 +1,3 @@
-running
+tests
 testInitialSpacePresenterHasStats
 	self assert: oldSpace legend statList isNotEmpty

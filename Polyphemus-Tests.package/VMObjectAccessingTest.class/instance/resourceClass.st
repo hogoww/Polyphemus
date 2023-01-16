@@ -1,3 +1,3 @@
-accessing
+configuring
 resourceClass 
 	^ resource

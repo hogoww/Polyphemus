@@ -1,3 +1,3 @@
 tests
 testNumberOfByteCode
-	self assert: object numberOfBytecodes equals: 5
+	self assert: compiledMethodObject numberOfBytecodes equals: 5

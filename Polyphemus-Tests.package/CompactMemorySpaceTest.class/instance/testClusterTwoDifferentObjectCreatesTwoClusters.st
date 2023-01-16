@@ -1,4 +1,4 @@
-running
+tests
 testClusterTwoDifferentObjectCreatesTwoClusters
 	| res objectOop |
 	self newZeroSizedObject.

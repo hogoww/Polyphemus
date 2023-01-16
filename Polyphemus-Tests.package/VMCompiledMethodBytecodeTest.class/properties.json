@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"compiledMethodObject",
-		"oop",
-		"object"
+		"compiledMethodOop",
+		"compiledMethodObject"
 	],
 	"name" : "VMCompiledMethodBytecodeTest",
 	"type" : "normal"

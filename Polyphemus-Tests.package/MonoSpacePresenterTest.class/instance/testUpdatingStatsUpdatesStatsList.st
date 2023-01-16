@@ -1,4 +1,4 @@
-running
+tests
 testUpdatingStatsUpdatesStatsList
 	self newZeroSizedObject.
 	self updateSpaces.

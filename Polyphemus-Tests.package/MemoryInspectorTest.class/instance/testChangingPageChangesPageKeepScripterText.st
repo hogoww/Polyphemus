@@ -1,4 +1,4 @@
-bindings
+tests-bindings
 testChangingPageChangesPageKeepScripterText
 	| initialCode |
 	initialCode := inspector selectedPage currentCode.

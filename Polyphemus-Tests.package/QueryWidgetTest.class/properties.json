@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"widget",
-		"vmInspector"
+		"widget"
 	],
-	"name" : "QueryWidgetTests",
+	"name" : "QueryWidgetTest",
 	"type" : "normal"
 }

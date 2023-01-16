@@ -1,4 +1,4 @@
-running
+tests
 testClusterTwoSimilarObjectCreatesOneCluster
 	| res |
 	self newZeroSizedObject.

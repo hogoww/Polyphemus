@@ -1,4 +1,4 @@
-running
+tests
 testTwoSimilarObjectDisplayTwoBoxes
 	self newZeroSizedObject.
 	self newZeroSizedObject.

@@ -1,4 +1,4 @@
-helpers - classes
+helpers
 newClassInOldSpaceWithSlots: numberOfSlots
 	| newClass formatWithSlots |
 

@@ -1,4 +1,4 @@
-running
+tests
 testSelectingItemChangesItemSelected
 	| initialText |
 	initialText := widget querySelector selectedItem.

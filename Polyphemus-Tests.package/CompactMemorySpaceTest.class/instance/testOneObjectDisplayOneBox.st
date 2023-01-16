@@ -1,4 +1,4 @@
-running
+tests
 testOneObjectDisplayOneBox
 	self newZeroSizedObject.
 	self updateSpace.

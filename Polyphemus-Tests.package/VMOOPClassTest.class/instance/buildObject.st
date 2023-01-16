@@ -1,4 +1,4 @@
-tests
+helpers
 buildObject
 	| oop |
 	oop := oopBuilder buildObject.

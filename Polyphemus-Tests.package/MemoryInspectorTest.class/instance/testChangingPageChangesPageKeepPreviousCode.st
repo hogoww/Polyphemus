@@ -1,4 +1,4 @@
-bindings
+tests-bindings
 testChangingPageChangesPageKeepPreviousCode
 	| initialCode |
 	initialCode := ' 1 + 1 '.

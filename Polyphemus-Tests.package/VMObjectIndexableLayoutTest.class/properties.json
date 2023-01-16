@@ -1,12 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "VMObjectTests",
+	"super" : "VMObjectTest",
 	"category" : "Polyphemus-Tests-layout",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"emptyLayoutObject",
 		"indexableLayoutObject"
 	],
 	"name" : "VMObjectIndexableLayoutTest",

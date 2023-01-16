@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"presenter"
-	],
+	"instvars" : [ ],
 	"name" : "AbstractPresenterTest",
 	"type" : "normal"
 }

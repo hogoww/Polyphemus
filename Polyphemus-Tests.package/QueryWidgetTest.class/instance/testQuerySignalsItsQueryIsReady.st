@@ -1,4 +1,4 @@
-running
+tests
 testQuerySignalsItsQueryIsReady
 	"If the Annoucement is not fired, the test fails"
 	| pass |

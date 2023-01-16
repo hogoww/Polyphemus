@@ -1,4 +1,4 @@
-running
+tests
 testUpdatingStatsUpdatesStatsCanvas
 	self newZeroSizedObject.
 	self updateSpaces.
