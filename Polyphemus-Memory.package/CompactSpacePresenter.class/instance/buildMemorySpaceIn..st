@@ -1,4 +1,4 @@
-showing
+building
 buildMemorySpaceIn: aCanvas
 	| clusters controller |
 	clusters := self clusterScopeByColor.

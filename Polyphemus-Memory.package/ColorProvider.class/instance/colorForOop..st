@@ -1,3 +1,3 @@
-helper
+coloring
 colorForOop: anOop
 	^ self subclassResponsibility

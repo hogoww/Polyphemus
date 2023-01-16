@@ -1,3 +1,3 @@
 accessing
 initialBlock
-	^ [ :anOop | anOop byteSizeOop ]
+	^ [ :anOop | anOop oopByteSize ]

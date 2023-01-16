@@ -1,4 +1,4 @@
-showing
+building
 buildWithLayout: aSpecLayout
 	| res |
 	res := super buildWithLayout: aSpecLayout.

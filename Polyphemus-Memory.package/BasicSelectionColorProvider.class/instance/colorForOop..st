@@ -1,4 +1,4 @@
-helper
+coloring
 colorForOop: anOop
 	^ (selection includes: anOop)
 		ifTrue: [ self colorForSelectedObject ]

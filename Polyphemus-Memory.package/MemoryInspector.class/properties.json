@@ -4,9 +4,7 @@
 	"category" : "Polyphemus-Memory-Presenters",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"LastCode"
-	],
+	"classvars" : [ ],
 	"instvars" : [
 		"notebook"
 	],

@@ -1,4 +1,4 @@
-showing
+building
 addElementsToCanvas: aCanvas
 	| clusters |
 	clusters := self clusterScopeByColor.
