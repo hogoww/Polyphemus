@@ -1,4 +1,4 @@
-querying
+accessing-classes
 indexForClass: aClassOop 
 	classTablePages do: [ :aClassTablePage | | index |
 		index := aClassTablePage indexForClass: aClassOop.

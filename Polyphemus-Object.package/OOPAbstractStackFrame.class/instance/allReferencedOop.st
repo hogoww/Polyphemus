@@ -1,4 +1,4 @@
-tool
+querying
 allReferencedOop
 
 	| referencedOop |

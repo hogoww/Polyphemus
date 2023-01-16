@@ -1,4 +1,4 @@
-inspection
+printing
 oopFormatName
 	"except a few exceptions (format = 9+, all other have a chance to have every format)"
 	^ String streamContents: [ :s |

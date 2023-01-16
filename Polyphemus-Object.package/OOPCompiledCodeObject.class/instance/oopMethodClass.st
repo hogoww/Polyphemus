@@ -1,0 +1,3 @@
+accessing
+oopMethodClass
+	^ self subclassResponsibility

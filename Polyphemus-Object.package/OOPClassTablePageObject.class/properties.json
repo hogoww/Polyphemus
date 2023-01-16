@@ -4,9 +4,7 @@
 	"category" : "Polyphemus-Object-oop-heap",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"ClassTableObjects"
-	],
+	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "OOPClassTablePageObject",
 	"type" : "normal"

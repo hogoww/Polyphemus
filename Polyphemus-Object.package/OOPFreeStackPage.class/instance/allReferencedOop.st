@@ -1,4 +1,4 @@
-as yet unclassified
+querying
 allReferencedOop
 
-	^Set new.
+	^ Set new

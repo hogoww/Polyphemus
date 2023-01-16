@@ -1,4 +1,4 @@
-accessing
+printing
 printOn: aStream
 	self oopMethodClass printOn: aStream.
 	aStream << ' >> #'.

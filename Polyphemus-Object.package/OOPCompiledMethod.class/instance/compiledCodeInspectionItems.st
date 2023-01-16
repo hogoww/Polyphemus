@@ -1,4 +1,4 @@
-accessing
+inspection
 compiledCodeInspectionItems
 	^ { 
 		#selector -> self oopSelector.

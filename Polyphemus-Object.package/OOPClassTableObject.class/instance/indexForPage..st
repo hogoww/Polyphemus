@@ -1,4 +1,4 @@
-testing
+accessing-classes
 indexForPage: anAddress
 	classTablePages doWithIndex: [ :aClassTablePage :i |
 		aClassTablePage = anAddress 

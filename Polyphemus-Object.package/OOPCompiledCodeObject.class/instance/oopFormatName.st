@@ -1,3 +1,3 @@
-accessing
+printing
 oopFormatName
 	^ String streamContents: [ :s | s << 'Compiled method (' << self oopFormat printString << ')' ]

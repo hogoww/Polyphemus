@@ -5,9 +5,7 @@ reifyMemoryThroughRoots
 
 	| visitor lastKnownIndex aRoot |
 	visitor := OOPObjectMissingSubgraphVisitor new.
-	visitor
-		baseAddress: baseAddress;
-		memory: self.
+	visitor memory: self.
 
 	lastKnownIndex := self indexForAddress: lastKnownObject address.
 	

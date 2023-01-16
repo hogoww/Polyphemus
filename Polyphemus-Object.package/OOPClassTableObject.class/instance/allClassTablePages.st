@@ -1,4 +1,4 @@
-testing
+accessing
 allClassTablePages
 	"Slow version that gets all the pages.
 	This should only be used while creating the memory.

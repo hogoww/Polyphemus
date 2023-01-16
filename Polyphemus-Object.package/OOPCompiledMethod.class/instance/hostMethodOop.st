@@ -1,3 +1,3 @@
-testing
+accessing
 hostMethodOop
 	^ self

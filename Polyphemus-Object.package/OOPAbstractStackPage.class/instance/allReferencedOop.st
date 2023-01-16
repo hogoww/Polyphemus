@@ -1,4 +1,4 @@
-as yet unclassified
+querying
 allReferencedOop
 
 	self subclassResponsibility

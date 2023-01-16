@@ -5,7 +5,6 @@ testCreationOfSubGraphFromRootObjectInMemoryCreatesRootObject
 	oop := self reifyOop: (self newObjectWithSlots: 0).
 	
 	res := OOPObjectMissingSubgraphVisitor new
-		baseAddress: memory newSpaceStart - memory wordSize;
 		memory: reifiedMemory;
 		rootObject: oop;
 		compute.

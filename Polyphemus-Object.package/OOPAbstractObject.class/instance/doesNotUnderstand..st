@@ -1,4 +1,4 @@
-printing
+reflective operations
 doesNotUnderstand: aMessage
 	aMessage selector = #doesNotUnderstand: ifTrue: [ ^ nil ].
 	(aMessage selector isUnary and: [ (self oopSlotNamed: aMessage selector) isNotNil ]) 

@@ -1,4 +1,4 @@
-as yet unclassified
+iterating
 allObjectsFrom: initialObject to: finalObject do: aBlock
 
 	| prevObj prevPrevObj objOop |

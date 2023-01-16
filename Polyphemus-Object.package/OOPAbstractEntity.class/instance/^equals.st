@@ -1,4 +1,4 @@
-accessing
+comparing
 = anotherObject
 	| compareTo |
 	compareTo := anotherObject isInteger ifTrue: [ anotherObject ] ifFalse: [ anotherObject address ]. 

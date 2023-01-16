@@ -10,16 +10,16 @@ reconstructFreeLists
 
 
 	"Then we need to find all freeChunks in our memory"
-	self fillBlankBetween: self nilObject and: self endOfMemory.
+	self fillBlankBetween: self nilObject and: memory endOfMemory.
 	self createCompressedVersion.
 	freeChunks := self select: [ :anOop | anOop isAbnormalOop ].
 	
 	"We create the final freeChunk"
-	address := self addressAfter: objects last address.
-	size := self endOfMemory - address.
+	address := memory addressAfter: objects last address.
+	size := memory endOfMemory - address.
 	freeChunks :=  freeChunks asOrderedCollection. "Need to see why this is not the case yet"
 	freeChunks add: (OOPAbnormalEntity newFor: address size: size  on: self).
 	
 	"We add the freeChunks in the freeLists"
 	freeChunks do: [ :aFreeChunk | 
-		self addFreeChunkWithBytes: aFreeChunk size at: aFreeChunk address ].
+		memory addFreeChunkWithBytes: aFreeChunk size at: aFreeChunk address ].

@@ -1,3 +1,3 @@
 printing
 descriptionString
-	^ '16Bits '
+	^ '64Bits '

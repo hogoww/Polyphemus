@@ -1,4 +1,4 @@
-printing
+inspection
 containedInspectionItems
 	| counter res |
 	counter := 0.
