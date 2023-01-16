@@ -1,3 +1,3 @@
 accessing
 oopUsers
-	^ ((self oopSlotNamed: #users) oopSlotNamed: #array) allSlots select: [ :o | o isNotNilOop ]
+	^ ((self oopSlotNamed: #users) oopSlotNamed: #array) allReifiedSlots select: [ :o | o isNotNilOop ]

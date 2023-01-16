@@ -1,4 +1,4 @@
 private
 visitSlotsOf: anOopObject
 
-	^ anOopObject allSlots do: [ :aSlot | self visitObject: aSlot ]
+	^ anOopObject allReifiedSlots do: [ :aSlot | self visitObject: aSlot ]

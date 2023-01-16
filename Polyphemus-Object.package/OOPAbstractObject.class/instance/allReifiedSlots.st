@@ -1,5 +1,5 @@
 accessing-slots
-allSlots
+allReifiedSlots
 
 	| errorBlock |
 	"I am unsure of what we should do for now I will juste anwser nilObject" 

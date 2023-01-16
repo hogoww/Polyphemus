@@ -1,6 +1,6 @@
 iterating
 classOopsDo: aBlock
-	self allSlots do: [ :aClassOop |
+	self allReifiedSlots do: [ :aClassOop |
 		aClassOop isNilOop ifFalse: [ 
 			aBlock value: aClassOop
 			]

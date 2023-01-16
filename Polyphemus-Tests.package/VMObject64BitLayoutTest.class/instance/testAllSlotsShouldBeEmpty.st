@@ -1,3 +1,3 @@
 tests
 testAllSlotsShouldBeEmpty
-	self assert: sixtyFourbitLayoutObject allSlots equals: {}
+	self assert: sixtyFourbitLayoutObject allReifiedSlots equals: {}

@@ -1,7 +1,7 @@
 initialization
 testAllSlotsReturnsNilObjects
 	| slots |
-	slots := self testedObject allSlots.
+	slots := self testedObject allReifiedSlots.
 	self assert: slots size equals: 3.
 
 	slots do: [ :aSlot |

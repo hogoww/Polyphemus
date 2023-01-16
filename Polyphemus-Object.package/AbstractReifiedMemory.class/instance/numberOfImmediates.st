@@ -2,4 +2,4 @@ querying
 numberOfImmediates
 
 	^ (self objects collect:[ :o | 
-		o allSlots count: [:s| s isImmediateOop ]]) sum.
+		o allReifiedSlots count: [:s| s isImmediateOop ]]) sum.

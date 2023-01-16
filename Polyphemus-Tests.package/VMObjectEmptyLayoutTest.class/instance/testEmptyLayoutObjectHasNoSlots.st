@@ -1,3 +1,3 @@
 tests
 testEmptyLayoutObjectHasNoSlots
-	self assert: emptyLayoutObject allSlots equals: { }
+	self assert: emptyLayoutObject allReifiedSlots equals: { }
