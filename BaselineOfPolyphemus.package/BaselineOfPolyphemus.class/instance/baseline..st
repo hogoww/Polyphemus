@@ -8,7 +8,7 @@ baseline: spec
 		spec baseline: 'VMMaker'
 				with:[ 
 					"This may be executed multiple times, does not matter, it'll fail immediatly"
-					LibC runCommand: 'git clone https://github.com/pharo-project/pharo-vm.git'.
+					LibC runCommand: 'git clone https://github.com/pharo-project/pharo-vm.git --depth=1'.
 					spec repository: 'tonel:///' , 
 					(FileSystem workingDirectory / 'pharo-vm' / 'smalltalksrc') pathString ].
 		
