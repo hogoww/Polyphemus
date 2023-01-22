@@ -2,7 +2,8 @@ initialization
 createInterpreterFrom: anImagePath
 
 	| memory |
-	memory :=  Spur64BitMemoryManager simulatorClass new.
+
+	memory := (AbstractInspectorsTest new imagePath: anImagePath) newMemory.
 
 	StackInterpreterSimulatorLSB
 		initializeWithOptions: { 
