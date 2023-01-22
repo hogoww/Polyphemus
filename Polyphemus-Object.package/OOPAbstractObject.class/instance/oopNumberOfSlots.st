@@ -1,3 +1,3 @@
 accessing-slots
-numSlots
+oopNumberOfSlots
 	^ memory numSlotsOf: address

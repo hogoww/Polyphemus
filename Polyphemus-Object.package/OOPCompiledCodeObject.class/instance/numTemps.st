@@ -1,3 +1,4 @@
 accessing
 numTemps
-	^ memory interpreter tempCountOf: address
+	"polymorphism with CompiledCode"
+	^ self oopNumberOfTemporaries 

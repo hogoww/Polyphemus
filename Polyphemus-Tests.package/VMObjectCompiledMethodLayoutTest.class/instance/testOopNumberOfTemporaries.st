@@ -1,0 +1,3 @@
+tests
+testOopNumberOfTemporaries
+	self assert: compiledMethodObject oopNumberOfTemporaries equals: 1

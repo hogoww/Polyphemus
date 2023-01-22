@@ -1,3 +1,3 @@
 accessing
-numElements
+oopNumberOfIndexed
 	^ self subclassResponsibility

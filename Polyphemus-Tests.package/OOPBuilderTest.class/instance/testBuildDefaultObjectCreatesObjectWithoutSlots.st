@@ -2,4 +2,4 @@ tests-default
 testBuildDefaultObjectCreatesObjectWithoutSlots
 	reifiedOop := self buildObject.
 	
-	self assert: reifiedOop numSlots equals: 0
+	self assert: reifiedOop oopNumberOfSlots equals: 0

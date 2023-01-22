@@ -1,3 +1,3 @@
 accessing
 numberOfSlotsForBytecodes
-	^ (memory numSlotsOf: address) - self numSlots
+	^ (memory numSlotsOf: address) - self oopNumberOfSlots

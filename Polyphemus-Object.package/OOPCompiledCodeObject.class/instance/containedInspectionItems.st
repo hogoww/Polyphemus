@@ -9,7 +9,7 @@ containedInspectionItems
 		+ (isPrimitive asBit << 16)"""
 	
 	counter := 0.
-	res := OrderedCollection new: self numSlots + 1.
+	res := OrderedCollection new: self oopNumberOfSlots + 1.
 	res addAll: self compiledCodeInspectionItems.
 	res
 		add: #numLiterals -> self numberOfLiterals.

@@ -5,4 +5,4 @@ testBuild8BitIndexableCorrectsFormat
 		oopNumberOfSlots: 10.
 	reifiedOop := self buildObject.
 	
-	self assert: reifiedOop numElements equals: 10
+	self assert: reifiedOop oopNumberOfIndexed equals: 10

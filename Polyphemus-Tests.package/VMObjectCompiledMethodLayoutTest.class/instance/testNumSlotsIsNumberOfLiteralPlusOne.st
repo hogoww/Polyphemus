@@ -1,4 +1,4 @@
 tests
 testNumSlotsIsNumberOfLiteralPlusOne
-	self assert: compiledMethodObject numSlots 
+	self assert: compiledMethodObject oopNumberOfSlots 
 		equals: compiledMethodObject numberOfLiterals + 1 "method header"

@@ -1,3 +1,3 @@
 accessing
 allIndexed
-	^ (1 to: self numElements) collect: [ :anIndex | self indexedAt: anIndex ]
+	^ (1 to: self oopNumberOfIndexed) collect: [ :anIndex | self indexedAt: anIndex ]

@@ -1,4 +1,4 @@
-accessing
+accessing-bytecodes
 bytecodeAt: anIndex put: aBytecode
 	"Currently not supported to add bytecodes"
 	(anIndex between: 1 and: self numberOfBytecodes) ifFalse: [ SubscriptOutOfBounds signal ].

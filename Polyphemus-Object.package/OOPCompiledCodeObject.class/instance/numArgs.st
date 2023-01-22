@@ -1,3 +1,4 @@
 accessing
 numArgs
-	^ memory interpreter argumentCountOf: address
+	"polymorphism with CompiledCode"
+	^ self oopNumberOfArgs

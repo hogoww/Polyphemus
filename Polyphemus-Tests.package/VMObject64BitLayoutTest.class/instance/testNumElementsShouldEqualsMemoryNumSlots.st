@@ -1,4 +1,4 @@
 tests
 testNumElementsShouldEqualsMemoryNumSlots
-	self assert: sixtyFourbitLayoutObject numElements 
+	self assert: sixtyFourbitLayoutObject oopNumberOfIndexed 
 		equals: (memory numSlotsOf: sixtyFourbitLayoutObject address)

@@ -1,3 +1,3 @@
-accessing
+accessing-bytecodes
 indexForBytecode: anIndex
-	^ self numSlots * memory wordSize + anIndex - 1
+	^ self oopNumberOfSlots * memory wordSize + anIndex - 1
