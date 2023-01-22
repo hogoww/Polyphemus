@@ -1,5 +1,4 @@
-tests
+building suites
 testParameters 
 
 	^ ParametrizedTestMatrix new
-			yourself
