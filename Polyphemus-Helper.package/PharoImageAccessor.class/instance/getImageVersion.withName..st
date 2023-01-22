@@ -1,5 +1,5 @@
-imageName
-getImageFor: aNumber Process: imageName
+action
+getImageVersion: aNumber withName: imageName
 	| newName |
 	self download: 'http://files.pharo.org/image/', (aNumber * 10) asString , '/' , imageName , '.zip'.
 	self extract: imageName.

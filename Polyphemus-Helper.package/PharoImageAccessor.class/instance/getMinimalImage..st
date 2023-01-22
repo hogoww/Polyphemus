@@ -1,3 +1,3 @@
-imageName
+api
 getMinimalImage: aNumber
-	self getImageFor: aNumber Process: 'latest-minimal-64'
+	self getImageVersion: aNumber withName: 'latest-minimal-64'

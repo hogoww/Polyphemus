@@ -1,4 +1,4 @@
-imageName
+action
 cdCommand
 	| package repoPath |
 	package := IceRepository registeredRepositoryIncludingPackage: self class package.
