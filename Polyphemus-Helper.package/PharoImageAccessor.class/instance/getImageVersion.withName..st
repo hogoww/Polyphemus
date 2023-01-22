@@ -10,7 +10,8 @@ getImageVersion: aNumber withName: imageName
 	newName := newName , 'P' , aNumber asString.
 	self renameFile: '*.image' to: newName , '.image'.
 	self renameFile: '*.sources' to: newName , '.sources'.
+	self renameFile: '*.changes' to: newName , '.changes'.
 	self moveFileToResources: newName , '.image'.
 	self moveFileToResources: newName , '.sources'.
-	
+	self moveFileToResources: newName , '.changes'.
 	
