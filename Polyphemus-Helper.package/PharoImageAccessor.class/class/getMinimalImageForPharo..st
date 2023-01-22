@@ -1,3 +1,3 @@
 downloading
-getImageForPharo: aNumber
+getMinimalImageForPharo: aNumber
 	self new getImage: aNumber

@@ -6,5 +6,5 @@ pathToMinimalPharo: aNumber
 	path asFileReference 
 		ifExists: [ ^ path ]
 		ifAbsent: [ 
-			self getImageForPharo: aNumber.
-			^ self pathToPharo: aNumber ].
+			self getMinimalImageForPharo: aNumber.
+			^ self pathToMinimalPharo: aNumber ].

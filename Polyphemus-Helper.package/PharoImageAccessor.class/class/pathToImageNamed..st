@@ -6,4 +6,4 @@ pathToImageNamed: anImageName
 	package := IceRepository registeredRepositoryIncludingPackage: self class package.
 	^ ((package 
 		ifNotNil: [ package location ]
-		ifNil: [ FileSystem workingDirectory ])  / 'resources' / anImageName) pathString
+		ifNil: [ FileSystem workingDirectory ]) / 'resources' / anImageName) pathString
