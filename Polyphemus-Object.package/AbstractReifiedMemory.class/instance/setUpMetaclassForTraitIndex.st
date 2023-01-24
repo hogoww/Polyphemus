@@ -1,4 +1,4 @@
 initialization
 setUpMetaclassForTraitIndex
 
-	[ metaclassForTraitIndex := self preFindClassNamed: 'MetaclassForTraits' ] on: NotFound do: [ metaclassForTraitIndex := nil ]
+	[ metaclassForTraitIndex := (self preFindClassNamed: 'MetaclassForTraits') - 1 ] on: NotFound do: [ metaclassForTraitIndex := -1 ]
