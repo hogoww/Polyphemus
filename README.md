@@ -12,7 +12,8 @@ The simplest way to use is to execute the following:
 - using an image```(MemoryInspector newFromImage: path) open```.  
 
 The path should be provided as a string.  
-A [small image](https://github.com/carolahp/PharoBootstrap/) is provided by default and its path is accessible through the message send: ```AbstractInspectorsTest new pathTo64BitImage.```.  
+A [small image](https://github.com/carolahp/PharoBootstrap/) is provided by default and its path is accessible through the message send: ```PharoImageAccessor pathToCandle64Bit.```.  
+You can also download the latests minimal & regular Pharo images using the class ```PharoImageAccessor.```.  
 
 # UI Details
 
