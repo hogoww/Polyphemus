@@ -1,3 +1,3 @@
 action
 cleanUp: anImageName
-	self runCommand: 'rm pharo.version *.changes ' , anImageName , '.zip' , ' 90 100 110'
+	self runCommand: 'rm pharo.version wget.log* ' , anImageName , '.zip'
