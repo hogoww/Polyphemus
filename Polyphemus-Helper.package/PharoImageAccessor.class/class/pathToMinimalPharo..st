@@ -7,4 +7,4 @@ pathToMinimalPharo: aNumber
 		ifExists: [ ^ path ]
 		ifAbsent: [ 
 			self getMinimalImageForPharo: aNumber.
-			self pathToMinimalPharo: aNumber ].
+			^ self pathToMinimalPharo: aNumber ].
