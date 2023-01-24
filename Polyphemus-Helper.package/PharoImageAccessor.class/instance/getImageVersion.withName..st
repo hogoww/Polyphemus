@@ -4,10 +4,7 @@ getImageVersion: aNumber withName: imageName
 	self download: 'http://files.pharo.org/image/', (aNumber * 10) asString , '/' , imageName , '.zip'.
 	self extract: imageName.
 	self cleanUp: imageName.
-	newName := (imageName includesSubstring: 'minimal') 
-		ifTrue: [ 'minimal' ] 
-		ifFalse: [ 'clean' ].
-	newName := newName , 'P' , aNumber asString.
+	newName := self class nameForVersion: aNumber imageName: imageName.
 	self renameFile: '*.image' to: newName , '.image'.
 	self renameFile: '*.sources' to: newName , '.sources'.
 	self renameFile: '*.changes' to: newName , '.changes'.

@@ -2,7 +2,7 @@ pathFinding
 pathToPharo: aNumber
 	| path |
 	
-	path := self pathToImageNamed: 'cleanP' , aNumber asString , '.image'.
+	path := self pathToImageNamed: (self nameForPharo: aNumber) , '.image'.
 	path asFileReference 
 		ifExists: [ ^ path ]
 		ifAbsent: [ 
