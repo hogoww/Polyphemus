@@ -1,6 +1,5 @@
 class initialization
 initialize
-	"similarly to resources, we force the creation an initialization to avoid risking to timeing out a test case"
-	self = ImageInterpretedSetup ifFalse:[
-		self currentImage 
-		].
+	"initialize is not looked up, can't factorize its code"
+	"Subclasses should define this explicitly to force the creation of the resource at loading time"
+	"self current"

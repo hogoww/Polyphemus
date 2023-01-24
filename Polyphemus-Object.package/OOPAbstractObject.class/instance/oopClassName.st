@@ -1,4 +1,4 @@
-class
+accessingClass
 oopClassName
 
 	| class |

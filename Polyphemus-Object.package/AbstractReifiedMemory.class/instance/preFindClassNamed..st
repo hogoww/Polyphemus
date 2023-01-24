@@ -9,7 +9,7 @@ preFindClassNamed: aString
 			ifTrue: [
 				class := OOPClassInstanceSideObject on: aClassTableAddress memory: self.
 				(OOPString on: (class slotAt: class slotIndexForClassName) memory: memory) asString = aString
-					ifTrue: [ ^ anIndex ]]
+					ifTrue: [ ^ anIndex + 1 ]]
 				] on: SubscriptOutOfBounds do: [ :e | ]].
 		
 	NotFound signal
