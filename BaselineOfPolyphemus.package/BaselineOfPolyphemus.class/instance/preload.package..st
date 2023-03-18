@@ -1,7 +1,7 @@
 baselines
 preload: loader package: packageSpec
 
-	'VMMaker' asPackage ifNotNil: [ ^ self ].
+	[ 'VMMaker' asPackage ] on: NotFound do: [ ^ self ].
 
 	Metacello new
 	  baseline: 'OpenSmalltalk-VM';
