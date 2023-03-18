@@ -3,7 +3,6 @@ baseline: spec
 	<baseline>
 
 	spec for: #common do: [
-		spec preLoadDoIt: #'preload:package:'.
 		spec postLoadDoIt: #postLoad.
 		spec package: 'Polyphemus-Helper'.
 		spec package: 'Polyphemus-Memory'.
