@@ -6,7 +6,3 @@ postLoad
 	browser owner tileLeft.
 	playground := StPlayground openContents: self defaultPlayground.
 	playground window tileTopRight.
-	
-	(IceRepositoryCreator new
-		location: FileSystem workingDirectory / 'pharo-vm';
-		createRepository) register.
