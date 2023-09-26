@@ -13,12 +13,7 @@ setUpUsingImage
 	interpreter initStackPages.
 	interpreter loadInitialContext.
 	wordSize := memory wordSize.
-	
-	objectHeaderSize := 8 "bytes. Always.".
-	emptyObjectSize := objectHeaderSize + 8 "minimum required single empty slot, to use for forwarders".
-	
-	newSpaceSize := memory newSpaceLimit - memory newSpaceStart.
-	oldSpaceSize := memory oldSpaceSize.
+
 	
 	methodBuilder := VMCompiledCodeBuilder new
 		interpreter: interpreter; 
